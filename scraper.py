@@ -24,7 +24,7 @@ listing_elements = soup.find_all("a", class_="b-result-tile__nUiUiFtR93FVbMOF")
 print(f"\nFound {len(listing_elements)} listing\n")
 
 listings = []
-seend_ids = set()
+seen_ids = set()
 
 for listing_elem in listing_elements:
     title_tag = listing_elem.find("span", class_="e-make-model-title__yWb_LfShP7iz22PX")
@@ -34,26 +34,29 @@ for listing_elem in listing_elements:
     price = price_tag.get_text(strip=True) if price_tag else None
 
     link = listing_elem.get("href", "")
-    print(f"DEBUG: Raw link = {link}")
+    # print(f"DEBUG: Raw link = {link}")
     if link:
         if not link.startswith("http"):
             full_link = f"https://www.autotrader.co.za{link}" if link else None
         else:
             full_link = link
 
+        #extracts unique id form url
         listing_id = link.split("/")[-1].split("?")[0] if link else None
     else:
         full_link = None
         listing_id = None
 
+    # skips  'undefined' titles
     if not title or not price or not listing_id or title == "undefined":
         print(f"skipping invalid listing: {title}")
         continue
 
-    if listing_id in seend_ids:
+    #skips duplicates
+    if listing_id in seen_ids:
         print(f"skipping duplicate listing: {listing_id}")
         continue
-    seend_ids.add(listing_id)
+    seen_ids.add(listing_id)
 
     listing_data = {
         'id': listing_id,
@@ -70,6 +73,7 @@ for listing_elem in listing_elements:
     print(f"price: {listing_data['price']}")
     print(f"link: {listing_data['url']}")
 
+#saves to JSON
 output_file = 'listings.json'
 with open(output_file, 'w') as f:
     json.dump(listings, f, indent=2)
