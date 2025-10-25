@@ -55,7 +55,7 @@ def main():
             for listing in new_listings.values():
                 print(f"    --[{listing['source']}] {listing['title']} - {listing['price']}")
         else:
-            print(f"\n  No new listings for {bike}")
+            print(f"\nNo new listings for {bike}")
 
         current[bike] = bike_listings
 
@@ -85,7 +85,7 @@ def main():
             print(f"   Search: {listing['search_term']}\n")
     
     else:
-        print("\n No new listings found accross all sites")
+        print("\nNo new listings found accross all sites")
 
     print("="*40 + "\n")  
 
