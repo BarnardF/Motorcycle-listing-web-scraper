@@ -190,6 +190,7 @@ Contributions are welcome! Please:
 
 - Built as a learning project to understand web scraping
 - Inspired by the need to find good motorcycle deals in South Africa
+- This project was created with the assistance of AI (Claude and ChatGPT)
 - This README was created with the assistance of AI (Claude) to ensure clarity and consistency.
 
 ---
