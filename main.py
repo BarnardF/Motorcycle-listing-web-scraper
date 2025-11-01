@@ -6,6 +6,7 @@ from trackers.baseTracker import load_bike_list, load_previous_listings, save_li
 from logger.logger import logger
 from config.config import SLEEP_MIN, SLEEP_MAX
 
+from html_generator import generate_html_report
 
 SCRAPERS = [
     scrape_autotrader,
@@ -100,9 +101,19 @@ def main():
 
         print("="*60 + "\n")  
 
-        # Save current data
-        save_listings(current)
+        # Save current listings
+        if save_listings(current):
+            logger.info("Listings saved successfully")
+        else:
+            logger.error("Failed to save listings")
+
+        # Generate HTML report for GitHub Pages
+        generate_html_report(all_new_listings, bikes, output_file="docs/index.html")
+
+        logger.info(f"Tracking completed! Found {len(all_new_listings)} new listing(s)")
+
         return all_new_listings
+    
     except KeyboardInterrupt:
         logger.warning('\n\n    Tracker interrupted by user')
         return []
