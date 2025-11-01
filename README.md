@@ -1,57 +1,33 @@
 # Motorcycle Listing Tracker
 
-A Python-based web scraper that automatically tracks motorcycle listings across multiple South African websites. Get notified when new bikes matching your criteria appear online!
+A Python-based web scraper that automatically tracks motorcycle listings across multiple South African websites. View your findings on a beautiful GitHub Pages dashboard!
 
 ## Features
 
 - **Multi-Site Scraping**: Tracks listings from AutoTrader and Gumtree
 - **Smart Duplicate Detection**: Avoids showing the same listing twice
 - **Persistent Storage**: Remembers previous runs to detect new listings
+- **GitHub Pages Dashboard**: Beautiful web interface to view all listings
 - **Configurable Searches**: Track multiple bike models from a simple text file
 - **Professional Logging**: Detailed logs for debugging and monitoring
 - **Robust Error Handling**: Continues running even if individual listings fail
 - **Clean Output**: Organized summary by source with detailed listing information
 - **Extensible Architecture**: Easy to add new websites
 
-## Quick Start
-
-### Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/yourusername/motorcycle-tracker.git
-cd motorcycle-tracker
-```
-
-2. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-3. **Configure your bikes**
-
-Create a `bikes.txt` file with the motorcycles you want to track (one per line):
-```
-Suzuki DS 250 SX V-STROM
-Triumph Scrambler 400 x
-Honda Rebel 500
-BMW G 310
-```
-
-4. **Run the tracker**
-```bash
-python main.py
-```
 
 ## Project Structure
 ```
 motorcycle-tracker/
 ├── main.py                     # Main entry point
 ├── config.py                   # Configuration settings
-├── logger.py                   # Logging utility
+├── html_generator.py           # GitHub Pages HTML generator
 ├── bikes.txt                   # List of bikes to track
 ├── listings.json              # Stored listings (auto-generated)
 ├── tracker.log                # Detailed logs (auto-generated)
+├── docs/
+│   └── index.html             # GitHub Pages dashboard (auto-generated)
+├── logger/
+│   └── logger.py              # Logging utility
 ├── trackers/
 │   ├── __init__.py
 │   ├── baseTracker.py        # Shared functionality
@@ -60,6 +36,54 @@ motorcycle-tracker/
 ├── requirements.txt           # Python dependencies
 └── README.md                  # This file
 ```
+
+## GitHub Pages Dashboard
+
+The tracker automatically generates a beautiful web dashboard that you can host on GitHub Pages!
+
+### Setting Up GitHub Pages
+
+1. **Push your repository to GitHub** (if not already done)
+```bash
+git add .
+git commit -m "Initial commit"
+git push origin main
+```
+
+2. **Enable GitHub Pages**
+   - Go to your repository on GitHub
+   - Click **Settings** → **Pages**
+   - Under "Source", select:
+     - Branch: `main`
+     - Folder: `/docs`
+   - Click **Save**
+
+3. **Access your dashboard**
+   - Your listings will be available at: `https://yourusername.github.io/motorcycle-tracker`
+   - GitHub will show you the exact URL in Settings → Pages
+
+### Updating the Dashboard
+
+Every time you run `python main.py`, the dashboard is automatically updated with the latest listings. To publish changes:
+
+```bash
+git add docs/index.html
+git commit -m "Update motorcycle listings"
+git push
+```
+
+GitHub Pages will automatically refresh within a few minutes.
+
+### Dashboard Features
+
+The web dashboard includes:
+- 📊 **Statistics**: Total listings, bikes tracked, sources
+- 🏍️ **Grouped Listings**: Organized by motorcycle model
+- 🎨 **Dark Theme**: Easy on the eyes with red accents
+- 📱 **Mobile Responsive**: Works great on phones and tablets
+- ✨ **Hover Effects**: Interactive cards with smooth animations
+- 🔗 **Direct Links**: Click to view any listing on the original site
+- ⏰ **Timestamp**: See when the page was last updated
 
 ## Configuration
 
@@ -108,55 +132,41 @@ Currently supports:
 - **Gumtree** (gumtree.co.za) - Flexible search format
 
 ## Output Example
+
+### Console Output
 ```
 ============================================================
 🏍️  MOTORCYCLE LISTING TRACKER
 ============================================================
 
-📋 Tracking 2 bike model(s) across 2 site(s):
-   • Honda Rebel 500
+📋 Tracking 5 bike model(s) across 2 site(s):
+   • Suzuki DS 250 SX V-STROM
    • Triumph Scrambler 400 x
+   • Honda Rebel 500
 
 ------------------------------------------------------------
-🔍 [1/2] Searching for: Honda Rebel 500
+🔍 [1/5] Searching for: Suzuki DS 250 SX V-STROM
 ------------------------------------------------------------
 
-[AutoTrader] Searching: Honda Rebel 500
-[AutoTrader] Found 3 listing(s) for Honda Rebel 500
-[Gumtree] Searching: Honda Rebel 500
-[Gumtree] Found 1 listing(s) for Honda Rebel 500
+[AutoTrader] Searching: Suzuki DS 250 SX V-STROM
+[AutoTrader] Found 3 listing(s)
+[Gumtree] Searching: Suzuki DS 250 SX V-STROM
+[Gumtree] Found 1 listing(s)
 
-🆕 2 NEW listing(s) for Honda Rebel 500
-   • [AutoTrader] 2024 Honda Rebel 500 - R 85,000
-   • [Gumtree] Honda Rebel 500 ABS - R 78,000
+🆕 4 NEW listing(s) for Suzuki DS 250 SX V-STROM
 
 ============================================================
 📊 SUMMARY
 ============================================================
 
-🎉 TOTAL: 2 NEW LISTING(S) FOUND
+🎉 TOTAL: 21 NEW LISTING(S) FOUND
 
-   • AutoTrader: 1 new listing(s)
-   • Gumtree: 1 new listing(s)
+   • AutoTrader: 19 new listing(s)
+   • Gumtree: 2 new listing(s)
 
-------------------------------------------------------------
-📋 DETAILS
-------------------------------------------------------------
-
-[AutoTrader] 2024 Honda Rebel 500
-   💰 R 85,000
-   🔗 https://www.autotrader.co.za/bikes-for-sale/...
-   🔍 Search: Honda Rebel 500
-
-[Gumtree] Honda Rebel 500 ABS
-   💰 R 78,000
-   🔗 https://www.gumtree.co.za/...
-   🔍 Search: Honda Rebel 500
-
-============================================================
-
+✓ Generated HTML report: docs/index.html
 ✓ Listings saved successfully
-✓ Tracking complete! Found 2 new listing(s)
+✓ Tracking complete! Found 21 new listing(s)
 ```
 
 ## Logging
@@ -164,11 +174,12 @@ Currently supports:
 The tracker creates detailed logs in `tracker.log`:
 
 ```
-2024-11-01 14:23:15 - INFO - Loaded 5 bike model(s) from bikes.txt
-2024-11-01 14:23:16 - INFO - [AutoTrader] Searching: Honda Rebel 500
-2024-11-01 14:23:17 - DEBUG - Fetching: https://www.autotrader.co.za/...
-2024-11-01 14:23:18 - INFO - [AutoTrader] Found 3 listing(s)
-2024-11-01 14:23:19 - WARNING - [AutoTrader] Skipping malformed listing 2
+2025-11-01 14:23:15 - INFO - Loaded 5 unique bike model(s) from bikes.txt
+2025-11-01 14:23:16 - INFO - [AutoTrader] Searching: Honda Rebel 500
+2025-11-01 14:23:17 - DEBUG - Fetching: https://www.autotrader.co.za/...
+2025-11-01 14:23:18 - INFO - [AutoTrader] Found 3 listing(s)
+2025-11-01 14:23:19 - WARNING - [AutoTrader] Skipping malformed listing 2
+2025-11-01 14:23:25 - INFO - ✓ Generated HTML report: docs/index.html
 ```
 
 **Log Levels:**
@@ -194,7 +205,7 @@ Example:
 ```python
 # trackers/newSiteTracker.py
 from trackers.baseTracker import fetch_page, create_listing
-from logger import logger
+from logger.logger import logger
 from config import NEW_SITE_BASE_URL
 
 SOURCE = "NewSite"
@@ -270,13 +281,13 @@ If you're getting blocked:
 - Look for patterns in which scraper is failing
 - One scraper failure won't crash the entire script anymore
 
-### Malformed Listings
+### GitHub Pages Not Updating
 
-The tracker now handles malformed listings gracefully:
-- Skips listings with missing data
-- Logs warnings for debugging
-- Continues processing other listings
-- Check `tracker.log` to see which listings were skipped
+- Make sure you've enabled GitHub Pages in Settings
+- Check that you selected the `/docs` folder
+- Wait a few minutes after pushing (GitHub takes time to rebuild)
+- Check the Actions tab for build errors
+- Verify `docs/index.html` exists and is committed
 
 ## Advanced Usage
 
@@ -287,8 +298,8 @@ The tracker now handles malformed listings gracefully:
 # Edit crontab
 crontab -e
 
-# Run every day at 9 AM
-0 9 * * * cd /path/to/motorcycle-tracker && python main.py
+# Run every day at 9 AM and auto-push to GitHub
+0 9 * * * cd /path/to/motorcycle-tracker && python main.py && git add docs/index.html && git commit -m "Auto-update listings" && git push
 
 # Run every 6 hours
 0 */6 * * * cd /path/to/motorcycle-tracker && python main.py
@@ -302,6 +313,30 @@ crontab -e
 5. Program: `python`
 6. Arguments: `C:\path\to\motorcycle-tracker\main.py`
 7. Start in: `C:\path\to\motorcycle-tracker`
+
+### Automated Git Push (Optional)
+
+Create a bash script `update_and_push.sh`:
+```bash
+#!/bin/bash
+cd /path/to/motorcycle-tracker
+python main.py
+
+# Check if docs/index.html changed
+if git diff --quiet docs/index.html; then
+    echo "No changes to publish"
+else
+    git add docs/index.html
+    git commit -m "Auto-update listings $(date '+%Y-%m-%d %H:%M')"
+    git push
+    echo "Listings updated and pushed to GitHub"
+fi
+```
+
+Make it executable:
+```bash
+chmod +x update_and_push.sh
+```
 
 ### Monitoring Logs
 
@@ -320,24 +355,6 @@ grep ERROR tracker.log
 grep "NEW listing(s)" tracker.log | grep "$(date +%Y-%m-%d)"
 ```
 
-## To-Do
-
-Phase 2 (High-Value Features):
-- [ ] Email notifications
-- [ ] Price drop alerts
-- [ ] Better CLI output with colors
-
-Phase 3 (Automation):
-- [ ] Command-line arguments (--quiet, --verbose, etc.)
-- [ ] Daily automation guide
-- [ ] Summary reports
-
-Phase 4 (Polish):
-- [ ] More scrapers (Cars.co.za, OLX)
-- [ ] Web dashboard (Flask)
-- [ ] SQLite database
-- [ ] Price history tracking
-- [ ] Export to CSV/HTML
 
 ## Legal & Ethics
 
@@ -378,7 +395,14 @@ Contributions are welcome! Please:
 
 ## Changelog
 
-### Version 2.0 (Current)
+### Version 2.1 (Current)
+- Added GitHub Pages HTML dashboard
+- Beautiful dark theme with red accents
+- Mobile-responsive design
+- Auto-generates static HTML report
+- Statistics and organized listing cards
+
+### Version 2.0
 - Added centralized configuration (`config.py`)
 - Implemented professional logging system
 - Enhanced error handling and resilience
@@ -394,11 +418,14 @@ Contributions are welcome! Please:
 
 ## Acknowledgments
 
-- Built as a learning project to understand web scraping
+- Built as a learning project to understand web scraping and automation
 - Inspired by the need to find good motorcycle deals in South Africa
-- This project was created with the assistance of AI (Claude and ChatGPT)
+- This project was created with the assistance of AI (Claude)
+- HTML dashboard design inspired by [HTML5 UP](https://html5up.net/)
 - Thanks to the Python community for excellent libraries (requests, BeautifulSoup)
 
 ---
 
 **Questions or Issues?** Check `tracker.log` first, then open an issue on GitHub!
+
+**Want to see a live demo?** Check out the example dashboard at your GitHub Pages URL!
