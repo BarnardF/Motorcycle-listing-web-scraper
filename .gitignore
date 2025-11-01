@@ -1,2 +1,5 @@
 listings.json
 trackers/__pycache__
+tracker.log
+logger/__pycache__/logger.cpython-313.pyc
+config/__pycache__/config.cpython-313.pyc
