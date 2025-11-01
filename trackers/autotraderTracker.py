@@ -1,26 +1,32 @@
 from urllib.parse import quote
+from trackers.baseTracker import fetch_page, create_listing, validate_search_term
+from logger.logger import logger
+from config.config import AUTOTRADER_BASE_URL
 
-from trackers.baseTracker import fetch_page, create_listing, HEADERS, BIKE_FILE, DATA_FILE
-
-
-BASE_URL = "https://www.autotrader.co.za/bikes-for-sale"
 SOURCE = "AutoTrader"
 
 
 
 def scrape_autotrader(search_term):
     """Scrape AutoTrader for a specific search term"""
-    parts = search_term.split(maxsplit=1)
-    if len(parts) < 2:
-        print(f"invalid format: '{search_term}' (need: Brand Model)")
+    # Skip empty search terms
+    if not search_term or not search_term.strip():
+        logger.warning(f"[{SOURCE}] Skipping empty search term")
         return {}
     
+    # Validate search term format
+    is_valid, error_msg = validate_search_term(search_term, requried_format="Brand Model")
+    if not is_valid:
+        logger.warning(f"[{SOURCE}] {error_msg}")
+        return {}
+    
+    parts = search_term.split(maxsplit=1)
     brand, model = parts[0].lower(), parts[1]
-    encoded_model = quote(model, safe='')
-    url = f"{BASE_URL}/{brand}/{encoded_model}"
+    encoded_model = quote(model, safe="")
+    url = f"{AUTOTRADER_BASE_URL}/{brand}/{encoded_model}"
 
-    print(f"Searching: {search_term}")
-    print(f"URL: {url}")
+    logger.info(f"[{SOURCE}] Searching: {search_term}")
+    logger.debug(f"[{SOURCE}] URL: {url}")
 
     soup = fetch_page(url)
     if not soup:
@@ -30,7 +36,7 @@ def scrape_autotrader(search_term):
     # print(f"\nFound {len(listing_elements)} listing elements")
 
     if not listing_elements:
-        print("No listings found")
+        logger.error(f"No listings found")
         return {}
     
     listings = {}
@@ -65,6 +71,7 @@ def scrape_autotrader(search_term):
         )
 
         # listings.append(listing_data)
-    print(f"found {len(listings)} listings")
+    # print(f"found {len(listings)} listings")
+    logger.info(f"[{SOURCE}] Found {len(listings)} listing(s) for {search_term}")
     return listings
 
