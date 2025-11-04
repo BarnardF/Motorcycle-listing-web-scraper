@@ -32,40 +32,66 @@ def scrape_gumtree(search_term):
     
     listings = {}
     seen_ids = set()
+    skipped = 0
 
     for idx,listing_elem in enumerate(listing_elements, 1):
         try:
+            # Extract title
+            title_elem = listing_elem.select_one("a.related-ad-title span")
+            title = title_elem.get_text(strip=True) if title_elem else None
+
+            # Extract price
+            price_elem = listing_elem.select_one("span.ad-price")
+            price = price_elem.get_text(strip=True) if price_elem else None  
+
+            # Extract kilometers
+            km_elem = listing_elem.select_one("div.chiplets-container span:nth-of-type(2)")  # second span usually holds km
+            kilometers = km_elem.get_text(strip=True) if km_elem else "N/A"
+
+            # Extract location  
+            location_elem = listing_elem.select_one(".bottom-container .location span")
+            location = location_elem.get_text(strip=True) if location_elem else "N/A"
+
+            # Extract URL
+            link_elem = listing_elem.select_one("a.related-ad-title")   
+            href = link_elem.get("href", "") if link_elem else ""
+
+            # Extract listing ID
             listing_id = listing_elem.get("data-adid", "")
             if not listing_id:
                 continue
 
             listing_id = f"gt_{listing_id}" #"gt_" for gumtree
 
-            if listing_id in seen_ids:
+            # Validate required fields
+            if not href or not title or not price or title == "undefined":
+                logger.debug(f"[{SOURCE}] Skipping listing {idx}: missing required fields")
+                skipped += 1
                 continue
 
-            title_elem = listing_elem.select_one("a.related-ad-title span")
-            title = title_elem.get_text(strip=True) if title_elem else None
-
-            price_elem = listing_elem.select_one("span.ad-price")
-            price = price_elem.get_text(strip=True) if price_elem else None  
-
-            link_elem = listing_elem.select_one("a.related-ad-title")   
-            href = link_elem.get("href", "") if link_elem else ""
-
-            if not title or not price or not href:
+            # Check for duplicates
+            if listing_id in seen_ids:
+                logger.debug(f"[{SOURCE}] Skipping duplicate listing: {listing_id}")
+                skipped += 1
                 continue
 
             seen_ids.add(listing_id)
+            full_url = f"https://www.gumtree.co.za{href}"
+
 
             listings[listing_id] = create_listing(
                 listing_id=listing_id,
                 title=title,
                 price=price,
-                url=f"https://www.gumtree.co.za{href}",
+                url=full_url,
                 search_term=search_term,
-                source="Gumtree"
-            )    
+                source=SOURCE
+            )
+
+            # Add extra info separately
+            listings[listing_id]['kilometers'] = kilometers
+            listings[listing_id]['location'] = location
+  
         except ArithmeticError as e:
             logger.warning(f"[{SOURCE}] Skipping malformed listing {idx}: {e}")  
             continue
@@ -74,5 +100,7 @@ def scrape_gumtree(search_term):
             continue
 
         # listings.append(listing_data)
-    logger.info(f"[{SOURCE}] Found {len(listings)} listing(s) for {search_term}")
+    logger.info(f"[{SOURCE}] Found {len(listings)} listing(s) for {search_term}" + 
+                (f" ({skipped} skipped)" if skipped > 0 else ""))
+    
     return listings
