@@ -59,14 +59,19 @@ def create_listing(listing_id, title, price, url, search_term, source):
     Returns:
         Dictionary containing listing information
     """
+    clean_price = price.strip() if price else "N/A"
     return {
         'id': listing_id,
         'title': title.strip() if title else "",
-        'price': price.strip() if price else "N/A",
+        'price': clean_price,
+        'price_history': [{
+            'date': datetime.now().strftime("%d-%m-%Y %H:%M:%S"),
+            'price': clean_price
+        }],
         'url': url,
         'search_term': search_term,
         'source': source,
-        'found_date': datetime.now().isoformat()
+        'found_date': datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     }
 
 
