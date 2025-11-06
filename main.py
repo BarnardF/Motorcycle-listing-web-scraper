@@ -69,6 +69,25 @@ def main():
             else:
                 print(f"\nNo new listings for {bike}")
 
+            #price comparison
+            for listing_id, current_listing in bike_listings.items():
+                if listing_id in previous_listings:
+                    old_listing = previous_listings[listing_id]
+                    old_price = old_listing.get('price', '').replace("R", "").replace(",", "").strip()
+                    new_price = current_listing.get('price', '').replace("R", "").replace(",", "").strip()
+
+                    # Default flag
+                    current_listing['price_dropped'] = False
+
+                    if old_price.isdigit() and new_price.isdigit():
+                        old_price_val = int(old_price)
+                        new_price_val = int(new_price)
+                        if new_price < old_price:
+                            logger.info(f"Price drop detected for {current_listing['title']}"
+                                        f"from R{old_price} -> R{new_price} [{current_listing['source']}]")
+                            current_listing['price_dropped'] = True
+                        
+
             current[bike] = bike_listings
 
         print("\n" + "="*60)
