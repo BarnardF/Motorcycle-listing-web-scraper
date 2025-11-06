@@ -2,7 +2,7 @@ import time
 import random
 from trackers.autotraderTracker import scrape_autotrader
 from trackers.gumtreeTracker import scrape_gumtree
-from trackers.baseTracker import load_bike_list, load_previous_listings, save_listings
+from trackers.baseTracker import load_bike_list, load_previous_listings, save_listings, clean_stale_listings
 from logger.logger import logger
 from config.config import SLEEP_MIN, SLEEP_MAX
 
@@ -86,30 +86,47 @@ def main():
             for source, listing in by_source.items():
                 print(f"    {source}: {len(listing)} new listing(s)")
 
-            print("\n" + "─"*60)
-            print("DETAILS:")
-            print("─"*60 + "\n")
+            # print("\n" + "─"*60)
+            # print("DETAILS:")
+            # print("─"*60 + "\n")
 
-            for listing in all_new_listings:
-                print(f"[{listing['source']}] {listing['title']}")
-                print(f"   {listing['price']}")
-                print(f"   {listing['url']}")
-                print(f"   Search: {listing['search_term']}\n")
+            # for listing in all_new_listings:
+            #     print(f"[{listing['source']}] {listing['title']}")
+            #     print(f"   {listing['price']}")
+            #     print(f"   {listing['url']}")
+            #     print(f"   Search: {listing['search_term']}\n")
         
         else:
             print("\nNo new listings found accross all sites")
 
         print("="*60 + "\n")  
 
+        # Clean up old listings
+        current_run_ids = set()
+        for bike_listings in current.values():
+            current_run_ids.update(bike_listings.keys())
+
+        #clean stale listings
+        all_listings, removed_count = clean_stale_listings(previous, current_run_ids)
+
+        if removed_count > 0:
+            logger.info(f"Removed {removed_count} stale listing(s) (likely sold/removed)")  
+        # Merge cleaned previous listings with new ones
+        all_listings.update(current)    
+
         # Save current listings
-        if save_listings(current):
+        if save_listings(all_listings):
             logger.info("Listings saved successfully")
         else:
             logger.error("Failed to save listings")
 
-        # Generate HTML report for GitHub Pages
-        generate_html_report(all_new_listings, bikes, output_file="docs/index.html")
+        # Pass ALL listings (both old and new), not just new ones
+        all_listings_flat = []
+        for bike_listings in current.items():
+            all_listings_flat.extend(bike_listings[1].values())
 
+        generate_html_report(all_listings_flat, bikes, "docs/index.html")
+        
         logger.info(f"Tracking completed! Found {len(all_new_listings)} new listing(s)")
 
         return all_new_listings
