@@ -1,5 +1,5 @@
 from urllib.parse import quote_plus
-from trackers.baseTracker import fetch_page, create_listing
+from trackers.baseTracker import fetch_page, create_listing, is_relevant_match
 from logger.logger import logger
 from config.config import GUMTREE_BASE_URL
 
@@ -78,6 +78,11 @@ def scrape_gumtree(search_term):
             seen_ids.add(listing_id)
             full_url = f"https://www.gumtree.co.za{href}"
 
+            #validate match
+            if not is_relevant_match(title, search_term, min_match_ratio=0.5):
+                logger.debug(f"[{SOURCE}] Skipping irrelevant match: {title}")
+                skipped += 1
+                continue
 
             listings[listing_id] = create_listing(
                 listing_id=listing_id,
