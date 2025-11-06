@@ -187,7 +187,8 @@ def generate_bike_view(listings_by_bike):
                         <tr>
                             <td class="source">{listing['source']}</td>
                             <td class="bike-name">{listing['title']}</td>
-                            <td class="price">{listing['price']}</td>
+                            <td class="price">{listing['price']}{"<span class='badge'>Price dropped!</span>" if listing.get('price_dropped') else ""}</td>
+
                             <td class="kilometers">{kilometers}</td>
                             <td class="location">{location}</td>
                             <td><a href="{listing['url']}" target="_blank" class="view-link">View →</a></td>
@@ -241,7 +242,7 @@ def generate_source_view(listings_by_source):
                         <tr>
                             <td class="bike-name">{listing['search_term']}</td>
                             <td>{listing['title']}</td>
-                            <td class="price">{listing['price']}</td>
+                            <td class="price">{listing['price']}{" <span class='badge'>Price dropped!</span>" if listing.get('price_dropped') else ""}</td>
                             <td class="kilometers">{kilometers}</td>
                             <td class="location">{location}</td>
                             <td><a href="{listing['url']}" target="_blank" class="view-link">View →</a></td>
