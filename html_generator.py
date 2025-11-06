@@ -54,10 +54,10 @@ def generate_html_report(all_listings, bikes_tracked, output_file="docs/index.ht
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(html)
         
-        logger.info(f"✓ Generated HTML report: {output_file}")
-        logger.info(f"  Total listings: {len(all_listings)}")
-        logger.info(f"  Bikes with listings: {len(listings_by_bike)}")
-        logger.info(f"  Sources: {len(listings_by_source)}")
+        logger.info(f"Generated HTML report: {output_file}")
+        logger.info(f" - Total listings: {len(all_listings)}")
+        logger.info(f" - Bikes with listings: {len(listings_by_bike)}")
+        logger.info(f" - Sources: {len(listings_by_source)}")
         
         return True
         
@@ -233,6 +233,9 @@ def generate_source_view(listings_by_source):
 """
             for listing in listings:
                 kilometers = listing.get('kilometers', 'N/A')
+                condition = listing.get('condition', 'N/A')
+                if kilometers == "N/A" and condition != "N/A":
+                    kilometers = condition  # Fallback to condition if kilometers not available
                 location = listing.get('location', 'N/A')
                 html += f"""
                         <tr>
