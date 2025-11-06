@@ -82,7 +82,7 @@ def main():
                     if old_price.isdigit() and new_price.isdigit():
                         old_price_val = int(old_price)
                         new_price_val = int(new_price)
-                        if new_price < old_price:
+                        if new_price_val < old_price_val:
                             logger.info(f"Price drop detected for {current_listing['title']}"
                                         f"from R{old_price} -> R{new_price} [{current_listing['source']}]")
                             current_listing['price_dropped'] = True
