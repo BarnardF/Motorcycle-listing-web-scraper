@@ -19,7 +19,7 @@
             <!-- Statistics -->
             <div class="stats">
                 <div class="stat-box">
-                    <span class="stat-number">40</span>
+                    <span class="stat-number">39</span>
                     <span class="stat-label">Total Listings</span>
                 </div>
                 <div class="stat-box">
@@ -30,12 +30,17 @@
                     <span class="stat-number">2</span>
                     <span class="stat-label">Sources</span>
                 </div>
+                <div class="stat-box">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Price Drops</span>
+                </div>
             </div>
 
             <!-- View Toggle Buttons -->
             <div class="view-toggle">
                 <button class="toggle-btn active" onclick="showView('bike')">📋 By Bike Model</button>
                 <button class="toggle-btn" onclick="showView('source')">🏪 By Source</button>
+                <button class="toggle-btn" onclick="showView('drops')">💰 Price Drops</button>
             </div>
 <div id="bike-view" class="view-container">
 
@@ -57,31 +62,28 @@
                     </thead>
                     <tbody>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Suzuki DS 250 SX V-STROM</td>
                             <td class="price">R 61 800</td>
-
                             <td class="kilometers">New</td>
                             <td class="location">Kempton Park Central,Kempton Park</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27931826?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Suzuki DS 250 SX V-STROM</td>
                             <td class="price">R 61 800</td>
-
                             <td class="kilometers">New</td>
                             <td class="location">Kempton Park Central,Kempton Park</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27699115?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Suzuki DS 250 SX V-STROM</td>
                             <td class="price">R 62 420</td>
-
                             <td class="kilometers">New</td>
                             <td class="location">Capital Park,Pretoria</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27970434?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
@@ -109,11 +111,10 @@
                     </thead>
                     <tbody>
 
-                        <tr>
+                        <tr class="price-drop-row">
                             <td class="source">Gumtree</td>
                             <td class="bike-name">2022 Honda CB500X</td>
-                            <td class="price">R 110,000</td>
-
+                            <td class="price"><span class='old-price'>R 900,000</span> R 110,000</td>
                             <td class="kilometers">8,403km</td>
                             <td class="location">Pietermaritzburg</td>
                             <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/pietermaritzburg/2022-honda-cb500x/10013318795501012895313109" target="_blank" class="view-link">View →</a></td>
@@ -141,31 +142,28 @@
                     </thead>
                     <tbody>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2018 Kawasaki NINJA 400</td>
                             <td class="price">R 87 999</td>
-
                             <td class="kilometers">19 239 km</td>
                             <td class="location">Bardene,Boksburg</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/kawasaki/ninja-400/28074807?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2022 Kawasaki NINJA 400</td>
                             <td class="price">R 109 999</td>
-
                             <td class="kilometers">8 319 km</td>
                             <td class="location">Bardene,Boksburg</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/kawasaki/ninja-400/27919265?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">Gumtree</td>
                             <td class="bike-name">2023 Kawasaki Ninja 400 SE ABS Demo</td>
                             <td class="price">R 109,995</td>
-
                             <td class="kilometers">200km</td>
                             <td class="location">Pinetown</td>
                             <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/pinetown/2023-kawasaki-ninja-400-se-abs-demo/10012465812701010354228509" target="_blank" class="view-link">View →</a></td>
@@ -193,81 +191,73 @@
                     </thead>
                     <tbody>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2024 Triumph Scrambler 400 X</td>
                             <td class="price">R 85 000</td>
-
                             <td class="kilometers">3 500 km</td>
                             <td class="location">Kramerville,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28276407?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2024 Triumph Scrambler 400 X</td>
                             <td class="price">R 89 000</td>
-
                             <td class="kilometers">3 836 km</td>
                             <td class="location">Cape Town City Centre,Cape Town</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28174507?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2024 Triumph Scrambler 400 X</td>
                             <td class="price">R 90 000</td>
-
                             <td class="kilometers">12 701 km</td>
                             <td class="location">Cape Town City Centre,Cape Town</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28156836?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Triumph Scrambler 400 X</td>
                             <td class="price">R 99 900</td>
-
                             <td class="kilometers">100 km</td>
                             <td class="location">Centurion Central,Centurion</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28148971?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Triumph Scrambler 400 X</td>
                             <td class="price">R 99 900</td>
-
                             <td class="kilometers">100 km</td>
                             <td class="location">Kramerville,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28028285?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Triumph Scrambler 400 X</td>
                             <td class="price">R 99 900</td>
-
                             <td class="kilometers">100 km</td>
                             <td class="location">Kramerville,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28028257?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Triumph Scrambler 400 X</td>
                             <td class="price">R 99 900</td>
-
                             <td class="kilometers">100 km</td>
                             <td class="location">Kramerville,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28028255?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Triumph Scrambler 400 X</td>
                             <td class="price">R 89 000</td>
-
                             <td class="kilometers">600 km</td>
                             <td class="location">Centurion Central,Centurion</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28030837?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
@@ -295,71 +285,64 @@
                     </thead>
                     <tbody>
 
-                        <tr>
-                            <td class="source">AutoTrader</td>
-                            <td class="bike-name">2024 Triumph Speed 400</td>
-                            <td class="price">R 89 990</td>
-
-                            <td class="kilometers">22 km</td>
-                            <td class="location">Paulshof,Sandton</td>
-                            <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28136958?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
-                        </tr>
-
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2024 Triumph Speed 400</td>
                             <td class="price">R 85 900</td>
-
                             <td class="kilometers">9 952 km</td>
                             <td class="location">Boksburg West,Boksburg</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28237637?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
+                            <td class="source">AutoTrader</td>
+                            <td class="bike-name">2024 Triumph Speed 400</td>
+                            <td class="price">R 89 990</td>
+                            <td class="kilometers">22 km</td>
+                            <td class="location">Paulshof,Sandton</td>
+                            <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28136958?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Triumph Speed 400</td>
                             <td class="price">R 89 900</td>
-
                             <td class="kilometers">100 km</td>
                             <td class="location">Kramerville,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28245203?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Triumph Speed 400</td>
                             <td class="price">R 89 900</td>
-
                             <td class="kilometers">100 km</td>
                             <td class="location">Kramerville,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28245202?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Triumph Speed 400</td>
                             <td class="price">R 95 000</td>
-
                             <td class="kilometers">100 km</td>
                             <td class="location">Kramerville,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28210472?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2024 Triumph Speed 400</td>
                             <td class="price">R 84 000</td>
-
                             <td class="kilometers">3 650 km</td>
                             <td class="location">Centurion Central,Centurion</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28164864?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Triumph Speed 400</td>
                             <td class="price">R 85 000</td>
-
                             <td class="kilometers">1 750 km</td>
                             <td class="location">Centurion Central,Centurion</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/27828439?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
@@ -387,111 +370,100 @@
                     </thead>
                     <tbody>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2016 Ducati Scrambler</td>
                             <td class="price">R 109 000</td>
-
                             <td class="kilometers">23 499 km</td>
                             <td class="location">Gonubie,East London</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28281102?vf=2&db=0&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2017 Ducati Scrambler</td>
                             <td class="price">R 129 990</td>
-
                             <td class="kilometers">18 567 km</td>
                             <td class="location">Paulshof,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28130939?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2015 Ducati Scrambler</td>
                             <td class="price">R 119 990</td>
-
                             <td class="kilometers">10 938 km</td>
                             <td class="location">Paulshof,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28106824?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2022 Ducati Scrambler</td>
                             <td class="price">R 179 900</td>
-
                             <td class="kilometers">5 073 km</td>
                             <td class="location">Zwartkop,Centurion</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28016790?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Ducati Scrambler</td>
                             <td class="price">R 198 000</td>
-
                             <td class="kilometers">New</td>
                             <td class="location">Zwartkop,Centurion</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/27127893?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Ducati Scrambler</td>
                             <td class="price">R 229 000</td>
-
                             <td class="kilometers">462 km</td>
                             <td class="location">Claremont,Cape Town</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28257268?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Ducati Scrambler</td>
                             <td class="price">R 284 000</td>
-
                             <td class="kilometers">New</td>
                             <td class="location">Claremont,Cape Town</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28234547?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Ducati Scrambler</td>
                             <td class="price">R 192 000</td>
-
                             <td class="kilometers">New</td>
                             <td class="location">Claremont,Cape Town</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28217189?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2018 Ducati Scrambler</td>
                             <td class="price">R 140 000</td>
-
                             <td class="kilometers">20 000 km</td>
                             <td class="location">Claremont,Cape Town</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28213581?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Ducati Scrambler</td>
                             <td class="price">R 242 000</td>
-
                             <td class="kilometers">New</td>
                             <td class="location">Claremont,Cape Town</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28204473?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">Gumtree</td>
                             <td class="bike-name">2015 Ducati X Scrambler @Bike Bros Motorcycles!</td>
                             <td class="price">R 124,500</td>
-
                             <td class="kilometers">11,349km</td>
                             <td class="location">Retreat</td>
                             <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/retreat/2015-ducati-x-scrambler-64-bike-bros-motorcycles/10012503439581011067160209" target="_blank" class="view-link">View →</a></td>
@@ -519,31 +491,28 @@
                     </thead>
                     <tbody>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2015 Yamaha MT-07</td>
                             <td class="price">R 99 990</td>
-
                             <td class="kilometers">35 779 km</td>
                             <td class="location">Paulshof,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/yamaha/mt-07/28243696?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Yamaha MT-07</td>
                             <td class="price">R 179 950</td>
-
                             <td class="kilometers">New</td>
                             <td class="location">Lavalia,George</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/yamaha/mt-07/27363948?vf=3&db=1&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 Yamaha MT-07</td>
                             <td class="price">R 179 999</td>
-
                             <td class="kilometers">New</td>
                             <td class="location">Alberton North,Alberton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/yamaha/mt-07/28077002?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
@@ -571,56 +540,22 @@
                     </thead>
                     <tbody>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2025 BMW G 310</td>
                             <td class="price">R 84 900</td>
-
                             <td class="kilometers">130 km</td>
                             <td class="location">Montana Tuine,Pretoria</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/bmw/g-310/28053462?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">Gumtree</td>
                             <td class="bike-name">2022 BMW G 310 RS Sport.</td>
                             <td class="price">R 59,995</td>
-
                             <td class="kilometers">6,900km</td>
                             <td class="location">Diep River</td>
                             <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/diep-river/2022-bmw-g-310-rs-sport/10013244739141010255774409" target="_blank" class="view-link">View →</a></td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="table-section">
-                <div class="table-header">
-                    <h2>Kawasaki Z400</h2>
-                    <span class="listing-count">1 listing(s)</span>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Source</th>
-                            <th>Title</th>
-                            <th>Price</th>
-                            <th>Kilometers</th>
-                            <th>Location</th>
-                            <th>Link</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        <tr>
-                            <td class="source">Gumtree</td>
-                            <td class="bike-name">Kawasaki Z400</td>
-                            <td class="price">R 55,000</td>
-
-                            <td class="kilometers">45,000km</td>
-                            <td class="location">Kimberley</td>
-                            <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/kimberley/kawasaki-z400/10013382584181012609250209" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
                     </tbody>
@@ -645,11 +580,10 @@
                     </thead>
                     <tbody>
 
-                        <tr>
+                        <tr class="">
                             <td class="source">Gumtree</td>
                             <td class="bike-name">1988 Kawasaki Eliminator SE 400</td>
                             <td class="price">R 36,000</td>
-
                             <td class="kilometers">54,500km</td>
                             <td class="location">Hermanus</td>
                             <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/hermanus/1988-kawasaki-eliminator-se-400/10013358771571010006903909" target="_blank" class="view-link">View →</a></td>
@@ -679,7 +613,7 @@
                     </thead>
                     <tbody>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Suzuki DS 250 SX V-STROM</td>
                             <td>2025 Suzuki DS 250 SX V-STROM</td>
                             <td class="price">R 61 800</td>
@@ -688,7 +622,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27931826?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Suzuki DS 250 SX V-STROM</td>
                             <td>2025 Suzuki DS 250 SX V-STROM</td>
                             <td class="price">R 61 800</td>
@@ -697,7 +631,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27699115?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Suzuki DS 250 SX V-STROM</td>
                             <td>2025 Suzuki DS 250 SX V-STROM</td>
                             <td class="price">R 62 420</td>
@@ -706,7 +640,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27970434?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Kawasaki Ninja 400</td>
                             <td>2018 Kawasaki NINJA 400</td>
                             <td class="price">R 87 999</td>
@@ -715,7 +649,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/kawasaki/ninja-400/28074807?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Kawasaki Ninja 400</td>
                             <td>2022 Kawasaki NINJA 400</td>
                             <td class="price">R 109 999</td>
@@ -724,7 +658,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/kawasaki/ninja-400/27919265?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Scrambler 400 x</td>
                             <td>2024 Triumph Scrambler 400 X</td>
                             <td class="price">R 85 000</td>
@@ -733,7 +667,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28276407?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Scrambler 400 x</td>
                             <td>2024 Triumph Scrambler 400 X</td>
                             <td class="price">R 89 000</td>
@@ -742,7 +676,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28174507?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Scrambler 400 x</td>
                             <td>2024 Triumph Scrambler 400 X</td>
                             <td class="price">R 90 000</td>
@@ -751,7 +685,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28156836?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Scrambler 400 x</td>
                             <td>2025 Triumph Scrambler 400 X</td>
                             <td class="price">R 99 900</td>
@@ -760,7 +694,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28148971?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Scrambler 400 x</td>
                             <td>2025 Triumph Scrambler 400 X</td>
                             <td class="price">R 99 900</td>
@@ -769,7 +703,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28028285?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Scrambler 400 x</td>
                             <td>2025 Triumph Scrambler 400 X</td>
                             <td class="price">R 99 900</td>
@@ -778,7 +712,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28028257?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Scrambler 400 x</td>
                             <td>2025 Triumph Scrambler 400 X</td>
                             <td class="price">R 99 900</td>
@@ -787,7 +721,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28028255?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Scrambler 400 x</td>
                             <td>2025 Triumph Scrambler 400 X</td>
                             <td class="price">R 89 000</td>
@@ -796,16 +730,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28030837?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
-                            <td class="bike-name">Triumph Speed 400</td>
-                            <td>2024 Triumph Speed 400</td>
-                            <td class="price">R 89 990</td>
-                            <td class="kilometers">22 km</td>
-                            <td class="location">Paulshof,Sandton</td>
-                            <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28136958?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
-                        </tr>
-
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Speed 400</td>
                             <td>2024 Triumph Speed 400</td>
                             <td class="price">R 85 900</td>
@@ -814,7 +739,16 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28237637?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
+                            <td class="bike-name">Triumph Speed 400</td>
+                            <td>2024 Triumph Speed 400</td>
+                            <td class="price">R 89 990</td>
+                            <td class="kilometers">22 km</td>
+                            <td class="location">Paulshof,Sandton</td>
+                            <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28136958?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                        <tr class="">
                             <td class="bike-name">Triumph Speed 400</td>
                             <td>2025 Triumph Speed 400</td>
                             <td class="price">R 89 900</td>
@@ -823,7 +757,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28245203?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Speed 400</td>
                             <td>2025 Triumph Speed 400</td>
                             <td class="price">R 89 900</td>
@@ -832,7 +766,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28245202?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Speed 400</td>
                             <td>2025 Triumph Speed 400</td>
                             <td class="price">R 95 000</td>
@@ -841,7 +775,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28210472?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Speed 400</td>
                             <td>2024 Triumph Speed 400</td>
                             <td class="price">R 84 000</td>
@@ -850,7 +784,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28164864?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Triumph Speed 400</td>
                             <td>2025 Triumph Speed 400</td>
                             <td class="price">R 85 000</td>
@@ -859,7 +793,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/27828439?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2016 Ducati Scrambler</td>
                             <td class="price">R 109 000</td>
@@ -868,7 +802,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28281102?vf=2&db=0&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2017 Ducati Scrambler</td>
                             <td class="price">R 129 990</td>
@@ -877,7 +811,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28130939?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2015 Ducati Scrambler</td>
                             <td class="price">R 119 990</td>
@@ -886,7 +820,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28106824?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2022 Ducati Scrambler</td>
                             <td class="price">R 179 900</td>
@@ -895,7 +829,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28016790?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2025 Ducati Scrambler</td>
                             <td class="price">R 198 000</td>
@@ -904,7 +838,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/27127893?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2025 Ducati Scrambler</td>
                             <td class="price">R 229 000</td>
@@ -913,7 +847,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28257268?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2025 Ducati Scrambler</td>
                             <td class="price">R 284 000</td>
@@ -922,7 +856,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28234547?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2025 Ducati Scrambler</td>
                             <td class="price">R 192 000</td>
@@ -931,7 +865,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28217189?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2018 Ducati Scrambler</td>
                             <td class="price">R 140 000</td>
@@ -940,7 +874,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28213581?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2025 Ducati Scrambler</td>
                             <td class="price">R 242 000</td>
@@ -949,7 +883,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28204473?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Yamaha MT-07</td>
                             <td>2015 Yamaha MT-07</td>
                             <td class="price">R 99 990</td>
@@ -958,7 +892,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/yamaha/mt-07/28243696?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Yamaha MT-07</td>
                             <td>2025 Yamaha MT-07</td>
                             <td class="price">R 179 950</td>
@@ -967,7 +901,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/yamaha/mt-07/27363948?vf=3&db=1&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Yamaha MT-07</td>
                             <td>2025 Yamaha MT-07</td>
                             <td class="price">R 179 999</td>
@@ -976,7 +910,7 @@
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/yamaha/mt-07/28077002?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">BMW G 310</td>
                             <td>2025 BMW G 310</td>
                             <td class="price">R 84 900</td>
@@ -992,7 +926,7 @@
             <div class="table-section">
                 <div class="table-header">
                     <h2>Gumtree</h2>
-                    <span class="listing-count">6 listing(s)</span>
+                    <span class="listing-count">5 listing(s)</span>
                 </div>
                 <table>
                     <thead>
@@ -1007,16 +941,16 @@
                     </thead>
                     <tbody>
 
-                        <tr>
+                        <tr class="price-drop-row">
                             <td class="bike-name">Honda CB500X</td>
                             <td>2022 Honda CB500X</td>
-                            <td class="price">R 110,000</td>
+                            <td class="price"><span class='old-price'>R 900,000</span> R 110,000</td>
                             <td class="kilometers">8,403km</td>
                             <td class="location">Pietermaritzburg</td>
                             <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/pietermaritzburg/2022-honda-cb500x/10013318795501012895313109" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Kawasaki Ninja 400</td>
                             <td>2023 Kawasaki Ninja 400 SE ABS Demo</td>
                             <td class="price">R 109,995</td>
@@ -1025,7 +959,7 @@
                             <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/pinetown/2023-kawasaki-ninja-400-se-abs-demo/10012465812701010354228509" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2015 Ducati X Scrambler @Bike Bros Motorcycles!</td>
                             <td class="price">R 124,500</td>
@@ -1034,7 +968,7 @@
                             <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/retreat/2015-ducati-x-scrambler-64-bike-bros-motorcycles/10012503439581011067160209" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">BMW G 310</td>
                             <td>2022 BMW G 310 RS Sport.</td>
                             <td class="price">R 59,995</td>
@@ -1043,16 +977,7 @@
                             <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/diep-river/2022-bmw-g-310-rs-sport/10013244739141010255774409" target="_blank" class="view-link">View →</a></td>
                         </tr>
 
-                        <tr>
-                            <td class="bike-name">Kawasaki Z400</td>
-                            <td>Kawasaki Z400</td>
-                            <td class="price">R 55,000</td>
-                            <td class="kilometers">45,000km</td>
-                            <td class="location">Kimberley</td>
-                            <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/kimberley/kawasaki-z400/10013382584181012609250209" target="_blank" class="view-link">View →</a></td>
-                        </tr>
-
-                        <tr>
+                        <tr class="">
                             <td class="bike-name">Kawasaki Eliminator</td>
                             <td>1988 Kawasaki Eliminator SE 400</td>
                             <td class="price">R 36,000</td>
@@ -1065,9 +990,44 @@
                 </table>
             </div>
 </div>
+<div id="drops-view" class="view-container hidden">
+
+            <div class="table-section">
+                <div class="table-header">
+                    <h2>Price Drops Detected</h2>
+                    <span class="listing-count">1 listing(s) with price drops</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bike Model</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Kilometers</th>
+                            <th>Location</th>
+                            <th>Source</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="price-drop-row">
+                            <td class="bike-name">Honda CB500X</td>
+                            <td>2022 Honda CB500X</td>
+                            <td class="price"><span class='old-price'>R 900,000</span> R 110,000</td>
+                            <td class="kilometers">8,403km</td>
+                            <td class="location">Pietermaritzburg</td>
+                            <td class="source">Gumtree</td>
+                            <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/pietermaritzburg/2022-honda-cb500x/10013318795501012895313109" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+</div>
 
             <div class="timestamp">
-                Last updated: 06/11/2025 20:51:43
+                Last updated: 07/11/2025 08:47:14
             </div>
         </div>
     </section>
