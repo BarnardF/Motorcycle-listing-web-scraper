@@ -1,12 +1,13 @@
 import time
 import random
+from datetime import datetime
 from trackers.autotraderTracker import scrape_autotrader
 from trackers.gumtreeTracker import scrape_gumtree
 from trackers.baseTracker import load_bike_list, load_previous_listings, save_listings, clean_stale_listings
 from logger.logger import logger
 from config.config import SLEEP_MIN, SLEEP_MAX
 
-from html_generator import generate_html_report
+from template_generator.html_generator import generate_html_report
 
 SCRAPERS = [
     scrape_autotrader,
@@ -33,6 +34,7 @@ def main():
         previous = load_previous_listings()
         current = {}
         all_new_listings = []
+        all_price_drops = []
 
         #Scrape each bike on each site
         for bike in bikes:
@@ -73,20 +75,41 @@ def main():
             for listing_id, current_listing in bike_listings.items():
                 if listing_id in previous_listings:
                     old_listing = previous_listings[listing_id]
+
+                    #carry over price history
+                    current_listing['price_history'] = previous_listings[listing_id].get('price_history', [])
+
                     old_price = old_listing.get('price', '').replace("R", "").replace(",", "").strip()
                     new_price = current_listing.get('price', '').replace("R", "").replace(",", "").strip()
 
-                    # Default flag
+                    # Default values
                     current_listing['price_dropped'] = False
+                    current_listing['old_price'] = None
 
                     if old_price.isdigit() and new_price.isdigit():
                         old_price_val = int(old_price)
                         new_price_val = int(new_price)
-                        if new_price_val < old_price_val:
-                            logger.info(f"Price drop detected for {current_listing['title']}"
-                                        f"from R{old_price} -> R{new_price} [{current_listing['source']}]")
-                            current_listing['price_dropped'] = True
-                        
+
+                        #check if price changed
+                        if new_price_val != old_price_val:
+                            #update price history
+                            current_listing['price_history'].append({
+                                'date': datetime.now().strftime("%d-%m-%Y %H:%M:%S"),
+                                'price': current_listing.get('price', 'N/A')
+                            })
+
+                            #check if price dropped
+                            if new_price_val < old_price_val:
+                                drop_amount = old_price_val - new_price_val
+                                logger.info(f"Price drop detected for {current_listing['title']}: "
+                                            f"R{old_price_val} -> R{new_price_val} " 
+                                            f"(R{drop_amount} drop) [{current_listing['source']}]")
+                                current_listing['price_dropped'] = True
+                                current_listing['old_price'] = old_listing.get('price') 
+                                all_price_drops.append(current_listing)
+
+                                print(f"   Price drop: {current_listing['title']}")
+                                print(f"   {old_listing.get('price')} -> {current_listing['price']} (Save R{drop_amount}!)")
 
             current[bike] = bike_listings
 
