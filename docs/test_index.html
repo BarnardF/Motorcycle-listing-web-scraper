@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Motorcycle Listings Tracker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,100italic,300italic" rel="stylesheet">
+</head>
+
+<body>
+    <section class="wrapper">
+        <div class="container">
+            <header class="major">
+                <h1>🏍️ Motorcycle Listings Tracker</h1>
+                <p>Tracking 4 motorcycle models across South African websites</p>
+            </header>
+
+            <!-- Statistics -->
+            <div class="stats">
+                <div class="stat-box">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Total Listings</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Bikes Tracked</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Sources</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Price Drops</span>
+                </div>
+            </div>
+
+            <!-- View Toggle Buttons -->
+            <div class="view-toggle">
+                <button class="toggle-btn active" onclick="showView('bike')">📋 By Bike Model</button>
+                <button class="toggle-btn" onclick="showView('source')">🏪 By Source</button>
+                <button class="toggle-btn" onclick="showView('drops')">💰 Price Drops</button>
+            </div>
+<div id="bike-view" class="view-container">
+
+            <div class="table-section">
+                <div class="table-header">
+                    <h2>Honda Rebel 500</h2>
+                    <span class="listing-count">2 listing(s)</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Kilometers</th>
+                            <th>Location</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="price-drop-row">
+                            <td class="source">AutoTrader</td>
+                            <td class="bike-name">2024 Honda Rebel 500</td>
+                            <td class="price"><span class='old-price'>R 79,000</span> R 75,000</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td><a href="https://example.com/listing/at_12345" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                        <tr class="">
+                            <td class="source">AutoTrader</td>
+                            <td class="bike-name">2023 Honda Rebel 500</td>
+                            <td class="price">R 78,000</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td><a href="https://example.com/listing/at_12346" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-section">
+                <div class="table-header">
+                    <h2>Triumph Scrambler 400</h2>
+                    <span class="listing-count">1 listing(s)</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Kilometers</th>
+                            <th>Location</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="price-drop-row">
+                            <td class="source">Gumtree</td>
+                            <td class="bike-name">2024 Triumph Scrambler 400</td>
+                            <td class="price"><span class='old-price'>R 89,500</span> R 79,999</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td><a href="https://example.com/listing/gt_54321" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-section">
+                <div class="table-header">
+                    <h2>BMW G 310 GS</h2>
+                    <span class="listing-count">1 listing(s)</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Kilometers</th>
+                            <th>Location</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="price-drop-row">
+                            <td class="source">AutoTrader</td>
+                            <td class="bike-name">2025 BMW G 310 GS</td>
+                            <td class="price"><span class='old-price'>R 105,000</span> R 103,500</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td><a href="https://example.com/listing/at_12347" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-section">
+                <div class="table-header">
+                    <h2>Kawasaki Ninja 400</h2>
+                    <span class="listing-count">1 listing(s)</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Source</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Kilometers</th>
+                            <th>Location</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="">
+                            <td class="source">Gumtree</td>
+                            <td class="bike-name">2024 Kawasaki Ninja 400</td>
+                            <td class="price">R 92,000</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td><a href="https://example.com/listing/gt_98765" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+</div>
+<div id="source-view" class="view-container hidden">
+
+            <div class="table-section">
+                <div class="table-header">
+                    <h2>AutoTrader</h2>
+                    <span class="listing-count">3 listing(s)</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bike Model</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Kilometers</th>
+                            <th>Location</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="price-drop-row">
+                            <td class="bike-name">Honda Rebel 500</td>
+                            <td>2024 Honda Rebel 500</td>
+                            <td class="price"><span class='old-price'>R 79,000</span> R 75,000</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td><a href="https://example.com/listing/at_12345" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                        <tr class="">
+                            <td class="bike-name">Honda Rebel 500</td>
+                            <td>2023 Honda Rebel 500</td>
+                            <td class="price">R 78,000</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td><a href="https://example.com/listing/at_12346" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                        <tr class="price-drop-row">
+                            <td class="bike-name">BMW G 310 GS</td>
+                            <td>2025 BMW G 310 GS</td>
+                            <td class="price"><span class='old-price'>R 105,000</span> R 103,500</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td><a href="https://example.com/listing/at_12347" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-section">
+                <div class="table-header">
+                    <h2>Gumtree</h2>
+                    <span class="listing-count">2 listing(s)</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bike Model</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Kilometers</th>
+                            <th>Location</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="price-drop-row">
+                            <td class="bike-name">Triumph Scrambler 400</td>
+                            <td>2024 Triumph Scrambler 400</td>
+                            <td class="price"><span class='old-price'>R 89,500</span> R 79,999</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td><a href="https://example.com/listing/gt_54321" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                        <tr class="">
+                            <td class="bike-name">Kawasaki Ninja 400</td>
+                            <td>2024 Kawasaki Ninja 400</td>
+                            <td class="price">R 92,000</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td><a href="https://example.com/listing/gt_98765" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+</div>
+<div id="drops-view" class="view-container hidden">
+
+            <div class="table-section">
+                <div class="table-header">
+                    <h2>💰 Price Drops Detected</h2>
+                    <span class="listing-count">3 listing(s) with price drops</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bike Model</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Kilometers</th>
+                            <th>Location</th>
+                            <th>Source</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="price-drop-row">
+                            <td class="bike-name">Honda Rebel 500</td>
+                            <td>2024 Honda Rebel 500</td>
+                            <td class="price"><span class='old-price'>R 79,000</span> R 75,000</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td class="source">AutoTrader</td>
+                            <td><a href="https://example.com/listing/at_12345" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                        <tr class="price-drop-row">
+                            <td class="bike-name">Triumph Scrambler 400</td>
+                            <td>2024 Triumph Scrambler 400</td>
+                            <td class="price"><span class='old-price'>R 89,500</span> R 79,999</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td class="source">Gumtree</td>
+                            <td><a href="https://example.com/listing/gt_54321" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                        <tr class="price-drop-row">
+                            <td class="bike-name">BMW G 310 GS</td>
+                            <td>2025 BMW G 310 GS</td>
+                            <td class="price"><span class='old-price'>R 105,000</span> R 103,500</td>
+                            <td class="kilometers">5,000 km</td>
+                            <td class="location">Johannesburg</td>
+                            <td class="source">AutoTrader</td>
+                            <td><a href="https://example.com/listing/at_12347" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+</div>
+
+            <div class="timestamp">
+                Last updated: 07/11/2025 08:09:54
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showView(viewType) {
+            // Hide all views
+            document.querySelectorAll('.view-container').forEach(el => {
+                el.classList.add('hidden');
+            });
+
+            // Show selected view
+            document.getElementById(viewType + '-view').classList.remove('hidden');
+
+            // Update button states
+            document.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
