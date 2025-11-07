@@ -1,5 +1,5 @@
 """
-HTML Report Generator for Motorcycle Listings
+HTML Report Generator template for Motorcycle Listings
 Generates a beautiful static HTML page for GitHub Pages
 Created with ai(Claude) - 1 Nov 2025
 """
@@ -58,6 +58,10 @@ def generate_html_report(all_listings, bikes_tracked, output_file="docs/index.ht
         logger.info(f" - Total listings: {len(all_listings)}")
         logger.info(f" - Bikes with listings: {len(listings_by_bike)}")
         logger.info(f" - Sources: {len(listings_by_source)}")
+
+        price_drops = sum(1 for listing in all_listings if listing.get('price_dropped'))
+        if price_drops > 0:
+            logger.info(f" - Price drops detected: {price_drops}")
         
         return True
         
@@ -70,6 +74,7 @@ def generate_html_template(all_listings, bikes_tracked, listings_by_bike, listin
     """Generate the complete HTML template"""
     
     sources_count = len(listings_by_source)
+    price_drops_count = sum(1 for listing in all_listings if listing.get('price_dropped'))
     
     html = f"""<!DOCTYPE HTML>
 <html>
@@ -103,18 +108,24 @@ def generate_html_template(all_listings, bikes_tracked, listings_by_bike, listin
                     <span class="stat-number">{sources_count}</span>
                     <span class="stat-label">Sources</span>
                 </div>
+                <div class="stat-box">
+                    <span class="stat-number">{price_drops_count}</span>
+                    <span class="stat-label">Price Drops</span>
+                </div>
             </div>
 
             <!-- View Toggle Buttons -->
             <div class="view-toggle">
                 <button class="toggle-btn active" onclick="showView('bike')">📋 By Bike Model</button>
                 <button class="toggle-btn" onclick="showView('source')">🏪 By Source</button>
+                <button class="toggle-btn" onclick="showView('drops')">💰 Price Drops</button>
             </div>
 """
 
-    # Generate both views
+    # Generate all views
     html += generate_bike_view(listings_by_bike)
     html += generate_source_view(listings_by_source)
+    html += generate_price_drops_view(all_listings)
 
     # Footer
     html += f"""
@@ -183,12 +194,17 @@ def generate_bike_view(listings_by_bike):
                 if kilometers == "N/A" and condition != "N/A":
                     kilometers = condition  # Fallback to condition if kilometers not available
                 location = listing.get('location', 'N/A')
+
+                price_display = listing['price']
+                if listing.get('price_dropped') and listing.get('old_price'):
+                    price_display = f"<span class='old-price'>{listing['old_price']}</span> {listing['price']}" 
+                    
+
                 html += f"""
-                        <tr>
+                        <tr class="{'price-drop-row' if listing.get('price_dropped') else ''}">
                             <td class="source">{listing['source']}</td>
                             <td class="bike-name">{listing['title']}</td>
-                            <td class="price">{listing['price']}{"<span class='badge'>Price dropped!</span>" if listing.get('price_dropped') else ""}</td>
-
+                            <td class="price">{price_display}</td>
                             <td class="kilometers">{kilometers}</td>
                             <td class="location">{location}</td>
                             <td><a href="{listing['url']}" target="_blank" class="view-link">View →</a></td>
@@ -238,17 +254,85 @@ def generate_source_view(listings_by_source):
                 if kilometers == "N/A" and condition != "N/A":
                     kilometers = condition  # Fallback to condition if kilometers not available
                 location = listing.get('location', 'N/A')
+
+                # Format price display with old price strikethrough if dropped
+                price_display = listing['price']
+                if listing.get('price_dropped') and listing.get('old_price'):
+                    price_display = f"<span class='old-price'>{listing['old_price']}</span> {listing['price']}"
+                
                 html += f"""
-                        <tr>
+                        <tr class="{'price-drop-row' if listing.get('price_dropped') else ''}">
                             <td class="bike-name">{listing['search_term']}</td>
                             <td>{listing['title']}</td>
-                            <td class="price">{listing['price']}{" <span class='badge'>Price dropped!</span>" if listing.get('price_dropped') else ""}</td>
+                            <td class="price">{price_display}</td>
                             <td class="kilometers">{kilometers}</td>
                             <td class="location">{location}</td>
                             <td><a href="{listing['url']}" target="_blank" class="view-link">View →</a></td>
                         </tr>
 """
             html += """
+                    </tbody>
+                </table>
+            </div>
+"""
+    
+    html += '</div>\n'
+    return html
+
+def generate_price_drops_view(all_listings):
+    """Generate the price drops view showing only listings with price drops"""
+    html = '<div id="drops-view" class="view-container hidden">\n'
+    
+    # Filter listings with price drops
+    price_drop_listings = [listing for listing in all_listings if listing.get('price_dropped')]
+    
+    if not price_drop_listings:
+        html += '<div class="no-listings"><p>No price drops detected yet. Keep tracking to find deals!</p></div>\n'
+    else:
+        html += f"""
+            <div class="table-section">
+                <div class="table-header">
+                    <h2>Price Drops Detected</h2>
+                    <span class="listing-count">{len(price_drop_listings)} listing(s) with price drops</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bike Model</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Kilometers</th>
+                            <th>Location</th>
+                            <th>Source</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+"""
+        for listing in price_drop_listings:
+            kilometers = listing.get('kilometers', 'N/A')
+            condition = listing.get('condition', 'N/A')
+            if kilometers == "N/A" and condition != "N/A":
+                kilometers = condition
+            location = listing.get('location', 'N/A')
+            
+            # Format price with strikethrough
+            price_display = listing['price']
+            if listing.get('old_price'):
+                price_display = f"<span class='old-price'>{listing['old_price']}</span> {listing['price']}"
+            
+            html += f"""
+                        <tr class="price-drop-row">
+                            <td class="bike-name">{listing['search_term']}</td>
+                            <td>{listing['title']}</td>
+                            <td class="price">{price_display}</td>
+                            <td class="kilometers">{kilometers}</td>
+                            <td class="location">{location}</td>
+                            <td class="source">{listing['source']}</td>
+                            <td><a href="{listing['url']}" target="_blank" class="view-link">View →</a></td>
+                        </tr>
+"""
+        html += """
                     </tbody>
                 </table>
             </div>
