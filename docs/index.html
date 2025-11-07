@@ -16,25 +16,26 @@
                 <p>Tracking 12 motorcycle models across South African websites</p>
             </header>
 
-            <!-- Statistics -->
-            <div class="stats">
-                <div class="stat-box">
-                    <span class="stat-number">39</span>
-                    <span class="stat-label">Total Listings</span>
+            <!-- Compact Stats Header -->
+            <div class="compact-stats">
+                <div class="compact-stat">
+                    <span class="compact-stat-number">39</span>
+                    <span class="compact-stat-label">Listings</span>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-number">12</span>
-                    <span class="stat-label">Bikes Tracked</span>
+                <div class="compact-stat">
+                    <span class="compact-stat-number">12</span>
+                    <span class="compact-stat-label">Bikes</span>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-number">2</span>
-                    <span class="stat-label">Sources</span>
+                <div class="compact-stat">
+                    <span class="compact-stat-number">2</span>
+                    <span class="compact-stat-label">Sources</span>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-number">1</span>
-                    <span class="stat-label">Price Drops</span>
+                <div class="compact-stat">
+                    <span class="compact-stat-number">0</span>
+                    <span class="compact-stat-label">Price Drops</span>
                 </div>
             </div>
+
 
             <!-- View Toggle Buttons -->
             <div class="view-toggle">
@@ -111,10 +112,10 @@
                     </thead>
                     <tbody>
 
-                        <tr class="price-drop-row">
+                        <tr class="">
                             <td class="source">Gumtree</td>
                             <td class="bike-name">2022 Honda CB500X</td>
-                            <td class="price"><span class='old-price'>R 900,000</span> R 110,000</td>
+                            <td class="price">R 110,000</td>
                             <td class="kilometers">8,403km</td>
                             <td class="location">Pietermaritzburg</td>
                             <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/pietermaritzburg/2022-honda-cb500x/10013318795501012895313109" target="_blank" class="view-link">View →</a></td>
@@ -391,7 +392,7 @@
                         <tr class="">
                             <td class="source">AutoTrader</td>
                             <td class="bike-name">2015 Ducati Scrambler</td>
-                            <td class="price">R 119 990</td>
+                            <td class="price">R 109 990</td>
                             <td class="kilometers">10 938 km</td>
                             <td class="location">Paulshof,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28106824?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
@@ -814,7 +815,7 @@
                         <tr class="">
                             <td class="bike-name">Ducati Scrambler</td>
                             <td>2015 Ducati Scrambler</td>
-                            <td class="price">R 119 990</td>
+                            <td class="price">R 109 990</td>
                             <td class="kilometers">10 938 km</td>
                             <td class="location">Paulshof,Sandton</td>
                             <td><a href="https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28106824?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4" target="_blank" class="view-link">View →</a></td>
@@ -941,10 +942,10 @@
                     </thead>
                     <tbody>
 
-                        <tr class="price-drop-row">
+                        <tr class="">
                             <td class="bike-name">Honda CB500X</td>
                             <td>2022 Honda CB500X</td>
-                            <td class="price"><span class='old-price'>R 900,000</span> R 110,000</td>
+                            <td class="price">R 110,000</td>
                             <td class="kilometers">8,403km</td>
                             <td class="location">Pietermaritzburg</td>
                             <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/pietermaritzburg/2022-honda-cb500x/10013318795501012895313109" target="_blank" class="view-link">View →</a></td>
@@ -991,63 +992,23 @@
             </div>
 </div>
 <div id="drops-view" class="view-container hidden">
-
-            <div class="table-section">
-                <div class="table-header">
-                    <h2>Price Drops Detected</h2>
-                    <span class="listing-count">1 listing(s) with price drops</span>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Bike Model</th>
-                            <th>Title</th>
-                            <th>Price</th>
-                            <th>Kilometers</th>
-                            <th>Location</th>
-                            <th>Source</th>
-                            <th>Link</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                        <tr class="price-drop-row">
-                            <td class="bike-name">Honda CB500X</td>
-                            <td>2022 Honda CB500X</td>
-                            <td class="price"><span class='old-price'>R 900,000</span> R 110,000</td>
-                            <td class="kilometers">8,403km</td>
-                            <td class="location">Pietermaritzburg</td>
-                            <td class="source">Gumtree</td>
-                            <td><a href="https://www.gumtree.co.za/a-motorcycles-scooters/pietermaritzburg/2022-honda-cb500x/10013318795501012895313109" target="_blank" class="view-link">View →</a></td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
+<div class="no-listings"><p>No price drops detected yet. Keep tracking to find deals!</p></div>
 </div>
 
             <div class="timestamp">
-                Last updated: 07/11/2025 08:47:14
+                Last updated: 07/11/2025 22:17:45
             </div>
         </div>
     </section>
 
+
     <script>
         function showView(viewType) {
-            // Hide all views
-            document.querySelectorAll('.view-container').forEach(el => {
-                el.classList.add('hidden');
-            });
-
-            // Show selected view
+            document.querySelectorAll('.view-container').forEach(el => el.classList.add('hidden'));
             document.getElementById(viewType + '-view').classList.remove('hidden');
-
-            // Update button states
-            document.querySelectorAll('.toggle-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
+            document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
+            updateVisibleCount();
         }
     </script>
 </body>
