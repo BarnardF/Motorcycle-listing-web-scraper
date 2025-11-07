@@ -94,25 +94,26 @@ def generate_html_template(all_listings, bikes_tracked, listings_by_bike, listin
                 <p>Tracking {len(bikes_tracked)} motorcycle models across South African websites</p>
             </header>
 
-            <!-- Statistics -->
-            <div class="stats">
-                <div class="stat-box">
-                    <span class="stat-number">{len(all_listings)}</span>
-                    <span class="stat-label">Total Listings</span>
+            <!-- Compact Stats Header -->
+            <div class="compact-stats">
+                <div class="compact-stat">
+                    <span class="compact-stat-number">{len(all_listings)}</span>
+                    <span class="compact-stat-label">Listings</span>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-number">{len(bikes_tracked)}</span>
-                    <span class="stat-label">Bikes Tracked</span>
+                <div class="compact-stat">
+                    <span class="compact-stat-number">{len(bikes_tracked)}</span>
+                    <span class="compact-stat-label">Bikes</span>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-number">{sources_count}</span>
-                    <span class="stat-label">Sources</span>
+                <div class="compact-stat">
+                    <span class="compact-stat-number">{sources_count}</span>
+                    <span class="compact-stat-label">Sources</span>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-number">{price_drops_count}</span>
-                    <span class="stat-label">Price Drops</span>
+                <div class="compact-stat">
+                    <span class="compact-stat-number">{price_drops_count}</span>
+                    <span class="compact-stat-label">Price Drops</span>
                 </div>
             </div>
+
 
             <!-- View Toggle Buttons -->
             <div class="view-toggle">
@@ -135,22 +136,14 @@ def generate_html_template(all_listings, bikes_tracked, listings_by_bike, listin
         </div>
     </section>
 
+
     <script>
         function showView(viewType) {{
-            // Hide all views
-            document.querySelectorAll('.view-container').forEach(el => {{
-                el.classList.add('hidden');
-            }});
-
-            // Show selected view
+            document.querySelectorAll('.view-container').forEach(el => el.classList.add('hidden'));
             document.getElementById(viewType + '-view').classList.remove('hidden');
-
-            // Update button states
-            document.querySelectorAll('.toggle-btn').forEach(btn => {{
-                btn.classList.remove('active');
-            }});
-            
+            document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
+            updateVisibleCount();
         }}
     </script>
 </body>
