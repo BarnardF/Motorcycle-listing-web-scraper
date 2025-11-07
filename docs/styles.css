@@ -211,6 +211,7 @@ td.price {
     color: #e44c65;
     font-weight: 300;
     font-size: 1.1em;
+    white-space: nowrap;
 }
 td.source {
     color: rgba(255, 255, 255, 0.6);
@@ -255,6 +256,23 @@ td.location {
 .view-container.hidden {
     display: none;
 }
+/* Price drop styling */
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 8px;
+    font-size: 0.9em;
+}
+
+.price-drop-row {
+    background-color: rgba(76, 175, 80, 0.1) !important;
+}
+
+.price-drop-row:hover {
+    background-color: rgba(76, 175, 80, 0.2) !important;
+}
+
+
 @media screen and (max-width: 980px) {
     body {
         font-size: 12pt;
