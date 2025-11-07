@@ -1,15 +1,22 @@
+#Adventure / Dual-Sport
 Suzuki DS 250 SX V-STROM
-Triumph Scrambler 400 x
-Triumph Speed 400
-Honda Rebel 500
-BMW G 310
-Yamaha MT-07
-Kawasaki Ninja 650
-KTM Duke 390
-Ducati Monster 821
-Harley-Davidson Street 750
-Suzuki GSX-R1000
 Honda CB500X
-Kawasaki Z900
-Yamaha R3
-BMW F 900 R
+
+#Sport / Supersport
+Kawasaki Ninja 400
+
+#Modern Classics / Retro
+Triumph Scrambler 400 x
+Triumph Scrambler 900
+Triumph Speed 400
+yamaha xsr700
+Ducati Scrambler
+
+#Naked / Streetfighter
+Yamaha MT-07
+BMW G 310
+Kawasaki Z400
+
+#Cruiser
+Kawasaki Eliminator
+
