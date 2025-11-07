@@ -97,7 +97,7 @@ def scrape_gumtree(search_term):
             listings[listing_id]['kilometers'] = kilometers
             listings[listing_id]['location'] = location
   
-        except ArithmeticError as e:
+        except AttributeError as e:
             logger.warning(f"[{SOURCE}] Skipping malformed listing {idx}: {e}")  
             continue
         except Exception as e:
