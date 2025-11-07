@@ -10,6 +10,9 @@ A Python-based web scraper that automatically tracks motorcycle listings across 
 - **Table Format**: Clean, sortable tables with all listing details
 - **Smart Duplicate Detection**: Avoids showing the same listing twice
 - **Persistent Storage**: Remembers previous runs to detect new listings
+- **Price Tracking**: Monitors price changes and maintains complete history
+- **Price Drop Alerts**: Visual indicators and dedicated view for discounts
+- **Green Highlighting**: Easy identification of price-reduced listings
 - **GitHub Pages Integration**: Beautiful web interface to view all listings
 - **Configurable Searches**: Track multiple bike models from a simple text file
 - **Professional Logging**: Detailed logs for debugging and monitoring
@@ -82,15 +85,23 @@ The tracker automatically generates a beautiful, interactive web dashboard that 
 
 ### Dashboard Features
 
-**📊 Statistics Overview**
+**📊 Compact Statistics Header**
 - Total listings found
 - Number of bikes tracked
 - Number of sources
+- **Price drops detected** (live counter)
 
-**🔄 Dual-View Toggle**
+**🔄 Triple-View Toggle**
 - **By Bike Model** (default): Groups all listings by motorcycle
 - **By Source**: Groups all listings by website (AutoTrader, Gumtree, etc.)
+- **Price Drops**: Dedicated view showing only listings with price reductions
 - Instant switching with toggle buttons
+
+**💸 Price Drop Indicators**
+- Visual strikethrough on old prices: ~~R 95,000~~ R 85,000
+- Green row highlighting for discounted listings
+- Automatic price history tracking
+- Drop amount calculated and logged
 
 **📋 Comprehensive Data Tables**
 
@@ -255,6 +266,50 @@ Currently supports:
 ✓ Listings saved successfully
 ✓ Tracking complete! Found 21 new listing(s)
 ```
+
+## Price Tracking
+
+The tracker automatically monitors price changes across runs:
+
+### How It Works
+
+1. **First Run**: All listings are recorded with their current prices
+2. **Subsequent Runs**: 
+   - Compares current prices to previous prices
+   - Detects drops and increases
+   - Updates price history for each listing
+   - Highlights price drops in console and dashboard
+
+### Price Drop Detection
+
+When a price drops, you'll see:
+
+**Console Output:**
+```
+💰 Price drop detected for 2024 Honda Rebel 500: R95,000 → R85,000 (R10,000 drop) [AutoTrader]
+   💰 PRICE DROP: 2024 Honda Rebel 500
+      R 95,000 → R 85,000 (Save R10,000!)
+```
+
+**Dashboard Display:**
+- Old price with strikethrough: ~~R 95,000~~
+- New price shown clearly: R 85,000
+- Entire row highlighted in green
+- Listing appears in "Price Drops" tab
+
+### Price History
+
+Each listing maintains a complete price history:
+```json
+{
+  "price_history": [
+    {"date": "01-11-2025 10:00:00", "price": "R 95,000"},
+    {"date": "05-11-2025 14:30:00", "price": "R 85,000"}
+  ]
+}
+```
+
+This allows you to track price trends over time and identify the best deals.
 
 ### Dashboard View
 
@@ -519,9 +574,11 @@ grep "Triumph Speed 400" tracker.log
 - [x] Mobile-responsive design
 - [x] Table format with comprehensive data
 
-### 🚧 Phase 3: Price Tracking (Complete)
+### ✅ Phase 3: Price Tracking (Complete)
 - [x] Price history tracking
 - [x] Price drop alerts
+- [x] Visual price drop indicators (strikethrough + green highlighting)
+- [x] Dedicated "Price Drops" view
 
 ### 📋 Phase 4: Automation & Features
 - [ ] Email/SMS notifications
@@ -578,7 +635,16 @@ Contributions are welcome! Please:
 
 ## Changelog
 
-### Version 2.2 (Current)
+### Version 2.3 (Current)
+- **Price Tracking System**: Full price history and drop detection
+- **Price Drop Alerts**: Visual indicators with strikethrough old prices
+- **Price Drops View**: Dedicated tab showing only discounted listings
+- **Compact Stats Header**: Cleaner, inline statistics display
+- **Enhanced Price Display**: ~~R 95,000~~ R 85,000 format for drops
+- **Green Row Highlighting**: Easy visual identification of deals
+- **Improved Data Persistence**: Price history carried across runs
+
+### Version 2.2
 - Added kilometers/mileage tracking for all listings
 - Added location data (suburb/city) for all listings
 - Added condition tracking (New/Used/Demo) for AutoTrader
