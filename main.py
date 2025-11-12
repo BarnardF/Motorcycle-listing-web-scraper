@@ -1,17 +1,25 @@
 import time
 import random
+import sys
+import os
 from datetime import datetime
-from trackers.autotraderTracker import scrape_autotrader
-from trackers.gumtreeTracker import scrape_gumtree
+
+
+
 from trackers.baseTracker import load_bike_list, load_previous_listings, save_listings, clean_stale_listings
 from logger.logger import logger
 from config.config import SLEEP_MIN, SLEEP_MAX
-
 from template_generator.html_generator import generate_html_report
+
+#scrapers
+from trackers.autotraderTracker import scrape_autotrader
+from trackers.gumtreeTracker import scrape_gumtree
+from trackers.webuycarsTracker import scrape_webuycars
 
 SCRAPERS = [
     scrape_autotrader,
-    scrape_gumtree 
+    scrape_gumtree
+    # scrape_webuycars
 ]
 
 
