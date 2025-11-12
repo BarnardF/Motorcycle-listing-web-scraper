@@ -15,6 +15,7 @@ Ducati Scrambler
 #Naked / Streetfighter
 Yamaha MT-07
 BMW G 310
+BMW GS 310
 Kawasaki Z400
 
 #Cruiser
