@@ -208,54 +208,7 @@ def clean_stale_listings(all_listings, current_run_ids):
     return cleaned, removed_count
 
 
-def validate_search_term(search_term, required_format=True):
-    """
-    Validate search term format
-    
-    Args:
-        search_term: The search term to validate
-        required_format: Optional format requirement (e.g., "Brand Model")
-        
-    Returns:
-        Tuple of (is_valid, error_message)
-    """
-    if not search_term or not search_term.strip():
-        return False, "Search term is empty"
-    
-    if required_format == "Brand Model":
-        parts = search_term.strip().split(maxsplit=1)
-        if len(parts) < 2:
-            return False, f"Invalid foramt: '{search_term}' (Expected: Brand Model, e.g., 'Honda CB500X')"
-        
-    return True, None
 
 
-def is_relevant_match(listing_title, search_term, min_match_ratio=0.5):
-    """
-    Check if listing title is relevant to search term
-    
-    Args:
-        listing_title: The listing title
-        search_term: Original search term
-        min_match_ratio: Minimum ratio of matching words (0.0-1.0)
-        
-    Returns:
-        True if relevant, False otherwise
-    """
-    # Normalize strings
-    title_words = set(listing_title.lower().split())
-    search_words = set(search_term.lower().split())
-    
-    # Remove common words
-    stop_words = {'the', 'a', 'an', 'and', 'or', 'for', 'with'}
-    title_words -= stop_words
-    search_words -= stop_words
-    
-    # Calculate match ratio
-    if not search_words:
-        return True
-    
-    matching_words = title_words & search_words
-    match_ratio = len(matching_words) / len(search_words)
-    
-    return match_ratio >= min_match_ratio
+
+
