@@ -5,3 +5,6 @@ logger/__pycache__/logger.cpython-313.pyc
 config/__pycache__/config.cpython-313.pyc
 __pycache__/html_generator.cpython-313.pyc
 template_generator/__pycache__/html_generator.cpython-313.pyc
+utils/__pycache__/relevant_match.cpython-313.pyc
+utils/__pycache__/search_variation_generator.cpython-313.pyc
+utils/__pycache__/validate_search_term.cpython-313.pyc
