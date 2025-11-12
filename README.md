@@ -18,6 +18,9 @@ A Python-based web scraper that automatically tracks motorcycle listings across 
 - **Professional Logging**: Detailed logs for debugging and monitoring
 - **Robust Error Handling**: Continues running even if individual listings fail
 - **Extensible Architecture**: Easy to add new websites
+- **Fuzzy Matching**: Intelligent matching to find variations of bike model names
+- **Search Variations**: Automatically tries different search formats to maximize results
+- **Match Ratio Tuning**: Diagnostic tool to optimize fuzzy matching thresholds
 
 ## Quick Start
 
@@ -75,6 +78,12 @@ motorcycle-tracker/
 │   ├── baseTracker.py        # Shared functionality
 │   ├── autotraderTracker.py  # AutoTrader scraper
 │   └── gumtreeTracker.py     # Gumtree scraper
+│   └── webuycarsTracker.py     # WeBuyCars scraper (planned)
+├── utils/
+│   ├── relevant_match.py           # Fuzzy matching engine
+│   ├── search_variation_generator.py # Search variation logic
+│   └── validate_search_term.py      # Input validation
+├── tune_match_ratio.py         # Match ratio tuning tool
 ├── requirements.txt           # Python dependencies
 └── README.md                  # This file
 ```
@@ -194,6 +203,26 @@ Triumph Bonneville
 
 **Important:** Remove any trailing spaces or empty lines to avoid scraping issues.
 
+### Match Ratio Tuning
+
+The tracker uses fuzzy matching to find bike listings that match your search terms, even with variations in naming. To optimize the matching threshold:
+
+**Run the tuning tool:**
+```bash
+python tune_match_ratio.py
+```
+
+This tests different thresholds against known good/bad matches and recommends the optimal value. Update the thresholds in `config/config.py`:
+```python
+MATCH_THRESHOLDS = {
+    "gumtree": 0.435,      # Threshold for Gumtree fuzzy matching
+    "autotrader": 0.50,    # Threshold for AutoTrader relevance matching
+}
+```
+
+**Diagnostic Tools:**
+- `tune_match_ratio.py`: Find optimal fuzzy match threshold for your use case
+
 ### Supported Websites
 
 Currently supports:
@@ -203,6 +232,9 @@ Currently supports:
 - **Gumtree** (gumtree.co.za) 
   - Flexible search format
   - Captures: price, kilometers, location
+- **WeBuyCars** (webuycars.co.za)
+  - Note: Search engine has inconsistent query handling
+  - Planned upgrade: Category page scraping (see Roadmap)
 
 ## Data Captured
 
@@ -440,6 +472,15 @@ SCRAPERS = [
 - Each bike should be on its own line
 - Lines starting with `#` are comments (ignored)
 
+### Fuzzy Matching Issues
+
+If you're getting too many false positives or false negatives:
+- Run `python tune_match_ratio.py` to find optimal threshold
+- Check the match scores in `tracker.log` (set `LOG_LEVEL = "DEBUG"`)
+- Adjust `MATCH_THRESHOLDS` in `config/config.py`
+- Example: Lower threshold to catch more variations, raise it to filter more strictly
+
+
 ### Kilometers Showing "N/A"
 
 - Some listings don't include mileage information
@@ -580,6 +621,13 @@ grep "Triumph Speed 400" tracker.log
 - [x] Visual price drop indicators (strikethrough + green highlighting)
 - [x] Dedicated "Price Drops" view
 
+### 🔧 Phase 3.5: WeBuyCars Enhancement (Planned)
+- [ ] Replace search-based scraping with category page scraping
+- [ ] Implement pagination for motorcycle category
+- [ ] Smart local filtering (handles variation automatically)
+- [ ] Remove dependency on WeBuyCars search API
+- **Why:** Their search engine is unreliable. Category scraping bypasses it entirely and handles bike name variations automatically without manual configuration.
+
 ### 📋 Phase 4: Automation & Features
 - [ ] Email/SMS notifications
 - [ ] Command-line arguments (--quiet, --verbose, --bike "Honda Rebel")
@@ -632,10 +680,22 @@ Contributions are welcome! Please:
 - Follow existing naming conventions
 - Update `config/config.py` for new settings
 - Add extra fields like `kilometers` and `location` after `create_listing()`
+- Create utility functions in `utils/` for reusable logic
+- Update `MATCH_THRESHOLDS` in `config.py` if adding new scrapers
+- Use fuzzy matching for flexible search term matching
+- Test with `tune_match_ratio.py` if adding matching logic
 
 ## Changelog
 
-### Version 2.3 (Current)
+### Version 2.4 (Current)
+- **Fuzzy Matching System**: Intelligent model name variation matching
+- **Search Variations Generator**: Automatically tries alternative search formats
+- **Match Ratio Tuning Tool**: Optimize thresholds with `tune_match_ratio.py`
+- **Validation Tools**: Search term validation and error checking
+- **Improved Error Handling**: Better detection of malformed listings
+- **Enhanced Logging**: Debug-level insights into matching and parsing
+
+### Version 2.3
 - **Price Tracking System**: Full price history and drop detection
 - **Price Drop Alerts**: Visual indicators with strikethrough old prices
 - **Price Drops View**: Dedicated tab showing only discounted listings
