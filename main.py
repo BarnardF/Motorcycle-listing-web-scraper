@@ -22,6 +22,11 @@ SCRAPERS = [
     scrape_webuycars_cached  
 ]
 
+LIVE_SCRAPERS = [
+    'Autotrader',
+    'Gumtree',
+]
+
 
 def main():
     try:
@@ -151,18 +156,33 @@ def main():
 
         print("="*60 + "\n")  
 
-        # Clean up old listings
+        # Clean up old listings - ONLY for live scrapers (AutoTrader, Gumtree)
+        # Don't remove WeBuyCars listings (cache-based, IDs change each run)
         current_run_ids = set()
         for bike_listings in current.values():
-            current_run_ids.update(bike_listings.keys())
+            for listing_id, listing in bike_listings.items():
+                # Only track IDs from live scrapers
+                if listing.get('source') in LIVE_SCRAPERS:
+                    current_run_ids.add(listing_id)
 
-        #clean stale listings
-        all_listings, removed_count = clean_stale_listings(previous, current_run_ids)
+        # Clean stale listings - only for live scrapers
+        previous_for_cleanup = {}
+        for bike, listings in previous.items():
+            # Filter to only live scraper listings
+            previous_for_cleanup[bike] = {
+                lid: listing for lid, listing in listings.items() 
+                if listing.get('source') in LIVE_SCRAPERS
+            }
+
+        all_listings, removed_count = clean_stale_listings(previous_for_cleanup, current_run_ids)
 
         if removed_count > 0:
             logger.info(f"Removed {removed_count} stale listing(s) (likely sold/removed)")  
-        # Merge cleaned previous listings with new ones
-        all_listings.update(current)    
+        # Merge ALL current listings (including WeBuyCars cache)
+        for bike, listings in current.items():
+            if bike not in all_listings:
+                all_listings[bike] = {}
+            all_listings[bike].update(listings)
 
         # Save current listings
         if save_listings(all_listings):
