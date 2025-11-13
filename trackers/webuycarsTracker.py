@@ -1,155 +1,159 @@
-from urllib.parse import quote_plus
-from trackers.baseTracker import fetch_page, create_listing
+"""
+WeBuyCars Cached Scraper
+Searches locally cached WeBuyCars listings (from API interception).
+Uses fuzzy matching to find relevant bikes without relying on their search API.
+"""
+
+import json
+from pathlib import Path
+from logger.logger import logger
+from config.config import WEBUYCARS_CACHE_FILE, MATCH_THRESHOLDS
 from utils.relevant_match import is_relevant_match
 from utils.search_variation_generator import generate_search_variations
-from logger.logger import logger
-from config.config import WEBUYCARS_BASE_URL
 
 SOURCE = "WeBuyCars"
 
-def scrape_webuycars(search_term):
-    """
-    ***DISABLED***
-    
-    Reason: Their search API is unreliable and returns inconsistent results.
-    
-    Better alternative: Scrape their motorcycle category page directly.
-    This bypasses the search API entirely and handles name variations
-    automatically without needing manual configuration.
-    
-    TODO (Roadmap): Implement category page scraper
-    - Get all bikes from: webuycars.co.za/motorcycles or similar
-    - Parse paginated results
-    - Extract all bike data automatically
-    - No search term matching needed
-    """
 
+def load_cache():
+    """Load WeBuyCars cache from file"""
+    try:
+        if not Path(WEBUYCARS_CACHE_FILE).exists():
+            logger.warning(f"[{SOURCE}] Cache file not found: {WEBUYCARS_CACHE_FILE}")
+            logger.warning(f"[{SOURCE}] Run 'python cache_webuycars.py' to create cache first")
+            return {}
+        
+        with open(WEBUYCARS_CACHE_FILE, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        listings = data.get('listings', {})
+        cached_date = data.get('date_formatted', 'Unknown')
+        
+        logger.info(f"[{SOURCE}] Loaded cache ({len(listings)} listings, last updated: {cached_date})")
+        return listings
+    
+    except Exception as e:
+        logger.error(f"[{SOURCE}] Error loading cache: {e}")
+        return {}
+
+def is_relevant_listing(title, make, model, search_term):
+    """
+    Check if listing is relevant to search term.
+    Uses fuzzy matching on title, make, and model.
+    """
+    threshold = MATCH_THRESHOLDS["webuycars"]
+    
+    # First, extract key identifiers from search term
+    search_parts = search_term.lower().split()
+    
+    # Build a comparison string from make + model
+    full_name = f"{make} {model}".strip().lower()
+    
+    # Check if ALL major search term words appear in the listing
+    # This prevents "BMW G 310" from matching "BMW C G 310"
+    matching_parts = sum(1 for part in search_parts if part in full_name)
+    
+    # If we have less than 50% of search terms, reject
+    if len(search_parts) > 0 and matching_parts / len(search_parts) < 0.6:
+        return False
+    
+    # Try matching against full title first
+    if is_relevant_match(title, search_term, threshold):
+        return True
+    
+    # Try matching against make + model
+    # full_name = f"{make} {model}".strip()
+    # if is_relevant_match(full_name, search_term, threshold):
+    #     return True
+    
+    return False
+
+def format_price(price):
+    """Format price string for display"""
+    try:
+        if isinstance(price, (int, float)):
+            return f"R {price:,.0f}"
+        if isinstance(price, str) and price != "N/A":
+            return f"R {price}"
+    except:
+        pass
+    return price
+
+def format_kilometers(km):
+    """Format kilometers for display"""
+    try:
+        if isinstance(km, (int, float)):
+            return f"{km:,.0f} km"
+        if isinstance(km, str) and km != "N/A":
+            return f"{km} km"
+    except:
+        pass
+    return km
+
+def scrape_webuycars_cached(search_term):
+    """
+    Search WeBuyCars cache for listings matching search_term.
+    Tries multiple search variations to handle different bike name formats.
+    
+    Returns dict of relevant listings in standard format.
+    """
     if not search_term or not search_term.strip():
-        logger.error(f"[{SOURCE}] Skipping empty search term.")
+        logger.warning(f"[{SOURCE}] Skipping empty search term")
         return {}
     
-    listings = {}
-    seen_ids = set()
+    search_term = search_term.strip()
+    logger.info(f"[{SOURCE}] Searching cache: {search_term}")
     
-    # Get search variations
+    # Load cache
+    cached_listings = load_cache()
+    if not cached_listings:
+        logger.warning(f"[{SOURCE}] Cache is empty or unavailable")
+        return {}
+    
+    # Generate search variations to try
     search_variations = generate_search_variations(search_term)
-    logger.info(f"[{SOURCE}] Trying {len(search_variations)} search variation(s) for {search_term}")
+    if len(search_variations) > 1:
+        logger.debug(f"[{SOURCE}] Trying {len(search_variations)} variation(s) for {search_term}")
     
-    # Try each variation
+    # Search cache for relevant listings
+    relevant_listings = {}
+    seen_ids = set()  # Track duplicates across variations
+    
     for variation in search_variations:
-        encoded_term = quote_plus(f'"{variation}"')
-        url = f"{WEBUYCARS_BASE_URL}?q={encoded_term}&activeTypeSearch=[\"Motorbike\"]"
-
-        logger.debug(f"[{SOURCE}] Trying variation: {variation}")
-        
-        soup = fetch_page(url)
-        if not soup:
-            logger.debug(f"[{SOURCE}] Failed to fetch page for variation: {variation}")
-            continue
-        
-        listing_elements = soup.select("div.list-grid-item")
-        if not listing_elements:
-            logger.debug(f"[{SOURCE}] No listings found for variation: {variation}")
-            continue
-        
-        logger.debug(f"[{SOURCE}] Found {len(listing_elements)} potential listings for variation: {variation}")    
-        
-        skipped = 0
-
-        for idx, listing_elem in enumerate(listing_elements, 1):
-            try:
-                # Extract stock number first for duplicate check
-                fav_btn = listing_elem.select_one("button[data-stocknumber]")
-                if not fav_btn:
-                    logger.debug(f"[{SOURCE}] Skipping listing {idx}: no stock number")
-                    skipped += 1
-                    continue
-                    
-                listing_id = fav_btn.get("data-stocknumber")
-                if not listing_id:
-                    skipped += 1
-                    continue
-                    
-                listing_id = f"wbc_{listing_id}"
-
-                # Check for duplicates early
-                if listing_id in seen_ids:
-                    logger.debug(f"[{SOURCE}] Skipping duplicate listing: {listing_id}")
-                    skipped += 1
-                    continue
-                    
-                seen_ids.add(listing_id)
-
-                # Extract title from description
-                desc_elem = listing_elem.select_one(".grid-card-body .description")
-                if not desc_elem:
-                    logger.debug(f"[{SOURCE}] Skipping listing {idx}: no description")
-                    skipped += 1
-                    continue
-                    
-                title = desc_elem.get_text(" ", strip=True)
-                
-                if not title or title == "undefined":
-                    skipped += 1
-                    continue
-
-                # Validate relevance to search term
-                if not is_relevant_match(title, search_term, min_match_ratio=0.3):
-                    logger.debug(f"[{SOURCE}] Skipping irrelevant match: {title}")
-                    skipped += 1
-                    continue
-
-                # Extract price - look for .price-text span
-                price_elem = listing_elem.select_one(".price-text span")
-                price = price_elem.get_text(strip=True) if price_elem else "N/A"
-                
-                if not price or price == "N/A":
-                    logger.debug(f"[{SOURCE}] Skipping listing {idx}: no price")
-                    skipped += 1
-                    continue
-
-                # Extract kilometers from chip-text spans
-                kilometers = "N/A"
-                chip_spans = listing_elem.select(".chip-text span")
-                for chip in chip_spans:
-                    chip_text = chip.get_text(strip=True)
-                    if 'km' in chip_text.lower():
-                        kilometers = chip_text
-                        break
-
-                # Extract location - look for map marker icon parent
-                location = "N/A"
-                loc_chip = listing_elem.select_one(".chip-text:has(i.fa-map-marker-alt)")
-                if loc_chip:
-                    # Get text after the icon
-                    location_text = loc_chip.get_text(strip=True)
-                    # Remove the icon placeholder
-                    location = location_text.replace("📍", "").strip()
-
-                # Construct URL using stock number
-                full_url = f"https://www.webuycars.co.za/stock-details/{listing_id.replace('wbc_', '')}" 
-
-                listings[listing_id] = create_listing(
-                    listing_id=listing_id,
-                    title=title,
-                    price=price,
-                    url=full_url,
-                    search_term=search_term,
-                    source=SOURCE
-                )
-
-                listings[listing_id]['kilometers'] = kilometers
-                listings[listing_id]['location'] = location
-                
-                logger.debug(f"[{SOURCE}] Added listing: {title} - {price}")
-
-            except Exception as e:
-                logger.error(f"[{SOURCE}] Error processing listing {idx}: {e}")
-                skipped += 1
+        for listing_id, listing in cached_listings.items():
+            # Skip if we've already added this listing
+            if listing_id in seen_ids:
                 continue
+            
+            try:
+                title = listing.get('title', '')
+                make = listing.get('make', '')
+                model = listing.get('model', '')
 
-        logger.info(f"[{SOURCE}] Found {len(listings)} listing(s) for variation '{variation}'" +
-                    (f" ({skipped} skipped)" if skipped > 0 else ""))
+            
+                # Check if this listing matches the search term
+                if is_relevant_listing(title, make, model, variation):
+                    seen_ids.add(listing_id)
 
-    logger.info(f"[{SOURCE}] Total: {len(listings)} listing(s) for {search_term}")
-    return listings
+                    # Use the ORIGINAL search_term (not variation) for grouping
+                    relevant_listings[listing_id] = {
+                        'id': listing_id,
+                        'title': title,
+                        'price': format_price(listing.get('price', 'N/A')),
+                        'url': listing.get('url', ''),
+                        'search_term': search_term,
+                        'source': SOURCE,
+                        'kilometers': format_kilometers(listing.get('kilometers', 'N/A')),
+                        'location': listing.get('location', 'N/A'),
+                    }
+            
+            except Exception as e:
+                logger.debug(f"[{SOURCE}] Error processing listing {listing_id}: {e}")
+                continue
+    
+    logger.info(f"[{SOURCE}] Found {len(relevant_listings)} listing(s) matching '{search_term}'")
+    return relevant_listings
+
+# For compatibility with main.py
+def scrape_webuycars(search_term):
+    """Wrapper for main.py compatibility"""
+    return scrape_webuycars_cached(search_term)
