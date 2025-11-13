@@ -14,12 +14,12 @@ from template_generator.html_generator import generate_html_report
 #scrapers
 from trackers.autotraderTracker import scrape_autotrader
 from trackers.gumtreeTracker import scrape_gumtree
-from trackers.webuycarsTracker import scrape_webuycars
+from trackers.webuycarsTracker import scrape_webuycars_cached
 
 SCRAPERS = [
     scrape_autotrader,
-    scrape_gumtree
-    # scrape_webuycars
+    scrape_gumtree,
+    scrape_webuycars_cached  
 ]
 
 
