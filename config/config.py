@@ -55,5 +55,5 @@ API_KEYWORDS = "website-elastic-backend/api/search"
 MATCH_THRESHOLDS = {
     "gumtree": 0.435,      # Threshold for Gumtree fuzzy matching
     "autotrader": 0.50,    # Threshold for AutoTrader relevance matching
-    "webuycars": 0.45,     # Threshold for WeBuyCars cache searching
+    "webuycars": 0.4575,     # Threshold for WeBuyCars cache searching
 }
