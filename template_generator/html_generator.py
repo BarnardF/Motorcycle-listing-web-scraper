@@ -21,10 +21,11 @@ def generate_html_report(all_listings, bikes_tracked, output_file="docs/index.ht
         # Ensure docs directory exists
         os.makedirs("docs", exist_ok=True)
         
-        # Group listings by bike model
+        # Group listings by SEARCH TERM (bike model from bikes.txt)
         listings_by_bike = {}
         for listing in all_listings:
-            bike = listing['search_term']
+            # Use search_term which is the bike model being searched for
+            bike = listing.get('search_term', 'Unknown')
             if bike not in listings_by_bike:
                 listings_by_bike[bike] = []
             listings_by_bike[bike].append(listing)
@@ -32,7 +33,7 @@ def generate_html_report(all_listings, bikes_tracked, output_file="docs/index.ht
         # Group by source
         listings_by_source = {}
         for listing in all_listings:
-            source = listing['source']
+            source = listing.get('source', 'Unknown')
             if source not in listings_by_source:
                 listings_by_source[source] = []
             listings_by_source[source].append(listing)
@@ -187,20 +188,25 @@ def generate_bike_view(listings_by_bike):
                 if kilometers == "N/A" and condition != "N/A":
                     kilometers = condition  # Fallback to condition if kilometers not available
                 location = listing.get('location', 'N/A')
+                source = listing.get('source', 'Unknown')
+                title = listing.get('title', 'Unknown')
+                price = listing.get('price', 'N/A')
+                url = listing.get('url', '#')
 
-                price_display = listing['price']
+                # Format price display with old price strikethrough if dropped
+                price_display = price
                 if listing.get('price_dropped') and listing.get('old_price'):
                     price_display = f"<span class='old-price'>{listing['old_price']}</span> {listing['price']}" 
                     
 
                 html += f"""
                         <tr class="{'price-drop-row' if listing.get('price_dropped') else ''}">
-                            <td class="source">{listing['source']}</td>
-                            <td class="bike-name">{listing['title']}</td>
+                            <td class="source">{source}</td>
+                            <td class="bike-name">{title}</td>
                             <td class="price">{price_display}</td>
                             <td class="kilometers">{kilometers}</td>
                             <td class="location">{location}</td>
-                            <td><a href="{listing['url']}" target="_blank" class="view-link">View →</a></td>
+                            <td><a href="{url}" target="_blank" class="view-link">View →</a></td>
                         </tr>
 """
             html += """
@@ -247,20 +253,24 @@ def generate_source_view(listings_by_source):
                 if kilometers == "N/A" and condition != "N/A":
                     kilometers = condition  # Fallback to condition if kilometers not available
                 location = listing.get('location', 'N/A')
+                bike = listing.get('search_term', 'Unknown')
+                title = listing.get('title', 'Unknown')
+                price = listing.get('price', 'N/A')
+                url = listing.get('url', '#')                
 
                 # Format price display with old price strikethrough if dropped
-                price_display = listing['price']
+                price_display = price
                 if listing.get('price_dropped') and listing.get('old_price'):
-                    price_display = f"<span class='old-price'>{listing['old_price']}</span> {listing['price']}"
+                    price_display = f"<span class='old-price'>{listing['old_price']}</span> {price}"
                 
                 html += f"""
                         <tr class="{'price-drop-row' if listing.get('price_dropped') else ''}">
-                            <td class="bike-name">{listing['search_term']}</td>
-                            <td>{listing['title']}</td>
+                            <td class="bike-name">{bike}</td>
+                            <td>{title}</td>
                             <td class="price">{price_display}</td>
                             <td class="kilometers">{kilometers}</td>
                             <td class="location">{location}</td>
-                            <td><a href="{listing['url']}" target="_blank" class="view-link">View →</a></td>
+                            <td><a href="{url}" target="_blank" class="view-link">View →</a></td>
                         </tr>
 """
             html += """
@@ -308,21 +318,26 @@ def generate_price_drops_view(all_listings):
             if kilometers == "N/A" and condition != "N/A":
                 kilometers = condition
             location = listing.get('location', 'N/A')
+            bike = listing.get('search_term', 'Unknown')
+            source = listing.get('source', 'Unknown')
+            title = listing.get('title', 'Unknown')
+            price = listing.get('price', 'N/A')
+            url = listing.get('url', '#')
             
             # Format price with strikethrough
-            price_display = listing['price']
+            price_display = price
             if listing.get('old_price'):
-                price_display = f"<span class='old-price'>{listing['old_price']}</span> {listing['price']}"
+                price_display = f"<span class='old-price'>{listing['old_price']}</span> {price}"
             
             html += f"""
                         <tr class="price-drop-row">
-                            <td class="bike-name">{listing['search_term']}</td>
-                            <td>{listing['title']}</td>
+                            <td class="bike-name">{bike}</td>
+                            <td>{title}</td>
                             <td class="price">{price_display}</td>
                             <td class="kilometers">{kilometers}</td>
                             <td class="location">{location}</td>
-                            <td class="source">{listing['source']}</td>
-                            <td><a href="{listing['url']}" target="_blank" class="view-link">View →</a></td>
+                            <td class="source">{source}</td>
+                            <td><a href="{url}" target="_blank" class="view-link">View →</a></td>
                         </tr>
 """
         html += """
