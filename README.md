@@ -35,6 +35,7 @@ cd motorcycle-tracker
 2. **Install dependencies**
 ```bash
 pip install -r requirements.txt
+playwright install 
 ```
 
 3. **Configure your bikes**
@@ -82,7 +83,8 @@ motorcycle-tracker/
 ├── utils/
 │   ├── relevant_match.py           # Fuzzy matching engine
 │   ├── search_variation_generator.py # Search variation logic
-│   └── validate_search_term.py      # Input validation
+│   ├── validate_search_term.py      # Input validation
+│   └── listing_builder.py          # Unified listing creator
 ├── tune_match_ratio.py         # Match ratio tuning tool
 ├── requirements.txt           # Python dependencies
 └── README.md                  # This file
@@ -229,12 +231,73 @@ Currently supports:
 - **AutoTrader** (autotrader.co.za) 
   - Requires "Brand Model" format
   - Captures: price, kilometers, condition, location
+  - Uses fuzzy matching with search variations
+  
 - **Gumtree** (gumtree.co.za) 
   - Flexible search format
   - Captures: price, kilometers, location
+  - Uses fuzzy matching with search variations
+  
 - **WeBuyCars** (webuycars.co.za)
-  - Note: Search engine has inconsistent query handling
-  - Planned upgrade: Category page scraping (see Roadmap)
+  - Uses Playwright API interception for daily cache refresh
+  - Captures: price, kilometers, location, make, model
+  - Fast local searching with fuzzy matching (no live API calls)
+  - Run `python cache_webuycars.py` daily to refresh listings
+
+### WeBuyCars Cache System
+
+WeBuyCars uses a **caching approach** instead of live scraping:
+
+**How it works:**
+1. `cache_webuycars.py` fetches ALL motorcycle listings daily via Playwright API interception
+2. Stores ~400-450 listings in `data/webuycars_cache.json`
+3. `webuycarsTracker.py` searches the local cache using fuzzy matching
+4. No repeated API calls during tracker runs = fast & reliable
+
+**Setup:**
+```bash
+# Initial cache creation
+python cache_webuycars.py
+
+# Schedule daily (cron/Task Scheduler)
+# Then run main.py normally
+python main.py
+```
+
+**Benefits:**
+  - Fast searches (<100ms vs 10+ seconds)
+  - Respectful to WeBuyCars servers (1 request/day vs dozens)
+  - No search API failures or rate limiting
+  - Price tracking works across cache refreshes
+
+### Unified Listing Builder
+
+All scrapers now use a centralized `utils/listing_builder.py` to create listings:
+
+**Benefits:**
+- **Consistency**: All listings have identical structure across all sources
+- **Price History**: Automatic price tracking for AutoTrader, Gumtree, AND WeBuyCars
+- **Maintainability**: Single source of truth for listing format
+- **Easy Expansion**: Add new fields without modifying each scraper
+
+**Example:**
+```python
+from utils.listing_builder import build_listing
+
+listing = build_listing(
+    listing_id="at_12345",
+    title="2025 Honda CB500X",
+    price="R 89,900",
+    url="https://www.autotrader.co.za/...",
+    search_term="Honda CB 500 X",
+    source="AutoTrader",
+    kilometers="New",
+    location="Sandton",
+    condition="New"
+)
+```
+
+All listings automatically include `price_history` tracking from first run onward.
 
 ## Data Captured
 
@@ -252,6 +315,15 @@ Currently supports:
 - Kilometers (when available in listing)
 - Location (suburb/city)
 - Direct URL
+
+### WeBuyCars Listings
+- Title (vehicle description)
+- Price
+- Make and Model (stored separately)
+- Kilometers (mileage)
+- Location (dealer location)
+- Direct URL
+- **Note**: Uses cached API data (not live search)
 
 ## Output Example
 
@@ -500,6 +572,24 @@ If you're getting blocked:
 - Check website's `robots.txt`
 - Review logs for HTTP 429 (Too Many Requests) errors
 
+### WeBuyCars Cache Issues
+
+**"Cache file not found" error:**
+- Run: `python cache_webuycars.py` to create initial cache
+- Check that `data/` folder exists
+- Verify `config.py` has correct `WEBUYCARS_CACHE_FILE` path
+
+**"Cache is empty or unavailable":**
+- Cache refresh failed - check `tracker.log` for Playwright errors
+- Ensure Playwright browsers are installed: `playwright install`
+- Try running cache refresh manually: `python cache_webuycars.py`
+
+**WeBuyCars listings not showing up:**
+- Run cache refresh first: `python cache_webuycars.py`
+- Check `tracker.log` for fuzzy matching scores
+- Verify bike names match listings (try variations manually)
+- Run `python tune_match_ratio.py` to optimize thresholds
+
 ### Script Crashes
 
 - Check `tracker.log` for detailed error messages
@@ -527,6 +617,33 @@ If you're getting blocked:
 - Try a different browser
 
 ## Advanced Usage
+
+### WeBuyCars Cache Refresh
+
+**One-time setup:**
+```bash
+python cache_webuycars.py
+```
+
+**Schedule daily refresh (Linux/Mac):**
+```bash
+# Edit crontab
+crontab -e
+
+# Add this line (runs at 2 AM daily)
+0 2 * * * cd /path/to/motorcycle-tracker && python cache_webuycars.py
+```
+
+**Schedule daily refresh (Windows Task Scheduler):**
+1. Open Task Scheduler
+2. Create Basic Task
+3. Set trigger: Daily at 2:00 AM
+4. Action: Start a program
+5. Program: `python`
+6. Arguments: `C:\path\to\motorcycle-tracker\cache_webuycars.py`
+7. Start in: `C:\path\to\motorcycle-tracker`
+
+The cache will be ready before your tracker runs.
 
 ### Running Periodically
 
@@ -621,12 +738,13 @@ grep "Triumph Speed 400" tracker.log
 - [x] Visual price drop indicators (strikethrough + green highlighting)
 - [x] Dedicated "Price Drops" view
 
-### 🔧 Phase 3.5: WeBuyCars Enhancement (Planned)
-- [ ] Replace search-based scraping with category page scraping
-- [ ] Implement pagination for motorcycle category
-- [ ] Smart local filtering (handles variation automatically)
-- [ ] Remove dependency on WeBuyCars search API
-- **Why:** Their search engine is unreliable. Category scraping bypasses it entirely and handles bike name variations automatically without manual configuration.
+### ✅ Phase 3.5: WeBuyCars Enhancement (Complete)
+- [x] Implemented Playwright API interception for cache refresh
+- [x] Daily cache system (~400-450 listings)
+- [x] Local fuzzy matching (handles variations automatically)
+- [x] Removed dependency on unreliable search API
+- [x] Price history tracking for WeBuyCars listings
+- **Result:** Fast, reliable, respectful to servers
 
 ### 📋 Phase 4: Automation & Features
 - [ ] Email/SMS notifications
@@ -688,10 +806,12 @@ Contributions are welcome! Please:
 ## Changelog
 
 ### Version 2.4 (Current)
+- **Unified Listing Builder**: Centralized listing creation (`utils/listing_builder.py`)
+- **WeBuyCars Cache System**: Playwright API interception + local fuzzy matching
+- **Price History for All Sources**: AutoTrader, Gumtree, AND WeBuyCars tracked
 - **Fuzzy Matching System**: Intelligent model name variation matching
 - **Search Variations Generator**: Automatically tries alternative search formats
 - **Match Ratio Tuning Tool**: Optimize thresholds with `tune_match_ratio.py`
-- **Validation Tools**: Search term validation and error checking
 - **Improved Error Handling**: Better detection of malformed listings
 - **Enhanced Logging**: Debug-level insights into matching and parsing
 
