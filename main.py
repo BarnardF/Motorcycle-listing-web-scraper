@@ -157,7 +157,6 @@ def main():
         print("="*60 + "\n")  
 
         # Clean up old listings - ONLY for live scrapers (AutoTrader, Gumtree)
-        # Don't remove WeBuyCars listings (cache-based, IDs change each run)
         current_run_ids = set()
         for bike_listings in current.values():
             for listing_id, listing in bike_listings.items():
