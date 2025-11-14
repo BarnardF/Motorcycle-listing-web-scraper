@@ -73,10 +73,10 @@ def fetch_all_listings():
                     try:
                         make = item.get("Make", "Unknown")
                         model = item.get("Model", "Unknown")
-                        vehicle_id = item.get("StockNumber", "N/A")
+                        stock_number = item.get("StockNumber", "N/A")
                         
                         # Skip if no stock number
-                        if vehicle_id == "N/A":
+                        if stock_number == "N/A":
                             continue
                         
                         price = item.get("Price", item.get("BuyNowPrice", "N/A"))
@@ -85,14 +85,15 @@ def fetch_all_listings():
                         description = item.get("OnlineDescription", "N/A")
                         
                         # Construct reliable URL
-                        url = f"https://www.webuycars.co.za/buy-a-car/{make}/{model}/{vehicle_id}"
+                        url = f"https://www.webuycars.co.za/buy-a-car/{make}/{model}/{stock_number}"
                         
                         # Use StockNumber as unique ID
-                        listing_id = f"{SOURCE.lower()}_{vehicle_id}"
+                        listing_id = f"{SOURCE.lower()}_{stock_number}"
                         
                         # Store in both all_listings and page_listings
                         listing_data = {
-                            'vehicle_id': vehicle_id,
+                            'vehicle_id': listing_id,
+                            'stock_number': stock_number,
                             'title': description,
                             'price': price,
                             'url': url,
