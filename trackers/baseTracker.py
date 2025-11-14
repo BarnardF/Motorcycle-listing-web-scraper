@@ -44,37 +44,6 @@ def fetch_page(url):
         return None
 
 
-def create_listing(listing_id, title, price, url, search_term, source):
-    """
-    Create a standardized listing dictionary
-    
-    Args:
-        listing_id: Unique identifier for the listing
-        title: Listing title
-        price: Listing price
-        url: Full URL to the listing
-        search_term: Search term used to find this listing
-        source: Source website name
-        
-    Returns:
-        Dictionary containing listing information
-    """
-    clean_price = price.strip() if price else "N/A"
-    return {
-        'id': listing_id,
-        'title': title.strip() if title else "",
-        'price': clean_price,
-        'price_history': [{
-            'date': datetime.now().strftime("%d-%m-%Y %H:%M:%S"),
-            'price': clean_price
-        }],
-        'url': url,
-        'search_term': search_term,
-        'source': source,
-        'found_date': datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    }
-
-
 def load_bike_list(filename=BIKE_FILE):
     """
     Load bike models from text file
