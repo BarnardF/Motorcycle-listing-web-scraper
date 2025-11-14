@@ -1,7 +1,8 @@
 from urllib.parse import quote_plus
-from trackers.baseTracker import fetch_page, create_listing
+from trackers.baseTracker import fetch_page
 from utils.relevant_match import is_relevant_match
 from utils.search_variation_generator import generate_search_variations
+from utils.listing_builder import build_listing
 from logger.logger import logger
 from config.config import GUMTREE_BASE_URL, MATCH_THRESHOLDS
 
@@ -115,7 +116,7 @@ def scrape_gumtree(search_term):
                     skipped += 1
                     continue
 
-                listing_id = f"gt_{listing_id}"
+                listing_id = f"{SOURCE.lower()}_{listing_id}"
 
                 # Check for duplicates across all variations
                 if listing_id in seen_ids:
@@ -133,12 +134,12 @@ def scrape_gumtree(search_term):
 
                 full_url = f"https://www.gumtree.co.za{href}"
 
-                listings[listing_id] = create_listing(
+                listings[listing_id] = build_listing(
                     listing_id=listing_id,
                     title=title,
                     price=price,
                     url=full_url,
-                    search_term=search_term,  # original search term
+                    search_term=search_term,
                     source=SOURCE
                 )
 
