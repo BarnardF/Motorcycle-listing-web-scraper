@@ -6,9 +6,10 @@ AI(Claude) assisted implementation
 """
 
 from urllib.parse import quote
-from trackers.baseTracker import fetch_page, create_listing
+from trackers.baseTracker import fetch_page
 from utils.search_variation_generator import generate_search_variations
 from utils.relevant_match import is_relevant_autotrader_match
+from utils.listing_builder import build_listing
 from logger.logger import logger
 from config.config import AUTOTRADER_BASE_URL
 
@@ -121,6 +122,7 @@ def scrape_autotrader(search_term):
 
                 # Extract listing ID
                 listing_id = href.split("/")[-1].split("?")[0]
+                listing_id = f"{SOURCE.lower()}_{listing_id}"
 
                 # Check for duplicates across all variations
                 if listing_id in seen_ids:
@@ -131,12 +133,12 @@ def scrape_autotrader(search_term):
                 seen_ids.add(listing_id)
                 full_url = f"https://www.autotrader.co.za{href}"
 
-                listings[listing_id] = create_listing(
+                listings[listing_id] = build_listing(
                     listing_id=listing_id,
                     title=title,
                     price=price,
                     url=full_url,
-                    search_term=search_term,  # Store original
+                    search_term=search_term,
                     source=SOURCE
                 )
 
