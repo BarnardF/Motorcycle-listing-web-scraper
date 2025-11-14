@@ -6,10 +6,12 @@ Uses fuzzy matching to find relevant bikes without relying on their search API.
 
 import json
 from pathlib import Path
+from datetime import datetime
 from logger.logger import logger
 from config.config import WEBUYCARS_CACHE_FILE, MATCH_THRESHOLDS
 from utils.relevant_match import is_relevant_match
 from utils.search_variation_generator import generate_search_variations
+from utils.listing_builder import build_listing
 
 SOURCE = "WeBuyCars"
 
@@ -52,7 +54,7 @@ def is_relevant_listing(title, make, model, search_term):
     # This prevents "BMW G 310" from matching "BMW C G 310"
     matching_parts = sum(1 for part in search_parts if part in full_name)
     
-    # If we have less than 50% of search terms, reject
+    # reject if less than 60% of search parts match
     if len(search_parts) > 0 and matching_parts / len(search_parts) < 0.6:
         return False
     
@@ -135,16 +137,16 @@ def scrape_webuycars_cached(search_term):
                     seen_ids.add(listing_id)
 
                     # Use the ORIGINAL search_term (not variation) for grouping
-                    relevant_listings[listing_id] = {
-                        'id': listing_id,
-                        'title': title,
-                        'price': format_price(listing.get('price', 'N/A')),
-                        'url': listing.get('url', ''),
-                        'search_term': search_term,
-                        'source': SOURCE,
-                        'kilometers': format_kilometers(listing.get('kilometers', 'N/A')),
-                        'location': listing.get('location', 'N/A'),
-                    }
+                    relevant_listings[listing_id] = build_listing(
+                        listing_id=listing_id,
+                        title=title,
+                        price=format_price(listing.get('price', 'N/A')),
+                        url=listing.get('url', ''),
+                        search_term=search_term,
+                        source=SOURCE,
+                        kilometers=format_kilometers(listing.get('kilometers', 'N/A')),
+                        location=listing.get('location', 'N/A')
+                    )
             
             except Exception as e:
                 logger.debug(f"[{SOURCE}] Error processing listing {listing_id}: {e}")
