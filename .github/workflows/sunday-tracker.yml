@@ -84,7 +84,7 @@ jobs:
       # --------------------------------------------------
       - name: Upload execution logs
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: sunday-tracker-logs
           path: tracker.log
@@ -92,7 +92,7 @@ jobs:
 
       - name: Upload cache backup
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: webuycars-cache-backup
           path: data/webuycars_cache.json
