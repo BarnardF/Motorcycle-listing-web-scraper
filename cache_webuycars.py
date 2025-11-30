@@ -215,7 +215,7 @@ def main():
     
     if success:
         logger.info("=" * 60)
-        logger.info(f"✅ CACHE REFRESH COMPLETE")
+        logger.info(f"CACHE REFRESH COMPLETE")
         logger.info("=" * 60)
         logger.info(f"Previous listings: {previous_count}")
         logger.info(f"Current listings:  {len(new_listings)}")
