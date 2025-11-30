@@ -1,0 +1,99 @@
+# .github/workflows/sunday-tracker.yml
+# Runs every Sunday at 5:00 AM SAST (03:00 UTC)
+# 1. Refreshes WeBuyCars cache
+# 2. Runs the full motorcycle tracker
+# 3. Commits updates only if files changed
+# 4. Uploads logs & cache backups for debugging
+
+name: Sunday Motorcycle Tracker
+
+on:
+  schedule:
+    # 5:00 AM SAST = 03:00 UTC
+    - cron: "0 3 * * 0"
+  workflow_dispatch:
+
+jobs:
+  sunday-tracking:
+    runs-on: ubuntu-latest
+
+    steps:
+      # --------------------------------------------------
+      # Checkout
+      # --------------------------------------------------
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # --------------------------------------------------
+      # Python setup
+      # --------------------------------------------------
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install
+
+      # --------------------------------------------------
+      # STEP 1 — Refresh WeBuyCars cache
+      # --------------------------------------------------
+      - name: Refresh WeBuyCars cache
+        run: python cache_webuycars.py
+
+      - name: Commit cache updates (if changed)
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          if git diff --quiet data/webuycars_cache.json; then
+            echo "✓ Cache unchanged — skipping commit"
+          else
+            echo "✓ Cache updated — committing changes"
+            git add data/webuycars_cache.json
+            git commit -m "Auto-refresh WeBuyCars cache - Sunday [$(TZ='Africa/Johannesburg' date +'%d-%m-%Y %H:%M:%S SAST')]"
+            git push
+          fi
+
+      # --------------------------------------------------
+      # STEP 2 — Run full tracker
+      # --------------------------------------------------
+      - name: Run motorcycle tracker
+        run: python main.py
+
+      - name: Commit tracker updates (if changed)
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          if git diff --quiet docs/index.html; then
+            echo "✓ Dashboard unchanged — skipping commit"
+          else
+            echo "✓ Dashboard updated — committing changes"
+            git add docs/index.html
+            git add data/listings.json
+            git commit -m "Auto-update listings - Sunday [$(TZ='Africa/Johannesburg' date +'%d-%m-%Y %H:%M:%S SAST')]"
+            git push
+          fi
+
+      # --------------------------------------------------
+      # STEP 3 — Upload logs for debugging
+      # --------------------------------------------------
+      - name: Upload execution logs
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: sunday-tracker-logs
+          path: tracker.log
+          retention-days: 30
+
+      - name: Upload cache backup
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: webuycars-cache-backup
+          path: data/webuycars_cache.json
+          retention-days: 30
