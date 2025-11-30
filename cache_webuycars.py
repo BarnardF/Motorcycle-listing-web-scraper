@@ -67,7 +67,7 @@ def fetch_all_listings():
                     logger.debug(f"[{SOURCE}] API returned empty data array")
                     return
                 
-                logger.info(f"[{SOURCE}] API Response: Found {len(data)} listing(s)")
+                # logger.info(f"[{SOURCE}] API Response: Found {len(data)} listing(s)")
                 
                 for item in data:
                     try:

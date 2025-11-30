@@ -1,9 +1,10 @@
-
 """
 AutoTrader Scraper with search variations
 Tries multiple search variations to handle different model name formats
 AI(Claude) assisted implementation
 """
+
+import time
 
 from urllib.parse import quote
 from trackers.baseTracker import fetch_page
@@ -57,6 +58,7 @@ def scrape_autotrader(search_term):
         logger.debug(f"[{SOURCE}] URL: {url}")
 
         soup = fetch_page(url)
+        time.sleep(2)  # Add a 2-second delay between requests to be polite
         if not soup:
             logger.debug(f"[{SOURCE}] Failed to fetch: {variation}")
             continue
