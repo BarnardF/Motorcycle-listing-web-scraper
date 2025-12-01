@@ -25,6 +25,12 @@ jobs:
         uses: actions/checkout@v4
 
       # --------------------------------------------------
+      # Ensure data folder exists
+      # --------------------------------------------------
+      - name: Create data folder
+        run: mkdir -p data
+
+      # --------------------------------------------------
       # Python setup
       # --------------------------------------------------
       - name: Set up Python
@@ -44,16 +50,27 @@ jobs:
       - name: Refresh WeBuyCars cache
         run: python cache_webuycars.py
 
+      - name: Verify cache file exists
+        run: |
+          if [ ! -f data/webuycars_cache.json ]; then
+            echo "Cache file not created"
+            exit 1
+          fi
+          
+          size=$(stat -c%s data/webuycars_cache.json 2>/dev/null || stat -f%z data/webuycars_cache.json 2>/dev/null)
+          echo "✓ Cache file created: $size bytes"
+
       - name: Commit cache updates (if changed)
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          if git diff --quiet data/webuycars_cache.json; then
+          git add data/webuycars_cache.json
+          
+          if git diff --quiet --cached; then
             echo "✓ Cache unchanged — skipping commit"
           else
             echo "✓ Cache updated — committing changes"
-            git add data/webuycars_cache.json
             git commit -m "Auto-refresh WeBuyCars cache - Sunday [$(TZ='Africa/Johannesburg' date +'%d-%m-%Y %H:%M:%S SAST')]"
             git push
           fi

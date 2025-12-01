@@ -25,6 +25,13 @@ SCRAPERS = [
     scrape_webuycars_cached  
 ]
 
+if IS_GITHUB_ACTIONS:
+    print("\nRunning on GitHub Actions")
+    print("- Using: AutoTrader + Gumtree + WeBuyCars (TESTING)\n")
+else:
+    print("\nRunning locally")
+    print("- Using: AutoTrader + Gumtree + WeBuyCars\n")
+
 LIVE_SCRAPERS = [
     'Autotrader',
     'Gumtree',
