@@ -1,4 +1,6 @@
 from pathlib import Path
+from random import random
+import os
 
 # ==================== DATA FOLDER ====================
 # Ensure data folder exists
@@ -15,13 +17,26 @@ WEBUYCARS_CACHE_FILE = str(DATA_FOLDER / "webuycars_cache.json")
 BIKE_FILE = "bikes.txt"
 LOG_FILE = "tracker.log"
 
+# ==================== ENVIRONMENT DETECTION ====================
+IS_GITHUB_ACTIONS = os.getenv('GITHUB_ACTIONS') == 'true'
+IS_LOCAL = not IS_GITHUB_ACTIONS
+
 
 # ==================== REQUEST SETTINGS ====================
-# User agent for web requests
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36"
-)
+# User agents for web requests
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/131.0",
+]
+
+def get_random_user_agent():
+    """Return a random user agent to avoid detection"""
+    return random.choice(USER_AGENTS)
+
+# Default user agent (fallback, not used if rotating)
+USER_AGENT = USER_AGENTS[0]
 
 # Request timeout (seconds)
 REQUEST_TIMEOUT = 10

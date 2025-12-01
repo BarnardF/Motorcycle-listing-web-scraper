@@ -4,12 +4,14 @@ import json
 import os
 from datetime import datetime
 from logger.logger import logger
-from config.config import DATA_FILE, BIKE_FILE, REQUEST_TIMEOUT, USER_AGENT
-
+from config.config import (
+    DATA_FILE, BIKE_FILE, REQUEST_TIMEOUT, 
+    get_random_user_agent, IS_GITHUB_ACTIONS
+)
 
 
 HEADERS = {
-    "User-Agent": USER_AGENT
+    "User-Agent": get_random_user_agent()
 }
 
 
@@ -24,9 +26,22 @@ def fetch_page(url):
     Returns:
         BeautifulSoup object or None if request fails
     """
+    # Use rotating user agent
+    user_agent = get_random_user_agent()
+    
+    headers = {
+        "User-Agent": user_agent,
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-ZA,en;q=0.9",
+        "Accept-Encoding": "gzip, deflate",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+        "Cache-Control": "max-age=0",
+    }
+
     try:
         logger.debug(f"Fetching: {url}")
-        response = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+        response = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
         response.raise_for_status()
         logger.debug(f"Successfully fetched {url} (status: {response.status_code})")
         return BeautifulSoup(response.content, 'html.parser')

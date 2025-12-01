@@ -65,6 +65,15 @@ def scrape_autotrader(search_term):
 
         time.sleep(2) # Be polite with requests
         
+        if soup is None:
+            logger.warning(f"[{SOURCE}] fetch_page returned None for {variation}")
+            continue
+        
+        # Check if we got valid HTML
+        if not soup.select("a.b-result-tile__nUiUiFtR93FVbMOF"):
+            logger.debug(f"[{SOURCE}] No listings found in HTML for {variation}")
+            continue
+
         if not soup:
             logger.debug(f"[{SOURCE}] Failed to fetch: {variation}")
             continue

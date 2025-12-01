@@ -2,6 +2,7 @@ import concurrent.futures
 import random
 from datetime import datetime
 import asyncio
+import os
 
 from trackers.baseTracker import (
     load_bike_list,
@@ -10,7 +11,7 @@ from trackers.baseTracker import (
     clean_stale_listings
 )
 from logger.logger import logger
-from config.config import SLEEP_MIN, SLEEP_MAX
+from config.config import SLEEP_MIN, SLEEP_MAX, IS_GITHUB_ACTIONS
 from template_generator.html_generator import generate_html_report
 
 #scrapers
