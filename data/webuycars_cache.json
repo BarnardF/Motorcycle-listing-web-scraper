@@ -1,8 +1,32 @@
 {
-  "timestamp": "2025-12-01T07:18:34.282843",
-  "date_formatted": "01/12/2025 07:18:34",
-  "total_listings": 447,
+  "timestamp": "2025-12-01T09:26:35.187261",
+  "date_formatted": "01/12/2025 09:26:35",
+  "total_listings": 445,
   "listings": {
+    "webuycars_497F02165": {
+      "vehicle_id": "webuycars_497F02165",
+      "stock_number": "497F02165",
+      "title": "2015 Honda XRL XR 125l",
+      "price": 22900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/XRL/497F02165",
+      "make": "Honda",
+      "model": "XRL",
+      "source": "WeBuyCars",
+      "kilometers": 1964,
+      "location": "Mbombela (MP)"
+    },
+    "webuycars_D3DB11260": {
+      "vehicle_id": "webuycars_D3DB11260",
+      "stock_number": "D3DB11260",
+      "title": "2016 Gomoto Sunny 150",
+      "price": 16900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Gomoto/Sunny/D3DB11260",
+      "make": "Gomoto",
+      "model": "Sunny",
+      "source": "WeBuyCars",
+      "kilometers": 2344,
+      "location": "Dome (GP)"
+    },
     "webuycars_8A8000743": {
       "vehicle_id": "webuycars_8A8000743",
       "stock_number": "8A8000743",
@@ -423,18 +447,6 @@
       "kilometers": 2002,
       "location": "Silver Lakes (GP)"
     },
-    "webuycars_D3DB11260": {
-      "vehicle_id": "webuycars_D3DB11260",
-      "stock_number": "D3DB11260",
-      "title": "2016 Gomoto Sunny 150",
-      "price": 16900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Gomoto/Sunny/D3DB11260",
-      "make": "Gomoto",
-      "model": "Sunny",
-      "source": "WeBuyCars",
-      "kilometers": 2344,
-      "location": "Dome (GP)"
-    },
     "webuycars_DD5A06024": {
       "vehicle_id": "webuycars_DD5A06024",
       "stock_number": "DD5A06024",
@@ -687,18 +699,6 @@
       "kilometers": 2865,
       "location": "Silver Lakes (GP)"
     },
-    "webuycars_FCBC10878": {
-      "vehicle_id": "webuycars_FCBC10878",
-      "stock_number": "FCBC10878",
-      "title": "2024 Suzuki 250 DS 250",
-      "price": 54900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/250/FCBC10878",
-      "make": "Suzuki",
-      "model": "250",
-      "source": "WeBuyCars",
-      "kilometers": 3480,
-      "location": "Richmond (WC)"
-    },
     "webuycars_2EEF08786": {
       "vehicle_id": "webuycars_2EEF08786",
       "stock_number": "2EEF08786",
@@ -902,18 +902,6 @@
       "source": "WeBuyCars",
       "kilometers": 8308,
       "location": "Silver Lakes (GP)"
-    },
-    "webuycars_69F200176": {
-      "vehicle_id": "webuycars_69F200176",
-      "stock_number": "69F200176",
-      "title": "2021 SYM GTS 300i",
-      "price": 37900,
-      "url": "https://www.webuycars.co.za/buy-a-car/SYM/GTS/69F200176",
-      "make": "SYM",
-      "model": "GTS",
-      "source": "WeBuyCars",
-      "kilometers": 7415,
-      "location": "Mbombela (MP)"
     },
     "webuycars_6D0308819": {
       "vehicle_id": "webuycars_6D0308819",
@@ -1214,18 +1202,6 @@
       "source": "WeBuyCars",
       "kilometers": 10000,
       "location": "Midstream (GP)"
-    },
-    "webuycars_EAE406782": {
-      "vehicle_id": "webuycars_EAE406782",
-      "stock_number": "EAE406782",
-      "title": "2019 BMW F Series F 850 GS",
-      "price": 91900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/EAE406782",
-      "make": "BMW",
-      "model": "F Series",
-      "source": "WeBuyCars",
-      "kilometers": 50000,
-      "location": "Silver Lakes (GP)"
     },
     "webuycars_F87814542": {
       "vehicle_id": "webuycars_F87814542",
@@ -1539,30 +1515,6 @@
       "kilometers": 22490,
       "location": "Silver Lakes (GP)"
     },
-    "webuycars_B12E14936": {
-      "vehicle_id": "webuycars_B12E14936",
-      "stock_number": "B12E14936",
-      "title": "2015 Honda CBR 300r",
-      "price": 35900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/B12E14936",
-      "make": "Honda",
-      "model": "CBR",
-      "source": "WeBuyCars",
-      "kilometers": 22834,
-      "location": "Riverhorse (KZN)"
-    },
-    "webuycars_C2E513509": {
-      "vehicle_id": "webuycars_C2E513509",
-      "stock_number": "C2E513509",
-      "title": "2015 Harley Davidson Street 750 Street",
-      "price": 45900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Street/C2E513509",
-      "make": "Harley Davidson",
-      "model": "Street",
-      "source": "WeBuyCars",
-      "kilometers": 21289,
-      "location": "Midstream (GP)"
-    },
     "webuycars_FE7010193": {
       "vehicle_id": "webuycars_FE7010193",
       "stock_number": "FE7010193",
@@ -1670,18 +1622,6 @@
       "source": "WeBuyCars",
       "kilometers": 27067,
       "location": "Germiston (GP)"
-    },
-    "webuycars_584A03760": {
-      "vehicle_id": "webuycars_584A03760",
-      "stock_number": "584A03760",
-      "title": "2021 Husqvarna TX TE 300 I",
-      "price": 69900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TX/584A03760",
-      "make": "Husqvarna",
-      "model": "TX",
-      "source": "WeBuyCars",
-      "kilometers": 30000,
-      "location": "Dome (GP)"
     },
     "webuycars_78AB12383": {
       "vehicle_id": "webuycars_78AB12383",
@@ -2521,18 +2461,6 @@
       "model": "F Series",
       "source": "WeBuyCars",
       "kilometers": 7969,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_741C10239": {
-      "vehicle_id": "webuycars_741C10239",
-      "stock_number": "741C10239",
-      "title": "2005 Suzuki SV 1000s",
-      "price": 46900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/SV/741C10239",
-      "make": "Suzuki",
-      "model": "SV",
-      "source": "WeBuyCars",
-      "kilometers": 17795,
       "location": "Midstream (GP)"
     },
     "webuycars_59B611306": {
@@ -3891,18 +3819,6 @@
       "kilometers": 167622,
       "location": "Brackenfell (WC)"
     },
-    "webuycars_497F02165": {
-      "vehicle_id": "webuycars_497F02165",
-      "stock_number": "497F02165",
-      "title": "2015 Honda XRL XR 125l",
-      "price": 22900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/XRL/497F02165",
-      "make": "Honda",
-      "model": "XRL",
-      "source": "WeBuyCars",
-      "kilometers": 1964,
-      "location": "Mbombela (MP)"
-    },
     "webuycars_1D5906858": {
       "vehicle_id": "webuycars_1D5906858",
       "stock_number": "1D5906858",
@@ -4083,6 +3999,54 @@
       "kilometers": "N/A",
       "location": "Dome (GP)"
     },
+    "webuycars_5BB800527": {
+      "vehicle_id": "webuycars_5BB800527",
+      "stock_number": "5BB800527",
+      "title": "2021 Big Boy Mustang 250",
+      "price": 25900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Mustang/5BB800527",
+      "make": "Big Boy",
+      "model": "Mustang",
+      "source": "WeBuyCars",
+      "kilometers": 1684,
+      "location": "Riverhorse (KZN)"
+    },
+    "webuycars_69F200176": {
+      "vehicle_id": "webuycars_69F200176",
+      "stock_number": "69F200176",
+      "title": "2021 SYM GTS 300i",
+      "price": 37900,
+      "url": "https://www.webuycars.co.za/buy-a-car/SYM/GTS/69F200176",
+      "make": "SYM",
+      "model": "GTS",
+      "source": "WeBuyCars",
+      "kilometers": 7415,
+      "location": "Mbombela (MP)"
+    },
+    "webuycars_B12E14936": {
+      "vehicle_id": "webuycars_B12E14936",
+      "stock_number": "B12E14936",
+      "title": "2015 Honda CBR 300r",
+      "price": 35900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/B12E14936",
+      "make": "Honda",
+      "model": "CBR",
+      "source": "WeBuyCars",
+      "kilometers": 22834,
+      "location": "Riverhorse (KZN)"
+    },
+    "webuycars_C2E513509": {
+      "vehicle_id": "webuycars_C2E513509",
+      "stock_number": "C2E513509",
+      "title": "2015 Harley Davidson Street 750 Street",
+      "price": 45900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Street/C2E513509",
+      "make": "Harley Davidson",
+      "model": "Street",
+      "source": "WeBuyCars",
+      "kilometers": 21289,
+      "location": "Midstream (GP)"
+    },
     "webuycars_F1F212851": {
       "vehicle_id": "webuycars_F1F212851",
       "stock_number": "F1F212851",
@@ -4094,6 +4058,18 @@
       "source": "WeBuyCars",
       "kilometers": "N/A",
       "location": "Midstream (GP)"
+    },
+    "webuycars_EAE406782": {
+      "vehicle_id": "webuycars_EAE406782",
+      "stock_number": "EAE406782",
+      "title": "2019 BMW F Series F 850 GS",
+      "price": 91900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/EAE406782",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 50000,
+      "location": "Silver Lakes (GP)"
     },
     "webuycars_61E912937": {
       "vehicle_id": "webuycars_61E912937",
@@ -4215,6 +4191,30 @@
       "kilometers": 61624,
       "location": "Gqeberha (EC)"
     },
+    "webuycars_584A03760": {
+      "vehicle_id": "webuycars_584A03760",
+      "stock_number": "584A03760",
+      "title": "2021 Husqvarna TX TE 300 I",
+      "price": 69900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TX/584A03760",
+      "make": "Husqvarna",
+      "model": "TX",
+      "source": "WeBuyCars",
+      "kilometers": 30000,
+      "location": "Dome (GP)"
+    },
+    "webuycars_741C10239": {
+      "vehicle_id": "webuycars_741C10239",
+      "stock_number": "741C10239",
+      "title": "2005 Suzuki SV 1000s",
+      "price": 46900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/SV/741C10239",
+      "make": "Suzuki",
+      "model": "SV",
+      "source": "WeBuyCars",
+      "kilometers": 17795,
+      "location": "Midstream (GP)"
+    },
     "webuycars_319C05189": {
       "vehicle_id": "webuycars_319C05189",
       "stock_number": "319C05189",
@@ -4226,18 +4226,6 @@
       "source": "WeBuyCars",
       "kilometers": 17000,
       "location": "Dome (GP)"
-    },
-    "webuycars_5BB800527": {
-      "vehicle_id": "webuycars_5BB800527",
-      "stock_number": "5BB800527",
-      "title": "2021 Big Boy Mustang 250",
-      "price": 25900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Mustang/5BB800527",
-      "make": "Big Boy",
-      "model": "Mustang",
-      "source": "WeBuyCars",
-      "kilometers": 1684,
-      "location": "Riverhorse (KZN)"
     },
     "webuycars_105C13631": {
       "vehicle_id": "webuycars_105C13631",
@@ -4274,18 +4262,6 @@
       "source": "WeBuyCars",
       "kilometers": 26110,
       "location": "Dome (GP)"
-    },
-    "webuycars_717309716": {
-      "vehicle_id": "webuycars_717309716",
-      "stock_number": "717309716",
-      "title": "2006 BMW K Series K 1200 GT",
-      "price": 34900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/K Series/717309716",
-      "make": "BMW",
-      "model": "K Series",
-      "source": "WeBuyCars",
-      "kilometers": 109375,
-      "location": "Richmond (WC)"
     },
     "webuycars_C2F112298": {
       "vehicle_id": "webuycars_C2F112298",
@@ -5235,6 +5211,18 @@
       "kilometers": 29016,
       "location": "Dome (GP)"
     },
+    "webuycars_3D1513628": {
+      "vehicle_id": "webuycars_3D1513628",
+      "stock_number": "3D1513628",
+      "title": "2017 BMW R Series R 1200 GS (full Spec)",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/3D1513628",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 24045,
+      "location": "Richmond (WC)"
+    },
     "webuycars_1DE010854": {
       "vehicle_id": "webuycars_1DE010854",
       "stock_number": "1DE010854",
@@ -5246,18 +5234,6 @@
       "source": "WeBuyCars",
       "kilometers": 18264,
       "location": "Rustenburg (NW)"
-    },
-    "webuycars_6F8B08656": {
-      "vehicle_id": "webuycars_6F8B08656",
-      "stock_number": "6F8B08656",
-      "title": "2023 Harley Davidson Dyna Softail Breakout 114",
-      "price": 265900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Dyna/6F8B08656",
-      "make": "Harley Davidson",
-      "model": "Dyna",
-      "source": "WeBuyCars",
-      "kilometers": 940,
-      "location": "Vereeniging (GP)"
     },
     "webuycars_E1A209287": {
       "vehicle_id": "webuycars_E1A209287",
