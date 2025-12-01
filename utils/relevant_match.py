@@ -22,7 +22,7 @@ def get_word_tokens(text):
     words = [w for w in normalized.split() if len(w) > 1]
     return set(words)
 
-
+#AI(Claude) helped - 1 Dec 2025
 def fuzzy_match_score(search_term, listing_title):
     """Calculate fuzzy match score (0.0 to 1.0)"""
     search_norm = normalize_text(search_term)
@@ -35,32 +35,29 @@ def fuzzy_match_score(search_term, listing_title):
     search_words = get_word_tokens(search_term)
     title_words = get_word_tokens(listing_title)
     
-    if not search_words:
+    if not search_words or not title_words:
         return 0.0
     
-    # Brand matching (critical)
-    search_words_list = list(search_words)
-    brand = search_words_list[0] if search_words_list else None
+    # REMOVED: Brand-critical check that was too strict
+    # Gumtree sellers don't always include brand, so we shouldn't fail immediately
     
-    if not brand or brand not in title_words:
-        return 0.1
-    
-    # Model number matching (critical if numbers exist)
-    search_numbers = set(re.findall(r'\b\d{2,4}\b', search_norm))
-    title_numbers = set(re.findall(r'\b\d{2,4}\b', title_norm))
+    # Model number matching (if search has numbers, they MUST appear)
+    search_numbers = set(re.findall(r'\d+', search_norm))  # Changed: include all numbers
+    title_numbers = set(re.findall(r'\d+', title_norm))
     
     if search_numbers and not (search_numbers & title_numbers):
-        return 0.15
+        return 0.2  # Has numbers but they don't match → low score
     
-    # Jaccard similarity
+    # Jaccard similarity (word overlap)
     intersection = search_words & title_words
     union = search_words | title_words
     jaccard = len(intersection) / len(union) if union else 0.0
     
-    # Sequence matching
+    # Sequence matching (character similarity)
     sequence_ratio = SequenceMatcher(None, search_norm, title_norm).ratio()
     
-    return (jaccard * 0.6) + (sequence_ratio * 0.4)
+    # Weight sequence matching higher for partial matches
+    return (jaccard * 0.5) + (sequence_ratio * 0.5)
 
 
 def is_relevant_match(search_term, listing_title, min_match_ratio=0.435):

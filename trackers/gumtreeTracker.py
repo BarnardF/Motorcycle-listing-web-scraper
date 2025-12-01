@@ -158,8 +158,10 @@ def scrape_gumtree(search_term):
                 continue
 
         if listing_elements:
-            logger.info(f"[{SOURCE}] Found {len([e for e in listing_elements if not (e.get('data-adid') in seen_ids)])} new listing(s) for variation '{variation}'" + 
-                        (f" ({skipped} skipped)" if skipped > 0 else ""))
+            listings_found = len(listing_elements)
+            listings_added = len(listings)  # Track this separately
+            logger.info(f"[{SOURCE}] Variation '{variation}': {listings_found} found, {listings_added} added" + 
+                        (f", {skipped} skipped" if skipped > 0 else ""))
 
     logger.info(f"[{SOURCE}] Total: {len(listings)} listing(s) for {search_term}")
     return listings

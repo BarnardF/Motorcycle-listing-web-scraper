@@ -57,8 +57,14 @@ def scrape_autotrader(search_term):
         logger.debug(f"[{SOURCE}] Trying variation: {variation}")
         logger.debug(f"[{SOURCE}] URL: {url}")
 
-        soup = fetch_page(url)
-        time.sleep(2)  # Add a 2-second delay between requests to be polite
+        try:
+            soup = fetch_page(url)
+        except Exception as e:
+            logger.debug(f"[{SOURCE}] Variation failed (this is normal): {variation}")
+            soup = None
+
+        time.sleep(2) # Be polite with requests
+        
         if not soup:
             logger.debug(f"[{SOURCE}] Failed to fetch: {variation}")
             continue
