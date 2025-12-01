@@ -86,12 +86,15 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          if git diff --quiet docs/index.html; then
-            echo "✓ Dashboard unchanged — skipping commit"
+          # Force add the files (don't rely on git diff, it's unreliable)
+          git add -f docs/index.html
+          git add -f data/listings.json
+          
+          # Check if there are staged changes
+          if git diff --quiet --cached; then
+            echo "✓ No changes to commit"
           else
-            echo "✓ Dashboard updated — committing changes"
-            git add docs/index.html
-            git add data/listings.json
+            echo "✓ Updates detected — committing changes"
             git commit -m "Auto-update listings - Sunday [$(TZ='Africa/Johannesburg' date +'%d-%m-%Y %H:%M:%S SAST')]"
             git push
           fi
