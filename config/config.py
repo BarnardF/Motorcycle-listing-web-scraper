@@ -1,5 +1,5 @@
 from pathlib import Path
-from random import random
+import random
 import os
 
 # ==================== DATA FOLDER ====================
