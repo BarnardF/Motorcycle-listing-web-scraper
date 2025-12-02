@@ -4,7 +4,7 @@ A Python-based web scraper that automatically tracks motorcycle listings across 
 
 ## Features
 
-- **Multi-Site Scraping**: Tracks listings from AutoTrader and Gumtree
+- **Multi-Site Scraping**: Tracks listings from Gumtree and WeBuyCars with automated GitHub Actions
 - **Comprehensive Data**: Captures price, kilometers, condition, and location
 - **Interactive Dashboard**: Toggle between bike-grouped and source-grouped views
 - **Table Format**: Clean, sortable tables with all listing details
@@ -20,10 +20,12 @@ A Python-based web scraper that automatically tracks motorcycle listings across 
 - **Extensible Architecture**: Easy to add new websites
 - **Fuzzy Matching**: Intelligent matching to find variations of bike model names
 - **Search Variations**: Automatically tries different search formats to maximize results
-- **Match Ratio Tuning**: Diagnostic tool to optimize fuzzy matching thresholds
 - **Async Scraping**: Concurrent scraper execution for faster results
 - **Optimized Performance**: ThreadPoolExecutor with multi-threaded scraping
 - **Intelligent Cleanup**: Stale listing detection and removal
+- **Rotating User Agents**: Avoids detection with varied request headers
+- **WeBuyCars Caching**: Daily Playwright API interception for fast, reliable searching
+- **GitHub Actions Automation**: Runs every Sunday at 5:00 AM SAST automatically
 
 ## Quick Start
 
@@ -47,52 +49,62 @@ Create a `bikes.txt` file with the motorcycles you want to track (one per line):
 ```
 Suzuki DS 250 SX V-STROM
 Triumph Scrambler 400 x
-Honda Rebel 500
+Honda CB 500 X
 BMW G 310
 ```
 
-4. **Run the tracker**
+4. **Run locally (optional)**
 ```bash
+# Cache refresh (run once, then daily)
+python cache_webuycars.py
+
+# Run tracker
 python main.py
 ```
 
 This will:
 - Concurrently scrape all configured websites (faster!)
-- Save results to `listings.json`
+- Save results to `data/listings.json`
 - Generate an interactive HTML dashboard in `docs/index.html`
 - Create detailed logs in `tracker.log`
 - Remove stale listings (sold/removed items)
 - Track complete price history for all listings
 
+**OR** - Let GitHub Actions do it automatically! Once set up, your tracker runs every Sunday at 5:00 AM SAST without any manual intervention.
+
 ## Project Structure
 ```
 motorcycle-tracker/
 ├── main.py                     # Main entry point
-├── html_generator.py           # GitHub Pages HTML generator
+├── cache_webuycars.py          # WeBuyCars cache refresh script
 ├── bikes.txt                   # List of bikes to track
-├── listings.json              # Stored listings (auto-generated)
-├── tracker.log                # Detailed logs (auto-generated)
+├── data/
+│   ├── .gitkeep                # Ensures folder is tracked
+│   ├── listings.json           # Stored listings (auto-generated)
+│   └── webuycars_cache.json   # WeBuyCars cache (auto-generated)
 ├── config/
-│   └── config.py              # Configuration settings
+│   └── config.py               # Configuration settings
 ├── docs/
-│   ├── index.html             # GitHub Pages dashboard (auto-generated)
-│   └── styles.css             # Dashboard stylesheet
+│   ├── index.html              # GitHub Pages dashboard (auto-generated)
+│   └── styles.css              # Dashboard stylesheet
 ├── logger/
-│   └── logger.py              # Logging utility
+│   └── logger.py               # Logging utility
 ├── trackers/
 │   ├── __init__.py
-│   ├── baseTracker.py        # Shared functionality
-│   ├── autotraderTracker.py  # AutoTrader scraper
-│   └── gumtreeTracker.py     # Gumtree scraper
-│   └── webuycarsTracker.py     # WeBuyCars scraper (planned)
+│   ├── baseTracker.py          # Shared functionality
+│   ├── gumtreeTracker.py       # Gumtree scraper
+│   └── webuycarsTracker.py     # WeBuyCars cache searcher
+├── template_generator/
+│   └── html_generator.py       # GitHub Pages HTML generator
 ├── utils/
-│   ├── relevant_match.py           # Fuzzy matching engine
+│   ├── relevant_match.py       # Fuzzy matching engine
 │   ├── search_variation_generator.py # Search variation logic
-│   ├── validate_search_term.py      # Input validation
-│   └── listing_builder.py          # Unified listing creator
-├── tune_match_ratio.py         # Match ratio tuning tool
-├── requirements.txt           # Python dependencies
-└── README.md                  # This file
+│   ├── validate_search_term.py # Input validation
+│   └── listing_builder.py      # Unified listing creator
+├── .github/workflows/
+│   └── sunday-tracker.yml      # GitHub Actions automation
+├── requirements.txt            # Python dependencies
+└── README.md                   # This file
 ```
 
 ## GitHub Pages Dashboard
@@ -107,9 +119,9 @@ The tracker automatically generates a beautiful, interactive web dashboard that 
 - Number of sources
 - **Price drops detected** (live counter)
 
-**🔄 Triple-View Toggle**
+**📄 Triple-View Toggle**
 - **By Bike Model** (default): Groups all listings by motorcycle
-- **By Source**: Groups all listings by website (AutoTrader, Gumtree, etc.)
+- **By Source**: Groups all listings by website (Gumtree, WeBuyCars)
 - **Price Drops**: Dedicated view showing only listings with price reductions
 - Instant switching with toggle buttons
 
@@ -122,7 +134,7 @@ The tracker automatically generates a beautiful, interactive web dashboard that 
 **📋 Comprehensive Data Tables**
 
 Each listing shows:
-- **Source**: Which website (AutoTrader, Gumtree)
+- **Source**: Which website (Gumtree, WeBuyCars)
 - **Title**: Full listing title
 - **Price**: Listed price
 - **Kilometers**: Mileage/odometer reading
@@ -156,17 +168,16 @@ git push origin main
    - Your listings will be available at: `https://yourusername.github.io/motorcycle-tracker`
    - GitHub will show you the exact URL in Settings → Pages
 
-### Updating the Dashboard
+### Automatic Updates
 
-Every time you run `python main.py`, the dashboard is automatically updated with the latest listings. To publish changes:
+The GitHub Actions workflow runs every Sunday at 5:00 AM SAST:
+1. Refreshes WeBuyCars cache (Playwright API interception)
+2. Runs the full tracker (Gumtree + WeBuyCars)
+3. Generates updated dashboard
+4. Commits changes automatically
+5. GitHub Pages auto-updates within minutes
 
-```bash
-git add docs/index.html
-git commit -m "Update motorcycle listings"
-git push
-```
-
-GitHub Pages will automatically refresh within a few minutes.
+No manual intervention needed after initial setup!
 
 ## Configuration
 
@@ -174,32 +185,40 @@ GitHub Pages will automatically refresh within a few minutes.
 
 Edit `config/config.py` to customize:
 - **File paths**: Change where data/logs are stored
-- **Request settings**: Adjust timeouts and user agent
+- **Request settings**: Adjust timeouts and user agent rotation
 - **Rate limiting**: Modify sleep intervals between requests
 - **Logging**: Change log levels and formats
+- **Match thresholds**: Adjust fuzzy matching sensitivity
 
 Example:
 ```python
 # File paths
-DATA_FILE = "listings.json"
+DATA_FILE = "data/listings.json"
+WEBUYCARS_CACHE_FILE = "data/webuycars_cache.json"
 BIKE_FILE = "bikes.txt"
 LOG_FILE = "tracker.log"
 
 # Rate limiting (seconds)
-SLEEP_MIN = 2
-SLEEP_MAX = 4
+SLEEP_MIN = 3
+SLEEP_MAX = 5
 
 # Logging
 LOG_LEVEL = "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# Fuzzy matching thresholds
+MATCH_THRESHOLDS = {
+    "gumtree": 0.40,       # Lower = more lenient matching
+    "webuycars": 0.4575,   # Adjust based on your results
+}
 ```
 
 ### Adding Bikes
 
-Edit `bikes.txt` and add bikes in the format: `Brand Model`
+Edit `bikes.txt` and add bikes (one per line):
 ```
 # Adventure bikes
 Suzuki DS 250 SX V-STROM
-BMW G 310 GS
+BMW G 310
 
 # Cruisers
 Honda Rebel 500
@@ -208,80 +227,73 @@ Triumph Bonneville
 # Comments start with #
 ```
 
-**Important:** Remove any trailing spaces or empty lines to avoid scraping issues.
+**Important:** Remove any trailing spaces or empty lines.
 
 ### Match Ratio Tuning
 
-The tracker uses fuzzy matching to find bike listings that match your search terms, even with variations in naming. To optimize the matching threshold:
+If you're getting too many false positives or false negatives:
 
-**Run the tuning tool:**
 ```bash
 python tune_match_ratio.py
 ```
 
-This tests different thresholds against known good/bad matches and recommends the optimal value. Update the thresholds in `config/config.py`:
-```python
-MATCH_THRESHOLDS = {
-    "gumtree": 0.435,      # Threshold for Gumtree fuzzy matching
-    "autotrader": 0.50,    # Threshold for AutoTrader relevance matching
-}
-```
-
-**Diagnostic Tools:**
-- `tune_match_ratio.py`: Find optimal fuzzy match threshold for your use case
+This tests different thresholds and recommends optimal values. Update `MATCH_THRESHOLDS` in `config.py` based on results.
 
 ### Supported Websites
 
 Currently supports:
-- **AutoTrader** (autotrader.co.za) 
-  - Requires "Brand Model" format
-  - Captures: price, kilometers, condition, location
-  - Uses fuzzy matching with search variations
-  
+
 - **Gumtree** (gumtree.co.za) 
   - Flexible search format
-  - Captures: price, kilometers, location
+  - Captures: price, kilometers, location, title
   - Uses fuzzy matching with search variations
+  - Live scraping with rotating user agents
   
 - **WeBuyCars** (webuycars.co.za)
   - Uses Playwright API interception for daily cache refresh
-  - Captures: price, kilometers, location, make, model
-  - Fast local searching with fuzzy matching (no live API calls)
-  - Run `python cache_webuycars.py` daily to refresh listings
+  - Captures: price, kilometers, location, make, model, title
+  - Fast local searching with fuzzy matching
+  - **No live API calls** (uses cached data)
+  - Run `python cache_webuycars.py` daily to refresh cache
 
 ### WeBuyCars Cache System
 
-WeBuyCars uses a **caching approach** instead of live scraping:
+WeBuyCars uses an efficient **caching approach**:
 
 **How it works:**
 1. `cache_webuycars.py` fetches ALL motorcycle listings daily via Playwright API interception
-2. Stores ~400-450 listings in `data/webuycars_cache.json`
+2. Stores ~445 listings in `data/webuycars_cache.json`
 3. `webuycarsTracker.py` searches the local cache using fuzzy matching
-4. No repeated API calls during tracker runs = fast & reliable
+4. No repeated API calls = fast & reliable searches
 
 **Setup:**
 ```bash
-# Initial cache creation
+# One-time setup (or run before tracker)
 python cache_webuycars.py
 
-# Schedule daily (cron/Task Scheduler)
-# Then run main.py normally
+# Then run tracker normally
 python main.py
 ```
 
 **Benefits:**
-  - Fast searches (<100ms vs 10+ seconds)
-  - Respectful to WeBuyCars servers (1 request/day vs dozens)
-  - No search API failures or rate limiting
-  - Price tracking works across cache refreshes
+- ⚡ Fast searches (<100ms)
+- 🔒 Respectful to WeBuyCars servers (1 request/day vs dozens)
+- 🛡️ No search API failures or rate limiting
+- 📊 Price tracking works across cache refreshes
+
+**Schedule daily refresh (Linux/Mac cron):**
+```bash
+crontab -e
+# Add: 0 2 * * * cd /path/to/motorcycle-tracker && python cache_webuycars.py
+```
 
 ### Unified Listing Builder
 
-All scrapers now use a centralized `utils/listing_builder.py` to create listings:
+All scrapers use a centralized `utils/listing_builder.py`:
 
 **Benefits:**
-- **Consistency**: All listings have identical structure across all sources
-- **Price History**: Automatic price tracking for AutoTrader, Gumtree, AND WeBuyCars
+- **Consistency**: All listings have identical structure
+- **Price History**: Automatic tracking across all sources
 - **Maintainability**: Single source of truth for listing format
 - **Easy Expansion**: Add new fields without modifying each scraper
 
@@ -290,38 +302,46 @@ All scrapers now use a centralized `utils/listing_builder.py` to create listings
 from utils.listing_builder import build_listing
 
 listing = build_listing(
-    listing_id="at_12345",
+    listing_id="gt_12345",
     title="2025 Honda CB500X",
     price="R 89,900",
-    url="https://www.autotrader.co.za/...",
+    url="https://www.gumtree.co.za/...",
     search_term="Honda CB 500 X",
-    source="AutoTrader",
-    kilometers="New",
-    location="Sandton",
-    condition="New"
+    source="Gumtree",
+    kilometers="5,000 km",
+    location="Cape Town"
 )
 ```
 
-All listings automatically include `price_history` tracking from first run onward.
+All listings automatically include `price_history` tracking.
+
+### Rotating User Agents
+
+The scraper uses multiple user agents to avoid detection:
+
+```python
+USER_AGENTS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36...",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)...",
+    "Mozilla/5.0 (X11; Linux x86_64)...",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0)...",
+]
+```
+
+Each request uses a random user agent from this list, making requests appear more human-like.
 
 ### Async & Concurrent Scraping
 
 **How it works:**
 - Scraper tasks run in parallel (not sequential)
-- ThreadPoolExecutor with 10 max workers
+- ThreadPoolExecutor with configurable max workers
 - All bikes scraped concurrently across all sites
 - One sleep per bike (not per scraper)
 
-**Performance improvement:**
-- Old way: 3 bikes × 3 sites = 9 requests sequentially = 30+ seconds
-- New way: 3 bikes × 3 sites = 9 requests in parallel = 10-15 seconds
-- Result: **50-66% faster execution**
-
-**Benefits:**
-- ✅ Faster results
-- ✅ More efficient resource usage
-- ✅ Better handling of slow scrapers
-- ✅ Isolated error handling per scraper
+**Performance:**
+- Sequential (old): 13 bikes × 2 sites = 30+ seconds
+- Concurrent (new): 13 bikes × 2 sites = ~3-5 minutes with full data
+- Result: **Efficient resource usage**
 
 ### Stale Listing Detection
 
@@ -329,8 +349,8 @@ All listings automatically include `price_history` tracking from first run onwar
 - Tracks which listings appeared in current run
 - Compares against previous run
 - Removes listings that disappeared (likely sold/removed)
-- Only applies to live scrapers (AutoTrader, Gumtree)
-- WeBuyCars cache listings preserved (refreshed daily)
+- Only applies to live scrapers (Gumtree)
+- WeBuyCars cache listings preserved
 
 **Example:**
 ```
@@ -340,25 +360,12 @@ Action: Remove 5 stale listings automatically
 Result: Clean, current-only data
 ```
 
-**Why it matters:**
-- Keeps dashboard showing only active listings
-- Automatically removes sold items
-- No manual cleanup needed
-
 ## Data Captured
 
-### AutoTrader Listings
-- Title (bike make/model/year)
-- Price
-- Kilometers (odometer reading)
-- Condition (New, Used, Demo)
-- Location (suburb/city)
-- Direct URL
-
 ### Gumtree Listings
-- Title (bike make/model/year)
+- Title (bike make/model/year/description)
 - Price
-- Kilometers (when available in listing)
+- Kilometers (when available)
 - Location (suburb/city)
 - Direct URL
 
@@ -379,42 +386,38 @@ Result: Clean, current-only data
 🏍️  MOTORCYCLE LISTING TRACKER
 ============================================================
 
-📋 Tracking 5 bike model(s) across 2 site(s):
-   • Suzuki DS 250 SX V-STROM
-   • Triumph Scrambler 400 x
-   • Honda Rebel 500
-   • BMW G 310
+📍 Running on GitHub Actions
+ℹ️  AutoTrader disabled (IP blocked on GitHub Actions)
+✓ Using: Gumtree + WeBuyCars
 
-------------------------------------------------------------
-🔍 [1/5] Searching for: Suzuki DS 250 SX V-STROM
-------------------------------------------------------------
+Loaded 13 unique bike model(s) from bikes.txt
+Tracking 13 bike model(s)...
+     • Suzuki DS 250 SX V-STROM
+     • Honda CB 500 X
+     • BMW G 310
 
-[AutoTrader] Searching: Suzuki DS 250 SX V-STROM
-[AutoTrader] Found 3 listing(s) for Suzuki DS 250 SX V-STROM
-[Gumtree] Searching: Suzuki DS 250 SX V-STROM
-[Gumtree] Found 1 listing(s) for Suzuki DS 250 SX V-STROM
+────────────────────────────────────────────────────────────
+Searching for: Suzuki DS 250 SX V-STROM
+────────────────────────────────────────────────────────────
+[Gumtree] Trying 6 variation(s) for Suzuki DS 250 SX V-STROM
+[Gumtree] Variation 'Suzuki 250': 8 found, 6 added, 2 skipped
+[WeBuyCars] Loaded cache (445 listings, last updated: 01/12/2025 09:26:35)
+[WeBuyCars] Found 6 listing(s) matching 'Suzuki DS 250 SX V-STROM'
 
-🆕 4 NEW listing(s) for Suzuki DS 250 SX V-STROM
-   • [AutoTrader] 2025 Suzuki DS 250 SX V-STROM - R 61 800
-   • [AutoTrader] 2025 Suzuki DS 250 SX V-STROM - R 61 800
-   • [AutoTrader] 2025 Suzuki DS 250 SX V-STROM - R 62 420
-   • [Gumtree] 2024 Suzuki V-Strom DS 250 SX - R 48,000
+6 NEW listing(s) for Suzuki DS 250 SX V-STROM
+    --[Gumtree] 2023 Suzuki Vstrom 250 SX - R 50,000
+    --[WeBuyCars] 2025 Suzuki 250 DS 250 - R 49,900
+    ...
 
 ============================================================
-📊 SUMMARY
+SUMMARY
 ============================================================
 
-🎉 TOTAL: 21 NEW LISTING(S) FOUND
+ TOTAL: 46 NEW LISTING(S) FOUND
 
-   • AutoTrader: 19 new listing(s)
-   • Gumtree: 2 new listing(s)
-
-✓ Generated HTML report: docs/index.html
-  Total listings: 21
-  Bikes with listings: 5
-  Sources: 2
-✓ Listings saved successfully
-✓ Tracking complete! Found 21 new listing(s)
+    Gumtree: 25 new listing(s)
+    WeBuyCars: 21 new listing(s)
+============================================================
 ```
 
 ## Price Tracking
@@ -432,13 +435,9 @@ The tracker automatically monitors price changes across runs:
 
 ### Price Drop Detection
 
-When a price drops, you'll see:
-
 **Console Output:**
 ```
-💰 Price drop detected for 2024 Honda Rebel 500: R95,000 → R85,000 (R10,000 drop) [AutoTrader]
-   💰 PRICE DROP: 2024 Honda Rebel 500
-      R 95,000 → R 85,000 (Save R10,000!)
+💰 Price drop detected for 2024 Honda Rebel 500: R95,000 → R85,000 (R10,000 drop) [Gumtree]
 ```
 
 **Dashboard Display:**
@@ -459,271 +458,144 @@ Each listing maintains a complete price history:
 }
 ```
 
-This allows you to track price trends over time and identify the best deals.
-
-### Dashboard View
-
-The generated HTML page shows listings in a clean table format:
-
-**View: By Bike Model**
-```
-Suzuki DS 250 SX V-STROM (4 listings)
-┌────────────┬──────────────────────┬──────────┬────────────┬────────────┬──────┐
-│ Source     │ Title                │ Price    │ Kilometers │ Location   │ Link │
-├────────────┼──────────────────────┼──────────┼────────────┼────────────┼──────┤
-│ AutoTrader │ 2025 Suzuki DS 250   │ R 61,800 │ New        │ Cape Town  │ View │
-│ AutoTrader │ 2025 Suzuki DS 250   │ R 62,420 │ New        │ Pretoria   │ View │
-│ Gumtree    │ 2024 Suzuki V-Strom  │ R 48,000 │ 5,000 km   │ Menlyn     │ View │
-└────────────┴──────────────────────┴──────────┴────────────┴────────────┴──────┘
-```
-
-**View: By Source** (click toggle button)
-```
-AutoTrader (19 listings)
-┌──────────────────────┬──────────────────────┬──────────┬────────────┬────────────┬──────┐
-│ Bike Model           │ Title                │ Price    │ Kilometers │ Location   │ Link │
-├──────────────────────┼──────────────────────┼──────────┼────────────┼────────────┼──────┤
-│ Suzuki DS 250        │ 2025 Suzuki DS 250   │ R 61,800 │ New        │ Cape Town  │ View │
-│ Triumph Speed 400    │ 2025 Triumph Speed   │ R 89,900 │ 500 km     │ Sandton    │ View │
-└──────────────────────┴──────────────────────┴──────────┴────────────┴────────────┴──────┘
-```
+Track price trends over time and identify the best deals!
 
 ## Logging
 
 The tracker creates detailed logs in `tracker.log`:
 
 ```
-2025-11-01 11:28:15 - INFO - Loaded 5 unique bike model(s) from bikes.txt
-2025-11-01 11:28:16 - INFO - [AutoTrader] Searching: Honda Rebel 500
-2025-11-01 11:28:17 - DEBUG - Fetching: https://www.autotrader.co.za/...
-2025-11-01 11:28:18 - INFO - [AutoTrader] Found 3 listing(s) for Honda Rebel 500
-2025-11-01 11:28:19 - WARNING - [AutoTrader] Skipping malformed listing 2
-2025-11-01 11:28:25 - INFO - ✓ Generated HTML report: docs/index.html
+2025-12-01 09:26:35 - INFO - Loaded 13 unique bike model(s) from bikes.txt
+2025-12-01 09:26:36 - INFO - [Gumtree] Trying 6 variation(s) for Suzuki DS 250 SX V-STROM
+2025-12-01 09:26:37 - INFO - [Gumtree] Found 6 listing(s) for Suzuki DS 250 SX V-STROM
+2025-12-01 09:27:45 - INFO - Saved 46 total listing(s) for 13 bike model(s)
+2025-12-01 09:27:46 - INFO - ✓ Generated HTML report: docs/index.html
 ```
 
 **Log Levels:**
-- **DEBUG**: Detailed information for diagnosing problems (URL fetches, parsing details)
-- **INFO**: Confirmation that things are working as expected
-- **WARNING**: Something unexpected happened, but still working (malformed listings skipped)
-- **ERROR**: A serious problem occurred (connection failures, parsing errors)
+- **DEBUG**: Detailed information (URL fetches, parsing details)
+- **INFO**: Confirmation that things are working
+- **WARNING**: Unexpected but working (malformed listings skipped)
+- **ERROR**: Serious problems (connection failures, parsing errors)
 
 Change log level in `config/config.py`:
 ```python
-LOG_LEVEL = "DEBUG"  # For verbose logging
-LOG_LEVEL = "INFO"   # Default (recommended)
-LOG_LEVEL = "ERROR"  # Only show errors
+LOG_LEVEL = "DEBUG"   # Verbose logging
+LOG_LEVEL = "INFO"    # Default (recommended)
+LOG_LEVEL = "ERROR"   # Only errors
 ```
+
+## Troubleshooting
+
+### No listings found for existing bikes
+
+- Check bike name format (exact match on websites)
+- Try different variations (e.g., "CB500X" vs "CB 500 X")
+- Look in `tracker.log` for detailed error messages
+- Enable DEBUG logging: `LOG_LEVEL = "DEBUG"`
+- Verify bike exists on website manually
+
+### Fuzzy Matching Issues
+
+Getting too many false positives or false negatives?
+- Run `python tune_match_ratio.py` to find optimal threshold
+- Check match scores in `tracker.log` (DEBUG level)
+- Adjust `MATCH_THRESHOLDS` in `config/config.py`
+- Lower threshold = catch more variations
+- Higher threshold = filter more strictly
+
+### Kilometers Showing "N/A"
+
+- Some listings don't include mileage information
+- Gumtree listings may not always have kilometers
+- This is normal - data just isn't available on website
+
+### Rate Limiting / Getting Blocked
+
+If getting blocked on Gumtree:
+- Increase sleep intervals in `config/config.py`:
+  ```python
+  SLEEP_MIN = 5
+  SLEEP_MAX = 8
+  ```
+- Run less frequently
+- Check website's `robots.txt`
+
+### WeBuyCars Cache Issues
+
+**"Cache file not found" error:**
+- Run: `python cache_webuycars.py`
+- Check that `data/` folder exists
+- Verify `WEBUYCARS_CACHE_FILE` path in config.py
+
+**"Cache is empty or unavailable":**
+- Cache refresh failed - check `tracker.log` for Playwright errors
+- Ensure Playwright installed: `playwright install`
+- Try running cache refresh manually
+
+**WeBuyCars listings not showing up:**
+- Run cache refresh first: `python cache_webuycars.py`
+- Check `tracker.log` for fuzzy matching scores
+- Run `python tune_match_ratio.py` to optimize thresholds
+
+### GitHub Actions Not Running
+
+- Check Actions tab for workflow status
+- Verify `.github/workflows/sunday-tracker.yml` exists
+- Check that GitHub Actions is enabled in Settings
+- Verify cron syntax is correct (runs Sunday 03:00 UTC = 05:00 SAST)
+
+### GitHub Pages Not Updating
+
+- Wait a few minutes after push (GitHub takes time)
+- Check Actions tab for build errors
+- Verify `docs/index.html` is committed
+- Clear browser cache (Ctrl+Shift+R)
+
+### Toggle Buttons Not Working
+
+- Enable JavaScript in your browser
+- Check browser console (F12 → Console tab)
+- Verify `docs/index.html` includes JavaScript
+- Try a different browser
 
 ## Adding New Websites
 
 Want to track more sites? Here's how:
 
 1. Create a new scraper in `trackers/` folder
-2. Follow the pattern from existing scrapers
+2. Follow the pattern from `gumtreeTracker.py`
 3. Extract: title, price, kilometers, location, URL
-4. Add to `SCRAPERS` list in `main.py`
+4. Use `build_listing()` from `utils/listing_builder.py`
+5. Add to `SCRAPERS` list in `main.py`
 
-**Example:**
-```python
-# trackers/newSiteTracker.py
-from trackers.baseTracker import fetch_page, create_listing
-from logger.logger import logger
-from config.config import NEW_SITE_BASE_URL
-
-SOURCE = "NewSite"
-
-def scrape_newsite(search_term):
-    """Scrape NewSite for a specific search term"""
-    if not search_term or not search_term.strip():
-        logger.warning(f"[{SOURCE}] Skipping empty search term")
-        return {}
-    
-    url = f"{NEW_SITE_BASE_URL}/search?q={search_term}"
-    logger.info(f"[{SOURCE}] Searching: {search_term}")
-    
-    soup = fetch_page(url)
-    if not soup:
-        return {}
-    
-    listings = {}
-    # ... extract listings ...
-    
-    # Add extra fields
-    listings[listing_id]['kilometers'] = kilometers
-    listings[listing_id]['location'] = location
-    
-    logger.info(f"[{SOURCE}] Found {len(listings)} listing(s)")
-    return listings
-```
-
-Then in `main.py`:
-```python
-from trackers.newSiteTracker import scrape_newsite
-
-SCRAPERS = [
-    scrape_autotrader,
-    scrape_gumtree,
-    scrape_newsite  # Add here
-]
-```
-
-## Troubleshooting
-
-### "No listings found" for existing bikes
-
-- Check the bike name format matches the website exactly
-- Try different variations (e.g., "CB500X" vs "CB 500 X")
-- Check if the bike exists on that website
-- Look in `tracker.log` for detailed error messages
-- Enable DEBUG logging to see actual URLs being scraped
-
-### 404 Errors
-
-- Verify the bike model name is correct
-- Some bikes may not be available on all sites
-- Check the website URL structure hasn't changed
-- View the actual URL in `tracker.log` (set `LOG_LEVEL = "DEBUG"`)
-
-### Empty Lines in bikes.txt
-
-- Remove trailing spaces and empty lines
-- Each bike should be on its own line
-- Lines starting with `#` are comments (ignored)
-
-### Fuzzy Matching Issues
-
-If you're getting too many false positives or false negatives:
-- Run `python tune_match_ratio.py` to find optimal threshold
-- Check the match scores in `tracker.log` (set `LOG_LEVEL = "DEBUG"`)
-- Adjust `MATCH_THRESHOLDS` in `config/config.py`
-- Example: Lower threshold to catch more variations, raise it to filter more strictly
-
-
-### Kilometers Showing "N/A"
-
-- Some listings don't include mileage information
-- AutoTrader usually shows "New" for brand new bikes
-- Gumtree listings may not always include kilometers
-- This is normal - the data just isn't available on the website
-
-### Rate Limiting / Getting Blocked
-
-If you're getting blocked:
-- Increase sleep intervals in `config/config.py`:
-  ```python
-  SLEEP_MIN = 4
-  SLEEP_MAX = 7
-  ```
-- Run less frequently
-- Check website's `robots.txt`
-- Review logs for HTTP 429 (Too Many Requests) errors
-
-### WeBuyCars Cache Issues
-
-**"Cache file not found" error:**
-- Run: `python cache_webuycars.py` to create initial cache
-- Check that `data/` folder exists
-- Verify `config.py` has correct `WEBUYCARS_CACHE_FILE` path
-
-**"Cache is empty or unavailable":**
-- Cache refresh failed - check `tracker.log` for Playwright errors
-- Ensure Playwright browsers are installed: `playwright install`
-- Try running cache refresh manually: `python cache_webuycars.py`
-
-**WeBuyCars listings not showing up:**
-- Run cache refresh first: `python cache_webuycars.py`
-- Check `tracker.log` for fuzzy matching scores
-- Verify bike names match listings (try variations manually)
-- Run `python tune_match_ratio.py` to optimize thresholds
-
-### Script Crashes
-
-- Check `tracker.log` for detailed error messages
-- Enable DEBUG logging in `config/config.py`:
-  ```python
-  LOG_LEVEL = "DEBUG"
-  ```
-- Look for patterns in which scraper is failing
-- One scraper failure won't crash the entire script anymore
-
-### Async/Concurrency Issues
-
-**"RuntimeError: asyncio.run() cannot be called from a running event loop"**
-- **Cause:** Script is running inside an existing event loop
-- **Solution:** Only happens in specific environments (rare)
-- **Fix:** Run from command line: `python main.py`
-
-**Workflow hangs or times out**
-- **Cause:** Too many max_workers or slow scrapers
-- **Solution:** Lower `max_workers` in `main.py` to 5 or 8
-- **Check:** Review `tracker.log` for scraper-specific issues
-
-**CPU usage spikes during tracker run**
-- **Expected:** Concurrent scraping uses multiple CPU cores
-- **Cause:** `max_workers=10` means up to 10 parallel requests
-- **Solution:** Lower `max_workers` if this is problematic
-- **Note:** Still much faster than sequential scraping
-
-### GitHub Pages Not Updating
-
-- Make sure you've enabled GitHub Pages in Settings
-- Check that you selected the `/docs` folder
-- Wait a few minutes after pushing (GitHub takes time to rebuild)
-- Check the Actions tab for build errors
-- Verify `docs/index.html` exists and is committed
-- Clear your browser cache to see the latest version
-
-### Toggle Buttons Not Working
-
-- Make sure JavaScript is enabled in your browser
-- Check browser console for errors (F12 → Console tab)
-- Verify `docs/index.html` includes the JavaScript code
-- Try a different browser
+**Code Standards:**
+- Use logging instead of print statements
+- Handle errors gracefully (try-except)
+- Add docstrings to functions
+- Follow existing naming conventions
+- Use `build_listing()` for all listing creation
+- Create utility functions in `utils/` for reusable logic
+- Update `MATCH_THRESHOLDS` in `config.py` if adding new scrapers
+- Use fuzzy matching for flexible search term matching
 
 ## Advanced Usage
-
-### WeBuyCars Cache Refresh
-
-**One-time setup:**
-```bash
-python cache_webuycars.py
-```
-
-**Schedule daily refresh (Linux/Mac):**
-```bash
-# Edit crontab
-crontab -e
-
-# Add this line (runs at 2 AM daily)
-0 2 * * * cd /path/to/motorcycle-tracker && python cache_webuycars.py
-```
-
-**Schedule daily refresh (Windows Task Scheduler):**
-1. Open Task Scheduler
-2. Create Basic Task
-3. Set trigger: Daily at 2:00 AM
-4. Action: Start a program
-5. Program: `python`
-6. Arguments: `C:\path\to\motorcycle-tracker\cache_webuycars.py`
-7. Start in: `C:\path\to\motorcycle-tracker`
-
-The cache will be ready before your tracker runs.
 
 ### Performance Tuning
 
 **Adjust max concurrent workers:**
 
-Edit `main.py`, find:
+Edit `main.py`:
 ```python
-executor = concurrent.futures.ThreadPoolExecutor(max_workers=10)
+executor = concurrent.futures.ThreadPoolExecutor(max_workers=6)
 ```
 
-Change `max_workers` value:
-- `5`: Conservative (less CPU/memory, slower)
-- `10`: Default (balanced)
-- `20`: Aggressive (faster, uses more resources)
+Values:
+- `3-5`: Conservative (less CPU/memory)
+- `6-10`: Default (balanced)
+- `15+`: Aggressive (faster, uses more resources)
 
-**Reduce between-scraper sleep:**
+**Reduce between-request sleep:**
 
 Edit `config/config.py`:
 ```python
@@ -732,53 +604,24 @@ SLEEP_MAX = 4
 ```
 
 **Monitor execution time:**
-- Check `tracker.log` for timing
-- Look for lines like: "Price drop detected" and timestamps
+- Check timestamps in `tracker.log`
 - Compare run times week-to-week
-
-### Running Periodically
-
-**Linux/Mac (cron):**
-```bash
-# Edit crontab
-crontab -e
-
-# Run every day at 9 AM and auto-push to GitHub
-0 9 * * * cd /path/to/motorcycle-tracker && python main.py && git add docs/index.html && git commit -m "Auto-update listings" && git push
-
-# Run every 6 hours
-0 */6 * * * cd /path/to/motorcycle-tracker && python main.py
-```
-
-**Windows (Task Scheduler):**
-1. Open Task Scheduler
-2. Create Basic Task
-3. Set trigger (daily, hourly, etc.)
-4. Action: Start a program
-5. Program: `python`
-6. Arguments: `C:\path\to\motorcycle-tracker\main.py`
-7. Start in: `C:\path\to\motorcycle-tracker`
 
 ### Automated Git Push (Optional)
 
-Create a bash script `update_and_push.sh`:
+Create `update_and_push.sh`:
 ```bash
 #!/bin/bash
 cd /path/to/motorcycle-tracker
+python cache_webuycars.py
 python main.py
 
-# Check if docs/index.html changed
-if git diff --quiet docs/index.html; then
-    echo "No changes to publish"
-else
-    git add docs/index.html
-    git commit -m "Auto-update listings $(date '+%Y-%m-%d %H:%M')"
-    git push
-    echo "Listings updated and pushed to GitHub"
-fi
+git add -f docs/index.html data/listings.json
+git commit -m "Auto-update listings $(date '+%Y-%m-%d %H:%M')" || true
+git push
 ```
 
-Make it executable:
+Make executable:
 ```bash
 chmod +x update_and_push.sh
 ```
@@ -795,20 +638,15 @@ tail -f tracker.log
 grep ERROR tracker.log
 ```
 
-**Count new listings found today:**
-```bash
-grep "NEW listing(s)" tracker.log | grep "$(date +%Y-%m-%d)"
-```
-
 **View specific bike searches:**
 ```bash
-grep "Triumph Speed 400" tracker.log
+grep "Honda CB 500" tracker.log
 ```
 
 ## Roadmap
 
 ### ✅ Phase 1: Foundation (Complete)
-- [x] Multi-site scraping (AutoTrader, Gumtree)
+- [x] Multi-site scraping (Gumtree, WeBuyCars)
 - [x] Duplicate detection
 - [x] Professional logging system
 - [x] Robust error handling
@@ -817,31 +655,36 @@ grep "Triumph Speed 400" tracker.log
 ### ✅ Phase 2: Enhanced Data & UI (Complete)
 - [x] Kilometers/mileage tracking
 - [x] Location data capture
-- [x] Condition tracking (New/Used/Demo)
 - [x] Interactive GitHub Pages dashboard
-- [x] Dual-view tables (by bike / by source)
+- [x] Multiple view options (by bike / by source)
 - [x] Mobile-responsive design
 - [x] Table format with comprehensive data
 
 ### ✅ Phase 3: Price Tracking (Complete)
 - [x] Price history tracking
 - [x] Price drop alerts
-- [x] Visual price drop indicators (strikethrough + green highlighting)
+- [x] Visual price drop indicators
 - [x] Dedicated "Price Drops" view
 
 ### ✅ Phase 3.5: WeBuyCars Enhancement (Complete)
-- [x] Implemented Playwright API interception for cache refresh
-- [x] Daily cache system (~400-450 listings)
-- [x] Local fuzzy matching (handles variations automatically)
-- [x] Removed dependency on unreliable search API
-- [x] Price history tracking for WeBuyCars listings
+- [x] Playwright API interception for cache refresh
+- [x] Daily cache system (~445 listings)
+- [x] Local fuzzy matching
+- [x] Price history tracking for WeBuyCars
 - **Result:** Fast, reliable, respectful to servers
 
-### 📋 Phase 4: Automation & Features
+### ✅ Phase 4: Automation & GitHub Actions (Complete)
+- [x] GitHub Actions workflow
+- [x] Automatic Sunday runs at 5:00 AM SAST
+- [x] Auto-commit cache and dashboard updates
+- [x] Rotating user agents to avoid detection
+- [x] Async/concurrent scraping
+
+### 📋 Phase 5: Future Enhancements
 - [ ] Email/SMS notifications
 - [ ] Command-line arguments (--quiet, --verbose, --bike "Honda Rebel")
 - [ ] More scrapers (OLX, Cars.co.za, dealerships)
-- [ ] Sortable table columns
+- [ ] Sortable/filterable table columns
 - [ ] Filter by price range, kilometers, location
 
 ### 🚀 Future: Full-Stack Upgrade
@@ -863,7 +706,7 @@ This project is for **personal use only**. Please:
 - Don't circumvent anti-scraping measures
 
 **Ethical Guidelines:**
-- Reasonable request intervals (2-4 seconds minimum)
+- Reasonable request intervals (2+ seconds minimum)
 - Proper User-Agent identification
 - Respect rate limits and 429 responses
 - Don't scrape personal/private information
@@ -875,91 +718,68 @@ Contributions are welcome! Please:
 
 1. Fork the repo
 2. Create a feature branch (`git checkout -b feature/new-scraper`)
-3. Follow existing code patterns (error handling, logging, etc.)
+3. Follow existing code patterns
 4. Update documentation if adding features
 5. Test thoroughly with various bikes
-6. Commit changes (`git commit -am 'Add OLX scraper'`)
+6. Commit changes (`git commit -am 'Add feature'`)
 7. Push to branch (`git push origin feature/new-scraper`)
 8. Open a Pull Request
 
-**Code Standards:**
-- Use logging instead of print statements
-- Handle errors gracefully (try-except)
-- Add docstrings to functions
-- Follow existing naming conventions
-- Use async/await for scraper functions (returns dict)
-- Update `config/config.py` for new settings
-- Use `build_listing()` for all listing creation
-- Create utility functions in `utils/` for reusable logic
-- Update `MATCH_THRESHOLDS` in `config.py` if adding new scrapers
-- Use fuzzy matching for flexible search term matching
-- Test with `tune_match_ratio.py` if adding matching logic
-- For new scrapers: follow AutoTrader/Gumtree/WeBuyCars patterns
-
 ## Changelog
 
-### Version 2.4 (Current)
-- **Async Concurrent Scraping**: 50-66% faster with ThreadPoolExecutor
-- **Stale Listing Detection**: Automatically removes sold/removed items
-- **Unified Listing Builder**: Centralized listing creation (`utils/listing_builder.py`)
-- **WeBuyCars Cache System**: Playwright API interception + local fuzzy matching
-- **Price History for All Sources**: AutoTrader, Gumtree, AND WeBuyCars tracked
-- **Fuzzy Matching System**: Intelligent model name variation matching
-- **Search Variations Generator**: Automatically tries alternative search formats
-- **Match Ratio Tuning Tool**: Optimize thresholds with `tune_match_ratio.py`
-- **Improved Error Handling**: Better detection of malformed listings
-- **Enhanced Logging**: Debug-level insights into matching and parsing
+### Version 2.5 (Current)
+- **GitHub Actions Automation**: Runs every Sunday 5:00 AM SAST automatically
+- **Fixed Fuzzy Matching**: Improved matching for Gumtree (threshold 0.40)
+- **Rotating User Agents**: Multiple user agents to avoid detection
+- **Cache Commit Support**: WeBuyCars cache now tracked in Git
+- **HTML Auto-Commit**: Dashboard updates committed to GitHub
+- **Removed AutoTrader**: Disabled on GitHub Actions (503 blocking), works locally
+- **Better Logging**: Cleaner environment detection and reporting
+
+### Version 2.4
+- Async Concurrent Scraping (50-66% faster)
+- Stale Listing Detection
+- Unified Listing Builder
+- WeBuyCars Cache System (Playwright API interception)
+- Price History for All Sources
+- Fuzzy Matching System
+- Search Variations Generator
 
 ### Version 2.3
-- **Price Tracking System**: Full price history and drop detection
-- **Price Drop Alerts**: Visual indicators with strikethrough old prices
-- **Price Drops View**: Dedicated tab showing only discounted listings
-- **Compact Stats Header**: Cleaner, inline statistics display
-- **Enhanced Price Display**: ~~R 95,000~~ R 85,000 format for drops
-- **Green Row Highlighting**: Easy visual identification of deals
-- **Improved Data Persistence**: Price history carried across runs
+- Price Tracking System with history
+- Price Drop Alerts with visual indicators
+- Price Drops dedicated view
+- Enhanced price display
 
 ### Version 2.2
-- Added kilometers/mileage tracking for all listings
-- Added location data (suburb/city) for all listings
-- Added condition tracking (New/Used/Demo) for AutoTrader
-- Redesigned dashboard with interactive table format
-- Dual-view toggle: switch between bike-grouped and source-grouped tables
-- Improved data extraction for Gumtree listings
-- Enhanced error handling for malformed listings
-- South African date format (DD/MM/YYYY) in dashboard
+- Kilometers/mileage tracking
+- Location data capture
+- Interactive dashboard with table format
+- Dual-view toggle (by bike / by source)
 
 ### Version 2.1
-- Added GitHub Pages HTML dashboard
-- Beautiful dark theme with red accents
+- GitHub Pages HTML dashboard
+- Dark theme with red accents
 - Mobile-responsive design
-- Auto-generates static HTML report
-- Statistics and organized listing cards
 
 ### Version 2.0
-- Added centralized configuration (`config/config.py`)
-- Implemented professional logging system
-- Enhanced error handling and resilience
-- Random sleep intervals for human-like behavior
-- Better validation and debugging tools
-- Fixed typos and improved output formatting
+- Centralized configuration
+- Professional logging system
+- Enhanced error handling
 
 ### Version 1.0
-- Initial release
-- AutoTrader and Gumtree scrapers
-- Basic duplicate detection
-- JSON storage for listings
+- Initial release (AutoTrader + Gumtree scrapers)
 
 ## Acknowledgments
 
 - Built as a learning project to understand web scraping and automation
 - Inspired by the need to find good motorcycle deals in South Africa
-- This project was created with the assistance of AI (Claude)
+- Created with the assistance of AI (Claude)
 - HTML dashboard design inspired by [HTML5 UP](https://html5up.net/)
-- Thanks to the Python community for excellent libraries (requests, BeautifulSoup)
+- Thanks to the Python community for excellent libraries
 
 ---
 
 **Questions or Issues?** Check `tracker.log` first, then open an issue on GitHub!
 
-**Want to see a live demo?** Check out the example dashboard at your GitHub Pages URL!
+**Live Demo:** Check out your GitHub Pages dashboard at `https://yourusername.github.io/motorcycle-tracker`
