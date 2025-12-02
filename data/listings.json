@@ -1,59 +1,5 @@
 {
   "Suzuki DS 250 SX V-STROM": {
-    "autotrader_27699115": {
-      "id": "autotrader_27699115",
-      "title": "2025 Suzuki DS 250 SX V-STROM",
-      "price": "R 61 800",
-      "price_history": [
-        {
-          "date": "01-12-2025 09:26:40",
-          "price": "R 61 800"
-        }
-      ],
-      "url": "https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27699115?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
-      "search_term": "Suzuki DS 250 SX V-STROM",
-      "source": "AutoTrader",
-      "found_date": "01-12-2025 09:26:40",
-      "kilometers": "N/A",
-      "condition": "New",
-      "location": "Kempton Park Central,Kempton Park"
-    },
-    "autotrader_27931826": {
-      "id": "autotrader_27931826",
-      "title": "2025 Suzuki DS 250 SX V-STROM",
-      "price": "R 61 800",
-      "price_history": [
-        {
-          "date": "01-12-2025 09:26:40",
-          "price": "R 61 800"
-        }
-      ],
-      "url": "https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27931826?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
-      "search_term": "Suzuki DS 250 SX V-STROM",
-      "source": "AutoTrader",
-      "found_date": "01-12-2025 09:26:40",
-      "kilometers": "N/A",
-      "condition": "New",
-      "location": "Kempton Park Central,Kempton Park"
-    },
-    "autotrader_27970434": {
-      "id": "autotrader_27970434",
-      "title": "2025 Suzuki DS 250 SX V-STROM",
-      "price": "R 62 420",
-      "price_history": [
-        {
-          "date": "01-12-2025 09:26:40",
-          "price": "R 62 420"
-        }
-      ],
-      "url": "https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27970434?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1",
-      "search_term": "Suzuki DS 250 SX V-STROM",
-      "source": "AutoTrader",
-      "found_date": "01-12-2025 09:26:40",
-      "kilometers": "N/A",
-      "condition": "New",
-      "location": "Capital Park,Pretoria"
-    },
     "gumtree_10013432943091013436132409": {
       "id": "gumtree_10013432943091013436132409",
       "title": "*SUPER RARE*  2019 Suzuki DL250X V-Strom",
@@ -67,9 +13,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/hermanus/super-rare-2019-suzuki-dl250x-v+strom/10013432943091013436132409",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:26:42",
+      "found_date": "02-12-2025 09:44:37",
       "kilometers": "28,000km",
-      "location": "Hermanus"
+      "location": "Hermanus",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013427327121013072243809": {
       "id": "gumtree_10013427327121013072243809",
@@ -84,9 +32,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/durbanville/2007-suzuki-rmz-250/10013427327121013072243809",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:26:42",
+      "found_date": "02-12-2025 09:44:37",
       "kilometers": "1,000km",
-      "location": "Durbanville"
+      "location": "Durbanville",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013429161411010930588509": {
       "id": "gumtree_10013429161411010930588509",
@@ -101,9 +51,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/port-elizabeth/motorcycle-suzuki-gsx-250-f/10013429161411010930588509",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:26:42",
+      "found_date": "02-12-2025 09:44:37",
       "kilometers": "9,250km",
-      "location": "Port Elizabeth"
+      "location": "Port Elizabeth",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013415721851010183766509": {
       "id": "gumtree_10013415721851010183766509",
@@ -118,9 +70,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/centurion/suzuki-250-v+strom/10013415721851010183766509",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:26:42",
+      "found_date": "02-12-2025 09:44:37",
       "kilometers": "1,900km",
-      "location": "Centurion"
+      "location": "Centurion",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013355567521010167017509": {
       "id": "gumtree_10013355567521010167017509",
@@ -135,9 +89,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/northern-pretoria/suzuki-ltz-250-quad-sport/10013355567521010167017509",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:26:42",
+      "found_date": "02-12-2025 09:44:37",
       "kilometers": "1,234km",
-      "location": "Northern Pretoria"
+      "location": "Northern Pretoria",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013386498981011153953009": {
       "id": "gumtree_10013386498981011153953009",
@@ -152,9 +108,91 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/mosselbaai/2023-suzuki-vstrom-250-sx/10013386498981011153953009",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:26:42",
+      "found_date": "02-12-2025 09:44:37",
       "kilometers": "6,800km",
-      "location": "Mosselbaai"
+      "location": "Mosselbaai",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27931826": {
+      "id": "autotrader_27931826",
+      "title": "2025 Suzuki DS 250 SX V-STROM",
+      "price": "R 61 800",
+      "price_history": [
+        {
+          "date": "01-12-2025 09:26:40",
+          "price": "R 61 800"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27931826?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Suzuki DS 250 SX V-STROM",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:44:35",
+      "kilometers": "N/A",
+      "condition": "New",
+      "location": "Kempton Park Central,Kempton Park",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27699115": {
+      "id": "autotrader_27699115",
+      "title": "2025 Suzuki DS 250 SX V-STROM",
+      "price": "R 61 800",
+      "price_history": [
+        {
+          "date": "01-12-2025 09:26:40",
+          "price": "R 61 800"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27699115?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Suzuki DS 250 SX V-STROM",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:44:35",
+      "kilometers": "N/A",
+      "condition": "New",
+      "location": "Kempton Park Central,Kempton Park",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27970434": {
+      "id": "autotrader_27970434",
+      "title": "2025 Suzuki DS 250 SX V-STROM",
+      "price": "R 62 420",
+      "price_history": [
+        {
+          "date": "01-12-2025 09:26:40",
+          "price": "R 62 420"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-sx-v-strom/27970434?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "Suzuki DS 250 SX V-STROM",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:44:35",
+      "kilometers": "N/A",
+      "condition": "New",
+      "location": "Capital Park,Pretoria",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27779467": {
+      "id": "autotrader_27779467",
+      "title": "2025 Suzuki DS 250 V-STROM",
+      "price": "R 61 800",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:03:42",
+          "price": "R 61 800"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/suzuki/ds-250-v-strom/27779467?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Suzuki DS 250 SX V-STROM",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:44:48",
+      "kilometers": "N/A",
+      "condition": "New",
+      "location": "Kempton Park Central,Kempton Park",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_7E9F13590": {
       "id": "webuycars_7E9F13590",
@@ -169,9 +207,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/DS/7E9F13590",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:26:36",
+      "found_date": "02-12-2025 09:44:31",
       "kilometers": "N/A",
-      "location": "Midstream (GP)"
+      "location": "Midstream (GP)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_457106339": {
       "id": "webuycars_457106339",
@@ -186,9 +226,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/250/457106339",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:26:36",
+      "found_date": "02-12-2025 09:44:31",
       "kilometers": "1,632 km",
-      "location": "Germiston (GP)"
+      "location": "Germiston (GP)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_F7C213165": {
       "id": "webuycars_F7C213165",
@@ -203,9 +245,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/250/F7C213165",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:26:36",
+      "found_date": "02-12-2025 09:44:31",
       "kilometers": "2,500 km",
-      "location": "Gqeberha (EC)"
+      "location": "Gqeberha (EC)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_2EEF08786": {
       "id": "webuycars_2EEF08786",
@@ -220,9 +264,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/250/2EEF08786",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:26:36",
+      "found_date": "02-12-2025 09:44:31",
       "kilometers": "5,370 km",
-      "location": "Silver Lakes (GP)"
+      "location": "Silver Lakes (GP)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_F6EB11634": {
       "id": "webuycars_F6EB11634",
@@ -237,9 +283,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/250/F6EB11634",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:26:36",
+      "found_date": "02-12-2025 09:44:31",
       "kilometers": "5,975 km",
-      "location": "Dome (GP)"
+      "location": "Dome (GP)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_74CA03829": {
       "id": "webuycars_74CA03829",
@@ -254,9 +302,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/250/74CA03829",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:26:36",
+      "found_date": "02-12-2025 09:44:31",
       "kilometers": "8,090 km",
-      "location": "Midstream (GP)"
+      "location": "Midstream (GP)",
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Honda CB 500 X": {
@@ -273,9 +323,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/pinetown/honda-nx500/10013320405561010354228509",
       "search_term": "Honda CB 500 X",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:27:03",
+      "found_date": "02-12-2025 09:44:59",
       "kilometers": "1km",
-      "location": "Pinetown"
+      "location": "Pinetown",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013318795501012895313109": {
       "id": "gumtree_10013318795501012895313109",
@@ -290,9 +342,51 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/pietermaritzburg/2022-honda-cb500x/10013318795501012895313109",
       "search_term": "Honda CB 500 X",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:27:05",
+      "found_date": "02-12-2025 09:45:03",
       "kilometers": "8,403km",
-      "location": "Pietermaritzburg"
+      "location": "Pietermaritzburg",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27958048": {
+      "id": "autotrader_27958048",
+      "title": "2023 Honda CB 500 X",
+      "price": "R 99 950",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:03:53",
+          "price": "R 99 950"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/honda/cb-500-x/27958048?vf=3&db=1&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "Honda CB 500 X",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:44:58",
+      "kilometers": "9 800 km",
+      "condition": "Used",
+      "location": "Lavalia,George",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28107523": {
+      "id": "autotrader_28107523",
+      "title": "2022 Honda CB 500 X",
+      "price": "R 99 950",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:03:53",
+          "price": "R 99 950"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/honda/cb-500-x/28107523?vf=3&db=1&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "Honda CB 500 X",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:44:58",
+      "kilometers": "7 500 km",
+      "condition": "Used",
+      "location": "Lavalia,George",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_513611610": {
       "id": "webuycars_513611610",
@@ -307,9 +401,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Honda/CB/513611610",
       "search_term": "Honda CB 500 X",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:27:00",
+      "found_date": "02-12-2025 09:44:54",
       "kilometers": "11,502 km",
-      "location": "Dome (GP)"
+      "location": "Dome (GP)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_834D12301": {
       "id": "webuycars_834D12301",
@@ -324,9 +420,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBF/834D12301",
       "search_term": "Honda CB 500 X",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:27:00",
+      "found_date": "02-12-2025 09:44:54",
       "kilometers": "N/A",
-      "location": "Gqeberha (EC)"
+      "location": "Gqeberha (EC)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_B12E14936": {
       "id": "webuycars_B12E14936",
@@ -341,9 +439,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/B12E14936",
       "search_term": "Honda CB 500 X",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:27:00",
+      "found_date": "02-12-2025 09:44:54",
       "kilometers": "22,834 km",
-      "location": "Riverhorse (KZN)"
+      "location": "Riverhorse (KZN)",
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Kawasaki Ninja 400": {
@@ -360,9 +460,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/pinetown/2023-kawasaki-ninja-400-se-abs-demo/10012465812701010354228509",
       "search_term": "Kawasaki Ninja 400",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:27:22",
+      "found_date": "02-12-2025 09:45:17",
       "kilometers": "200km",
-      "location": "Pinetown"
+      "location": "Pinetown",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013417692861010198692009": {
       "id": "gumtree_10013417692861010198692009",
@@ -377,9 +479,31 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/bluff/2021-kawasaki-ninja-400/10013417692861010198692009",
       "search_term": "Kawasaki Ninja 400",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:27:22",
+      "found_date": "02-12-2025 09:45:17",
       "kilometers": "4,200km",
-      "location": "Bluff"
+      "location": "Bluff",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27919265": {
+      "id": "autotrader_27919265",
+      "title": "2022 Kawasaki NINJA 400",
+      "price": "R 109 999",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:11",
+          "price": "R 109 999"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/kawasaki/ninja-400/27919265?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "Kawasaki Ninja 400",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:19",
+      "kilometers": "8 319 km",
+      "condition": "Used",
+      "location": "Bardene,Boksburg",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_319C05189": {
       "id": "webuycars_319C05189",
@@ -394,12 +518,274 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Ninja/319C05189",
       "search_term": "Kawasaki Ninja 400",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:27:21",
+      "found_date": "02-12-2025 09:45:15",
       "kilometers": "17,000 km",
-      "location": "Dome (GP)"
+      "location": "Dome (GP)",
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Triumph Scrambler 400 x": {
+    "autotrader_28291204": {
+      "id": "autotrader_28291204",
+      "title": "2025 Triumph Scrambler 400 X",
+      "price": "R 99 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:29",
+          "price": "R 99 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28291204?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:36",
+      "kilometers": "100 km",
+      "condition": "Used",
+      "location": "Cape Town City Centre,Cape Town",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28276407": {
+      "id": "autotrader_28276407",
+      "title": "2024 Triumph Scrambler 400 X",
+      "price": "R 85 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:29",
+          "price": "R 85 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28276407?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:36",
+      "kilometers": "3 500 km",
+      "condition": "Used",
+      "location": "Kramerville,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28174507": {
+      "id": "autotrader_28174507",
+      "title": "2024 Triumph Scrambler 400 X",
+      "price": "R 89 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:29",
+          "price": "R 89 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28174507?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:36",
+      "kilometers": "3 836 km",
+      "condition": "Used",
+      "location": "Cape Town City Centre,Cape Town",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28156836": {
+      "id": "autotrader_28156836",
+      "title": "2024 Triumph Scrambler 400 X",
+      "price": "R 85 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:29",
+          "price": "R 85 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28156836?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:36",
+      "kilometers": "12 701 km",
+      "condition": "Used",
+      "location": "Cape Town City Centre,Cape Town",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28148971": {
+      "id": "autotrader_28148971",
+      "title": "2025 Triumph Scrambler 400 X",
+      "price": "R 120 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:29",
+          "price": "R 120 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28148971?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:36",
+      "kilometers": "100 km",
+      "condition": "Used",
+      "location": "Centurion Central,Centurion",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28028285": {
+      "id": "autotrader_28028285",
+      "title": "2025 Triumph Scrambler 400 X",
+      "price": "R 99 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:29",
+          "price": "R 99 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28028285?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:36",
+      "kilometers": "100 km",
+      "condition": "Used",
+      "location": "Kramerville,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28028258": {
+      "id": "autotrader_28028258",
+      "title": "2025 Triumph Scrambler 400 X",
+      "price": "R 99 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:29",
+          "price": "R 99 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28028258?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:36",
+      "kilometers": "100 km",
+      "condition": "Used",
+      "location": "Kramerville,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28028257": {
+      "id": "autotrader_28028257",
+      "title": "2025 Triumph Scrambler 400 X",
+      "price": "R 99 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:29",
+          "price": "R 99 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28028257?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:36",
+      "kilometers": "100 km",
+      "condition": "Used",
+      "location": "Kramerville,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28028255": {
+      "id": "autotrader_28028255",
+      "title": "2025 Triumph Scrambler 400 X",
+      "price": "R 99 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:29",
+          "price": "R 99 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28028255?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:36",
+      "kilometers": "100 km",
+      "condition": "Used",
+      "location": "Kramerville,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28030837": {
+      "id": "autotrader_28030837",
+      "title": "2025 Triumph Scrambler 400 X",
+      "price": "R 89 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:29",
+          "price": "R 89 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400-x/28030837?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:36",
+      "kilometers": "600 km",
+      "condition": "Used",
+      "location": "Centurion Central,Centurion",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27974802": {
+      "id": "autotrader_27974802",
+      "title": "2025 Triumph Scrambler 400",
+      "price": "R 89 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:38",
+          "price": "R 89 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400/27974802?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:46",
+      "kilometers": "2 800 km",
+      "condition": "Used",
+      "location": "Kramerville,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27956363": {
+      "id": "autotrader_27956363",
+      "title": "2025 Triumph Scrambler 400",
+      "price": "R 89 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:38",
+          "price": "R 89 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400/27956363?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:46",
+      "kilometers": "2 000 km",
+      "condition": "Used",
+      "location": "Kramerville,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27944158": {
+      "id": "autotrader_27944158",
+      "title": "2025 Triumph Scrambler 400",
+      "price": "R 94 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:04:38",
+          "price": "R 94 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/scrambler-400/27944158?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Scrambler 400 x",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:45:46",
+      "kilometers": "799 km",
+      "condition": "Used",
+      "location": "Centurion Central,Centurion",
+      "price_dropped": false,
+      "old_price": null
+    },
     "webuycars_97BD12912": {
       "id": "webuycars_97BD12912",
       "title": "2019 Triumph Scrambler Street Scrambler",
@@ -413,9 +799,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Scrambler/97BD12912",
       "search_term": "Triumph Scrambler 400 x",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:27:37",
+      "found_date": "02-12-2025 09:45:33",
       "kilometers": "16,469 km",
-      "location": "East London (EC)"
+      "location": "East London (EC)",
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Triumph Scrambler 900": {
@@ -432,9 +820,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/george/triumph-speed-twin-900/10013424411931010005469309",
       "search_term": "Triumph Scrambler 900",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:28:01",
+      "found_date": "02-12-2025 09:45:57",
       "kilometers": "1,000km",
-      "location": "George"
+      "location": "George",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_97BD12912": {
       "id": "webuycars_97BD12912",
@@ -449,12 +839,155 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Scrambler/97BD12912",
       "search_term": "Triumph Scrambler 900",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:27:58",
+      "found_date": "02-12-2025 09:45:53",
       "kilometers": "16,469 km",
-      "location": "East London (EC)"
+      "location": "East London (EC)",
+      "price_dropped": false,
+      "old_price": null
     }
   },
-  "Triumph Speed 400": {},
+  "Triumph Speed 400": {
+    "autotrader_28237637": {
+      "id": "autotrader_28237637",
+      "title": "2024 Triumph Speed 400",
+      "price": "R 85 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:05",
+          "price": "R 85 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28237637?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Speed 400",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:14",
+      "kilometers": "9 952 km",
+      "condition": "Used",
+      "location": "Boksburg West,Boksburg",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28136958": {
+      "id": "autotrader_28136958",
+      "title": "2024 Triumph Speed 400",
+      "price": "R 89 990",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:05",
+          "price": "R 89 990"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28136958?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4",
+      "search_term": "Triumph Speed 400",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:14",
+      "kilometers": "22 km",
+      "condition": "Used",
+      "location": "Paulshof,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28245203": {
+      "id": "autotrader_28245203",
+      "title": "2025 Triumph Speed 400",
+      "price": "R 89 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:05",
+          "price": "R 89 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28245203?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Speed 400",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:14",
+      "kilometers": "100 km",
+      "condition": "Used",
+      "location": "Kramerville,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28245202": {
+      "id": "autotrader_28245202",
+      "title": "2025 Triumph Speed 400",
+      "price": "R 89 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:05",
+          "price": "R 89 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28245202?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Speed 400",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:14",
+      "kilometers": "100 km",
+      "condition": "Used",
+      "location": "Kramerville,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28210472": {
+      "id": "autotrader_28210472",
+      "title": "2025 Triumph Speed 400",
+      "price": "R 89 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:05",
+          "price": "R 89 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28210472?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Speed 400",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:14",
+      "kilometers": "100 km",
+      "condition": "Used",
+      "location": "Kramerville,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28164864": {
+      "id": "autotrader_28164864",
+      "title": "2024 Triumph Speed 400",
+      "price": "R 84 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:05",
+          "price": "R 84 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/28164864?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Speed 400",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:14",
+      "kilometers": "3 650 km",
+      "condition": "Used",
+      "location": "Centurion Central,Centurion",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27828439": {
+      "id": "autotrader_27828439",
+      "title": "2025 Triumph Speed 400",
+      "price": "R 85 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:05",
+          "price": "R 85 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/triumph/speed-400/27828439?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Triumph Speed 400",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:14",
+      "kilometers": "1 750 km",
+      "condition": "Used",
+      "location": "Centurion Central,Centurion",
+      "price_dropped": false,
+      "old_price": null
+    }
+  },
   "yamaha xsr 700": {
     "gumtree_10013423932061012659766309": {
       "id": "gumtree_10013423932061012659766309",
@@ -469,9 +1002,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/modimolle-nylstroom/2006-yamaha-raptor-700/10013423932061012659766309",
       "search_term": "yamaha xsr 700",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:28:35",
+      "found_date": "02-12-2025 09:46:33",
       "kilometers": "10,000km",
-      "location": "Modimolle / Nylstroom"
+      "location": "Modimolle / Nylstroom",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013430126281010001272009": {
       "id": "gumtree_10013430126281010001272009",
@@ -486,9 +1021,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/kempton-park/yamaha-raptor-700r/10013430126281010001272009",
       "search_term": "yamaha xsr 700",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:28:35",
+      "found_date": "02-12-2025 09:46:33",
       "kilometers": "2km",
-      "location": "Kempton Park"
+      "location": "Kempton Park",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013423044341010806790709": {
       "id": "gumtree_10013423044341010806790709",
@@ -503,9 +1040,30 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/gillitts/yamaha-tenere-700/10013423044341010806790709",
       "search_term": "yamaha xsr 700",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:28:35",
+      "found_date": "02-12-2025 09:46:33",
       "kilometers": "3,100km",
-      "location": "Gillitts"
+      "location": "Gillitts",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "gumtree_10013434854271013437147209": {
+      "id": "gumtree_10013434854271013437147209",
+      "title": "2012 Yamaha Raptor 700",
+      "price": "R 129,500",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:21",
+          "price": "R 129,500"
+        }
+      ],
+      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/blouberg/2012-yamaha-raptor-700/10013434854271013437147209",
+      "search_term": "yamaha xsr 700",
+      "source": "Gumtree",
+      "found_date": "02-12-2025 09:46:33",
+      "kilometers": "123km",
+      "location": "Blouberg",
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Ducati Scrambler": {
@@ -522,9 +1080,170 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/retreat/2015-ducati-x-scrambler-64-bike-bros-motorcycles/10012503439581011067160209",
       "search_term": "Ducati Scrambler",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:28:50",
+      "found_date": "02-12-2025 09:46:48",
       "kilometers": "11,349km",
-      "location": "Retreat"
+      "location": "Retreat",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "gumtree_10013434253351010003065109": {
+      "id": "gumtree_10013434253351010003065109",
+      "title": "Ducati Scrambler 800 Urban Enduro 2015",
+      "price": "R 129,000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:35",
+          "price": "R 129,000"
+        }
+      ],
+      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/other/ducati-scrambler-800-urban-enduro-2015/10013434253351010003065109",
+      "search_term": "Ducati Scrambler",
+      "source": "Gumtree",
+      "found_date": "02-12-2025 09:46:48",
+      "kilometers": "11,100km",
+      "location": "Other",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28281102": {
+      "id": "autotrader_28281102",
+      "title": "2016 Ducati Scrambler",
+      "price": "R 109 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:37",
+          "price": "R 109 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28281102?vf=2&db=0&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Ducati Scrambler",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:50",
+      "kilometers": "23 499 km",
+      "condition": "Used",
+      "location": "Gonubie,East London",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28106824": {
+      "id": "autotrader_28106824",
+      "title": "2015 Ducati Scrambler",
+      "price": "R 109 990",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:37",
+          "price": "R 109 990"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28106824?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4",
+      "search_term": "Ducati Scrambler",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:50",
+      "kilometers": "10 938 km",
+      "condition": "Used",
+      "location": "Paulshof,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28016790": {
+      "id": "autotrader_28016790",
+      "title": "2022 Ducati Scrambler",
+      "price": "R 179 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:37",
+          "price": "R 179 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28016790?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Ducati Scrambler",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:50",
+      "kilometers": "5 073 km",
+      "condition": "Used",
+      "location": "Zwartkop,Centurion",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27127893": {
+      "id": "autotrader_27127893",
+      "title": "2025 Ducati Scrambler",
+      "price": "R 198 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:37",
+          "price": "R 198 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/27127893?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "Ducati Scrambler",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:50",
+      "kilometers": "N/A",
+      "condition": "New",
+      "location": "Zwartkop,Centurion",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28234547": {
+      "id": "autotrader_28234547",
+      "title": "2025 Ducati Scrambler",
+      "price": "R 284 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:37",
+          "price": "R 284 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28234547?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "Ducati Scrambler",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:50",
+      "kilometers": "N/A",
+      "condition": "New",
+      "location": "Claremont,Cape Town",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28217189": {
+      "id": "autotrader_28217189",
+      "title": "2025 Ducati Scrambler",
+      "price": "R 192 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:37",
+          "price": "R 192 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28217189?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "Ducati Scrambler",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:50",
+      "kilometers": "N/A",
+      "condition": "New",
+      "location": "Claremont,Cape Town",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28204473": {
+      "id": "autotrader_28204473",
+      "title": "2025 Ducati Scrambler",
+      "price": "R 242 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:37",
+          "price": "R 242 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/ducati/scrambler/28204473?vf=1&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "Ducati Scrambler",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:50",
+      "kilometers": "N/A",
+      "condition": "New",
+      "location": "Claremont,Cape Town",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_D3D901140": {
       "id": "webuycars_D3D901140",
@@ -539,9 +1258,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Ducati/Scrambler/D3D901140",
       "search_term": "Ducati Scrambler",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:28:49",
+      "found_date": "02-12-2025 09:46:46",
       "kilometers": "11,221 km",
-      "location": "Richmond (WC)"
+      "location": "Richmond (WC)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_930609871": {
       "id": "webuycars_930609871",
@@ -556,9 +1277,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Ducati/Scrambler/930609871",
       "search_term": "Ducati Scrambler",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:28:49",
+      "found_date": "02-12-2025 09:46:46",
       "kilometers": "23,488 km",
-      "location": "Silver Lakes (GP)"
+      "location": "Silver Lakes (GP)",
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Yamaha MT 07": {
@@ -575,9 +1298,31 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/kraaifontein/2025-yamaha-mt07-+-mt-07-new/10013416804491010004286409",
       "search_term": "Yamaha MT 07",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:28:58",
+      "found_date": "02-12-2025 09:46:55",
       "kilometers": "N/A",
-      "location": "Kraaifontein"
+      "location": "Kraaifontein",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28144007": {
+      "id": "autotrader_28144007",
+      "title": "2020 Yamaha MT 07",
+      "price": "R 129 950",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:43",
+          "price": "R 129 950"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/yamaha/mt-07/28144007?vf=3&db=1&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "Yamaha MT 07",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:46:56",
+      "kilometers": "21 000 km",
+      "condition": "Used",
+      "location": "Lavalia,George",
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "BMW G 310": {
@@ -594,9 +1339,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/benoni/2023-bmw-310-45-g450/10013432294351010054329109",
       "search_term": "BMW G 310",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:29:17",
+      "found_date": "02-12-2025 09:47:14",
       "kilometers": "200km",
-      "location": "Benoni"
+      "location": "Benoni",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013307002971010167017509": {
       "id": "gumtree_10013307002971010167017509",
@@ -611,9 +1358,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/northern-pretoria/2021-bmw-gs-310/10013307002971010167017509",
       "search_term": "BMW G 310",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:29:17",
+      "found_date": "02-12-2025 09:47:14",
       "kilometers": "22,000km",
-      "location": "Northern Pretoria"
+      "location": "Northern Pretoria",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013251672391010002889209": {
       "id": "gumtree_10013251672391010002889209",
@@ -628,9 +1377,310 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/montague-gardens/bmw-310/10013251672391010002889209",
       "search_term": "BMW G 310",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:29:18",
+      "found_date": "02-12-2025 09:47:14",
       "kilometers": "17,000km",
-      "location": "Montague Gardens"
+      "location": "Montague Gardens",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "gumtree_10013434427341012587794309": {
+      "id": "gumtree_10013434427341012587794309",
+      "title": "Bmw G 310 R 300 Cc (excellent Condition)",
+      "price": "R 45,000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:57",
+          "price": "R 45,000"
+        }
+      ],
+      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/johannesburg-south/bmw-g-310-r-300-cc-excellent-condition/10013434427341012587794309",
+      "search_term": "BMW G 310",
+      "source": "Gumtree",
+      "found_date": "02-12-2025 09:47:11",
+      "kilometers": "22,000km",
+      "location": "Johannesburg South",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28053462": {
+      "id": "autotrader_28053462",
+      "title": "2025 BMW G 310",
+      "price": "R 84 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:05:58",
+          "price": "R 84 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g-310/28053462?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:14",
+      "kilometers": "130 km",
+      "condition": "Used",
+      "location": "Montana Tuine,Pretoria",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28299793": {
+      "id": "autotrader_28299793",
+      "title": "2018 BMW G310",
+      "price": "R 64 990",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 64 990"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28299793?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "9 427 km",
+      "condition": "Used",
+      "location": "Paulshof,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28284192": {
+      "id": "autotrader_28284192",
+      "title": "2022 BMW G310",
+      "price": "R 65 990",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 65 990"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28284192?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "5 228 km",
+      "condition": "Used",
+      "location": "Paulshof,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28271751": {
+      "id": "autotrader_28271751",
+      "title": "2018 BMW G310",
+      "price": "R 59 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 59 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28271751?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "4 696 km",
+      "condition": "Used",
+      "location": "Boksburg West,Boksburg",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28261977": {
+      "id": "autotrader_28261977",
+      "title": "2023 BMW G310",
+      "price": "R 74 990",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 74 990"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28261977?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "746 km",
+      "condition": "Used",
+      "location": "Paulshof,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28260564": {
+      "id": "autotrader_28260564",
+      "title": "2024 BMW G310",
+      "price": "R 79 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 79 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28260564?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "2 554 km",
+      "condition": "Used",
+      "location": "Boksburg West,Boksburg",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28238074": {
+      "id": "autotrader_28238074",
+      "title": "2025 BMW G310",
+      "price": "R 79 999",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 79 999"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28238074?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "549 km",
+      "condition": "Used",
+      "location": "Cedar Creek,Randburg",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28180298": {
+      "id": "autotrader_28180298",
+      "title": "2023 BMW G310",
+      "price": "R 69 990",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 69 990"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28180298?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "2 904 km",
+      "condition": "Used",
+      "location": "Paulshof,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28152738": {
+      "id": "autotrader_28152738",
+      "title": "2022 BMW G310",
+      "price": "R 79 990",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 79 990"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28152738?vf=3&db=1&s360=0&so=1&pl=0&pr=5&po=1&pq=0&sp=4",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "3 279 km",
+      "condition": "Used",
+      "location": "Paulshof,Sandton",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28023939": {
+      "id": "autotrader_28023939",
+      "title": "2018 BMW G310",
+      "price": "R 69 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 69 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28023939?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "17 145 km",
+      "condition": "Used",
+      "location": "Boksburg West,Boksburg",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_27921452": {
+      "id": "autotrader_27921452",
+      "title": "2023 BMW G310",
+      "price": "R 79 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 79 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/27921452?vf=2&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "18 306 km",
+      "condition": "Used",
+      "location": "Boksburg West,Boksburg",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28290653": {
+      "id": "autotrader_28290653",
+      "title": "2022 BMW G310",
+      "price": "R 68 500",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 68 500"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28290653?vf=1&db=1&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "5 000 km",
+      "condition": "Used",
+      "location": "Wilgeheuwel,Roodepoort",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28237118": {
+      "id": "autotrader_28237118",
+      "title": "2022 BMW G310",
+      "price": "R 59 996",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 59 996"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28237118?vf=1&db=1&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "3 050 km",
+      "condition": "Used",
+      "location": "Wilgeheuwel,Roodepoort",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28057082": {
+      "id": "autotrader_28057082",
+      "title": "2025 BMW G310",
+      "price": "R 69 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:07",
+          "price": "R 69 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/g310/28057082?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "BMW G 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:24",
+      "kilometers": "2 km",
+      "condition": "Used",
+      "location": "Greenacres,Port Elizabeth",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_9DB310327": {
       "id": "webuycars_9DB310327",
@@ -645,9 +1695,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/9DB310327",
       "search_term": "BMW G 310",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:29:14",
+      "found_date": "02-12-2025 09:47:10",
       "kilometers": "22,490 km",
-      "location": "Silver Lakes (GP)"
+      "location": "Silver Lakes (GP)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_CAF414786": {
       "id": "webuycars_CAF414786",
@@ -662,9 +1714,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/CAF414786",
       "search_term": "BMW G 310",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:29:14",
+      "found_date": "02-12-2025 09:47:10",
       "kilometers": "73,328 km",
-      "location": "George (WC)"
+      "location": "George (WC)",
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "BMW GS 310": {
@@ -681,9 +1735,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/northern-pretoria/2021-bmw-gs-310/10013307002971010167017509",
       "search_term": "BMW GS 310",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:29:32",
+      "found_date": "02-12-2025 09:47:30",
       "kilometers": "22,000km",
-      "location": "Northern Pretoria"
+      "location": "Northern Pretoria",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013402558801012478762009": {
       "id": "gumtree_10013402558801012478762009",
@@ -698,9 +1754,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/pietermaritzburg/2022-bmw-gs-310-rallye-limited-edition/10013402558801012478762009",
       "search_term": "BMW GS 310",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:29:32",
+      "found_date": "02-12-2025 09:47:30",
       "kilometers": "8,500km",
-      "location": "Pietermaritzburg"
+      "location": "Pietermaritzburg",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013432294351010054329109": {
       "id": "gumtree_10013432294351010054329109",
@@ -715,9 +1773,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/benoni/2023-bmw-310-45-g450/10013432294351010054329109",
       "search_term": "BMW GS 310",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:29:35",
+      "found_date": "02-12-2025 09:47:34",
       "kilometers": "200km",
-      "location": "Benoni"
+      "location": "Benoni",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013251672391010002889209": {
       "id": "gumtree_10013251672391010002889209",
@@ -732,9 +1792,51 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/montague-gardens/bmw-310/10013251672391010002889209",
       "search_term": "BMW GS 310",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:29:35",
+      "found_date": "02-12-2025 09:47:34",
       "kilometers": "17,000km",
-      "location": "Montague Gardens"
+      "location": "Montague Gardens",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28107215": {
+      "id": "autotrader_28107215",
+      "title": "2021 BMW Gs 310",
+      "price": "R 64 900",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:16",
+          "price": "R 64 900"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/gs-310/28107215?vf=3&db=1&s360=0&so=1&pl=1&pr=5&po=1&pq=0&sp=6",
+      "search_term": "BMW GS 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:32",
+      "kilometers": "22 000 km",
+      "condition": "Used",
+      "location": "Montana Tuine,Pretoria",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "autotrader_28298022": {
+      "id": "autotrader_28298022",
+      "title": "2018 BMW GS310",
+      "price": "R 64 000",
+      "price_history": [
+        {
+          "date": "02-12-2025 09:06:25",
+          "price": "R 64 000"
+        }
+      ],
+      "url": "https://www.autotrader.co.za/bike-for-sale/bmw/gs310/28298022?vf=1&db=0&s360=0&so=0&pl=0&pr=5&po=1&pq=0&sp=1",
+      "search_term": "BMW GS 310",
+      "source": "AutoTrader",
+      "found_date": "02-12-2025 09:47:43",
+      "kilometers": "24 300 km",
+      "condition": "Used",
+      "location": "Rondebosch,Cape Town",
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Kawasaki Z 400": {
@@ -751,9 +1853,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/pinetown/2023-kawasaki-ninja-400-se-abs-demo/10012465812701010354228509",
       "search_term": "Kawasaki Z 400",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:29:50",
+      "found_date": "02-12-2025 09:47:52",
       "kilometers": "200km",
-      "location": "Pinetown"
+      "location": "Pinetown",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013417692861010198692009": {
       "id": "gumtree_10013417692861010198692009",
@@ -768,9 +1872,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/bluff/2021-kawasaki-ninja-400/10013417692861010198692009",
       "search_term": "Kawasaki Z 400",
       "source": "Gumtree",
-      "found_date": "01-12-2025 09:29:50",
+      "found_date": "02-12-2025 09:47:52",
       "kilometers": "4,200km",
-      "location": "Bluff"
+      "location": "Bluff",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_9C5206358": {
       "id": "webuycars_9C5206358",
@@ -785,9 +1891,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZX6-R/9C5206358",
       "search_term": "Kawasaki Z 400",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:29:47",
+      "found_date": "02-12-2025 09:47:47",
       "kilometers": "11,018 km",
-      "location": "East London (EC)"
+      "location": "East London (EC)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_031302389": {
       "id": "webuycars_031302389",
@@ -802,9 +1910,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Z 900/031302389",
       "search_term": "Kawasaki Z 400",
       "source": "WeBuyCars",
-      "found_date": "01-12-2025 09:29:47",
+      "found_date": "02-12-2025 09:47:47",
       "kilometers": "10,732 km",
-      "location": "Dome (GP)"
+      "location": "Dome (GP)",
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Kawasaki Eliminator": {}
