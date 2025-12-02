@@ -44,8 +44,8 @@ REQUEST_TIMEOUT = 10
 
 # ==================== RATE LIMITING ====================
 # Sleep interval between requests (in seconds)
-SLEEP_MIN = 3
-SLEEP_MAX = 5
+SLEEP_MIN = 2
+SLEEP_MAX = 4
 
 
 # ==================== LOGGING ====================

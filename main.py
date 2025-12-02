@@ -50,7 +50,7 @@ def clean_price(price_str: str):
 # ─────────────────────────────────────────────────────────────
 # Async Scraping Logic
 # ─────────────────────────────────────────────────────────────
-executor = concurrent.futures.ThreadPoolExecutor(max_workers=6)
+executor = concurrent.futures.ThreadPoolExecutor(max_workers=10)
 
 async def scrape_bike_async(bike, scraper):
     """Run scraping in a thread pool."""
