@@ -91,6 +91,7 @@ motorcycle-tracker/
 │   └── logger.py               # Logging utility
 ├── trackers/
 │   ├── __init__.py
+│   ├── autotraderTracker.py    # Autotrader scraper
 │   ├── baseTracker.py          # Shared functionality
 │   ├── gumtreeTracker.py       # Gumtree scraper
 │   └── webuycarsTracker.py     # WeBuyCars cache searcher
