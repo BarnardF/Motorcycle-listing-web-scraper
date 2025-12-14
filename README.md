@@ -783,4 +783,4 @@ Contributions are welcome! Please:
 
 **Questions or Issues?** Check `tracker.log` first, then open an issue on GitHub!
 
-**Live Demo:** Check out your GitHub Pages dashboard at `https://yourusername.github.io/motorcycle-tracker`
+**Live Demo:** Check out your GitHub Pages dashboard at `[https://barnardf.github.io/Motorcycle-listing-web-scraper/]`
