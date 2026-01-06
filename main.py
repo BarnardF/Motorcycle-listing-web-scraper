@@ -12,7 +12,8 @@ from trackers.baseTracker import (
 )
 from logger.logger import logger
 from config.config import SLEEP_MIN, SLEEP_MAX, IS_GITHUB_ACTIONS
-from template_generator.html_generator import generate_html_report
+# from template_generator.html_generator import generate_html_report
+from template_generator.excel_generator import generate_excel_report
 
 #scrapers
 from trackers.autotraderTracker import scrape_autotrader
@@ -228,15 +229,17 @@ async def main():
         # Save
         save_listings(all_listings)
 
-        # Generate HTML
-        all_flat = [
+        # Flatten listings for Excel export
+        # Convert from nested dict {bike: {id: listing}} to flat list [listing, listing, ...]
+        flat_listings = [
             listing
-            for bike_listings in current.values()
+            for bike_listings in all_listings.values()
             for listing in bike_listings.values()
         ]
 
-        generate_html_report(all_flat, bikes, "docs/index.html")
-        logger.info("✓ Generated HTML report")
+        generate_excel_report(flat_listings, bikes)
+        # generate_html_report(all_flat, bikes, "docs/index.html")
+        logger.info("- Tracker completed successfully")
 
         return new_listings
 
