@@ -12,7 +12,7 @@ from trackers.baseTracker import (
 )
 from logger.logger import logger
 from config.config import SLEEP_MIN, SLEEP_MAX, IS_GITHUB_ACTIONS
-# from template_generator.html_generator import generate_html_report
+from template_generator.html_generator import generate_html_report
 from template_generator.excel_generator import generate_excel_report
 
 #scrapers
@@ -237,8 +237,9 @@ async def main():
             for listing in bike_listings.values()
         ]
 
+        #generate excel and html report
         generate_excel_report(flat_listings, bikes)
-        # generate_html_report(all_flat, bikes, "docs/index.html")
+        generate_html_report(all_flat, bikes, "docs/index.html")
         logger.info("- Tracker completed successfully")
 
         return new_listings
