@@ -21,7 +21,7 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/hermanus/super-rare-2019-suzuki-dl250x-v+strom/10013432943091013436132409",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:09:09",
+      "found_date": "18-01-2026 04:04:00",
       "kilometers": "29,000km",
       "location": "Hermanus",
       "price_dropped": false,
@@ -40,36 +40,9 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/port-elizabeth/motorcycle-suzuki-gsx-250-f/10013429161411010930588509",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:09:09",
+      "found_date": "18-01-2026 04:04:00",
       "kilometers": "9,250km",
       "location": "Port Elizabeth",
-      "price_dropped": false,
-      "old_price": null
-    },
-    "webuycars_7E9F13590": {
-      "id": "webuycars_7E9F13590",
-      "title": "1997 Suzuki DS 80",
-      "price": "R 13,900",
-      "price_history": [
-        {
-          "date": "01-12-2025 09:26:36",
-          "price": "N/A"
-        },
-        {
-          "date": "21-12-2025 04:01:14",
-          "price": "R 14,900"
-        },
-        {
-          "date": "04-01-2026 04:12:33",
-          "price": "R 13,900"
-        }
-      ],
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/DS/7E9F13590",
-      "search_term": "Suzuki DS 250 SX V-STROM",
-      "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:05",
-      "kilometers": "N/A",
-      "location": "Midstream (GP)",
       "price_dropped": false,
       "old_price": null
     },
@@ -90,11 +63,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/250/3AEC10006",
       "search_term": "Suzuki DS 250 SX V-STROM",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:05",
+      "found_date": "18-01-2026 04:03:54",
       "kilometers": "40 km",
       "location": "Polokwane (L)",
-      "price_dropped": true,
-      "old_price": "R 52,900"
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Honda CB 500 X": {
@@ -111,7 +84,7 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/pinetown/honda-nx500/10013320405561010354228509",
       "search_term": "Honda CB 500 X",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:09:30",
+      "found_date": "18-01-2026 04:04:20",
       "kilometers": "1km",
       "location": "Pinetown",
       "price_dropped": false,
@@ -130,28 +103,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/pietermaritzburg/2022-honda-cb500x/10013318795501012895313109",
       "search_term": "Honda CB 500 X",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:09:32",
+      "found_date": "18-01-2026 04:04:22",
       "kilometers": "8,403km",
       "location": "Pietermaritzburg",
       "price_dropped": false,
       "old_price": null
-    },
-    "webuycars_8D5600562": {
-      "id": "webuycars_8D5600562",
-      "title": "2010 Honda CBR 600rr (abs)",
-      "price": "R 78,900",
-      "price_history": [
-        {
-          "date": "11-01-2026 04:09:27",
-          "price": "R 78,900"
-        }
-      ],
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/8D5600562",
-      "search_term": "Honda CB 500 X",
-      "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:27",
-      "kilometers": "22,740 km",
-      "location": "Gqeberha (EC)"
     },
     "webuycars_9A6A00589": {
       "id": "webuycars_9A6A00589",
@@ -166,9 +122,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/9A6A00589",
       "search_term": "Honda CB 500 X",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:27",
+      "found_date": "18-01-2026 04:04:16",
       "kilometers": "32,184 km",
-      "location": "Gqeberha (EC)"
+      "location": "Gqeberha (EC)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_979A01277": {
       "id": "webuycars_979A01277",
@@ -183,32 +141,28 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/979A01277",
       "search_term": "Honda CB 500 X",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:27",
+      "found_date": "18-01-2026 04:04:16",
       "kilometers": "56,711 km",
-      "location": "George (WC)"
+      "location": "George (WC)",
+      "price_dropped": false,
+      "old_price": null
     },
-    "webuycars_986807218": {
-      "id": "webuycars_986807218",
-      "title": "2009 Honda CBR 1000 RR Fireblade",
-      "price": "R 60,900",
+    "webuycars_88E207230": {
+      "id": "webuycars_88E207230",
+      "title": "2012 Honda CBF 600s",
+      "price": "N/A",
       "price_history": [
         {
-          "date": "28-12-2025 04:06:39",
-          "price": "R 64,900"
-        },
-        {
-          "date": "11-01-2026 04:12:09",
-          "price": "R 60,900"
+          "date": "18-01-2026 04:04:16",
+          "price": "N/A"
         }
       ],
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/986807218",
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBF/88E207230",
       "search_term": "Honda CB 500 X",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:27",
-      "kilometers": "60,931 km",
-      "location": "East London (EC)",
-      "price_dropped": true,
-      "old_price": "R 64,900"
+      "found_date": "18-01-2026 04:04:16",
+      "kilometers": "23,412 km",
+      "location": "Richmond (WC)"
     },
     "webuycars_4BE207412": {
       "id": "webuycars_4BE207412",
@@ -227,11 +181,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Honda/CB/4BE207412",
       "search_term": "Honda CB 500 X",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:27",
+      "found_date": "18-01-2026 04:04:16",
       "kilometers": "4,885 km",
       "location": "Mbombela (MP)",
-      "price_dropped": true,
-      "old_price": "R 92,900"
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_513611610": {
       "id": "webuycars_513611610",
@@ -254,28 +208,28 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Honda/CB/513611610",
       "search_term": "Honda CB 500 X",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:27",
+      "found_date": "18-01-2026 04:04:16",
       "kilometers": "11,502 km",
       "location": "Dome (GP)",
-      "price_dropped": true,
-      "old_price": "R 84,900"
+      "price_dropped": false,
+      "old_price": null
     },
-    "webuycars_1F4103155": {
-      "id": "webuycars_1F4103155",
-      "title": "2013 Honda CBR 250r",
-      "price": "N/A",
+    "webuycars_0CB604174": {
+      "id": "webuycars_0CB604174",
+      "title": "2011 Honda CBR 600f",
+      "price": "R 43,900",
       "price_history": [
         {
-          "date": "11-01-2026 04:09:27",
-          "price": "N/A"
+          "date": "18-01-2026 04:04:16",
+          "price": "R 43,900"
         }
       ],
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/1F4103155",
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/0CB604174",
       "search_term": "Honda CB 500 X",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:27",
-      "kilometers": "4,468 km",
-      "location": "Dome (GP)"
+      "found_date": "18-01-2026 04:04:16",
+      "kilometers": "26,590 km",
+      "location": "Mbombela (MP)"
     }
   },
   "Kawasaki Ninja 400": {
@@ -292,7 +246,7 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/pinetown/2023-kawasaki-ninja-400-se-abs-demo/10012465812701010354228509",
       "search_term": "Kawasaki Ninja 400",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:09:45",
+      "found_date": "18-01-2026 04:04:37",
       "kilometers": "200km",
       "location": "Pinetown",
       "price_dropped": false,
@@ -311,36 +265,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Ninja/AD6B02295",
       "search_term": "Kawasaki Ninja 400",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:45",
+      "found_date": "18-01-2026 04:04:36",
       "kilometers": "9,287 km",
-      "location": "Midstream (GP)"
-    },
-    "webuycars_CDB401427": {
-      "id": "webuycars_CDB401427",
-      "title": "2010 Kawasaki Ninja 250 R",
-      "price": "R 24,900",
-      "price_history": [
-        {
-          "date": "07-12-2025 03:55:23",
-          "price": "N/A"
-        },
-        {
-          "date": "28-12-2025 04:09:37",
-          "price": "R 26,900"
-        },
-        {
-          "date": "11-01-2026 04:12:09",
-          "price": "R 24,900"
-        }
-      ],
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Ninja/CDB401427",
-      "search_term": "Kawasaki Ninja 400",
-      "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:45",
-      "kilometers": "46,539 km",
-      "location": "East London (EC)",
-      "price_dropped": true,
-      "old_price": "R 26,900"
+      "location": "Midstream (GP)",
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_10B913141": {
       "id": "webuycars_10B913141",
@@ -355,7 +284,7 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Ninja/10B913141",
       "search_term": "Kawasaki Ninja 400",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:09:45",
+      "found_date": "18-01-2026 04:04:36",
       "kilometers": "38,993 km",
       "location": "Dome (GP)",
       "price_dropped": false,
@@ -384,11 +313,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Scrambler/97BD12912",
       "search_term": "Triumph Scrambler 400 x",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:10:00",
+      "found_date": "18-01-2026 04:04:52",
       "kilometers": "16,469 km",
       "location": "East London (EC)",
-      "price_dropped": true,
-      "old_price": "R 95,900"
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Triumph Scrambler 900": {
@@ -409,11 +338,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/george/triumph-speed-twin-900/10013424411931010005469309",
       "search_term": "Triumph Scrambler 900",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:10:21",
+      "found_date": "18-01-2026 04:05:15",
       "kilometers": "1,000km",
       "location": "George",
-      "price_dropped": true,
-      "old_price": "R 25,900"
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_97BD12912": {
       "id": "webuycars_97BD12912",
@@ -436,11 +365,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Scrambler/97BD12912",
       "search_term": "Triumph Scrambler 900",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:10:18",
+      "found_date": "18-01-2026 04:05:11",
       "kilometers": "16,469 km",
       "location": "East London (EC)",
-      "price_dropped": true,
-      "old_price": "R 95,900"
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Triumph Speed 400": {
@@ -457,7 +386,7 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Speedmaster/AA5A00028",
       "search_term": "Triumph Speed 400",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:10:32",
+      "found_date": "18-01-2026 04:05:27",
       "kilometers": "50,543 km",
       "location": "Richmond (WC)",
       "price_dropped": false,
@@ -480,33 +409,14 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Speed Triple/E05B01946",
       "search_term": "Triumph Speed 400",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:10:32",
+      "found_date": "18-01-2026 04:05:27",
       "kilometers": "17,155 km",
       "location": "Midstream (GP)",
-      "price_dropped": true,
-      "old_price": "R 189,900"
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "yamaha xsr 700": {
-    "gumtree_10013444086691010762425009": {
-      "id": "gumtree_10013444086691010762425009",
-      "title": "2021 Yamaha Tenere 700 XTZ 700",
-      "price": "R 195,000",
-      "price_history": [
-        {
-          "date": "14-12-2025 03:59:14",
-          "price": "R 195,000"
-        }
-      ],
-      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/george/2021-yamaha-tenere-700-xtz-700/10013444086691010762425009",
-      "search_term": "yamaha xsr 700",
-      "source": "Gumtree",
-      "found_date": "11-01-2026 04:10:48",
-      "kilometers": "13,100km",
-      "location": "George",
-      "price_dropped": false,
-      "old_price": null
-    },
     "gumtree_10013461863741013316472309": {
       "id": "gumtree_10013461863741013316472309",
       "title": "Yamaha raptor 700",
@@ -520,9 +430,11 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/thabazimbi/yamaha-raptor-700/10013461863741013316472309",
       "search_term": "yamaha xsr 700",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:10:48",
+      "found_date": "18-01-2026 04:05:46",
       "kilometers": "6km",
-      "location": "Thabazimbi"
+      "location": "Thabazimbi",
+      "price_dropped": false,
+      "old_price": null
     },
     "gumtree_10013462968081010410536609": {
       "id": "gumtree_10013462968081010410536609",
@@ -537,9 +449,28 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/vereeniging/yamaha-raptor-700r/10013462968081010410536609",
       "search_term": "yamaha xsr 700",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:10:48",
+      "found_date": "18-01-2026 04:05:46",
       "kilometers": "2,500km",
-      "location": "Vereeniging"
+      "location": "Vereeniging",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "gumtree_10013466040191011073853909": {
+      "id": "gumtree_10013466040191011073853909",
+      "title": "2016 xsr 700 Yamaha",
+      "price": "R 110,000",
+      "price_history": [
+        {
+          "date": "18-01-2026 04:05:44",
+          "price": "R 110,000"
+        }
+      ],
+      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/mosselbaai/2016-xsr-700-yamaha/10013466040191011073853909",
+      "search_term": "yamaha xsr 700",
+      "source": "Gumtree",
+      "found_date": "18-01-2026 04:05:44",
+      "kilometers": "29,560km",
+      "location": "Mosselbaai"
     }
   },
   "Ducati Scrambler": {
@@ -556,7 +487,7 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/retreat/2015-ducati-x-scrambler-64-bike-bros-motorcycles/10012503439581011067160209",
       "search_term": "Ducati Scrambler",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:11:02",
+      "found_date": "18-01-2026 04:06:00",
       "kilometers": "11,349km",
       "location": "Retreat",
       "price_dropped": false,
@@ -583,33 +514,14 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/other/ducati-scrambler-800-urban-enduro-2015/10013434253351010003065109",
       "search_term": "Ducati Scrambler",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:11:02",
+      "found_date": "18-01-2026 04:06:00",
       "kilometers": "11,100km",
       "location": "Other",
-      "price_dropped": true,
-      "old_price": "R 124,900"
+      "price_dropped": false,
+      "old_price": null
     }
   },
   "Yamaha MT 07": {
-    "gumtree_10013416804491010004286409": {
-      "id": "gumtree_10013416804491010004286409",
-      "title": "2025 Yamaha MT07 - MT 07 NEW",
-      "price": "R 179,950",
-      "price_history": [
-        {
-          "date": "21-12-2025 04:00:10",
-          "price": "R 179,950"
-        }
-      ],
-      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/kraaifontein/2025-yamaha-mt07-+-mt-07-new/10013416804491010004286409",
-      "search_term": "Yamaha MT 07",
-      "source": "Gumtree",
-      "found_date": "11-01-2026 04:11:07",
-      "kilometers": "N/A",
-      "location": "Kraaifontein",
-      "price_dropped": false,
-      "old_price": null
-    },
     "webuycars_73F808904": {
       "id": "webuycars_73F808904",
       "title": "2021 Yamaha MT Tenere 700 (xtz690)",
@@ -627,16 +539,16 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/MT/73F808904",
       "search_term": "Yamaha MT 07",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:06",
+      "found_date": "18-01-2026 04:06:06",
       "kilometers": "6,740 km",
       "location": "Dome (GP)",
-      "price_dropped": true,
-      "old_price": "R 159,900"
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_4F9108269": {
       "id": "webuycars_4F9108269",
       "title": "2018 Yamaha MT MT-09 Tracer",
-      "price": "R 114,900",
+      "price": "R 119,900",
       "price_history": [
         {
           "date": "07-12-2025 03:56:50",
@@ -645,14 +557,18 @@
         {
           "date": "04-01-2026 04:12:33",
           "price": "R 114,900"
+        },
+        {
+          "date": "18-01-2026 04:07:15",
+          "price": "R 119,900"
         }
       ],
       "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/MT/4F9108269",
       "search_term": "Yamaha MT 07",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:06",
+      "found_date": "18-01-2026 04:06:06",
       "kilometers": "11,998 km",
-      "location": "Riverhorse (KZN)",
+      "location": "Dome (GP)",
       "price_dropped": false,
       "old_price": null
     }
@@ -671,11 +587,45 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/vanderbijlpark/2018-bmw-310-45-g450/10013459591011011119609209",
       "search_term": "BMW G 310",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:11:24",
+      "found_date": "18-01-2026 04:06:25",
       "kilometers": "32,500km",
       "location": "Vanderbijlpark",
       "price_dropped": false,
       "old_price": null
+    },
+    "gumtree_10013466954171012238794009": {
+      "id": "gumtree_10013466954171012238794009",
+      "title": "2022 BMW G 310GS Triple Black",
+      "price": "R 69,900",
+      "price_history": [
+        {
+          "date": "18-01-2026 04:06:24",
+          "price": "R 69,900"
+        }
+      ],
+      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/centurion/2022-bmw-g-310gs-triple-black/10013466954171012238794009",
+      "search_term": "BMW G 310",
+      "source": "Gumtree",
+      "found_date": "18-01-2026 04:06:24",
+      "kilometers": "15,000km",
+      "location": "Centurion"
+    },
+    "gumtree_10013465574691012895313109": {
+      "id": "gumtree_10013465574691012895313109",
+      "title": "2018 BMW G310 GS",
+      "price": "R 55,000",
+      "price_history": [
+        {
+          "date": "18-01-2026 04:06:26",
+          "price": "R 55,000"
+        }
+      ],
+      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/pietermaritzburg/2018-bmw-g310-gs/10013465574691012895313109",
+      "search_term": "BMW G 310",
+      "source": "Gumtree",
+      "found_date": "18-01-2026 04:06:26",
+      "kilometers": "7,353km",
+      "location": "Pietermaritzburg"
     },
     "webuycars_9DB310327": {
       "id": "webuycars_9DB310327",
@@ -698,11 +648,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/9DB310327",
       "search_term": "BMW G 310",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:21",
+      "found_date": "18-01-2026 04:06:21",
       "kilometers": "22,490 km",
       "location": "Silver Lakes (GP)",
-      "price_dropped": true,
-      "old_price": "R 49,900"
+      "price_dropped": false,
+      "old_price": null
     },
     "webuycars_866314815": {
       "id": "webuycars_866314815",
@@ -717,33 +667,33 @@
       "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/866314815",
       "search_term": "BMW G 310",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:21",
+      "found_date": "18-01-2026 04:06:21",
       "kilometers": "33,076 km",
-      "location": "Brackenfell (WC)"
-    },
-    "webuycars_5DFF00161": {
-      "id": "webuycars_5DFF00161",
-      "title": "2008 BMW G Series G 650 X Cntry ABS",
-      "price": "R 39,900",
-      "price_history": [
-        {
-          "date": "04-01-2026 04:11:41",
-          "price": "N/A"
-        }
-      ],
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/5DFF00161",
-      "search_term": "BMW G 310",
-      "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:21",
-      "kilometers": "24,813 km",
       "location": "Brackenfell (WC)",
       "price_dropped": false,
       "old_price": null
     },
+    "webuycars_76DE04781": {
+      "id": "webuycars_76DE04781",
+      "title": "2008 BMW G Series G450 X",
+      "price": "R 35,900",
+      "price_history": [
+        {
+          "date": "18-01-2026 04:06:21",
+          "price": "R 35,900"
+        }
+      ],
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/76DE04781",
+      "search_term": "BMW G 310",
+      "source": "WeBuyCars",
+      "found_date": "18-01-2026 04:06:21",
+      "kilometers": "8,076 km",
+      "location": "Montana (GP)"
+    },
     "webuycars_CAF414786": {
       "id": "webuycars_CAF414786",
       "title": "2014 BMW G Series G 650 GS Sertao ABS H/grips",
-      "price": "R 37,900",
+      "price": "R 34,900",
       "price_history": [
         {
           "date": "28-12-2025 04:08:42",
@@ -752,33 +702,20 @@
         {
           "date": "04-01-2026 04:12:33",
           "price": "R 37,900"
+        },
+        {
+          "date": "18-01-2026 04:07:15",
+          "price": "R 34,900"
         }
       ],
       "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/CAF414786",
       "search_term": "BMW G 310",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:21",
+      "found_date": "18-01-2026 04:06:21",
       "kilometers": "73,328 km",
       "location": "George (WC)",
-      "price_dropped": false,
-      "old_price": null
-    },
-    "webuycars_8DF302214": {
-      "id": "webuycars_8DF302214",
-      "title": "2012 BMW G Series G650 GS",
-      "price": "N/A",
-      "price_history": [
-        {
-          "date": "11-01-2026 04:11:21",
-          "price": "N/A"
-        }
-      ],
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/8DF302214",
-      "search_term": "BMW G 310",
-      "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:21",
-      "kilometers": "34,097 km",
-      "location": "Germiston (GP)"
+      "price_dropped": true,
+      "old_price": "R 37,900"
     }
   },
   "BMW GS 310": {
@@ -795,11 +732,28 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/vanderbijlpark/2018-bmw-310-45-g450/10013459591011011119609209",
       "search_term": "BMW GS 310",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:11:36",
+      "found_date": "18-01-2026 04:06:39",
       "kilometers": "32,500km",
       "location": "Vanderbijlpark",
       "price_dropped": false,
       "old_price": null
+    },
+    "gumtree_10013465574691012895313109": {
+      "id": "gumtree_10013465574691012895313109",
+      "title": "2018 BMW G310 GS",
+      "price": "R 55,000",
+      "price_history": [
+        {
+          "date": "18-01-2026 04:06:40",
+          "price": "R 55,000"
+        }
+      ],
+      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/pietermaritzburg/2018-bmw-g310-gs/10013465574691012895313109",
+      "search_term": "BMW GS 310",
+      "source": "Gumtree",
+      "found_date": "18-01-2026 04:06:40",
+      "kilometers": "7,353km",
+      "location": "Pietermaritzburg"
     }
   },
   "Kawasaki Z 400": {
@@ -816,11 +770,70 @@
       "url": "https://www.gumtree.co.za/a-motorcycles-scooters/pinetown/2023-kawasaki-ninja-400-se-abs-demo/10012465812701010354228509",
       "search_term": "Kawasaki Z 400",
       "source": "Gumtree",
-      "found_date": "11-01-2026 04:11:52",
+      "found_date": "18-01-2026 04:06:56",
       "kilometers": "200km",
       "location": "Pinetown",
       "price_dropped": false,
       "old_price": null
+    },
+    "webuycars_25F405448": {
+      "id": "webuycars_25F405448",
+      "title": "2013 Kawasaki Z Z1000 SX (abs)",
+      "price": "R 92,900",
+      "price_history": [
+        {
+          "date": "18-01-2026 04:06:53",
+          "price": "R 92,900"
+        }
+      ],
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Z/25F405448",
+      "search_term": "Kawasaki Z 400",
+      "source": "WeBuyCars",
+      "found_date": "18-01-2026 04:06:53",
+      "kilometers": "38,460 km",
+      "location": "Gqeberha (EC)"
+    },
+    "webuycars_F5BC02354": {
+      "id": "webuycars_F5BC02354",
+      "title": "2007 Kawasaki ZX 14",
+      "price": "R 79,900",
+      "price_history": [
+        {
+          "date": "11-01-2026 04:11:49",
+          "price": "R 79,900"
+        }
+      ],
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZX/F5BC02354",
+      "search_term": "Kawasaki Z 400",
+      "source": "WeBuyCars",
+      "found_date": "18-01-2026 04:06:53",
+      "kilometers": "43,595 km",
+      "location": "Richmond (WC)",
+      "price_dropped": false,
+      "old_price": null
+    },
+    "webuycars_AAA711971": {
+      "id": "webuycars_AAA711971",
+      "title": "2008 Kawasaki ZX 14",
+      "price": "R 64,900",
+      "price_history": [
+        {
+          "date": "28-12-2025 04:09:14",
+          "price": "N/A"
+        },
+        {
+          "date": "18-01-2026 04:07:15",
+          "price": "R 64,900"
+        }
+      ],
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZX/AAA711971",
+      "search_term": "Kawasaki Z 400",
+      "source": "WeBuyCars",
+      "found_date": "18-01-2026 04:06:53",
+      "kilometers": "69,086 km",
+      "location": "Germiston (GP)",
+      "price_dropped": true,
+      "old_price": "R 68,900"
     },
     "webuycars_0FB705702": {
       "id": "webuycars_0FB705702",
@@ -839,45 +852,9 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Zx10/0FB705702",
       "search_term": "Kawasaki Z 400",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:49",
-      "kilometers": "21,878 km",
+      "found_date": "18-01-2026 04:06:53",
+      "kilometers": "N/A",
       "location": "Mbombela (MP)",
-      "price_dropped": true,
-      "old_price": "R 141,000"
-    },
-    "webuycars_F5BC02354": {
-      "id": "webuycars_F5BC02354",
-      "title": "2007 Kawasaki ZX 14",
-      "price": "R 79,900",
-      "price_history": [
-        {
-          "date": "11-01-2026 04:11:49",
-          "price": "R 79,900"
-        }
-      ],
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZX/F5BC02354",
-      "search_term": "Kawasaki Z 400",
-      "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:49",
-      "kilometers": "43,595 km",
-      "location": "Richmond (WC)"
-    },
-    "webuycars_AAA711971": {
-      "id": "webuycars_AAA711971",
-      "title": "2008 Kawasaki ZX 14",
-      "price": "R 68,900",
-      "price_history": [
-        {
-          "date": "28-12-2025 04:09:14",
-          "price": "N/A"
-        }
-      ],
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZX/AAA711971",
-      "search_term": "Kawasaki Z 400",
-      "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:49",
-      "kilometers": "69,086 km",
-      "location": "Germiston (GP)",
       "price_dropped": false,
       "old_price": null
     },
@@ -902,34 +879,11 @@
       "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Z 900/031302389",
       "search_term": "Kawasaki Z 400",
       "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:49",
+      "found_date": "18-01-2026 04:06:53",
       "kilometers": "10,732 km",
       "location": "Dome (GP)",
       "price_dropped": false,
       "old_price": null
-    },
-    "webuycars_28B610027": {
-      "id": "webuycars_28B610027",
-      "title": "2021 Kawasaki Z 900 ABS (zr900f)",
-      "price": "R 124,900",
-      "price_history": [
-        {
-          "date": "21-12-2025 04:00:54",
-          "price": "N/A"
-        },
-        {
-          "date": "11-01-2026 04:12:09",
-          "price": "R 124,900"
-        }
-      ],
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Z 900/28B610027",
-      "search_term": "Kawasaki Z 400",
-      "source": "WeBuyCars",
-      "found_date": "11-01-2026 04:11:49",
-      "kilometers": "10,227 km",
-      "location": "JHB South (GP)",
-      "price_dropped": true,
-      "old_price": "R 129,900"
     }
   },
   "Kawasaki Eliminator": {}
