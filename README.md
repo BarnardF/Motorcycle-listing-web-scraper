@@ -4,28 +4,140 @@ A Python-based web scraper that automatically tracks motorcycle listings across 
 
 ## Features
 
-- **Multi-Site Scraping**: Tracks listings from Gumtree and WeBuyCars with automated GitHub Actions
-- **Comprehensive Data**: Captures price, kilometers, condition, and location
-- **Interactive Dashboard**: Toggle between bike-grouped and source-grouped views
-- **Table Format**: Clean, sortable tables with all listing details
-- **Smart Duplicate Detection**: Avoids showing the same listing twice
-- **Persistent Storage**: Remembers previous runs to detect new listings
-- **Price Tracking**: Monitors price changes and maintains complete history
-- **Price Drop Alerts**: Visual indicators and dedicated view for discounts
-- **Green Highlighting**: Easy identification of price-reduced listings
-- **GitHub Pages Integration**: Beautiful web interface to view all listings
-- **Configurable Searches**: Track multiple bike models from a simple text file
+- **Multi-Site Scraping**: Gumtree & WeBuyCars with GitHub Actions automation
+- **Smart Deduplication**: Fuzzy matching with search variations
+- **Price Tracking**: Complete history with drop detection and alerts
+- **Interactive Dashboard**: Toggle between bike-grouped, source-grouped, and price-drop views
+- **Concurrent Processing**: ThreadPoolExecutor-based scraping for speed
+- **Persistent Storage**: Auto-detects stale listings, remembers previous runs
+- **WeBuyCars Cache**: Daily API refresh with server-respectful searching
 - **Professional Logging**: Detailed logs for debugging and monitoring
-- **Robust Error Handling**: Continues running even if individual listings fail
-- **Extensible Architecture**: Easy to add new websites
-- **Fuzzy Matching**: Intelligent matching to find variations of bike model names
-- **Search Variations**: Automatically tries different search formats to maximize results
-- **Async Scraping**: Concurrent scraper execution for faster results
-- **Optimized Performance**: ThreadPoolExecutor with multi-threaded scraping
-- **Intelligent Cleanup**: Stale listing detection and removal
 - **Rotating User Agents**: Avoids detection with varied request headers
-- **WeBuyCars Caching**: Daily Playwright API interception for fast, reliable searching
 - **GitHub Actions Automation**: Runs every Sunday at 5:00 AM SAST automatically
+
+## System Architecture
+
+### Current Design (Phase 2.5)
+
+**Why this approach:**
+- **JSON file storage** for simplicity during MVP, but identifies scaling bottlenecks:
+  - File-level locking during concurrent scraper writes
+  - No query API (must parse JSON to analyze data)
+  - Price history as arrays = O(n) search complexity
+  - Static HTML rebuilds on every run
+
+This is intentional—proving the concept before infrastructure investment.
+
+### Design Decisions & Trade-offs
+
+**Fuzzy Matching over Exact Search**
+- Problem: "Honda CB 500X" vs "CB500X" vs "CB 500 X" across sites
+- Solution: Levenshtein distance-based matching (fuzzywuzzy)
+- Trade-off: Slightly slower, but catches all variations without manual rules
+
+**Playwright Cache vs Live Scraping**
+- WeBuyCars has no public search API
+- Solution: Playwright intercepts API responses, caches locally, searches in-memory
+- Trade-off: 1-day stale data, but respects server load + eliminates rate-limiting
+
+**Concurrent ThreadPoolExecutor vs Sequential**
+- Old: 13 bikes × 2 sites = 30+ seconds
+- New: All parallel = 3-5 minutes with full dedup
+- Trade-off: More CPU/memory, acceptable for weekly runs
+
+---
+
+## Phase 6: Production-Ready Upgrade (Planned)
+
+### Backend: FastAPI
+
+**Why FastAPI (not Flask/Django):**
+- Async-first design handles concurrent scraper requests without threading issues
+- Pydantic models force schema consistency across scrapers
+- Built-in OpenAPI/Swagger documentation (industry standard)
+- 10x faster than Flask on async I/O operations
+
+**Current pain point:** Flask + ThreadPoolExecutor = RequestContext complexity and race conditions
+
+### Database: PostgreSQL
+
+**Why PostgreSQL (not SQLite):**
+- SQLite file-level locks block concurrent scraper writes
+- PostgreSQL row-level locking prevents duplicate listings during concurrent inserts
+- ACID transactions ensure data integrity during crashes
+- Native JSON support for price_history tracking
+- Window functions for analytics queries
+- Full-text search on listing titles (faster than fuzzy match on 10k+ rows)
+
+**Proposed schema:**
+```sql
+CREATE TABLE motorcycles (
+    id SERIAL PRIMARY KEY,
+    make VARCHAR(50), model VARCHAR(100),
+    UNIQUE(make, model)  -- Prevents "Honda" vs "honda" inconsistency
+);
+
+CREATE TABLE listings (
+    id SERIAL PRIMARY KEY,
+    motorcycle_id INT REFERENCES motorcycles,
+    source ENUM('gumtree', 'webuycars'),
+    price_current INT, price_previous INT,
+    kilometers INT, location VARCHAR(100),
+    url TEXT UNIQUE,  -- Prevents duplicates at DB level
+    created_at TIMESTAMP, updated_at TIMESTAMP,
+    INDEX idx_motorcycle_source (motorcycle_id, source),
+    INDEX idx_updated_at (updated_at)
+);
+
+CREATE TABLE price_history (
+    id SERIAL PRIMARY KEY,
+    listing_id INT REFERENCES listings ON DELETE CASCADE,
+    price INT, recorded_at TIMESTAMP,
+    INDEX idx_listing_recorded (listing_id, recorded_at)  -- Fast time-series queries
+);
+```
+
+**Why this schema:**
+- Normalization prevents data anomalies
+- Foreign keys enforce referential integrity
+- Composite indexes handle "show all Hondas on Gumtree" in milliseconds
+- Separate price_history table = fast analytics (impossible with JSON arrays)
+
+### API Design: REST with Future GraphQL
+
+**Initial endpoints:**
+```
+GET    /api/listings                     # Filterable listings
+GET    /api/listings/{id}                # Single listing + full history
+GET    /api/listings/search?q=Honda      # Search by title
+GET    /api/motorcycles                  # All tracked bikes
+GET    /api/analytics/price-drops        # Price drop analytics
+```
+
+**Why REST initially:** Standard HTTP semantics, works perfectly for CRUD + analytics
+
+**Future GraphQL (Phase 7):** Once query complexity grows (nested filters, multiple joins)
+
+### Deployment Strategy
+
+**Development:** Docker Compose (FastAPI + PostgreSQL locally)
+
+**Production:**
+- **FastAPI**: Railway.app ($10-20/month) with auto-deploy on GitHub push
+- **Static dashboard**: GitHub Pages (free)
+- **Scraper automation**: GitHub Actions (free)
+
+### Why This Upgrade Matters
+
+| Current Bottleneck | Impact | Solution |
+|------------------|--------|----------|
+| No query API | Must clone repo to analyze listings | `/api/listings?filters=...` |
+| JSON file locks | Concurrent writes = corruption risk | PostgreSQL ACID transactions |
+| Static HTML rebuilds | 10k-row table regenerates every run | React SPA fetches incremental data |
+| No authentication | Can't safely share dashboard | JWT tokens + user accounts (Phase 6.3) |
+| O(n) price history search | "Show price trend" = slow JSON parsing | Indexed SQL queries return in <50ms |
+
+---
 
 ## Quick Start
 
@@ -114,25 +226,25 @@ The tracker automatically generates a beautiful, interactive web dashboard that 
 
 ### Dashboard Features
 
-**📊 Compact Statistics Header**
+**Compact Statistics Header**
 - Total listings found
 - Number of bikes tracked
 - Number of sources
 - **Price drops detected** (live counter)
 
-**📄 Triple-View Toggle**
+**Triple-View Toggle**
 - **By Bike Model** (default): Groups all listings by motorcycle
 - **By Source**: Groups all listings by website (Gumtree, WeBuyCars)
 - **Price Drops**: Dedicated view showing only listings with price reductions
 - Instant switching with toggle buttons
 
-**💸 Price Drop Indicators**
+**Price Drop Indicators**
 - Visual strikethrough on old prices: ~~R 95,000~~ R 85,000
 - Green row highlighting for discounted listings
 - Automatic price history tracking
 - Drop amount calculated and logged
 
-**📋 Comprehensive Data Tables**
+**Comprehensive Data Tables**
 
 Each listing shows:
 - **Source**: Which website (Gumtree, WeBuyCars)
@@ -142,7 +254,7 @@ Each listing shows:
 - **Location**: Geographic location (suburb/city)
 - **Link**: Direct link to view the listing
 
-**🎨 Modern Design**
+**Modern Design**
 - Dark theme with red accents (#e44c65)
 - Responsive tables (works on desktop, tablet, mobile)
 - Hover effects on table rows
@@ -277,10 +389,10 @@ python main.py
 ```
 
 **Benefits:**
-- ⚡ Fast searches (<100ms)
-- 🔒 Respectful to WeBuyCars servers (1 request/day vs dozens)
-- 🛡️ No search API failures or rate limiting
-- 📊 Price tracking works across cache refreshes
+-  Fast searches (<100ms)
+-  Respectful to WeBuyCars servers (1 request/day vs dozens)
+-  No search API failures or rate limiting
+-  Price tracking works across cache refreshes
 
 **Schedule daily refresh (Linux/Mac cron):**
 ```bash
@@ -384,11 +496,11 @@ Result: Clean, current-only data
 ### Console Output
 ```
 ============================================================
-🏍️  MOTORCYCLE LISTING TRACKER
+  MOTORCYCLE LISTING TRACKER
 ============================================================
 
-📍 Running on GitHub Actions
-ℹ️  AutoTrader disabled (IP blocked on GitHub Actions)
+ Running on GitHub Actions
+ℹ  AutoTrader disabled (IP blocked on GitHub Actions)
 ✓ Using: Gumtree + WeBuyCars
 
 Loaded 13 unique bike model(s) from bikes.txt
@@ -438,7 +550,7 @@ The tracker automatically monitors price changes across runs:
 
 **Console Output:**
 ```
-💰 Price drop detected for 2024 Honda Rebel 500: R95,000 → R85,000 (R10,000 drop) [Gumtree]
+Price drop detected for 2024 Honda Rebel 500: R95,000 → R85,000 (R10,000 drop) [Gumtree]
 ```
 
 **Dashboard Display:**
@@ -646,14 +758,14 @@ grep "Honda CB 500" tracker.log
 
 ## Roadmap
 
-### ✅ Phase 1: Foundation (Complete)
+### Phase 1: Foundation (Complete)
 - [x] Multi-site scraping (Gumtree, WeBuyCars)
 - [x] Duplicate detection
 - [x] Professional logging system
 - [x] Robust error handling
 - [x] Centralized configuration
 
-### ✅ Phase 2: Enhanced Data & UI (Complete)
+### Phase 2: Enhanced Data & UI (Complete)
 - [x] Kilometers/mileage tracking
 - [x] Location data capture
 - [x] Interactive GitHub Pages dashboard
@@ -661,34 +773,34 @@ grep "Honda CB 500" tracker.log
 - [x] Mobile-responsive design
 - [x] Table format with comprehensive data
 
-### ✅ Phase 3: Price Tracking (Complete)
+### Phase 3: Price Tracking (Complete)
 - [x] Price history tracking
 - [x] Price drop alerts
 - [x] Visual price drop indicators
 - [x] Dedicated "Price Drops" view
 
-### ✅ Phase 3.5: WeBuyCars Enhancement (Complete)
+### Phase 3.5: WeBuyCars Enhancement (Complete)
 - [x] Playwright API interception for cache refresh
 - [x] Daily cache system (~445 listings)
 - [x] Local fuzzy matching
 - [x] Price history tracking for WeBuyCars
 - **Result:** Fast, reliable, respectful to servers
 
-### ✅ Phase 4: Automation & GitHub Actions (Complete)
+### Phase 4: Automation & GitHub Actions (Complete)
 - [x] GitHub Actions workflow
 - [x] Automatic Sunday runs at 5:00 AM SAST
 - [x] Auto-commit cache and dashboard updates
 - [x] Rotating user agents to avoid detection
 - [x] Async/concurrent scraping
 
-### 📋 Phase 5: Future Enhancements
+### Phase 5: Future Enhancements
 - [ ] Email/SMS notifications
 - [ ] Command-line arguments (--quiet, --verbose, --bike "Honda Rebel")
 - [ ] More scrapers (OLX, Cars.co.za, dealerships)
 - [ ] Sortable/filterable table columns
 - [ ] Filter by price range, kilometers, location
 
-### 🚀 Future: Full-Stack Upgrade
+### Future: Full-Stack Upgrade
 - [ ] FastAPI backend
 - [ ] PostgreSQL database
 - [ ] React frontend
