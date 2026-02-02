@@ -237,10 +237,21 @@ async def main():
             for listing in bike_listings.values()
         ]
 
-        #generate excel and html report
-        generate_excel_report(flat_listings, bikes)
-        generate_html_report(all_flat, bikes, "docs/index.html")
-        logger.info("- Tracker completed successfully")
+        # Generate Excel report
+        try:
+            generate_excel_report(flat_listings, bikes)
+            logger.info("✓ Generated Excel report: data/listings.xlsx")
+        except Exception as e:
+            logger.error(f"Failed to generate Excel report: {e}", exc_info=True)
+            print(f"ERROR: Excel generation failed - {e}")
+
+        # Generate HTML report
+        try:
+            generate_html_report(flat_listings, bikes, "docs/index.html")
+            logger.info("✓ Generated HTML report: docs/index.html")
+        except Exception as e:
+            logger.error(f"Failed to generate HTML report: {e}", exc_info=True)
+            print(f"ERROR: HTML generation failed - {e}")
 
         return new_listings
 
