@@ -1,6 +1,6 @@
 # Motorcycle Listing Tracker
 
-A Python-based web scraper that automatically tracks motorcycle listings across multiple South African websites. View your findings on a beautiful, interactive GitHub Pages dashboard!
+A Python-based web scraper that automatically tracks motorcycle listings across multiple South African websites.
 
 ## Features
 
