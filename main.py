@@ -229,18 +229,30 @@ async def main():
         # Save
         save_listings(all_listings)
 
-        # Flatten listings for Excel export
-        # Convert from nested dict {bike: {id: listing}} to flat list [listing, listing, ...]
+
+        # # Generate HTML
+        # all_flat = [
+        #     listing
+        #     for bike_listings in current.values()
+        #     for listing in bike_listings.values()
+        # ]
+
+        # generate_html_report(all_flat, bikes, "docs/index.html")
+        # logger.info("Generated HTML report")
+
+        # return new_listings
+
+        # Flatten listings for reports (use current data from this run)
         flat_listings = [
             listing
-            for bike_listings in all_listings.values()
+            for bike_listings in current.values()
             for listing in bike_listings.values()
         ]
 
         # Generate Excel report
         try:
             generate_excel_report(flat_listings, bikes)
-            logger.info("✓ Generated Excel report: data/listings.xlsx")
+            # logger.info("Generated Excel report: data/listings.xlsx")
         except Exception as e:
             logger.error(f"Failed to generate Excel report: {e}", exc_info=True)
             print(f"ERROR: Excel generation failed - {e}")
@@ -248,7 +260,7 @@ async def main():
         # Generate HTML report
         try:
             generate_html_report(flat_listings, bikes, "docs/index.html")
-            logger.info("✓ Generated HTML report: docs/index.html")
+            # logger.info("Generated HTML report: docs/index.html")
         except Exception as e:
             logger.error(f"Failed to generate HTML report: {e}", exc_info=True)
             print(f"ERROR: HTML generation failed - {e}")
