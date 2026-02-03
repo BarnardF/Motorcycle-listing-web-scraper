@@ -1,9 +1,11 @@
 #Adventure / Dual-Sport
-Suzuki DS 250 SX V-STROM
+Suzuki V-STROM 250 SX 
+Lifan X Trail 250
 Honda CB 500 X
 
 #Sport / Supersport
 Kawasaki Ninja 400
+suzuki Gixxer 250
 
 #Modern Classics / Retro
 Triumph Scrambler 400 x
