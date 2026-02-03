@@ -174,7 +174,7 @@ def generate_excel_report(all_listings, bikes_tracked, output_file="data/listing
         os.makedirs("data", exist_ok=True)
         wb.save(output_file)
         
-        logger.info(f"- Generated Excel report: {output_file}")
+        logger.info(f"Generated Excel report: {output_file}")
         logger.info(f" - Total listings: {total_listings}")
         logger.info(f" - Bikes with listings: {len(listings_by_bike)}")
         logger.info(f" - Sources: {len(sources)}")
