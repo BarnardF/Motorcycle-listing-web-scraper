@@ -19,7 +19,7 @@ specific motorcycles. I wanted one automated place to see all listings.
 4. **Display** - Shows everything in an HTML dashboard
 
 ETL workflow for the Motorcycle Listing Tracker:
-```mermaid```
+```mermaid
 flowchart TD
     A[Gumtree Scraper] --> C[Transform: Fuzzy Match, Deduplicate, Track Prices]
     B[WeBuyCars Scraper] --> C
