@@ -26,7 +26,7 @@ flowchart TD
     C --> D[Load: Database + Dashboard]
     D --> E[GitHub Pages Display]
     D --> F[GitHub Actions Automation]
-
+```
 
 
 Runs automatically every Sunday via GitHub Actions.
