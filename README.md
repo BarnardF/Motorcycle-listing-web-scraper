@@ -21,10 +21,11 @@ specific motorcycles. I wanted one automated place to see all listings.
 ETL workflow for the Motorcycle Listing Tracker:
 ```mermaid
 flowchart TD
-    A[Listing Scrapers] --> C[Transform: Fuzzy Match, Deduplicate, Track Prices]
-    B --> C[Load: Database + Dashboard]
-    C --> D[GitHub Actions Automation]
-    D --> E[GitHub Pages Display]
+    A[Listing Scrapers] --> B[Transform: Fuzzy Match, Deduplicate, Track Prices]
+    B --> C[(Database)]
+    C --> D[Dashboard]
+    C --> E[GitHub Actions Automation]
+    E --> F[GitHub Pages Display]
 ```
 
 
