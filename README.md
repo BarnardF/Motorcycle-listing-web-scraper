@@ -23,9 +23,9 @@ ETL workflow for the Motorcycle Listing Tracker:
 flowchart TD
     A[Listing Scrapers] --> B[Transform: Fuzzy Match, Deduplicate, Track Prices]
     B --> C[(Database)]
-    C --> D[Dashboard]
-    C --> E[GitHub Actions Automation]
-    E --> F[GitHub Pages Display]
+    C --> D[GitHub Actions Automation]
+    D --> E[GitHub Pages Display]
+    E --> F[Dashboard]
 ```
 
 
