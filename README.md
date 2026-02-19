@@ -4,13 +4,6 @@ A web scraper that collects motorcycle listings from multiple sites,
 de-duplicates them, tracks price changes, and displays everything 
 in one dashboard.
 
-
-flowchart TD
-    A[Gumtree Scraper] --> C[Transform: Fuzzy Match, Deduplicate, Track Prices]
-    B[WeBuyCars Scraper] --> C
-    C --> D[Load: Database + Dashboard + GitHub Pages]
-
-
 Built with significant AI assistance for code implementation.
 
 ## Why I Built This
@@ -24,6 +17,16 @@ specific motorcycles. I wanted one automated place to see all listings.
 2. **Process** - Removes duplicates using fuzzy matching
 3. **Track** - Records price changes over time  
 4. **Display** - Shows everything in an HTML dashboard
+
+ETL workflow for the Motorcycle Listing Tracker:
+```mermaid
+flowchart TD
+    A[Gumtree Scraper] --> C[Transform: Fuzzy Match, Deduplicate, Track Prices]
+    B[WeBuyCars Scraper] --> C
+    C --> D[Load: Database + Dashboard]
+    D --> E[GitHub Pages Display]
+    D --> F[GitHub Actions Automation]
+
 
 Runs automatically every Sunday via GitHub Actions.
 
