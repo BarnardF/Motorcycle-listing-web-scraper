@@ -88,7 +88,8 @@ jobs:
 
           # Force add the files (don't rely on git diff, it's unreliable)
           git add -f docs/index.html
-          git add -f data/listings.json
+          # git add -f data/listings.json
+          git add -f data/listings.db
           
           # Check if there are staged changes
           if git diff --quiet --cached; then
