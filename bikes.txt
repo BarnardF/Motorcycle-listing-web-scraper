@@ -19,6 +19,8 @@ Yamaha MT 07
 BMW G 310
 BMW GS 310
 Kawasaki Z 400
+Big Boy Pacer 200
+Triumph Bonneville T100
 
 #Cruiser
 Kawasaki Eliminator
