@@ -14,6 +14,7 @@ from logger.logger import logger
 from config.config import SLEEP_MIN, SLEEP_MAX, IS_GITHUB_ACTIONS
 from template_generator.html_generator import generate_html_report
 from template_generator.excel_generator import generate_excel_report
+from template_generator.db_manager import DatabaseManager
 
 #scrapers
 from trackers.autotraderTracker import scrape_autotrader
@@ -172,6 +173,7 @@ def print_summary(new_listings):
 # MAIN
 # ─────────────────────────────────────────────────────────────
 async def main():
+    db = None  # Initialize database reference
     try:
         print("=" * 60)
         print("MOTORCYCLE LISTING TRACKER")
@@ -187,17 +189,18 @@ async def main():
             print(f"     • {b}")
         print()
 
-        previous = load_previous_listings()
+        # Initialize database
+        db = DatabaseManager()
+        previous = db.get_all_listings()
 
         # Scraping
         current = await scrape_all_bikes_async(bikes)
 
         # Processing
-        new_listings, price_drops = process_listings(current, previous)
+        new_listings = process_listings(current, previous)[0]  # Just take the first return value
         print_summary(new_listings)
 
         # Clean stale listings (only for live scrapers)
-        # Collect all IDs from *this run* that came from live scrapers
         current_run_ids = set()
 
         for bike_listings in current.values():
@@ -226,21 +229,9 @@ async def main():
             all_listings.setdefault(bike, {})
             all_listings[bike].update(listings)
 
-        # Save
-        save_listings(all_listings)
-
-
-        # # Generate HTML
-        # all_flat = [
-        #     listing
-        #     for bike_listings in current.values()
-        #     for listing in bike_listings.values()
-        # ]
-
-        # generate_html_report(all_flat, bikes, "docs/index.html")
-        # logger.info("Generated HTML report")
-
-        # return new_listings
+        # Save to database
+        db.save_listings(all_listings)
+        logger.info("Saved listings to database")
 
         # Flatten listings for reports (use current data from this run)
         flat_listings = [
@@ -252,7 +243,7 @@ async def main():
         # Generate Excel report
         try:
             generate_excel_report(flat_listings, bikes)
-            # logger.info("Generated Excel report: data/listings.xlsx")
+            logger.info("Generated Excel report: data/listings.xlsx")
         except Exception as e:
             logger.error(f"Failed to generate Excel report: {e}", exc_info=True)
             print(f"ERROR: Excel generation failed - {e}")
@@ -260,7 +251,7 @@ async def main():
         # Generate HTML report
         try:
             generate_html_report(flat_listings, bikes, "docs/index.html")
-            # logger.info("Generated HTML report: docs/index.html")
+            logger.info("Generated HTML report: docs/index.html")
         except Exception as e:
             logger.error(f"Failed to generate HTML report: {e}", exc_info=True)
             print(f"ERROR: HTML generation failed - {e}")
@@ -274,6 +265,10 @@ async def main():
     except Exception as e:
         logger.error(f"Unexpected error: {e}", exc_info=True)
         return []
+    
+    finally:
+        if db:
+            db.close()
 
 
 if __name__ == "__main__":
