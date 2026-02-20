@@ -2,7 +2,7 @@
 
 A web scraper that collects motorcycle listings from multiple sites, 
 de-duplicates them, tracks price changes, and displays everything 
-in one dashboard.
+in an Excel spreadsheet and dashboard.
 
 Built with significant AI assistance for code implementation.
 
@@ -16,18 +16,17 @@ specific motorcycles. I wanted one automated place to see all listings.
 1. **Scrape** - Collects listings from Gumtree and WeBuyCars
 2. **Process** - Removes duplicates using fuzzy matching
 3. **Track** - Records price changes over time  
-4. **Display** - Shows everything in an HTML dashboard
+4. **Display** - Saves to SQLite database and generates Excel exports
 
 ETL workflow for the Motorcycle Listing Tracker:
 ```mermaid
 flowchart TD
     A[Listing Scrapers] --> B[Transform: Fuzzy Match, Deduplicate, Track Prices]
-    B --> C[(Database)]
+    B --> C[(SQLite Database)]
     C --> D[GitHub Actions Automation]
-    D --> E[GitHub Pages Display]
-    E --> F[Dashboard]
+    D --> E[Excel + HTML Export]
+    E --> F[Results]
 ```
-
 
 Runs automatically every Sunday via GitHub Actions.
 
@@ -53,11 +52,17 @@ Runs automatically every Sunday via GitHub Actions.
 - Extract → Transform → Load workflow
 - Planning architecture before coding matters
 
+### 5. Database Design
+- SQLite provides better data organization than JSON
+- Relational schema with price history tracking
+- Easy to query and analyze listings
+
 ## Implementation Details
 
 - Gumtree & WeBuyCars scrapers (using Playwright)
 - Fuzzy duplicate detection
-- Price history tracking
+- Price history tracking in SQLite database
+- Excel spreadsheet export
 - GitHub Pages dashboard
 - GitHub Actions automation
 - Concurrent scraping with ThreadPoolExecutor
