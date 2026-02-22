@@ -1,9 +1,10 @@
 # .github/workflows/sunday-tracker.yml
 # Runs every Sunday at 5:00 AM SAST (03:00 UTC)
-# 1. Refreshes WeBuyCars cache
-# 2. Runs the full motorcycle tracker
-# 3. Commits updates only if files changed
-# 4. Uploads logs & cache backups for debugging
+# 1. Refreshes ZABikers cache
+# 2. Refreshes WeBuyCars cache
+# 3. Runs the full motorcycle tracker
+# 4. Commits updates only if files changed
+# 5. Uploads logs & cache backups for debugging
 
 name: Sunday Motorcycle Tracker
 
@@ -45,22 +46,53 @@ jobs:
           playwright install
 
       # --------------------------------------------------
-      # STEP 1 — Refresh WeBuyCars cache
+      # STEP 1 — Refresh ZABikers cache
+      # --------------------------------------------------
+      - name: Refresh ZABikers cache
+        run: python cache_zabikers.py
+
+      - name: Verify ZABikers cache file exists
+        run: |
+          if [ ! -f data/zabikers_cache.json ]; then
+            echo "ZABikers cache file not created"
+            exit 1
+          fi
+          
+          size=$(stat -c%s data/zabikers_cache.json 2>/dev/null || stat -f%z data/zabikers_cache.json 2>/dev/null)
+          echo "✓ ZABikers cache file created: $size bytes"
+
+      - name: Commit ZABikers cache updates (if changed)
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          git add data/zabikers_cache.json
+          
+          if git diff --quiet --cached; then
+            echo "✓ ZABikers cache unchanged — skipping commit"
+          else
+            echo "✓ ZABikers cache updated — committing changes"
+            git commit -m "Auto-refresh ZABikers cache - Sunday [$(TZ='Africa/Johannesburg' date +'%d-%m-%Y %H:%M:%S SAST')]"
+            git push
+          fi
+
+      # --------------------------------------------------
+      # STEP 2 — Refresh WeBuyCars cache
       # --------------------------------------------------
       - name: Refresh WeBuyCars cache
         run: python cache_webuycars.py
 
-      - name: Verify cache file exists
+      - name: Verify WeBuyCars cache file exists
         run: |
           if [ ! -f data/webuycars_cache.json ]; then
-            echo "Cache file not created"
+            echo "WeBuyCars cache file not created"
             exit 1
           fi
           
           size=$(stat -c%s data/webuycars_cache.json 2>/dev/null || stat -f%z data/webuycars_cache.json 2>/dev/null)
-          echo "✓ Cache file created: $size bytes"
+          echo "✓ WeBuyCars cache file created: $size bytes"
 
-      - name: Commit cache updates (if changed)
+      - name: Commit WeBuyCars cache updates (if changed)
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -68,15 +100,15 @@ jobs:
           git add data/webuycars_cache.json
           
           if git diff --quiet --cached; then
-            echo "✓ Cache unchanged — skipping commit"
+            echo "✓ WeBuyCars cache unchanged — skipping commit"
           else
-            echo "✓ Cache updated — committing changes"
+            echo "✓ WeBuyCars cache updated — committing changes"
             git commit -m "Auto-refresh WeBuyCars cache - Sunday [$(TZ='Africa/Johannesburg' date +'%d-%m-%Y %H:%M:%S SAST')]"
             git push
           fi
 
       # --------------------------------------------------
-      # STEP 2 — Run full tracker
+      # STEP 3 — Run full tracker
       # --------------------------------------------------
       - name: Run motorcycle tracker
         run: python main.py
@@ -88,7 +120,6 @@ jobs:
 
           # Force add the files (don't rely on git diff, it's unreliable)
           git add -f docs/index.html
-          # git add -f data/listings.json
           git add -f data/listings.db
           
           # Check if there are staged changes
@@ -101,7 +132,7 @@ jobs:
           fi
 
       # --------------------------------------------------
-      # STEP 3 — Upload logs for debugging
+      # STEP 4 — Upload logs for debugging
       # --------------------------------------------------
       - name: Upload execution logs
         if: always()
@@ -111,7 +142,15 @@ jobs:
           path: tracker.log
           retention-days: 30
 
-      - name: Upload cache backup
+      - name: Upload ZABikers cache backup
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: zabikers-cache-backup
+          path: data/zabikers_cache.json
+          retention-days: 30
+
+      - name: Upload WeBuyCars cache backup
         if: always()
         uses: actions/upload-artifact@v4
         with:

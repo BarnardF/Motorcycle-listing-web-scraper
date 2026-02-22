@@ -2,7 +2,7 @@
 WeBuyCars Cache Generator (Playwright API Interception)
 Fetches ALL motorcycle listings from WeBuyCars API and stores them locally.
 Uses Playwright to intercept API responses - much faster and more reliable than DOM scraping.
-Used ai(Claude) to help write this code after many, many, many hours of strugling to figure this shit out.
+Used ai(Claude) to help write this code after many, many, many hours of struggling to figure this shit out.
 """
 
 import json

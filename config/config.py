@@ -12,6 +12,8 @@ DATA_FOLDER.mkdir(exist_ok=True)
 # Main data files (in data folder)
 DATA_FILE = str(DATA_FOLDER / "listings.json")
 WEBUYCARS_CACHE_FILE = str(DATA_FOLDER / "webuycars_cache.json")
+ZABIKERS_CACHE_FILE = str(DATA_FOLDER / "zabikers_cache.json")
+
 
 # Other files (in root)
 BIKE_FILE = "bikes.txt"
@@ -59,6 +61,7 @@ LOG_DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 AUTOTRADER_BASE_URL = "https://www.autotrader.co.za/bikes-for-sale"
 GUMTREE_BASE_URL = "https://www.gumtree.co.za/s-motorcycles-scooters/v1c9027p1"
 WEBUYCARS_BASE_URL = 'https://www.webuycars.co.za/buy-a-car?activeTypeSearch=["Motorbike"]'
+ZABIKERS_BASE_URL = "https://www.zabikers.co.za/bikes-for-sale/"
 
 # API Keywords to identify relevant responses
 API_KEYWORDS = "website-elastic-backend/api/search"
@@ -71,4 +74,5 @@ MATCH_THRESHOLDS = {
     "gumtree": 0.40,      # Threshold for Gumtree fuzzy matching
     "autotrader": 0.50,    # Threshold for AutoTrader relevance matching
     "webuycars": 0.4575,     # Threshold for WeBuyCars cache searching
+    "zabikers": 0.45        # Threshold for zabikers cache searching
 }

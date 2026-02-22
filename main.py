@@ -20,11 +20,13 @@ from template_generator.db_manager import DatabaseManager
 from trackers.autotraderTracker import scrape_autotrader
 from trackers.gumtreeTracker import scrape_gumtree
 from trackers.webuycarsTracker import scrape_webuycars_cached
+from trackers.zabikerstracker import scrape_zabikers
 
 SCRAPERS = [
     scrape_autotrader,
     scrape_gumtree,
-    scrape_webuycars_cached  
+    scrape_webuycars_cached,  
+    scrape_zabikers  
 ]
 
 if IS_GITHUB_ACTIONS:
