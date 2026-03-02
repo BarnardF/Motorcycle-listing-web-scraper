@@ -1,19 +1,331 @@
 {
-  "timestamp": "2026-03-01T04:51:19.860127",
-  "date_formatted": "01/03/2026 04:51:19",
+  "timestamp": "2026-03-02T18:32:36.743146",
+  "date_formatted": "02/03/2026 18:32:36",
   "total_listings": 472,
   "listings": {
-    "webuycars_0F2A11517": {
-      "vehicle_id": "webuycars_0F2A11517",
-      "stock_number": "0F2A11517",
-      "title": "2025 Big Boy Pacer 200 Pacer 200",
-      "price": 22900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Pacer 200/0F2A11517",
+    "webuycars_3F1E12795": {
+      "vehicle_id": "webuycars_3F1E12795",
+      "stock_number": "3F1E12795",
+      "title": "2024 KTM SX 125 SX",
+      "price": 57900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/SX/3F1E12795",
+      "make": "KTM",
+      "model": "SX",
+      "source": "WeBuyCars",
+      "kilometers": 71,
+      "location": "Midstream (GP)"
+    },
+    "webuycars_357205481": {
+      "vehicle_id": "webuycars_357205481",
+      "stock_number": "357205481",
+      "title": "2023 SYM Crox NH X125",
+      "price": 24000,
+      "url": "https://www.webuycars.co.za/buy-a-car/SYM/Crox/357205481",
+      "make": "SYM",
+      "model": "Crox",
+      "source": "WeBuyCars",
+      "kilometers": 1613,
+      "location": "Lansdowne (WC)"
+    },
+    "webuycars_201108163": {
+      "vehicle_id": "webuycars_201108163",
+      "stock_number": "201108163",
+      "title": "2025 Big Boy Velocity Cargo 150",
+      "price": 14000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/201108163",
+      "make": "Big Boy",
+      "model": "Velocity Cargo",
+      "source": "WeBuyCars",
+      "kilometers": 3070,
+      "location": "Dome (GP)"
+    },
+    "webuycars_6F0308160": {
+      "vehicle_id": "webuycars_6F0308160",
+      "stock_number": "6F0308160",
+      "title": "2025 Honda ACE 125",
+      "price": 21000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/ACE/6F0308160",
+      "make": "Honda",
+      "model": "ACE",
+      "source": "WeBuyCars",
+      "kilometers": 2983,
+      "location": "Dome (GP)"
+    },
+    "webuycars_94A807898": {
+      "vehicle_id": "webuycars_94A807898",
+      "stock_number": "94A807898",
+      "title": "2014 Big Boy Revival 150",
+      "price": 11000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Revival/94A807898",
+      "make": "Big Boy",
+      "model": "Revival",
+      "source": "WeBuyCars",
+      "kilometers": 2332,
+      "location": "Midstream (GP)"
+    },
+    "webuycars_A41911129": {
+      "vehicle_id": "webuycars_A41911129",
+      "stock_number": "A41911129",
+      "title": "2022 KTM Duke 390 Adventure",
+      "price": 62900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Duke/A41911129",
+      "make": "KTM",
+      "model": "Duke",
+      "source": "WeBuyCars",
+      "kilometers": 5137,
+      "location": "Midstream (GP)"
+    },
+    "webuycars_1C9802358": {
+      "vehicle_id": "webuycars_1C9802358",
+      "stock_number": "1C9802358",
+      "title": "2023 Kawasaki KLE 300 Versys-X",
+      "price": 57000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLE/1C9802358",
+      "make": "Kawasaki",
+      "model": "KLE",
+      "source": "WeBuyCars",
+      "kilometers": 8430,
+      "location": "Germiston (GP)"
+    },
+    "webuycars_4DED08387": {
+      "vehicle_id": "webuycars_4DED08387",
+      "stock_number": "4DED08387",
+      "title": "2024 Big Boy Pacer 200 Pacer 200",
+      "price": 15000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Pacer 200/4DED08387",
       "make": "Big Boy",
       "model": "Pacer 200",
       "source": "WeBuyCars",
-      "kilometers": 24,
-      "location": "East London (EC)"
+      "kilometers": 9046,
+      "location": "Brackenfell (WC)"
+    },
+    "webuycars_CB2F05587": {
+      "vehicle_id": "webuycars_CB2F05587",
+      "stock_number": "CB2F05587",
+      "title": "2015 Kawasaki KLE 650 Versys (14)",
+      "price": 61000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLE/CB2F05587",
+      "make": "Kawasaki",
+      "model": "KLE",
+      "source": "WeBuyCars",
+      "kilometers": 24764,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_F6FA06514": {
+      "vehicle_id": "webuycars_F6FA06514",
+      "stock_number": "F6FA06514",
+      "title": "2015 BMW F Series F 800 GS MU F/lift",
+      "price": 74000,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/F6FA06514",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 44071,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_6F5907323": {
+      "vehicle_id": "webuycars_6F5907323",
+      "stock_number": "6F5907323",
+      "title": "2014 KTM Enduro 690 Enduro R",
+      "price": 44900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Enduro/6F5907323",
+      "make": "KTM",
+      "model": "Enduro",
+      "source": "WeBuyCars",
+      "kilometers": 51866,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_AEF705960": {
+      "vehicle_id": "webuycars_AEF705960",
+      "stock_number": "AEF705960",
+      "title": "2017 KTM Enduro 690 Enduro R",
+      "price": 44900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Enduro/AEF705960",
+      "make": "KTM",
+      "model": "Enduro",
+      "source": "WeBuyCars",
+      "kilometers": 54364,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_647806612": {
+      "vehicle_id": "webuycars_647806612",
+      "stock_number": "647806612",
+      "title": "2015 Suzuki DL 1000a V Strom",
+      "price": 71000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/DL/647806612",
+      "make": "Suzuki",
+      "model": "DL",
+      "source": "WeBuyCars",
+      "kilometers": 68558,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_76DE04781": {
+      "vehicle_id": "webuycars_76DE04781",
+      "stock_number": "76DE04781",
+      "title": "2008 BMW G Series G450 X",
+      "price": 25000,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/76DE04781",
+      "make": "BMW",
+      "model": "G Series",
+      "source": "WeBuyCars",
+      "kilometers": 8076,
+      "location": "Montana (GP)"
+    },
+    "webuycars_5A1813296": {
+      "vehicle_id": "webuycars_5A1813296",
+      "stock_number": "5A1813296",
+      "title": "2010 Harley Davidson Dyna Super Glide Custom",
+      "price": 90000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Dyna/5A1813296",
+      "make": "Harley Davidson",
+      "model": "Dyna",
+      "source": "WeBuyCars",
+      "kilometers": 12265,
+      "location": "Dome (GP)"
+    },
+    "webuycars_DD1215206": {
+      "vehicle_id": "webuycars_DD1215206",
+      "stock_number": "DD1215206",
+      "title": "2025 Lifan Lifan 125 Lifan 125",
+      "price": 15900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Lifan/Lifan 125/DD1215206",
+      "make": "Lifan",
+      "model": "Lifan 125",
+      "source": "WeBuyCars",
+      "kilometers": 207,
+      "location": "Riverhorse (KZN)"
+    },
+    "webuycars_718805035": {
+      "vehicle_id": "webuycars_718805035",
+      "stock_number": "718805035",
+      "title": "2008 Yamaha YZF R1 YZF R1",
+      "price": 75900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/YZF R1/718805035",
+      "make": "Yamaha",
+      "model": "YZF R1",
+      "source": "WeBuyCars",
+      "kilometers": 41862,
+      "location": "Dome (GP)"
+    },
+    "webuycars_935415032": {
+      "vehicle_id": "webuycars_935415032",
+      "stock_number": "935415032",
+      "title": "2015 Polaris Sportsman 400/450 4x4",
+      "price": 74900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Polaris/Sportsman/935415032",
+      "make": "Polaris",
+      "model": "Sportsman",
+      "source": "WeBuyCars",
+      "kilometers": 451,
+      "location": "Mbombela (MP)"
+    },
+    "webuycars_F75615445": {
+      "vehicle_id": "webuycars_F75615445",
+      "stock_number": "F75615445",
+      "title": "2025 Zontes ZT Zt310-R",
+      "price": 54900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Zontes/ZT/F75615445",
+      "make": "Zontes",
+      "model": "ZT",
+      "source": "WeBuyCars",
+      "kilometers": 551,
+      "location": "Brackenfell (WC)"
+    },
+    "webuycars_244002139": {
+      "vehicle_id": "webuycars_244002139",
+      "stock_number": "244002139",
+      "title": "2012 Yamaha Royal Star",
+      "price": 38900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/Royal/244002139",
+      "make": "Yamaha",
+      "model": "Royal",
+      "source": "WeBuyCars",
+      "kilometers": 50595,
+      "location": "Dome (GP)"
+    },
+    "webuycars_DAA514572": {
+      "vehicle_id": "webuycars_DAA514572",
+      "stock_number": "DAA514572",
+      "title": "2022 Husqvarna TE 250 I",
+      "price": 78900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TE/DAA514572",
+      "make": "Husqvarna",
+      "model": "TE",
+      "source": "WeBuyCars",
+      "kilometers": 1198,
+      "location": "Brackenfell (WC)"
+    },
+    "webuycars_09A815528": {
+      "vehicle_id": "webuycars_09A815528",
+      "stock_number": "09A815528",
+      "title": "2015 Harley Davidson Sportster Xl883 N Iron",
+      "price": 89900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/09A815528",
+      "make": "Harley Davidson",
+      "model": "Sportster",
+      "source": "WeBuyCars",
+      "kilometers": 4188,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_6E2E15592": {
+      "vehicle_id": "webuycars_6E2E15592",
+      "stock_number": "6E2E15592",
+      "title": "2023 SYM Fiddle II 150",
+      "price": 18900,
+      "url": "https://www.webuycars.co.za/buy-a-car/SYM/Fiddle/6E2E15592",
+      "make": "SYM",
+      "model": "Fiddle",
+      "source": "WeBuyCars",
+      "kilometers": 3534,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_6D5700450": {
+      "vehicle_id": "webuycars_6D5700450",
+      "stock_number": "6D5700450",
+      "title": "2011 Aprilia Rsv4 R Aprc",
+      "price": 68000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Aprilia/Rsv4/6D5700450",
+      "make": "Aprilia",
+      "model": "Rsv4",
+      "source": "WeBuyCars",
+      "kilometers": 72144,
+      "location": "Dome (GP)"
+    },
+    "webuycars_9EA503972": {
+      "vehicle_id": "webuycars_9EA503972",
+      "stock_number": "9EA503972",
+      "title": "2020 Husqvarna TC 50",
+      "price": 16900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TC/9EA503972",
+      "make": "Husqvarna",
+      "model": "TC",
+      "source": "WeBuyCars",
+      "kilometers": "N/A",
+      "location": "Midstream (GP)"
+    },
+    "webuycars_34E914049": {
+      "vehicle_id": "webuycars_34E914049",
+      "stock_number": "34E914049",
+      "title": "2016 Yamaha XTZ 125",
+      "price": 18900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/XTZ/34E914049",
+      "make": "Yamaha",
+      "model": "XTZ",
+      "source": "WeBuyCars",
+      "kilometers": 5835,
+      "location": "Montana (GP)"
+    },
+    "webuycars_D21409264": {
+      "vehicle_id": "webuycars_D21409264",
+      "stock_number": "D21409264",
+      "title": "2015 Honda CRF 250 L",
+      "price": 44900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CRF/D21409264",
+      "make": "Honda",
+      "model": "CRF",
+      "source": "WeBuyCars",
+      "kilometers": 5560,
+      "location": "Riverhorse (KZN)"
     },
     "webuycars_53C711273": {
       "vehicle_id": "webuycars_53C711273",
@@ -27,17 +339,17 @@
       "kilometers": 7,
       "location": "Dome (GP)"
     },
-    "webuycars_0C4E00462": {
-      "vehicle_id": "webuycars_0C4E00462",
-      "stock_number": "0C4E00462",
-      "title": "2025 Custom Mobility Scooter HS-925",
-      "price": 14900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Custom/Mobility Scooter/0C4E00462",
-      "make": "Custom",
-      "model": "Mobility Scooter",
+    "webuycars_0F2A11517": {
+      "vehicle_id": "webuycars_0F2A11517",
+      "stock_number": "0F2A11517",
+      "title": "2025 Big Boy Pacer 200 Pacer 200",
+      "price": 22900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Pacer 200/0F2A11517",
+      "make": "Big Boy",
+      "model": "Pacer 200",
       "source": "WeBuyCars",
-      "kilometers": 101,
-      "location": "Midstream (GP)"
+      "kilometers": 24,
+      "location": "East London (EC)"
     },
     "webuycars_10DB00920": {
       "vehicle_id": "webuycars_10DB00920",
@@ -51,18 +363,6 @@
       "kilometers": 91,
       "location": "Dome (GP)"
     },
-    "webuycars_3D7408650": {
-      "vehicle_id": "webuycars_3D7408650",
-      "stock_number": "3D7408650",
-      "title": "2025 Lifan Lifan 125 Lifan 125",
-      "price": 16900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Lifan/Lifan 125/3D7408650",
-      "make": "Lifan",
-      "model": "Lifan 125",
-      "source": "WeBuyCars",
-      "kilometers": 72,
-      "location": "Midstream (GP)"
-    },
     "webuycars_3E3708499": {
       "vehicle_id": "webuycars_3E3708499",
       "stock_number": "3E3708499",
@@ -74,18 +374,6 @@
       "source": "WeBuyCars",
       "kilometers": 34,
       "location": "Riverhorse (KZN)"
-    },
-    "webuycars_3F1E12795": {
-      "vehicle_id": "webuycars_3F1E12795",
-      "stock_number": "3F1E12795",
-      "title": "2024 KTM SX 125 SX",
-      "price": 61900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/SX/3F1E12795",
-      "make": "KTM",
-      "model": "SX",
-      "source": "WeBuyCars",
-      "kilometers": 71,
-      "location": "Midstream (GP)"
     },
     "webuycars_CAEC10090": {
       "vehicle_id": "webuycars_CAEC10090",
@@ -133,18 +421,6 @@
       "model": "XC",
       "source": "WeBuyCars",
       "kilometers": 154,
-      "location": "Dome (GP)"
-    },
-    "webuycars_8F1C06024": {
-      "vehicle_id": "webuycars_8F1C06024",
-      "stock_number": "8F1C06024",
-      "title": "2019 Husqvarna TX 300",
-      "price": 64900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TX/8F1C06024",
-      "make": "Husqvarna",
-      "model": "TX",
-      "source": "WeBuyCars",
-      "kilometers": 184,
       "location": "Dome (GP)"
     },
     "webuycars_9F6703932": {
@@ -195,17 +471,17 @@
       "kilometers": 158,
       "location": "Midstream (GP)"
     },
-    "webuycars_27E107061": {
-      "vehicle_id": "webuycars_27E107061",
-      "stock_number": "27E107061",
-      "title": "2019 SYM Fiddle II 150",
-      "price": 15400,
-      "url": "https://www.webuycars.co.za/buy-a-car/SYM/Fiddle/27E107061",
-      "make": "SYM",
-      "model": "Fiddle",
+    "webuycars_1E5014819": {
+      "vehicle_id": "webuycars_1E5014819",
+      "stock_number": "1E5014819",
+      "title": "2016 Ducati Hypermotard Hyperstrada",
+      "price": 88900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Ducati/Hypermotard/1E5014819",
+      "make": "Ducati",
+      "model": "Hypermotard",
       "source": "WeBuyCars",
-      "kilometers": 297,
-      "location": "Dome (GP)"
+      "kilometers": 26275,
+      "location": "Brackenfell (WC)"
     },
     "webuycars_5BBD07521": {
       "vehicle_id": "webuycars_5BBD07521",
@@ -231,17 +507,17 @@
       "kilometers": 286,
       "location": "Dome (GP)"
     },
-    "webuycars_6C7F09032": {
-      "vehicle_id": "webuycars_6C7F09032",
-      "stock_number": "6C7F09032",
-      "title": "2015 KTM XC 300 Xc-W SIX Days (tpi)",
-      "price": 43900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/XC/6C7F09032",
-      "make": "KTM",
-      "model": "XC",
+    "webuycars_8F1C06024": {
+      "vehicle_id": "webuycars_8F1C06024",
+      "stock_number": "8F1C06024",
+      "title": "2019 Husqvarna TX 300",
+      "price": 64900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TX/8F1C06024",
+      "make": "Husqvarna",
+      "model": "TX",
       "source": "WeBuyCars",
-      "kilometers": 355,
-      "location": "Polokwane (L)"
+      "kilometers": 184,
+      "location": "Dome (GP)"
     },
     "webuycars_93F803700": {
       "vehicle_id": "webuycars_93F803700",
@@ -254,18 +530,6 @@
       "source": "WeBuyCars",
       "kilometers": 230,
       "location": "Montana (GP)"
-    },
-    "webuycars_CA1D07416": {
-      "vehicle_id": "webuycars_CA1D07416",
-      "stock_number": "CA1D07416",
-      "title": "2025 Big Boy Pacer 200 Pacer 200",
-      "price": 16900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Pacer 200/CA1D07416",
-      "make": "Big Boy",
-      "model": "Pacer 200",
-      "source": "WeBuyCars",
-      "kilometers": 199,
-      "location": "Gqeberha (EC)"
     },
     "webuycars_E18713387": {
       "vehicle_id": "webuycars_E18713387",
@@ -327,17 +591,29 @@
       "kilometers": 648,
       "location": "Silver Lakes (GP)"
     },
-    "webuycars_781407546": {
-      "vehicle_id": "webuycars_781407546",
-      "stock_number": "781407546",
-      "title": "2026 Big Boy Velocity Cargo 150",
-      "price": 16900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/781407546",
-      "make": "Big Boy",
-      "model": "Velocity Cargo",
+    "webuycars_6C7F09032": {
+      "vehicle_id": "webuycars_6C7F09032",
+      "stock_number": "6C7F09032",
+      "title": "2015 KTM XC 300 Xc-W SIX Days (tpi)",
+      "price": 40900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/XC/6C7F09032",
+      "make": "KTM",
+      "model": "XC",
       "source": "WeBuyCars",
-      "kilometers": 457,
-      "location": "Richmond (WC)"
+      "kilometers": 355,
+      "location": "Polokwane (L)"
+    },
+    "webuycars_92F113292": {
+      "vehicle_id": "webuycars_92F113292",
+      "stock_number": "92F113292",
+      "title": "2015 Custom Electric Wheelchair",
+      "price": 11900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Custom/Electric/92F113292",
+      "make": "Custom",
+      "model": "Electric",
+      "source": "WeBuyCars",
+      "kilometers": "N/A",
+      "location": "Polokwane (L)"
     },
     "webuycars_91EB05077": {
       "vehicle_id": "webuycars_91EB05077",
@@ -362,6 +638,18 @@
       "source": "WeBuyCars",
       "kilometers": 894,
       "location": "Richmond (WC)"
+    },
+    "webuycars_0C4E00462": {
+      "vehicle_id": "webuycars_0C4E00462",
+      "stock_number": "0C4E00462",
+      "title": "2025 Custom Mobility Scooter HS-925",
+      "price": 13900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Custom/Mobility Scooter/0C4E00462",
+      "make": "Custom",
+      "model": "Mobility Scooter",
+      "source": "WeBuyCars",
+      "kilometers": 101,
+      "location": "Midstream (GP)"
     },
     "webuycars_448314016": {
       "vehicle_id": "webuycars_448314016",
@@ -411,18 +699,6 @@
       "kilometers": 1000,
       "location": "Dome (GP)"
     },
-    "webuycars_775F14473": {
-      "vehicle_id": "webuycars_775F14473",
-      "stock_number": "775F14473",
-      "title": "2016 KTM XC 300 Xc-W SIX Days (tpi)",
-      "price": 49900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/XC/775F14473",
-      "make": "KTM",
-      "model": "XC",
-      "source": "WeBuyCars",
-      "kilometers": 1001,
-      "location": "Silver Lakes (GP)"
-    },
     "webuycars_C06C04414": {
       "vehicle_id": "webuycars_C06C04414",
       "stock_number": "C06C04414",
@@ -458,18 +734,6 @@
       "source": "WeBuyCars",
       "kilometers": 1369,
       "location": "Dome (GP)"
-    },
-    "webuycars_357205481": {
-      "vehicle_id": "webuycars_357205481",
-      "stock_number": "357205481",
-      "title": "2023 SYM Crox NH X125",
-      "price": 26900,
-      "url": "https://www.webuycars.co.za/buy-a-car/SYM/Crox/357205481",
-      "make": "SYM",
-      "model": "Crox",
-      "source": "WeBuyCars",
-      "kilometers": 1613,
-      "location": "Lansdowne (WC)"
     },
     "webuycars_64D514250": {
       "vehicle_id": "webuycars_64D514250",
@@ -519,6 +783,18 @@
       "kilometers": 1579,
       "location": "Dome (GP)"
     },
+    "webuycars_E23615349": {
+      "vehicle_id": "webuycars_E23615349",
+      "stock_number": "E23615349",
+      "title": "2015 BMW G Series G650 GS ABS H/grips",
+      "price": 58900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/E23615349",
+      "make": "BMW",
+      "model": "G Series",
+      "source": "WeBuyCars",
+      "kilometers": 41905,
+      "location": "Richmond (WC)"
+    },
     "webuycars_D5FD15079": {
       "vehicle_id": "webuycars_D5FD15079",
       "stock_number": "D5FD15079",
@@ -543,18 +819,6 @@
       "kilometers": 2280,
       "location": "Richmond (WC)"
     },
-    "webuycars_10E214734": {
-      "vehicle_id": "webuycars_10E214734",
-      "stock_number": "10E214734",
-      "title": "2023 Big Boy Velocity Cargo 150",
-      "price": 14700,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/10E214734",
-      "make": "Big Boy",
-      "model": "Velocity Cargo",
-      "source": "WeBuyCars",
-      "kilometers": 2358,
-      "location": "Lansdowne (WC)"
-    },
     "webuycars_15E108904": {
       "vehicle_id": "webuycars_15E108904",
       "stock_number": "15E108904",
@@ -577,42 +841,6 @@
       "model": "TSR",
       "source": "WeBuyCars",
       "kilometers": 3006,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_6F0308160": {
-      "vehicle_id": "webuycars_6F0308160",
-      "stock_number": "6F0308160",
-      "title": "2025 Honda ACE 125",
-      "price": 23900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/ACE/6F0308160",
-      "make": "Honda",
-      "model": "ACE",
-      "source": "WeBuyCars",
-      "kilometers": 2983,
-      "location": "Dome (GP)"
-    },
-    "webuycars_7CE505838": {
-      "vehicle_id": "webuycars_7CE505838",
-      "stock_number": "7CE505838",
-      "title": "2022 KTM Duke 390 Adventure",
-      "price": 61900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Duke/7CE505838",
-      "make": "KTM",
-      "model": "Duke",
-      "source": "WeBuyCars",
-      "kilometers": 2628,
-      "location": "Montana (GP)"
-    },
-    "webuycars_94A807898": {
-      "vehicle_id": "webuycars_94A807898",
-      "stock_number": "94A807898",
-      "title": "2014 Big Boy Revival 150",
-      "price": 12900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Revival/94A807898",
-      "make": "Big Boy",
-      "model": "Revival",
-      "source": "WeBuyCars",
-      "kilometers": 2332,
       "location": "Midstream (GP)"
     },
     "webuycars_011200978": {
@@ -651,18 +879,6 @@
       "kilometers": 4421,
       "location": "Richmond (WC)"
     },
-    "webuycars_201108163": {
-      "vehicle_id": "webuycars_201108163",
-      "stock_number": "201108163",
-      "title": "2025 Big Boy Velocity Cargo 150",
-      "price": 16900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/201108163",
-      "make": "Big Boy",
-      "model": "Velocity Cargo",
-      "source": "WeBuyCars",
-      "kilometers": 3070,
-      "location": "Dome (GP)"
-    },
     "webuycars_349C08661": {
       "vehicle_id": "webuycars_349C08661",
       "stock_number": "349C08661",
@@ -686,6 +902,18 @@
       "source": "WeBuyCars",
       "kilometers": 3486,
       "location": "Richmond (WC)"
+    },
+    "webuycars_A7C611819": {
+      "vehicle_id": "webuycars_A7C611819",
+      "stock_number": "A7C611819",
+      "title": "2022 Big Boy Velocity Cargo 150",
+      "price": 13400,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/A7C611819",
+      "make": "Big Boy",
+      "model": "Velocity Cargo",
+      "source": "WeBuyCars",
+      "kilometers": 15138,
+      "location": "Midstream (GP)"
     },
     "webuycars_BF2503905": {
       "vehicle_id": "webuycars_BF2503905",
@@ -711,17 +939,17 @@
       "kilometers": 5127,
       "location": "Dome (GP)"
     },
-    "webuycars_53C407306": {
-      "vehicle_id": "webuycars_53C407306",
-      "stock_number": "53C407306",
-      "title": "2021 KTM SX-F 250 Sx-F",
-      "price": 59900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/SX-F/53C407306",
-      "make": "KTM",
-      "model": "SX-F",
+    "webuycars_5F6410185": {
+      "vehicle_id": "webuycars_5F6410185",
+      "stock_number": "5F6410185",
+      "title": "2020 Honda CHA 125 (elite)",
+      "price": 19900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CHA/5F6410185",
+      "make": "Honda",
+      "model": "CHA",
       "source": "WeBuyCars",
-      "kilometers": 5001,
-      "location": "Germiston (GP)"
+      "kilometers": 5631,
+      "location": "Dome (GP)"
     },
     "webuycars_85E712209": {
       "vehicle_id": "webuycars_85E712209",
@@ -735,18 +963,6 @@
       "kilometers": 5000,
       "location": "Germiston (GP)"
     },
-    "webuycars_A41911129": {
-      "vehicle_id": "webuycars_A41911129",
-      "stock_number": "A41911129",
-      "title": "2022 KTM Duke 390 Adventure",
-      "price": 66900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Duke/A41911129",
-      "make": "KTM",
-      "model": "Duke",
-      "source": "WeBuyCars",
-      "kilometers": 5137,
-      "location": "Midstream (GP)"
-    },
     "webuycars_A5AD15143": {
       "vehicle_id": "webuycars_A5AD15143",
       "stock_number": "A5AD15143",
@@ -758,18 +974,6 @@
       "source": "WeBuyCars",
       "kilometers": 5562,
       "location": "Dome (GP)"
-    },
-    "webuycars_B6C907619": {
-      "vehicle_id": "webuycars_B6C907619",
-      "stock_number": "B6C907619",
-      "title": "2022 BMW C G 310 R",
-      "price": 57900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/C/B6C907619",
-      "make": "BMW",
-      "model": "C",
-      "source": "WeBuyCars",
-      "kilometers": 4600,
-      "location": "Midstream (GP)"
     },
     "webuycars_E95005460": {
       "vehicle_id": "webuycars_E95005460",
@@ -807,18 +1011,6 @@
       "kilometers": 7277,
       "location": "Richmond (WC)"
     },
-    "webuycars_5F6410185": {
-      "vehicle_id": "webuycars_5F6410185",
-      "stock_number": "5F6410185",
-      "title": "2020 Honda CHA 125 (elite)",
-      "price": 19900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CHA/5F6410185",
-      "make": "Honda",
-      "model": "CHA",
-      "source": "WeBuyCars",
-      "kilometers": 5631,
-      "location": "Dome (GP)"
-    },
     "webuycars_AA3A08709": {
       "vehicle_id": "webuycars_AA3A08709",
       "stock_number": "AA3A08709",
@@ -830,6 +1022,18 @@
       "source": "WeBuyCars",
       "kilometers": 5646,
       "location": "Dome (GP)"
+    },
+    "webuycars_BFDC13157": {
+      "vehicle_id": "webuycars_BFDC13157",
+      "stock_number": "BFDC13157",
+      "title": "2023 Honda Elite 125",
+      "price": 13900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/Elite/BFDC13157",
+      "make": "Honda",
+      "model": "Elite",
+      "source": "WeBuyCars",
+      "kilometers": 7280,
+      "location": "Riverhorse (KZN)"
     },
     "webuycars_EDE200821": {
       "vehicle_id": "webuycars_EDE200821",
@@ -843,6 +1047,18 @@
       "kilometers": 7215,
       "location": "Silver Lakes (GP)"
     },
+    "webuycars_D15013925": {
+      "vehicle_id": "webuycars_D15013925",
+      "stock_number": "D15013925",
+      "title": "2004 Harley Davidson Sportster Xl1200 Custom",
+      "price": 46900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/D15013925",
+      "make": "Harley Davidson",
+      "model": "Sportster",
+      "source": "WeBuyCars",
+      "kilometers": 15635,
+      "location": "Riverhorse (KZN)"
+    },
     "webuycars_F6CF09408": {
       "vehicle_id": "webuycars_F6CF09408",
       "stock_number": "F6CF09408",
@@ -855,17 +1071,17 @@
       "kilometers": 5747,
       "location": "Montana (GP)"
     },
-    "webuycars_F7DA09965": {
-      "vehicle_id": "webuycars_F7DA09965",
-      "stock_number": "F7DA09965",
-      "title": "2014 Suzuki RMX RM-X 450 Z",
-      "price": 39900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/RMX/F7DA09965",
+    "webuycars_FC8507409": {
+      "vehicle_id": "webuycars_FC8507409",
+      "stock_number": "FC8507409",
+      "title": "2009 Suzuki GSX-R GSX R750",
+      "price": 69900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX-R/FC8507409",
       "make": "Suzuki",
-      "model": "RMX",
+      "model": "GSX-R",
       "source": "WeBuyCars",
-      "kilometers": 7205,
-      "location": "Brackenfell (WC)"
+      "kilometers": 31415,
+      "location": "Silver Lakes (GP)"
     },
     "webuycars_46D911507": {
       "vehicle_id": "webuycars_46D911507",
@@ -915,18 +1131,6 @@
       "kilometers": 7966,
       "location": "Gqeberha (EC)"
     },
-    "webuycars_BFDC13157": {
-      "vehicle_id": "webuycars_BFDC13157",
-      "stock_number": "BFDC13157",
-      "title": "2023 Honda Elite 125",
-      "price": 13900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/Elite/BFDC13157",
-      "make": "Honda",
-      "model": "Elite",
-      "source": "WeBuyCars",
-      "kilometers": 7280,
-      "location": "Riverhorse (KZN)"
-    },
     "webuycars_C58311736": {
       "vehicle_id": "webuycars_C58311736",
       "stock_number": "C58311736",
@@ -951,6 +1155,18 @@
       "kilometers": 7698,
       "location": "Silver Lakes (GP)"
     },
+    "webuycars_F54A16209": {
+      "vehicle_id": "webuycars_F54A16209",
+      "stock_number": "F54A16209",
+      "title": "2007 KTM LC4 640",
+      "price": 44900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/LC4/F54A16209",
+      "make": "KTM",
+      "model": "LC4",
+      "source": "WeBuyCars",
+      "kilometers": 10869,
+      "location": "Dome (GP)"
+    },
     "webuycars_038210631": {
       "vehicle_id": "webuycars_038210631",
       "stock_number": "038210631",
@@ -962,18 +1178,6 @@
       "source": "WeBuyCars",
       "kilometers": "N/A",
       "location": "Brackenfell (WC)"
-    },
-    "webuycars_624112597": {
-      "vehicle_id": "webuycars_624112597",
-      "stock_number": "624112597",
-      "title": "2023 Hero Eco Delux 100cc",
-      "price": 16900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Hero/Eco Delux/624112597",
-      "make": "Hero",
-      "model": "Eco Delux",
-      "source": "WeBuyCars",
-      "kilometers": "N/A",
-      "location": "Midstream (GP)"
     },
     "webuycars_76E507883": {
       "vehicle_id": "webuycars_76E507883",
@@ -991,13 +1195,25 @@
       "vehicle_id": "webuycars_9E3313383",
       "stock_number": "9E3313383",
       "title": "2025 Custom Electric Wheelchair",
-      "price": 15900,
+      "price": 14900,
       "url": "https://www.webuycars.co.za/buy-a-car/Custom/Electric/9E3313383",
       "make": "Custom",
       "model": "Electric",
       "source": "WeBuyCars",
       "kilometers": "N/A",
       "location": "Midstream (GP)"
+    },
+    "webuycars_B63214193": {
+      "vehicle_id": "webuycars_B63214193",
+      "stock_number": "B63214193",
+      "title": "2024 Yamaha YZ 450 F",
+      "price": 98900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/YZ/B63214193",
+      "make": "Yamaha",
+      "model": "YZ",
+      "source": "WeBuyCars",
+      "kilometers": "N/A",
+      "location": "Vereeniging (GP)"
     },
     "webuycars_CD9105949": {
       "vehicle_id": "webuycars_CD9105949",
@@ -1015,7 +1231,7 @@
       "vehicle_id": "webuycars_0BC002677",
       "stock_number": "0BC002677",
       "title": "2022 KTM SX 125 SX",
-      "price": 50900,
+      "price": 47900,
       "url": "https://www.webuycars.co.za/buy-a-car/KTM/SX/0BC002677",
       "make": "KTM",
       "model": "SX",
@@ -1083,6 +1299,18 @@
       "kilometers": "N/A",
       "location": "Richmond (WC)"
     },
+    "webuycars_A52C12212": {
+      "vehicle_id": "webuycars_A52C12212",
+      "stock_number": "A52C12212",
+      "title": "2014 KTM Super Duke 1290 Super Duke R",
+      "price": 89900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Super Duke/A52C12212",
+      "make": "KTM",
+      "model": "Super Duke",
+      "source": "WeBuyCars",
+      "kilometers": 59247,
+      "location": "Midstream (GP)"
+    },
     "webuycars_59EE10511": {
       "vehicle_id": "webuycars_59EE10511",
       "stock_number": "59EE10511",
@@ -1094,30 +1322,6 @@
       "source": "WeBuyCars",
       "kilometers": "N/A",
       "location": "Polokwane (L)"
-    },
-    "webuycars_1C9802358": {
-      "vehicle_id": "webuycars_1C9802358",
-      "stock_number": "1C9802358",
-      "title": "2023 Kawasaki KLE 300 Versys-X",
-      "price": 60900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLE/1C9802358",
-      "make": "Kawasaki",
-      "model": "KLE",
-      "source": "WeBuyCars",
-      "kilometers": 8430,
-      "location": "Germiston (GP)"
-    },
-    "webuycars_4DED08387": {
-      "vehicle_id": "webuycars_4DED08387",
-      "stock_number": "4DED08387",
-      "title": "2024 Big Boy Pacer 200 Pacer 200",
-      "price": 17900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Pacer 200/4DED08387",
-      "make": "Big Boy",
-      "model": "Pacer 200",
-      "source": "WeBuyCars",
-      "kilometers": 9046,
-      "location": "Brackenfell (WC)"
     },
     "webuycars_836803744": {
       "vehicle_id": "webuycars_836803744",
@@ -1142,18 +1346,6 @@
       "source": "WeBuyCars",
       "kilometers": "N/A",
       "location": "Silver Lakes (GP)"
-    },
-    "webuycars_92F113292": {
-      "vehicle_id": "webuycars_92F113292",
-      "stock_number": "92F113292",
-      "title": "2015 Custom Electric Wheelchair",
-      "price": 11900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Custom/Electric/92F113292",
-      "make": "Custom",
-      "model": "Electric",
-      "source": "WeBuyCars",
-      "kilometers": "N/A",
-      "location": "Polokwane (L)"
     },
     "webuycars_9F2B16907": {
       "vehicle_id": "webuycars_9F2B16907",
@@ -1227,18 +1419,6 @@
       "kilometers": 12512,
       "location": "Springfield (KZN)"
     },
-    "webuycars_BAE810477": {
-      "vehicle_id": "webuycars_BAE810477",
-      "stock_number": "BAE810477",
-      "title": "2019 Husqvarna TE 701 Svartpilen",
-      "price": 78900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TE/BAE810477",
-      "make": "Husqvarna",
-      "model": "TE",
-      "source": "WeBuyCars",
-      "kilometers": 11205,
-      "location": "Witbank (MP)"
-    },
     "webuycars_D5D901106": {
       "vehicle_id": "webuycars_D5D901106",
       "stock_number": "D5D901106",
@@ -1262,6 +1442,18 @@
       "source": "WeBuyCars",
       "kilometers": 13270,
       "location": "East London (EC)"
+    },
+    "webuycars_F05B05005": {
+      "vehicle_id": "webuycars_F05B05005",
+      "stock_number": "F05B05005",
+      "title": "2019 Linhai Tboss T-Boss 550 EFI 4x4",
+      "price": 95900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Linhai/Tboss/F05B05005",
+      "make": "Linhai",
+      "model": "Tboss",
+      "source": "WeBuyCars",
+      "kilometers": 13991,
+      "location": "Dome (GP)"
     },
     "webuycars_220F00435": {
       "vehicle_id": "webuycars_220F00435",
@@ -1287,30 +1479,6 @@
       "kilometers": 14822,
       "location": "George (WC)"
     },
-    "webuycars_737910309": {
-      "vehicle_id": "webuycars_737910309",
-      "stock_number": "737910309",
-      "title": "2025 Lifan Lifan 125 Lifan 125",
-      "price": 12900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Lifan/Lifan 125/737910309",
-      "make": "Lifan",
-      "model": "Lifan 125",
-      "source": "WeBuyCars",
-      "kilometers": 14557,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_AA8F04672": {
-      "vehicle_id": "webuycars_AA8F04672",
-      "stock_number": "AA8F04672",
-      "title": "2015 Mv Agusta Rivale 800",
-      "price": 90900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Mv Agusta/Rivale/AA8F04672",
-      "make": "Mv Agusta",
-      "model": "Rivale",
-      "source": "WeBuyCars",
-      "kilometers": 14771,
-      "location": "Dome (GP)"
-    },
     "webuycars_D54704708": {
       "vehicle_id": "webuycars_D54704708",
       "stock_number": "D54704708",
@@ -1335,17 +1503,17 @@
       "kilometers": 14168,
       "location": "Midstream (GP)"
     },
-    "webuycars_F05B05005": {
-      "vehicle_id": "webuycars_F05B05005",
-      "stock_number": "F05B05005",
-      "title": "2019 Linhai Tboss T-Boss 550 EFI 4x4",
-      "price": 95900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Linhai/Tboss/F05B05005",
-      "make": "Linhai",
-      "model": "Tboss",
+    "webuycars_FBCC07320": {
+      "vehicle_id": "webuycars_FBCC07320",
+      "stock_number": "FBCC07320",
+      "title": "2021 Triumph Sreet Triple Trident 660",
+      "price": 98900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Sreet Triple/FBCC07320",
+      "make": "Triumph",
+      "model": "Sreet Triple",
       "source": "WeBuyCars",
-      "kilometers": 13991,
-      "location": "Dome (GP)"
+      "kilometers": 14136,
+      "location": "Richmond (WC)"
     },
     "webuycars_456D05341": {
       "vehicle_id": "webuycars_456D05341",
@@ -1359,18 +1527,6 @@
       "kilometers": 16018,
       "location": "Silver Lakes (GP)"
     },
-    "webuycars_603D04413": {
-      "vehicle_id": "webuycars_603D04413",
-      "stock_number": "603D04413",
-      "title": "2022 SYM Crox NH X125",
-      "price": 22900,
-      "url": "https://www.webuycars.co.za/buy-a-car/SYM/Crox/603D04413",
-      "make": "SYM",
-      "model": "Crox",
-      "source": "WeBuyCars",
-      "kilometers": 16904,
-      "location": "Springfield (KZN)"
-    },
     "webuycars_622511580": {
       "vehicle_id": "webuycars_622511580",
       "stock_number": "622511580",
@@ -1382,18 +1538,6 @@
       "source": "WeBuyCars",
       "kilometers": 17915,
       "location": "Lansdowne (WC)"
-    },
-    "webuycars_8EC405220": {
-      "vehicle_id": "webuycars_8EC405220",
-      "stock_number": "8EC405220",
-      "title": "2025 Lifan Lifan 125 Lifan 125",
-      "price": 13900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Lifan/Lifan 125/8EC405220",
-      "make": "Lifan",
-      "model": "Lifan 125",
-      "source": "WeBuyCars",
-      "kilometers": 16734,
-      "location": "Midstream (GP)"
     },
     "webuycars_910309679": {
       "vehicle_id": "webuycars_910309679",
@@ -1491,29 +1635,29 @@
       "kilometers": 21836,
       "location": "Midstream (GP)"
     },
-    "webuycars_CB2F05587": {
-      "vehicle_id": "webuycars_CB2F05587",
-      "stock_number": "CB2F05587",
-      "title": "2015 Kawasaki KLE 650 Versys (14)",
-      "price": 65900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLE/CB2F05587",
-      "make": "Kawasaki",
-      "model": "KLE",
+    "webuycars_EDD116302": {
+      "vehicle_id": "webuycars_EDD116302",
+      "stock_number": "EDD116302",
+      "title": "2015 Royal Enfield Classic 500 Classic",
+      "price": 47900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Royal Enfield/Classic/EDD116302",
+      "make": "Royal Enfield",
+      "model": "Classic",
       "source": "WeBuyCars",
-      "kilometers": 24764,
-      "location": "Richmond (WC)"
+      "kilometers": 23175,
+      "location": "Silver Lakes (GP)"
     },
-    "webuycars_FB3009032": {
-      "vehicle_id": "webuycars_FB3009032",
-      "stock_number": "FB3009032",
-      "title": "2019 KTM Enduro 690 Enduro R",
-      "price": 88900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Enduro/FB3009032",
-      "make": "KTM",
-      "model": "Enduro",
+    "webuycars_0CAE08366": {
+      "vehicle_id": "webuycars_0CAE08366",
+      "stock_number": "0CAE08366",
+      "title": "2020 Suzuki DL 1000a V Strom",
+      "price": 99900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/DL/0CAE08366",
+      "make": "Suzuki",
+      "model": "DL",
       "source": "WeBuyCars",
-      "kilometers": 25392,
-      "location": "Richmond (WC)"
+      "kilometers": 29879,
+      "location": "Dome (GP)"
     },
     "webuycars_1DA104413": {
       "vehicle_id": "webuycars_1DA104413",
@@ -1527,23 +1671,11 @@
       "kilometers": 26971,
       "location": "Lansdowne (WC)"
     },
-    "webuycars_520314800": {
-      "vehicle_id": "webuycars_520314800",
-      "stock_number": "520314800",
-      "title": "2018 Suzuki SV 650a",
-      "price": 62900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/SV/520314800",
-      "make": "Suzuki",
-      "model": "SV",
-      "source": "WeBuyCars",
-      "kilometers": 31051,
-      "location": "Dome (GP)"
-    },
     "webuycars_5FCF04225": {
       "vehicle_id": "webuycars_5FCF04225",
       "stock_number": "5FCF04225",
       "title": "2025 Honda ACE 125",
-      "price": 15900,
+      "price": 14900,
       "url": "https://www.webuycars.co.za/buy-a-car/Honda/ACE/5FCF04225",
       "make": "Honda",
       "model": "ACE",
@@ -1563,17 +1695,17 @@
       "kilometers": 27976,
       "location": "Richmond (WC)"
     },
-    "webuycars_A65704905": {
-      "vehicle_id": "webuycars_A65704905",
-      "stock_number": "A65704905",
-      "title": "2015 Kawasaki ER 650f",
-      "price": 54900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ER/A65704905",
+    "webuycars_C2A112641": {
+      "vehicle_id": "webuycars_C2A112641",
+      "stock_number": "C2A112641",
+      "title": "2007 Kawasaki KLR Klr650",
+      "price": 42900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLR/C2A112641",
       "make": "Kawasaki",
-      "model": "ER",
+      "model": "KLR",
       "source": "WeBuyCars",
-      "kilometers": 29913,
-      "location": "George (WC)"
+      "kilometers": 46478,
+      "location": "Richmond (WC)"
     },
     "webuycars_CA1903249": {
       "vehicle_id": "webuycars_CA1903249",
@@ -1599,17 +1731,29 @@
       "kilometers": 27355,
       "location": "Richmond (WC)"
     },
-    "webuycars_324D12030": {
-      "vehicle_id": "webuycars_324D12030",
-      "stock_number": "324D12030",
-      "title": "2015 Harley Davidson Street 750 Street",
-      "price": 48900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Street/324D12030",
-      "make": "Harley Davidson",
-      "model": "Street",
+    "webuycars_FB3009032": {
+      "vehicle_id": "webuycars_FB3009032",
+      "stock_number": "FB3009032",
+      "title": "2019 KTM Enduro 690 Enduro R",
+      "price": 88900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Enduro/FB3009032",
+      "make": "KTM",
+      "model": "Enduro",
       "source": "WeBuyCars",
-      "kilometers": 39844,
-      "location": "Midstream (GP)"
+      "kilometers": 25392,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_520314800": {
+      "vehicle_id": "webuycars_520314800",
+      "stock_number": "520314800",
+      "title": "2018 Suzuki SV 650a",
+      "price": 62900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/SV/520314800",
+      "make": "Suzuki",
+      "model": "SV",
+      "source": "WeBuyCars",
+      "kilometers": 31051,
+      "location": "Dome (GP)"
     },
     "webuycars_71C609438": {
       "vehicle_id": "webuycars_71C609438",
@@ -1635,6 +1779,18 @@
       "kilometers": 33076,
       "location": "Brackenfell (WC)"
     },
+    "webuycars_A65704905": {
+      "vehicle_id": "webuycars_A65704905",
+      "stock_number": "A65704905",
+      "title": "2015 Kawasaki ER 650f",
+      "price": 54900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ER/A65704905",
+      "make": "Kawasaki",
+      "model": "ER",
+      "source": "WeBuyCars",
+      "kilometers": 29913,
+      "location": "George (WC)"
+    },
     "webuycars_BF8C17792": {
       "vehicle_id": "webuycars_BF8C17792",
       "stock_number": "BF8C17792",
@@ -1645,18 +1801,6 @@
       "model": "F Series",
       "source": "WeBuyCars",
       "kilometers": 32308,
-      "location": "Dome (GP)"
-    },
-    "webuycars_C49F14372": {
-      "vehicle_id": "webuycars_C49F14372",
-      "stock_number": "C49F14372",
-      "title": "2016 Triumph Tiger 800 XCX",
-      "price": 88900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Tiger/C49F14372",
-      "make": "Triumph",
-      "model": "Tiger",
-      "source": "WeBuyCars",
-      "kilometers": 39057,
       "location": "Dome (GP)"
     },
     "webuycars_D23715319": {
@@ -1695,18 +1839,6 @@
       "kilometers": 40183,
       "location": "Germiston (GP)"
     },
-    "webuycars_498B09809": {
-      "vehicle_id": "webuycars_498B09809",
-      "stock_number": "498B09809",
-      "title": "2024 Big Boy Superlight 200",
-      "price": 16900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Superlight/498B09809",
-      "make": "Big Boy",
-      "model": "Superlight",
-      "source": "WeBuyCars",
-      "kilometers": 44295,
-      "location": "Silver Lakes (GP)"
-    },
     "webuycars_875D09369": {
       "vehicle_id": "webuycars_875D09369",
       "stock_number": "875D09369",
@@ -1743,6 +1875,42 @@
       "kilometers": 42071,
       "location": "Dome (GP)"
     },
+    "webuycars_C49F14372": {
+      "vehicle_id": "webuycars_C49F14372",
+      "stock_number": "C49F14372",
+      "title": "2016 Triumph Tiger 800 XCX",
+      "price": 88900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Tiger/C49F14372",
+      "make": "Triumph",
+      "model": "Tiger",
+      "source": "WeBuyCars",
+      "kilometers": 39057,
+      "location": "Dome (GP)"
+    },
+    "webuycars_498B09809": {
+      "vehicle_id": "webuycars_498B09809",
+      "stock_number": "498B09809",
+      "title": "2024 Big Boy Superlight 200",
+      "price": 16900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Superlight/498B09809",
+      "make": "Big Boy",
+      "model": "Superlight",
+      "source": "WeBuyCars",
+      "kilometers": 44295,
+      "location": "Silver Lakes (GP)"
+    },
+    "webuycars_A7DA15326": {
+      "vehicle_id": "webuycars_A7DA15326",
+      "stock_number": "A7DA15326",
+      "title": "2024 Big Boy Superlight 200",
+      "price": 12900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Superlight/A7DA15326",
+      "make": "Big Boy",
+      "model": "Superlight",
+      "source": "WeBuyCars",
+      "kilometers": 46812,
+      "location": "Riverhorse (KZN)"
+    },
     "webuycars_E3DC02812": {
       "vehicle_id": "webuycars_E3DC02812",
       "stock_number": "E3DC02812",
@@ -1754,90 +1922,6 @@
       "source": "WeBuyCars",
       "kilometers": 44685,
       "location": "Polokwane (L)"
-    },
-    "webuycars_F6FA06514": {
-      "vehicle_id": "webuycars_F6FA06514",
-      "stock_number": "F6FA06514",
-      "title": "2015 BMW F Series F 800 GS MU F/lift",
-      "price": 78900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/F6FA06514",
-      "make": "BMW",
-      "model": "F Series",
-      "source": "WeBuyCars",
-      "kilometers": 44071,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_239300108": {
-      "vehicle_id": "webuycars_239300108",
-      "stock_number": "239300108",
-      "title": "2014 Yamaha XT Xt1200 Z Super Tenere",
-      "price": 68900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/XT/239300108",
-      "make": "Yamaha",
-      "model": "XT",
-      "source": "WeBuyCars",
-      "kilometers": 53082,
-      "location": "Dome (GP)"
-    },
-    "webuycars_434C13653": {
-      "vehicle_id": "webuycars_434C13653",
-      "stock_number": "434C13653",
-      "title": "2013 BMW F Series F 700 GS",
-      "price": 50900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/434C13653",
-      "make": "BMW",
-      "model": "F Series",
-      "source": "WeBuyCars",
-      "kilometers": 57993,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_6F5907323": {
-      "vehicle_id": "webuycars_6F5907323",
-      "stock_number": "6F5907323",
-      "title": "2014 KTM Enduro 690 Enduro R",
-      "price": 47900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Enduro/6F5907323",
-      "make": "KTM",
-      "model": "Enduro",
-      "source": "WeBuyCars",
-      "kilometers": 51866,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_7C2A03344": {
-      "vehicle_id": "webuycars_7C2A03344",
-      "stock_number": "7C2A03344",
-      "title": "2015 Ducati Scrambler Icon RED",
-      "price": 54900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Ducati/Scrambler/7C2A03344",
-      "make": "Ducati",
-      "model": "Scrambler",
-      "source": "WeBuyCars",
-      "kilometers": 55001,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_AEF705960": {
-      "vehicle_id": "webuycars_AEF705960",
-      "stock_number": "AEF705960",
-      "title": "2017 KTM Enduro 690 Enduro R",
-      "price": 47900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Enduro/AEF705960",
-      "make": "KTM",
-      "model": "Enduro",
-      "source": "WeBuyCars",
-      "kilometers": 54364,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_E15203462": {
-      "vehicle_id": "webuycars_E15203462",
-      "stock_number": "E15203462",
-      "title": "2022 Honda NC 750 XD",
-      "price": 82900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/NC/E15203462",
-      "make": "Honda",
-      "model": "NC",
-      "source": "WeBuyCars",
-      "kilometers": 57426,
-      "location": "Silver Lakes (GP)"
     },
     "webuycars_E99E14884": {
       "vehicle_id": "webuycars_E99E14884",
@@ -1851,6 +1935,18 @@
       "kilometers": 45033,
       "location": "Vereeniging (GP)"
     },
+    "webuycars_148716529": {
+      "vehicle_id": "webuycars_148716529",
+      "stock_number": "148716529",
+      "title": "2009 BMW R Series R 1200 GS ABS H/grips",
+      "price": 64900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/148716529",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 66640,
+      "location": "Gqeberha (EC)"
+    },
     "webuycars_3A5615002": {
       "vehicle_id": "webuycars_3A5615002",
       "stock_number": "3A5615002",
@@ -1863,40 +1959,28 @@
       "kilometers": 65001,
       "location": "Montana (GP)"
     },
-    "webuycars_466213337": {
-      "vehicle_id": "webuycars_466213337",
-      "stock_number": "466213337",
-      "title": "2012 GoGo Elite Traveler",
-      "price": 11400,
-      "url": "https://www.webuycars.co.za/buy-a-car/GoGo/Elite/466213337",
-      "make": "GoGo",
-      "model": "Elite",
+    "webuycars_7C2A03344": {
+      "vehicle_id": "webuycars_7C2A03344",
+      "stock_number": "7C2A03344",
+      "title": "2015 Ducati Scrambler Icon RED",
+      "price": 54900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Ducati/Scrambler/7C2A03344",
+      "make": "Ducati",
+      "model": "Scrambler",
       "source": "WeBuyCars",
-      "kilometers": "N/A",
-      "location": "Montana (GP)"
+      "kilometers": 55001,
+      "location": "Midstream (GP)"
     },
-    "webuycars_4E2E08455": {
-      "vehicle_id": "webuycars_4E2E08455",
-      "stock_number": "4E2E08455",
-      "title": "2015 Kawasaki KLZ 1000b Versys",
-      "price": 47900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLZ/4E2E08455",
-      "make": "Kawasaki",
-      "model": "KLZ",
+    "webuycars_7EF215387": {
+      "vehicle_id": "webuycars_7EF215387",
+      "stock_number": "7EF215387",
+      "title": "2005 BMW F Series F 650 GS ABS H/grips",
+      "price": 39900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/7EF215387",
+      "make": "BMW",
+      "model": "F Series",
       "source": "WeBuyCars",
-      "kilometers": 85466,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_647806612": {
-      "vehicle_id": "webuycars_647806612",
-      "stock_number": "647806612",
-      "title": "2015 Suzuki DL 1000a V Strom",
-      "price": 75900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/DL/647806612",
-      "make": "Suzuki",
-      "model": "DL",
-      "source": "WeBuyCars",
-      "kilometers": 68558,
+      "kilometers": 68568,
       "location": "Richmond (WC)"
     },
     "webuycars_7C4711455": {
@@ -1923,41 +2007,29 @@
       "kilometers": 88126,
       "location": "Vereeniging (GP)"
     },
-    "webuycars_FEC508495": {
-      "vehicle_id": "webuycars_FEC508495",
-      "stock_number": "FEC508495",
-      "title": "2021 Custom Mobility Scooter HS328",
-      "price": 14900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Custom/Mobility Scooter/FEC508495",
-      "make": "Custom",
-      "model": "Mobility Scooter",
+    "webuycars_E15203462": {
+      "vehicle_id": "webuycars_E15203462",
+      "stock_number": "E15203462",
+      "title": "2022 Honda NC 750 XD",
+      "price": 82900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/NC/E15203462",
+      "make": "Honda",
+      "model": "NC",
       "source": "WeBuyCars",
-      "kilometers": "N/A",
+      "kilometers": 57426,
       "location": "Silver Lakes (GP)"
     },
-    "webuycars_3B1B05345": {
-      "vehicle_id": "webuycars_3B1B05345",
-      "stock_number": "3B1B05345",
-      "title": "1997 Suzuki GSX-R 600 S-RAD",
-      "price": 28900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX-R/3B1B05345",
-      "make": "Suzuki",
-      "model": "GSX-R",
+    "webuycars_466213337": {
+      "vehicle_id": "webuycars_466213337",
+      "stock_number": "466213337",
+      "title": "2012 GoGo Elite Traveler",
+      "price": 11400,
+      "url": "https://www.webuycars.co.za/buy-a-car/GoGo/Elite/466213337",
+      "make": "GoGo",
+      "model": "Elite",
       "source": "WeBuyCars",
       "kilometers": "N/A",
-      "location": "Gqeberha (EC)"
-    },
-    "webuycars_674918016": {
-      "vehicle_id": "webuycars_674918016",
-      "stock_number": "674918016",
-      "title": "2000 CTM Mobility Scooter HS-360",
-      "price": 9400,
-      "url": "https://www.webuycars.co.za/buy-a-car/CTM/Mobility Scooter/674918016",
-      "make": "CTM",
-      "model": "Mobility Scooter",
-      "source": "WeBuyCars",
-      "kilometers": 10,
-      "location": "Pietermaritzburg (KZN)"
+      "location": "Montana (GP)"
     },
     "webuycars_7D1D12097": {
       "vehicle_id": "webuycars_7D1D12097",
@@ -1983,17 +2055,17 @@
       "kilometers": "N/A",
       "location": "Riverhorse (KZN)"
     },
-    "webuycars_BC2800365": {
-      "vehicle_id": "webuycars_BC2800365",
-      "stock_number": "BC2800365",
-      "title": "2010 Golf Cart Badger",
-      "price": 62900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Golf/Cart/BC2800365",
-      "make": "Golf",
-      "model": "Cart",
+    "webuycars_C5A815056": {
+      "vehicle_id": "webuycars_C5A815056",
+      "stock_number": "C5A815056",
+      "title": "2006 BMW F Series F 650 GS",
+      "price": 27900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/C5A815056",
+      "make": "BMW",
+      "model": "F Series",
       "source": "WeBuyCars",
       "kilometers": "N/A",
-      "location": "Silver Lakes (GP)"
+      "location": "Pietermaritzburg (KZN)"
     },
     "webuycars_ECCA10793": {
       "vehicle_id": "webuycars_ECCA10793",
@@ -2007,29 +2079,29 @@
       "kilometers": "N/A",
       "location": "George (WC)"
     },
-    "webuycars_F0DB08290": {
-      "vehicle_id": "webuycars_F0DB08290",
-      "stock_number": "F0DB08290",
-      "title": "2023 SYM XS Xs125-K",
-      "price": 16900,
-      "url": "https://www.webuycars.co.za/buy-a-car/SYM/XS/F0DB08290",
-      "make": "SYM",
-      "model": "XS",
+    "webuycars_FEC508495": {
+      "vehicle_id": "webuycars_FEC508495",
+      "stock_number": "FEC508495",
+      "title": "2021 Custom Mobility Scooter HS328",
+      "price": 14900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Custom/Mobility Scooter/FEC508495",
+      "make": "Custom",
+      "model": "Mobility Scooter",
       "source": "WeBuyCars",
-      "kilometers": 21,
-      "location": "Midstream (GP)"
+      "kilometers": "N/A",
+      "location": "Silver Lakes (GP)"
     },
-    "webuycars_4A2014787": {
-      "vehicle_id": "webuycars_4A2014787",
-      "stock_number": "4A2014787",
-      "title": "2009 Kawasaki KX 250 F",
-      "price": 21900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KX/4A2014787",
-      "make": "Kawasaki",
-      "model": "KX",
+    "webuycars_674918016": {
+      "vehicle_id": "webuycars_674918016",
+      "stock_number": "674918016",
+      "title": "2000 CTM Mobility Scooter HS-360",
+      "price": 9400,
+      "url": "https://www.webuycars.co.za/buy-a-car/CTM/Mobility Scooter/674918016",
+      "make": "CTM",
+      "model": "Mobility Scooter",
       "source": "WeBuyCars",
-      "kilometers": 1001,
-      "location": "Dome (GP)"
+      "kilometers": 10,
+      "location": "Pietermaritzburg (KZN)"
     },
     "webuycars_92D503346": {
       "vehicle_id": "webuycars_92D503346",
@@ -2042,18 +2114,6 @@
       "source": "WeBuyCars",
       "kilometers": 1474,
       "location": "Polokwane (L)"
-    },
-    "webuycars_A30301660": {
-      "vehicle_id": "webuycars_A30301660",
-      "stock_number": "A30301660",
-      "title": "2009 Harley Davidson Sportster Xl883 L Super LOW",
-      "price": 62900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/A30301660",
-      "make": "Harley Davidson",
-      "model": "Sportster",
-      "source": "WeBuyCars",
-      "kilometers": 2077,
-      "location": "Midstream (GP)"
     },
     "webuycars_AD3806899": {
       "vehicle_id": "webuycars_AD3806899",
@@ -2091,6 +2151,18 @@
       "kilometers": 816,
       "location": "Dome (GP)"
     },
+    "webuycars_F0DB08290": {
+      "vehicle_id": "webuycars_F0DB08290",
+      "stock_number": "F0DB08290",
+      "title": "2023 SYM XS Xs125-K",
+      "price": 16900,
+      "url": "https://www.webuycars.co.za/buy-a-car/SYM/XS/F0DB08290",
+      "make": "SYM",
+      "model": "XS",
+      "source": "WeBuyCars",
+      "kilometers": 21,
+      "location": "Midstream (GP)"
+    },
     "webuycars_F2DB04986": {
       "vehicle_id": "webuycars_F2DB04986",
       "stock_number": "F2DB04986",
@@ -2115,17 +2187,17 @@
       "kilometers": 2501,
       "location": "Montana (GP)"
     },
-    "webuycars_247A12380": {
-      "vehicle_id": "webuycars_247A12380",
-      "stock_number": "247A12380",
-      "title": "2011 BMW F Series F 800 GS ABS H/grips",
-      "price": 74900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/247A12380",
-      "make": "BMW",
-      "model": "F Series",
+    "webuycars_1A1915224": {
+      "vehicle_id": "webuycars_1A1915224",
+      "stock_number": "1A1915224",
+      "title": "2005 Honda CBR 1000rr",
+      "price": 55900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/1A1915224",
+      "make": "Honda",
+      "model": "CBR",
       "source": "WeBuyCars",
-      "kilometers": 5337,
-      "location": "Dome (GP)"
+      "kilometers": 4709,
+      "location": "Midstream (GP)"
     },
     "webuycars_344211482": {
       "vehicle_id": "webuycars_344211482",
@@ -2139,6 +2211,18 @@
       "kilometers": 3083,
       "location": "George (WC)"
     },
+    "webuycars_76A816618": {
+      "vehicle_id": "webuycars_76A816618",
+      "stock_number": "76A816618",
+      "title": "2009 BMW F Series F 800 GS",
+      "price": 44900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/76A816618",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 88297,
+      "location": "Midstream (GP)"
+    },
     "webuycars_3B6813576": {
       "vehicle_id": "webuycars_3B6813576",
       "stock_number": "3B6813576",
@@ -2151,77 +2235,41 @@
       "kilometers": 2664,
       "location": "Springfield (KZN)"
     },
-    "webuycars_B36104908": {
-      "vehicle_id": "webuycars_B36104908",
-      "stock_number": "B36104908",
-      "title": "2012 Big Boy Revival 150",
-      "price": 9900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Revival/B36104908",
-      "make": "Big Boy",
-      "model": "Revival",
+    "webuycars_A30301660": {
+      "vehicle_id": "webuycars_A30301660",
+      "stock_number": "A30301660",
+      "title": "2009 Harley Davidson Sportster Xl883 L Super LOW",
+      "price": 62900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/A30301660",
+      "make": "Harley Davidson",
+      "model": "Sportster",
       "source": "WeBuyCars",
-      "kilometers": 6944,
-      "location": "JHB South (GP)"
+      "kilometers": 2077,
+      "location": "Midstream (GP)"
     },
-    "webuycars_DAE903926": {
-      "vehicle_id": "webuycars_DAE903926",
-      "stock_number": "DAE903926",
-      "title": "2021 Big Boy TSR 125",
-      "price": 15900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/TSR/DAE903926",
-      "make": "Big Boy",
-      "model": "TSR",
-      "source": "WeBuyCars",
-      "kilometers": 2703,
-      "location": "Germiston (GP)"
-    },
-    "webuycars_F73813339": {
-      "vehicle_id": "webuycars_F73813339",
-      "stock_number": "F73813339",
-      "title": "2013 Husqvarna TE 125",
-      "price": 28900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TE/F73813339",
+    "webuycars_E3F408524": {
+      "vehicle_id": "webuycars_E3F408524",
+      "stock_number": "E3F408524",
+      "title": "2024 Husqvarna TE 250 I",
+      "price": 49900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TE/E3F408524",
       "make": "Husqvarna",
       "model": "TE",
       "source": "WeBuyCars",
-      "kilometers": 5768,
-      "location": "Rustenburg (NW)"
+      "kilometers": 3051,
+      "location": "Riverhorse (KZN)"
     },
-    "webuycars_5A1813296": {
-      "vehicle_id": "webuycars_5A1813296",
-      "stock_number": "5A1813296",
-      "title": "2010 Harley Davidson Dyna Super Glide Custom",
-      "price": 94900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Dyna/5A1813296",
-      "make": "Harley Davidson",
-      "model": "Dyna",
-      "source": "WeBuyCars",
-      "kilometers": 12265,
-      "location": "Dome (GP)"
-    },
-    "webuycars_76DE04781": {
-      "vehicle_id": "webuycars_76DE04781",
-      "stock_number": "76DE04781",
-      "title": "2008 BMW G Series G450 X",
-      "price": 27900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/76DE04781",
+    "webuycars_247A12380": {
+      "vehicle_id": "webuycars_247A12380",
+      "stock_number": "247A12380",
+      "title": "2011 BMW F Series F 800 GS ABS H/grips",
+      "price": 74900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/247A12380",
       "make": "BMW",
-      "model": "G Series",
+      "model": "F Series",
       "source": "WeBuyCars",
-      "kilometers": 8076,
-      "location": "Montana (GP)"
-    },
-    "webuycars_9FFD14712": {
-      "vehicle_id": "webuycars_9FFD14712",
-      "stock_number": "9FFD14712",
-      "title": "2013 Jonway Znen Yesterday 125",
-      "price": 10400,
-      "url": "https://www.webuycars.co.za/buy-a-car/Jonway/Znen Yesterday/9FFD14712",
-      "make": "Jonway",
-      "model": "Znen Yesterday",
-      "source": "WeBuyCars",
-      "kilometers": 11790,
-      "location": "Silver Lakes (GP)"
+      "kilometers": 5337,
+      "location": "Dome (GP)"
     },
     "webuycars_AC0310075": {
       "vehicle_id": "webuycars_AC0310075",
@@ -2235,17 +2283,17 @@
       "kilometers": 9475,
       "location": "Dome (GP)"
     },
-    "webuycars_C59510681": {
-      "vehicle_id": "webuycars_C59510681",
-      "stock_number": "C59510681",
-      "title": "2023 Suzuki AN UN 125 (avenis)",
-      "price": 15900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/AN/C59510681",
-      "make": "Suzuki",
-      "model": "AN",
+    "webuycars_B79316463": {
+      "vehicle_id": "webuycars_B79316463",
+      "stock_number": "B79316463",
+      "title": "2006 BMW R Series R 1200 GS ABS H/grips",
+      "price": 48900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/B79316463",
+      "make": "BMW",
+      "model": "R Series",
       "source": "WeBuyCars",
-      "kilometers": 7706,
-      "location": "Midstream (GP)"
+      "kilometers": 112383,
+      "location": "Gqeberha (EC)"
     },
     "webuycars_D47114325": {
       "vehicle_id": "webuycars_D47114325",
@@ -2259,29 +2307,17 @@
       "kilometers": 7387,
       "location": "Silver Lakes (GP)"
     },
-    "webuycars_DBCE14191": {
-      "vehicle_id": "webuycars_DBCE14191",
-      "stock_number": "DBCE14191",
-      "title": "2025 Big Boy CGL D-Lite 125",
-      "price": 9900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/CGL/DBCE14191",
-      "make": "Big Boy",
-      "model": "CGL",
+    "webuycars_F73813339": {
+      "vehicle_id": "webuycars_F73813339",
+      "stock_number": "F73813339",
+      "title": "2013 Husqvarna TE 125",
+      "price": 28900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TE/F73813339",
+      "make": "Husqvarna",
+      "model": "TE",
       "source": "WeBuyCars",
-      "kilometers": 10725,
-      "location": "Dome (GP)"
-    },
-    "webuycars_155C09205": {
-      "vehicle_id": "webuycars_155C09205",
-      "stock_number": "155C09205",
-      "title": "2002 Yamaha FZS 1000 Fazer",
-      "price": 52900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/FZS/155C09205",
-      "make": "Yamaha",
-      "model": "FZS",
-      "source": "WeBuyCars",
-      "kilometers": 16078,
-      "location": "Richmond (WC)"
+      "kilometers": 5768,
+      "location": "Rustenburg (NW)"
     },
     "webuycars_17C600052": {
       "vehicle_id": "webuycars_17C600052",
@@ -2295,18 +2331,6 @@
       "kilometers": 16000,
       "location": "Dome (GP)"
     },
-    "webuycars_666603185": {
-      "vehicle_id": "webuycars_666603185",
-      "stock_number": "666603185",
-      "title": "2014 Motomia Beretta 125",
-      "price": 11900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Motomia/Beretta/666603185",
-      "make": "Motomia",
-      "model": "Beretta",
-      "source": "WeBuyCars",
-      "kilometers": 16484,
-      "location": "Brackenfell (WC)"
-    },
     "webuycars_806B11528": {
       "vehicle_id": "webuycars_806B11528",
       "stock_number": "806B11528",
@@ -2319,17 +2343,17 @@
       "kilometers": 15115,
       "location": "Richmond (WC)"
     },
-    "webuycars_885112791": {
-      "vehicle_id": "webuycars_885112791",
-      "stock_number": "885112791",
-      "title": "2013 Harley Davidson Sportster Xl883 N Iron",
-      "price": 72900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/885112791",
-      "make": "Harley Davidson",
-      "model": "Sportster",
+    "webuycars_9FFD14712": {
+      "vehicle_id": "webuycars_9FFD14712",
+      "stock_number": "9FFD14712",
+      "title": "2013 Jonway Znen Yesterday 125",
+      "price": 10400,
+      "url": "https://www.webuycars.co.za/buy-a-car/Jonway/Znen Yesterday/9FFD14712",
+      "make": "Jonway",
+      "model": "Znen Yesterday",
       "source": "WeBuyCars",
-      "kilometers": 16368,
-      "location": "Brackenfell (WC)"
+      "kilometers": 11790,
+      "location": "Silver Lakes (GP)"
     },
     "webuycars_A95F12230": {
       "vehicle_id": "webuycars_A95F12230",
@@ -2343,6 +2367,90 @@
       "kilometers": 15692,
       "location": "Montana (GP)"
     },
+    "webuycars_C25516233": {
+      "vehicle_id": "webuycars_C25516233",
+      "stock_number": "C25516233",
+      "title": "2013 BMW R Series R 1200 GS (full Spec)",
+      "price": 58900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/C25516233",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 127998,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_DBCE14191": {
+      "vehicle_id": "webuycars_DBCE14191",
+      "stock_number": "DBCE14191",
+      "title": "2025 Big Boy CGL D-Lite 125",
+      "price": 8900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/CGL/DBCE14191",
+      "make": "Big Boy",
+      "model": "CGL",
+      "source": "WeBuyCars",
+      "kilometers": 10725,
+      "location": "Dome (GP)"
+    },
+    "webuycars_4E4013217": {
+      "vehicle_id": "webuycars_4E4013217",
+      "stock_number": "4E4013217",
+      "title": "2005 Aprilia RSV 1000 R",
+      "price": 57900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Aprilia/RSV/4E4013217",
+      "make": "Aprilia",
+      "model": "RSV",
+      "source": "WeBuyCars",
+      "kilometers": 20001,
+      "location": "Midstream (GP)"
+    },
+    "webuycars_573201651": {
+      "vehicle_id": "webuycars_573201651",
+      "stock_number": "573201651",
+      "title": "2007 Harley Davidson Sportster Xl883 R Roadster",
+      "price": 62900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/573201651",
+      "make": "Harley Davidson",
+      "model": "Sportster",
+      "source": "WeBuyCars",
+      "kilometers": 17300,
+      "location": "Midstream (GP)"
+    },
+    "webuycars_666603185": {
+      "vehicle_id": "webuycars_666603185",
+      "stock_number": "666603185",
+      "title": "2014 Motomia Beretta 125",
+      "price": 11900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Motomia/Beretta/666603185",
+      "make": "Motomia",
+      "model": "Beretta",
+      "source": "WeBuyCars",
+      "kilometers": 16484,
+      "location": "Brackenfell (WC)"
+    },
+    "webuycars_6A1A05176": {
+      "vehicle_id": "webuycars_6A1A05176",
+      "stock_number": "6A1A05176",
+      "title": "2011 Harley Davidson Sportster Xl883 C Custom",
+      "price": 76900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/6A1A05176",
+      "make": "Harley Davidson",
+      "model": "Sportster",
+      "source": "WeBuyCars",
+      "kilometers": 19644,
+      "location": "Brackenfell (WC)"
+    },
+    "webuycars_885112791": {
+      "vehicle_id": "webuycars_885112791",
+      "stock_number": "885112791",
+      "title": "2013 Harley Davidson Sportster Xl883 N Iron",
+      "price": 72900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/885112791",
+      "make": "Harley Davidson",
+      "model": "Sportster",
+      "source": "WeBuyCars",
+      "kilometers": 16368,
+      "location": "Brackenfell (WC)"
+    },
     "webuycars_DF7C08240": {
       "vehicle_id": "webuycars_DF7C08240",
       "stock_number": "DF7C08240",
@@ -2353,6 +2461,30 @@
       "model": "KLR",
       "source": "WeBuyCars",
       "kilometers": 16421,
+      "location": "Dome (GP)"
+    },
+    "webuycars_F14707058": {
+      "vehicle_id": "webuycars_F14707058",
+      "stock_number": "F14707058",
+      "title": "2009 Aprilia Shiver 750",
+      "price": 45900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Aprilia/Shiver/F14707058",
+      "make": "Aprilia",
+      "model": "Shiver",
+      "source": "WeBuyCars",
+      "kilometers": 18909,
+      "location": "Germiston (GP)"
+    },
+    "webuycars_0C3F01532": {
+      "vehicle_id": "webuycars_0C3F01532",
+      "stock_number": "0C3F01532",
+      "title": "2013 Husqvarna TR 650 Terra ABS",
+      "price": 42900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TR/0C3F01532",
+      "make": "Husqvarna",
+      "model": "TR",
+      "source": "WeBuyCars",
+      "kilometers": 25209,
       "location": "Dome (GP)"
     },
     "webuycars_220505429": {
@@ -2379,41 +2511,17 @@
       "kilometers": 24280,
       "location": "Silver Lakes (GP)"
     },
-    "webuycars_4E4013217": {
-      "vehicle_id": "webuycars_4E4013217",
-      "stock_number": "4E4013217",
-      "title": "2005 Aprilia RSV 1000 R",
-      "price": 57900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Aprilia/RSV/4E4013217",
-      "make": "Aprilia",
-      "model": "RSV",
+    "webuycars_97E009155": {
+      "vehicle_id": "webuycars_97E009155",
+      "stock_number": "97E009155",
+      "title": "2009 Kawasaki ZX Zx10-R",
+      "price": 78900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZX/97E009155",
+      "make": "Kawasaki",
+      "model": "ZX",
       "source": "WeBuyCars",
-      "kilometers": 20001,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_573201651": {
-      "vehicle_id": "webuycars_573201651",
-      "stock_number": "573201651",
-      "title": "2007 Harley Davidson Sportster Xl883 R Roadster",
-      "price": 62900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/573201651",
-      "make": "Harley Davidson",
-      "model": "Sportster",
-      "source": "WeBuyCars",
-      "kilometers": 17300,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_6A1A05176": {
-      "vehicle_id": "webuycars_6A1A05176",
-      "stock_number": "6A1A05176",
-      "title": "2011 Harley Davidson Sportster Xl883 C Custom",
-      "price": 76900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/6A1A05176",
-      "make": "Harley Davidson",
-      "model": "Sportster",
-      "source": "WeBuyCars",
-      "kilometers": 19644,
-      "location": "Brackenfell (WC)"
+      "kilometers": 24637,
+      "location": "Dome (GP)"
     },
     "webuycars_B11708301": {
       "vehicle_id": "webuycars_B11708301",
@@ -2426,78 +2534,6 @@
       "source": "WeBuyCars",
       "kilometers": 23551,
       "location": "Midstream (GP)"
-    },
-    "webuycars_F14707058": {
-      "vehicle_id": "webuycars_F14707058",
-      "stock_number": "F14707058",
-      "title": "2009 Aprilia Shiver 750",
-      "price": 45900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Aprilia/Shiver/F14707058",
-      "make": "Aprilia",
-      "model": "Shiver",
-      "source": "WeBuyCars",
-      "kilometers": 18909,
-      "location": "Germiston (GP)"
-    },
-    "webuycars_082914180": {
-      "vehicle_id": "webuycars_082914180",
-      "stock_number": "082914180",
-      "title": "2008 Suzuki SV 1000s",
-      "price": 54900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/SV/082914180",
-      "make": "Suzuki",
-      "model": "SV",
-      "source": "WeBuyCars",
-      "kilometers": 27522,
-      "location": "Silver Lakes (GP)"
-    },
-    "webuycars_0C3F01532": {
-      "vehicle_id": "webuycars_0C3F01532",
-      "stock_number": "0C3F01532",
-      "title": "2013 Husqvarna TR 650 Terra ABS",
-      "price": 42900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TR/0C3F01532",
-      "make": "Husqvarna",
-      "model": "TR",
-      "source": "WeBuyCars",
-      "kilometers": 25209,
-      "location": "Dome (GP)"
-    },
-    "webuycars_42FD14153": {
-      "vehicle_id": "webuycars_42FD14153",
-      "stock_number": "42FD14153",
-      "title": "2010 BMW R Series R 1200 GS ABS H/grips",
-      "price": 80900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/42FD14153",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 27039,
-      "location": "Gqeberha (EC)"
-    },
-    "webuycars_604715044": {
-      "vehicle_id": "webuycars_604715044",
-      "stock_number": "604715044",
-      "title": "2007 Harley Davidson Sportster Xl1200 Custom",
-      "price": 54900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/604715044",
-      "make": "Harley Davidson",
-      "model": "Sportster",
-      "source": "WeBuyCars",
-      "kilometers": 26063,
-      "location": "Montana (GP)"
-    },
-    "webuycars_97E009155": {
-      "vehicle_id": "webuycars_97E009155",
-      "stock_number": "97E009155",
-      "title": "2009 Kawasaki ZX Zx10-R",
-      "price": 78900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZX/97E009155",
-      "make": "Kawasaki",
-      "model": "ZX",
-      "source": "WeBuyCars",
-      "kilometers": 24637,
-      "location": "Dome (GP)"
     },
     "webuycars_C29817313": {
       "vehicle_id": "webuycars_C29817313",
@@ -2523,17 +2559,17 @@
       "kilometers": 25199,
       "location": "Riverhorse (KZN)"
     },
-    "webuycars_0B5E13037": {
-      "vehicle_id": "webuycars_0B5E13037",
-      "stock_number": "0B5E13037",
-      "title": "2014 Honda NC 750 XD",
-      "price": 67900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/NC/0B5E13037",
-      "make": "Honda",
-      "model": "NC",
+    "webuycars_082914180": {
+      "vehicle_id": "webuycars_082914180",
+      "stock_number": "082914180",
+      "title": "2008 Suzuki SV 1000s",
+      "price": 54900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/SV/082914180",
+      "make": "Suzuki",
+      "model": "SV",
       "source": "WeBuyCars",
-      "kilometers": 32437,
-      "location": "Midstream (GP)"
+      "kilometers": 27522,
+      "location": "Silver Lakes (GP)"
     },
     "webuycars_27F209780": {
       "vehicle_id": "webuycars_27F209780",
@@ -2547,6 +2583,30 @@
       "kilometers": 29379,
       "location": "Mbombela (MP)"
     },
+    "webuycars_42FD14153": {
+      "vehicle_id": "webuycars_42FD14153",
+      "stock_number": "42FD14153",
+      "title": "2010 BMW R Series R 1200 GS ABS H/grips",
+      "price": 80900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/42FD14153",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 27039,
+      "location": "Gqeberha (EC)"
+    },
+    "webuycars_604715044": {
+      "vehicle_id": "webuycars_604715044",
+      "stock_number": "604715044",
+      "title": "2007 Harley Davidson Sportster Xl1200 Custom",
+      "price": 54900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/604715044",
+      "make": "Harley Davidson",
+      "model": "Sportster",
+      "source": "WeBuyCars",
+      "kilometers": 26063,
+      "location": "Montana (GP)"
+    },
     "webuycars_67F106721": {
       "vehicle_id": "webuycars_67F106721",
       "stock_number": "67F106721",
@@ -2558,30 +2618,6 @@
       "source": "WeBuyCars",
       "kilometers": 28823,
       "location": "Gqeberha (EC)"
-    },
-    "webuycars_6B9613820": {
-      "vehicle_id": "webuycars_6B9613820",
-      "stock_number": "6B9613820",
-      "title": "2007 Honda CBR 600 RR",
-      "price": 55900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/6B9613820",
-      "make": "Honda",
-      "model": "CBR",
-      "source": "WeBuyCars",
-      "kilometers": 32466,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_894717054": {
-      "vehicle_id": "webuycars_894717054",
-      "stock_number": "894717054",
-      "title": "2006 BMW R Series R 1200 RT",
-      "price": 62900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/894717054",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 32277,
-      "location": "Pietermaritzburg (KZN)"
     },
     "webuycars_E12711063": {
       "vehicle_id": "webuycars_E12711063",
@@ -2595,17 +2631,17 @@
       "kilometers": 28110,
       "location": "Brackenfell (WC)"
     },
-    "webuycars_FC8507409": {
-      "vehicle_id": "webuycars_FC8507409",
-      "stock_number": "FC8507409",
-      "title": "2009 Suzuki GSX-R GSX R750",
-      "price": 73900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX-R/FC8507409",
-      "make": "Suzuki",
-      "model": "GSX-R",
+    "webuycars_0B5E13037": {
+      "vehicle_id": "webuycars_0B5E13037",
+      "stock_number": "0B5E13037",
+      "title": "2014 Honda NC 750 XD",
+      "price": 67900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/NC/0B5E13037",
+      "make": "Honda",
+      "model": "NC",
       "source": "WeBuyCars",
-      "kilometers": 31415,
-      "location": "Silver Lakes (GP)"
+      "kilometers": 32437,
+      "location": "Midstream (GP)"
     },
     "webuycars_52A001669": {
       "vehicle_id": "webuycars_52A001669",
@@ -2619,29 +2655,17 @@
       "kilometers": 33583,
       "location": "JHB South (GP)"
     },
-    "webuycars_895302815": {
-      "vehicle_id": "webuycars_895302815",
-      "stock_number": "895302815",
-      "title": "2008 Honda CBR 1000 RR Fireblade",
-      "price": 76900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/895302815",
+    "webuycars_6B9613820": {
+      "vehicle_id": "webuycars_6B9613820",
+      "stock_number": "6B9613820",
+      "title": "2007 Honda CBR 600 RR",
+      "price": 55900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/6B9613820",
       "make": "Honda",
       "model": "CBR",
       "source": "WeBuyCars",
-      "kilometers": 34461,
-      "location": "Germiston (GP)"
-    },
-    "webuycars_C4E900420": {
-      "vehicle_id": "webuycars_C4E900420",
-      "stock_number": "C4E900420",
-      "title": "2007 BMW F Series F 650 GS",
-      "price": 36900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/C4E900420",
-      "make": "BMW",
-      "model": "F Series",
-      "source": "WeBuyCars",
-      "kilometers": 34459,
-      "location": "East London (EC)"
+      "kilometers": 32466,
+      "location": "Midstream (GP)"
     },
     "webuycars_D8AA12037": {
       "vehicle_id": "webuycars_D8AA12037",
@@ -2667,23 +2691,11 @@
       "kilometers": 34223,
       "location": "Dome (GP)"
     },
-    "webuycars_ECAF07780": {
-      "vehicle_id": "webuycars_ECAF07780",
-      "stock_number": "ECAF07780",
-      "title": "2007 Kawasaki ZX 14",
-      "price": 88900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZX/ECAF07780",
-      "make": "Kawasaki",
-      "model": "ZX",
-      "source": "WeBuyCars",
-      "kilometers": 34687,
-      "location": "Brackenfell (WC)"
-    },
     "webuycars_F79315783": {
       "vehicle_id": "webuycars_F79315783",
       "stock_number": "F79315783",
       "title": "2019 Gomoto Gomoto 125",
-      "price": 10900,
+      "price": 9900,
       "url": "https://www.webuycars.co.za/buy-a-car/Gomoto/Gomoto/F79315783",
       "make": "Gomoto",
       "model": "Gomoto",
@@ -2703,23 +2715,11 @@
       "kilometers": 35874,
       "location": "Silver Lakes (GP)"
     },
-    "webuycars_408605351": {
-      "vehicle_id": "webuycars_408605351",
-      "stock_number": "408605351",
-      "title": "2005 Buell Lightning XB9S",
-      "price": 42900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Buell/Lightning/408605351",
-      "make": "Buell",
-      "model": "Lightning",
-      "source": "WeBuyCars",
-      "kilometers": 38178,
-      "location": "JHB South (GP)"
-    },
     "webuycars_41B113734": {
       "vehicle_id": "webuycars_41B113734",
       "stock_number": "41B113734",
       "title": "2006 BMW F Series F 650 GS ABS H/grips",
-      "price": 36900,
+      "price": 33900,
       "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/41B113734",
       "make": "BMW",
       "model": "F Series",
@@ -2739,6 +2739,90 @@
       "kilometers": 36022,
       "location": "Dome (GP)"
     },
+    "webuycars_895302815": {
+      "vehicle_id": "webuycars_895302815",
+      "stock_number": "895302815",
+      "title": "2008 Honda CBR 1000 RR Fireblade",
+      "price": 76900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/895302815",
+      "make": "Honda",
+      "model": "CBR",
+      "source": "WeBuyCars",
+      "kilometers": 34461,
+      "location": "Germiston (GP)"
+    },
+    "webuycars_C4E900420": {
+      "vehicle_id": "webuycars_C4E900420",
+      "stock_number": "C4E900420",
+      "title": "2007 BMW F Series F 650 GS",
+      "price": 36900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/C4E900420",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 34459,
+      "location": "East London (EC)"
+    },
+    "webuycars_E06F01464": {
+      "vehicle_id": "webuycars_E06F01464",
+      "stock_number": "E06F01464",
+      "title": "2009 Suzuki GSX-R GSX R750",
+      "price": 86900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX-R/E06F01464",
+      "make": "Suzuki",
+      "model": "GSX-R",
+      "source": "WeBuyCars",
+      "kilometers": 36355,
+      "location": "Midstream (GP)"
+    },
+    "webuycars_ECAF07780": {
+      "vehicle_id": "webuycars_ECAF07780",
+      "stock_number": "ECAF07780",
+      "title": "2007 Kawasaki ZX 14",
+      "price": 88900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZX/ECAF07780",
+      "make": "Kawasaki",
+      "model": "ZX",
+      "source": "WeBuyCars",
+      "kilometers": 34687,
+      "location": "Brackenfell (WC)"
+    },
+    "webuycars_37D114003": {
+      "vehicle_id": "webuycars_37D114003",
+      "stock_number": "37D114003",
+      "title": "2005 BMW F Series F 650 GS Dakar ABS H/grips",
+      "price": 39900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/37D114003",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 38197,
+      "location": "Dome (GP)"
+    },
+    "webuycars_408605351": {
+      "vehicle_id": "webuycars_408605351",
+      "stock_number": "408605351",
+      "title": "2005 Buell Lightning XB9S",
+      "price": 42900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Buell/Lightning/408605351",
+      "make": "Buell",
+      "model": "Lightning",
+      "source": "WeBuyCars",
+      "kilometers": 38178,
+      "location": "JHB South (GP)"
+    },
+    "webuycars_6E6D10660": {
+      "vehicle_id": "webuycars_6E6D10660",
+      "stock_number": "6E6D10660",
+      "title": "2002 BMW R Series R 1100 S",
+      "price": 44900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/6E6D10660",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 38464,
+      "location": "Dome (GP)"
+    },
     "webuycars_834D14607": {
       "vehicle_id": "webuycars_834D14607",
       "stock_number": "834D14607",
@@ -2751,17 +2835,29 @@
       "kilometers": 38106,
       "location": "Dome (GP)"
     },
-    "webuycars_E06F01464": {
-      "vehicle_id": "webuycars_E06F01464",
-      "stock_number": "E06F01464",
-      "title": "2009 Suzuki GSX-R GSX R750",
-      "price": 90900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX-R/E06F01464",
-      "make": "Suzuki",
-      "model": "GSX-R",
+    "webuycars_A02B07559": {
+      "vehicle_id": "webuycars_A02B07559",
+      "stock_number": "A02B07559",
+      "title": "2005 Honda XL 650 V Transalp",
+      "price": 32900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/XL/A02B07559",
+      "make": "Honda",
+      "model": "XL",
       "source": "WeBuyCars",
-      "kilometers": 36355,
-      "location": "Midstream (GP)"
+      "kilometers": 39150,
+      "location": "Dome (GP)"
+    },
+    "webuycars_FBBB13826": {
+      "vehicle_id": "webuycars_FBBB13826",
+      "stock_number": "FBBB13826",
+      "title": "2013 Suzuki GSX 1300 BK (b-King)",
+      "price": 98900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX/FBBB13826",
+      "make": "Suzuki",
+      "model": "GSX",
+      "source": "WeBuyCars",
+      "kilometers": 39917,
+      "location": "Vereeniging (GP)"
     },
     "webuycars_FF7600086": {
       "vehicle_id": "webuycars_FF7600086",
@@ -2773,6 +2869,18 @@
       "model": "1400",
       "source": "WeBuyCars",
       "kilometers": 38196,
+      "location": "Dome (GP)"
+    },
+    "webuycars_12C206499": {
+      "vehicle_id": "webuycars_12C206499",
+      "stock_number": "12C206499",
+      "title": "2008 Kawasaki KLR Klr650",
+      "price": 42900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLR/12C206499",
+      "make": "Kawasaki",
+      "model": "KLR",
+      "source": "WeBuyCars",
+      "kilometers": 42877,
       "location": "Dome (GP)"
     },
     "webuycars_248A03569": {
@@ -2787,52 +2895,16 @@
       "kilometers": 40789,
       "location": "George (WC)"
     },
-    "webuycars_37D114003": {
-      "vehicle_id": "webuycars_37D114003",
-      "stock_number": "37D114003",
-      "title": "2005 BMW F Series F 650 GS Dakar ABS H/grips",
-      "price": 39900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/37D114003",
+    "webuycars_BC1807646": {
+      "vehicle_id": "webuycars_BC1807646",
+      "stock_number": "BC1807646",
+      "title": "2000 BMW F Series F 650 GS",
+      "price": 30900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/BC1807646",
       "make": "BMW",
       "model": "F Series",
       "source": "WeBuyCars",
-      "kilometers": 38197,
-      "location": "Dome (GP)"
-    },
-    "webuycars_6E6D10660": {
-      "vehicle_id": "webuycars_6E6D10660",
-      "stock_number": "6E6D10660",
-      "title": "2002 BMW R Series R 1100 S",
-      "price": 44900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/6E6D10660",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 38464,
-      "location": "Dome (GP)"
-    },
-    "webuycars_718805035": {
-      "vehicle_id": "webuycars_718805035",
-      "stock_number": "718805035",
-      "title": "2008 Yamaha YZF R1 YZF R1",
-      "price": 79900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/YZF R1/718805035",
-      "make": "Yamaha",
-      "model": "YZF R1",
-      "source": "WeBuyCars",
-      "kilometers": 41862,
-      "location": "Dome (GP)"
-    },
-    "webuycars_A02B07559": {
-      "vehicle_id": "webuycars_A02B07559",
-      "stock_number": "A02B07559",
-      "title": "2005 Honda XL 650 V Transalp",
-      "price": 32900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/XL/A02B07559",
-      "make": "Honda",
-      "model": "XL",
-      "source": "WeBuyCars",
-      "kilometers": 39150,
+      "kilometers": 42274,
       "location": "Dome (GP)"
     },
     "webuycars_BEA403686": {
@@ -2859,17 +2931,17 @@
       "kilometers": 40083,
       "location": "Dome (GP)"
     },
-    "webuycars_12C206499": {
-      "vehicle_id": "webuycars_12C206499",
-      "stock_number": "12C206499",
-      "title": "2008 Kawasaki KLR Klr650",
-      "price": 42900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLR/12C206499",
-      "make": "Kawasaki",
-      "model": "KLR",
+    "webuycars_DF8711263": {
+      "vehicle_id": "webuycars_DF8711263",
+      "stock_number": "DF8711263",
+      "title": "2012 BMW R Series R 1200 RT",
+      "price": 82900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/DF8711263",
+      "make": "BMW",
+      "model": "R Series",
       "source": "WeBuyCars",
-      "kilometers": 42877,
-      "location": "Dome (GP)"
+      "kilometers": 44090,
+      "location": "Springfield (KZN)"
     },
     "webuycars_331309882": {
       "vehicle_id": "webuycars_331309882",
@@ -2883,90 +2955,6 @@
       "kilometers": 45016,
       "location": "Gqeberha (EC)"
     },
-    "webuycars_906214451": {
-      "vehicle_id": "webuycars_906214451",
-      "stock_number": "906214451",
-      "title": "2007 Kawasaki KLE 650 Versys",
-      "price": 30900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLE/906214451",
-      "make": "Kawasaki",
-      "model": "KLE",
-      "source": "WeBuyCars",
-      "kilometers": 43133,
-      "location": "Brackenfell (WC)"
-    },
-    "webuycars_A5BD10867": {
-      "vehicle_id": "webuycars_A5BD10867",
-      "stock_number": "A5BD10867",
-      "title": "2012 Suzuki GSX-R GSX R750",
-      "price": 69900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX-R/A5BD10867",
-      "make": "Suzuki",
-      "model": "GSX-R",
-      "source": "WeBuyCars",
-      "kilometers": 45256,
-      "location": "JHB South (GP)"
-    },
-    "webuycars_BC1807646": {
-      "vehicle_id": "webuycars_BC1807646",
-      "stock_number": "BC1807646",
-      "title": "2000 BMW F Series F 650 GS",
-      "price": 30900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/BC1807646",
-      "make": "BMW",
-      "model": "F Series",
-      "source": "WeBuyCars",
-      "kilometers": 42274,
-      "location": "Dome (GP)"
-    },
-    "webuycars_DF8711263": {
-      "vehicle_id": "webuycars_DF8711263",
-      "stock_number": "DF8711263",
-      "title": "2012 BMW R Series R 1200 RT",
-      "price": 82900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/DF8711263",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 44090,
-      "location": "Springfield (KZN)"
-    },
-    "webuycars_FFDC03809": {
-      "vehicle_id": "webuycars_FFDC03809",
-      "stock_number": "FFDC03809",
-      "title": "2009 Triumph Daytona 675",
-      "price": 50900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Daytona/FFDC03809",
-      "make": "Triumph",
-      "model": "Daytona",
-      "source": "WeBuyCars",
-      "kilometers": 45089,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_188811605": {
-      "vehicle_id": "webuycars_188811605",
-      "stock_number": "188811605",
-      "title": "2013 BMW F Series F 800 GS ABS H/grips",
-      "price": 68900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/188811605",
-      "make": "BMW",
-      "model": "F Series",
-      "source": "WeBuyCars",
-      "kilometers": 50000,
-      "location": "Dome (GP)"
-    },
-    "webuycars_420C13231": {
-      "vehicle_id": "webuycars_420C13231",
-      "stock_number": "420C13231",
-      "title": "2013 KTM Duke 690 Duke",
-      "price": 35900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Duke/420C13231",
-      "make": "KTM",
-      "model": "Duke",
-      "source": "WeBuyCars",
-      "kilometers": 50499,
-      "location": "Midstream (GP)"
-    },
     "webuycars_705214128": {
       "vehicle_id": "webuycars_705214128",
       "stock_number": "705214128",
@@ -2978,18 +2966,6 @@
       "source": "WeBuyCars",
       "kilometers": 46682,
       "location": "Dome (GP)"
-    },
-    "webuycars_717813867": {
-      "vehicle_id": "webuycars_717813867",
-      "stock_number": "717813867",
-      "title": "2012 Triumph Tiger 1200 Explorer",
-      "price": 58900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Tiger/717813867",
-      "make": "Triumph",
-      "model": "Tiger",
-      "source": "WeBuyCars",
-      "kilometers": 50157,
-      "location": "Brackenfell (WC)"
     },
     "webuycars_8A6212451": {
       "vehicle_id": "webuycars_8A6212451",
@@ -3027,41 +3003,29 @@
       "kilometers": 47099,
       "location": "Vereeniging (GP)"
     },
-    "webuycars_075C12022": {
-      "vehicle_id": "webuycars_075C12022",
-      "stock_number": "075C12022",
-      "title": "2014 Big Boy TSR 250",
-      "price": 12900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/TSR/075C12022",
-      "make": "Big Boy",
-      "model": "TSR",
+    "webuycars_FFDC03809": {
+      "vehicle_id": "webuycars_FFDC03809",
+      "stock_number": "FFDC03809",
+      "title": "2009 Triumph Daytona 675",
+      "price": 50900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Daytona/FFDC03809",
+      "make": "Triumph",
+      "model": "Daytona",
       "source": "WeBuyCars",
-      "kilometers": 50807,
-      "location": "Midstream (GP)"
+      "kilometers": 45089,
+      "location": "Richmond (WC)"
     },
-    "webuycars_244002139": {
-      "vehicle_id": "webuycars_244002139",
-      "stock_number": "244002139",
-      "title": "2012 Yamaha Royal Star",
-      "price": 41900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/Royal/244002139",
-      "make": "Yamaha",
-      "model": "Royal",
+    "webuycars_717813867": {
+      "vehicle_id": "webuycars_717813867",
+      "stock_number": "717813867",
+      "title": "2012 Triumph Tiger 1200 Explorer",
+      "price": 58900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Tiger/717813867",
+      "make": "Triumph",
+      "model": "Tiger",
       "source": "WeBuyCars",
-      "kilometers": 50595,
-      "location": "Dome (GP)"
-    },
-    "webuycars_7FFE10812": {
-      "vehicle_id": "webuycars_7FFE10812",
-      "stock_number": "7FFE10812",
-      "title": "2008 BMW K Series K 1200 S",
-      "price": 52900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/K Series/7FFE10812",
-      "make": "BMW",
-      "model": "K Series",
-      "source": "WeBuyCars",
-      "kilometers": 55889,
-      "location": "Midstream (GP)"
+      "kilometers": 50157,
+      "location": "Brackenfell (WC)"
     },
     "webuycars_904F03399": {
       "vehicle_id": "webuycars_904F03399",
@@ -3123,6 +3087,18 @@
       "kilometers": 59356,
       "location": "East London (EC)"
     },
+    "webuycars_7FFE10812": {
+      "vehicle_id": "webuycars_7FFE10812",
+      "stock_number": "7FFE10812",
+      "title": "2008 BMW K Series K 1200 S",
+      "price": 52900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/K Series/7FFE10812",
+      "make": "BMW",
+      "model": "K Series",
+      "source": "WeBuyCars",
+      "kilometers": 55889,
+      "location": "Midstream (GP)"
+    },
     "webuycars_AC0B02247": {
       "vehicle_id": "webuycars_AC0B02247",
       "stock_number": "AC0B02247",
@@ -3175,24 +3151,12 @@
       "vehicle_id": "webuycars_F57E11570",
       "stock_number": "F57E11570",
       "title": "2013 Triumph Tiger 1200 Explorer",
-      "price": 61900,
+      "price": 57900,
       "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Tiger/F57E11570",
       "make": "Triumph",
       "model": "Tiger",
       "source": "WeBuyCars",
       "kilometers": 61226,
-      "location": "Dome (GP)"
-    },
-    "webuycars_FA0914224": {
-      "vehicle_id": "webuycars_FA0914224",
-      "stock_number": "FA0914224",
-      "title": "2004 BMW R Series R 1200 GS ABS H/grips",
-      "price": 57900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/FA0914224",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 61631,
       "location": "Dome (GP)"
     },
     "webuycars_10A410548": {
@@ -3231,18 +3195,6 @@
       "kilometers": 65719,
       "location": "Richmond (WC)"
     },
-    "webuycars_D49A04408": {
-      "vehicle_id": "webuycars_D49A04408",
-      "stock_number": "D49A04408",
-      "title": "2007 BMW R Series R 1200 GS ABS H/grips",
-      "price": 52900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/D49A04408",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 67833,
-      "location": "Vereeniging (GP)"
-    },
     "webuycars_E01008034": {
       "vehicle_id": "webuycars_E01008034",
       "stock_number": "E01008034",
@@ -3267,6 +3219,18 @@
       "kilometers": 64420,
       "location": "Richmond (WC)"
     },
+    "webuycars_FA0914224": {
+      "vehicle_id": "webuycars_FA0914224",
+      "stock_number": "FA0914224",
+      "title": "2004 BMW R Series R 1200 GS ABS H/grips",
+      "price": 57900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/FA0914224",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 61631,
+      "location": "Dome (GP)"
+    },
     "webuycars_FB8D12012": {
       "vehicle_id": "webuycars_FB8D12012",
       "stock_number": "FB8D12012",
@@ -3278,18 +3242,6 @@
       "source": "WeBuyCars",
       "kilometers": 63232,
       "location": "JHB South (GP)"
-    },
-    "webuycars_3B6403131": {
-      "vehicle_id": "webuycars_3B6403131",
-      "stock_number": "3B6403131",
-      "title": "2005 Suzuki DL 650 V Strom",
-      "price": 46900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/DL/3B6403131",
-      "make": "Suzuki",
-      "model": "DL",
-      "source": "WeBuyCars",
-      "kilometers": 73913,
-      "location": "Richmond (WC)"
     },
     "webuycars_412D07528": {
       "vehicle_id": "webuycars_412D07528",
@@ -3314,18 +3266,6 @@
       "source": "WeBuyCars",
       "kilometers": 71358,
       "location": "Silver Lakes (GP)"
-    },
-    "webuycars_6D5700450": {
-      "vehicle_id": "webuycars_6D5700450",
-      "stock_number": "6D5700450",
-      "title": "2011 Aprilia Rsv4 R Aprc",
-      "price": 72900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Aprilia/Rsv4/6D5700450",
-      "make": "Aprilia",
-      "model": "Rsv4",
-      "source": "WeBuyCars",
-      "kilometers": 72144,
-      "location": "Dome (GP)"
     },
     "webuycars_A43710971": {
       "vehicle_id": "webuycars_A43710971",
@@ -3363,17 +3303,17 @@
       "kilometers": 72432,
       "location": "East London (EC)"
     },
-    "webuycars_0F5415477": {
-      "vehicle_id": "webuycars_0F5415477",
-      "stock_number": "0F5415477",
-      "title": "2005 Kawasaki KLR 650",
-      "price": 32900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLR/0F5415477",
-      "make": "Kawasaki",
-      "model": "KLR",
+    "webuycars_D49A04408": {
+      "vehicle_id": "webuycars_D49A04408",
+      "stock_number": "D49A04408",
+      "title": "2007 BMW R Series R 1200 GS ABS H/grips",
+      "price": 52900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/D49A04408",
+      "make": "BMW",
+      "model": "R Series",
       "source": "WeBuyCars",
-      "kilometers": 80370,
-      "location": "Montana (GP)"
+      "kilometers": 67833,
+      "location": "Vereeniging (GP)"
     },
     "webuycars_292E16939": {
       "vehicle_id": "webuycars_292E16939",
@@ -3386,6 +3326,18 @@
       "source": "WeBuyCars",
       "kilometers": 80319,
       "location": "Gqeberha (EC)"
+    },
+    "webuycars_3B6403131": {
+      "vehicle_id": "webuycars_3B6403131",
+      "stock_number": "3B6403131",
+      "title": "2005 Suzuki DL 650 V Strom",
+      "price": 46900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/DL/3B6403131",
+      "make": "Suzuki",
+      "model": "DL",
+      "source": "WeBuyCars",
+      "kilometers": 73913,
+      "location": "Richmond (WC)"
     },
     "webuycars_3CD210409": {
       "vehicle_id": "webuycars_3CD210409",
@@ -3447,17 +3399,17 @@
       "kilometers": 74281,
       "location": "Dome (GP)"
     },
-    "webuycars_3B2B13130": {
-      "vehicle_id": "webuycars_3B2B13130",
-      "stock_number": "3B2B13130",
-      "title": "2004 Suzuki SV 1000s",
-      "price": 30900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/SV/3B2B13130",
-      "make": "Suzuki",
-      "model": "SV",
+    "webuycars_0F5415477": {
+      "vehicle_id": "webuycars_0F5415477",
+      "stock_number": "0F5415477",
+      "title": "2005 Kawasaki KLR 650",
+      "price": 32900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLR/0F5415477",
+      "make": "Kawasaki",
+      "model": "KLR",
       "source": "WeBuyCars",
-      "kilometers": 91235,
-      "location": "Richmond (WC)"
+      "kilometers": 80370,
+      "location": "Montana (GP)"
     },
     "webuycars_3EDE08955": {
       "vehicle_id": "webuycars_3EDE08955",
@@ -3471,6 +3423,18 @@
       "kilometers": 81371,
       "location": "Richmond (WC)"
     },
+    "webuycars_47CA11112": {
+      "vehicle_id": "webuycars_47CA11112",
+      "stock_number": "47CA11112",
+      "title": "2010 Yamaha XT Xt1200 Z Super Tenere",
+      "price": 59900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/XT/47CA11112",
+      "make": "Yamaha",
+      "model": "XT",
+      "source": "WeBuyCars",
+      "kilometers": 84074,
+      "location": "Midstream (GP)"
+    },
     "webuycars_9A5909771": {
       "vehicle_id": "webuycars_9A5909771",
       "stock_number": "9A5909771",
@@ -3482,18 +3446,6 @@
       "source": "WeBuyCars",
       "kilometers": 84088,
       "location": "Midstream (GP)"
-    },
-    "webuycars_AF5E11085": {
-      "vehicle_id": "webuycars_AF5E11085",
-      "stock_number": "AF5E11085",
-      "title": "2006 Kawasaki KLR 650",
-      "price": 23900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLR/AF5E11085",
-      "make": "Kawasaki",
-      "model": "KLR",
-      "source": "WeBuyCars",
-      "kilometers": 91824,
-      "location": "Brackenfell (WC)"
     },
     "webuycars_D71300517": {
       "vehicle_id": "webuycars_D71300517",
@@ -3591,6 +3543,18 @@
       "kilometers": 110466,
       "location": "Midstream (GP)"
     },
+    "webuycars_AF5E11085": {
+      "vehicle_id": "webuycars_AF5E11085",
+      "stock_number": "AF5E11085",
+      "title": "2006 Kawasaki KLR 650",
+      "price": 23900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLR/AF5E11085",
+      "make": "Kawasaki",
+      "model": "KLR",
+      "source": "WeBuyCars",
+      "kilometers": 91824,
+      "location": "Brackenfell (WC)"
+    },
     "webuycars_BEC500937": {
       "vehicle_id": "webuycars_BEC500937",
       "stock_number": "BEC500937",
@@ -3602,18 +3566,6 @@
       "source": "WeBuyCars",
       "kilometers": 105032,
       "location": "Richmond (WC)"
-    },
-    "webuycars_CD4B00844": {
-      "vehicle_id": "webuycars_CD4B00844",
-      "stock_number": "CD4B00844",
-      "title": "2005 BMW R Series R 1200 GS ABS H/grips",
-      "price": 39900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/CD4B00844",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 119207,
-      "location": "George (WC)"
     },
     "webuycars_12F700856": {
       "vehicle_id": "webuycars_12F700856",
@@ -3639,233 +3591,89 @@
       "kilometers": 126552,
       "location": "Gqeberha (EC)"
     },
-    "webuycars_F31D04500": {
-      "vehicle_id": "webuycars_F31D04500",
-      "stock_number": "F31D04500",
-      "title": "2021 Big Boy Velocity Cargo 150",
-      "price": 12900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/F31D04500",
-      "make": "Big Boy",
-      "model": "Velocity Cargo",
+    "webuycars_CD4B00844": {
+      "vehicle_id": "webuycars_CD4B00844",
+      "stock_number": "CD4B00844",
+      "title": "2005 BMW R Series R 1200 GS ABS H/grips",
+      "price": 39900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/CD4B00844",
+      "make": "BMW",
+      "model": "R Series",
       "source": "WeBuyCars",
-      "kilometers": "N/A",
-      "location": "Midstream (GP)"
+      "kilometers": 119207,
+      "location": "George (WC)"
     },
-    "webuycars_5CDE07184": {
-      "vehicle_id": "webuycars_5CDE07184",
-      "stock_number": "5CDE07184",
-      "title": "2017 KTM XCR 450 Xc-W / Exc-F",
-      "price": 63900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/XCR/5CDE07184",
-      "make": "KTM",
-      "model": "XCR",
-      "source": "WeBuyCars",
-      "kilometers": 220,
-      "location": "JHB South (GP)"
-    },
-    "webuycars_7D3E03305": {
-      "vehicle_id": "webuycars_7D3E03305",
-      "stock_number": "7D3E03305",
-      "title": "2023 Big Boy Revival 150",
-      "price": 14400,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Revival/7D3E03305",
-      "make": "Big Boy",
-      "model": "Revival",
-      "source": "WeBuyCars",
-      "kilometers": 1887,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_AAD313128": {
-      "vehicle_id": "webuycars_AAD313128",
-      "stock_number": "AAD313128",
-      "title": "2022 Big Boy RCT 150",
-      "price": 12900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/RCT/AAD313128",
-      "make": "Big Boy",
-      "model": "RCT",
-      "source": "WeBuyCars",
-      "kilometers": 3618,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_391F03226": {
-      "vehicle_id": "webuycars_391F03226",
-      "stock_number": "391F03226",
-      "title": "2018 BMW F Series F 700 GS TU",
-      "price": 77300,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/391F03226",
+    "webuycars_9F2000045": {
+      "vehicle_id": "webuycars_9F2000045",
+      "stock_number": "9F2000045",
+      "title": "2008 BMW F Series F 650 GS ABS H/grips",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/9F2000045",
       "make": "BMW",
       "model": "F Series",
       "source": "WeBuyCars",
-      "kilometers": 16018,
-      "location": "Pietermaritzburg (KZN)"
+      "kilometers": 4693,
+      "location": "Springfield (KZN)"
     },
-    "webuycars_552211210": {
-      "vehicle_id": "webuycars_552211210",
-      "stock_number": "552211210",
-      "title": "2023 KTM Duke 390 Adventure",
-      "price": 70900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Duke/552211210",
-      "make": "KTM",
-      "model": "Duke",
-      "source": "WeBuyCars",
-      "kilometers": 5843,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_870308408": {
-      "vehicle_id": "webuycars_870308408",
-      "stock_number": "870308408",
-      "title": "2025 Suzuki GSX 250",
-      "price": 38900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX/870308408",
+    "webuycars_B59907279": {
+      "vehicle_id": "webuycars_B59907279",
+      "stock_number": "B59907279",
+      "title": "2008 Suzuki GS 500F",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GS/B59907279",
       "make": "Suzuki",
-      "model": "GSX",
+      "model": "GS",
       "source": "WeBuyCars",
-      "kilometers": 14455,
-      "location": "Montana (GP)"
-    },
-    "webuycars_2FB412358": {
-      "vehicle_id": "webuycars_2FB412358",
-      "stock_number": "2FB412358",
-      "title": "2007 Honda VTR 1000f Firestorm",
-      "price": 28900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/VTR/2FB412358",
-      "make": "Honda",
-      "model": "VTR",
-      "source": "WeBuyCars",
-      "kilometers": 57440,
+      "kilometers": 11971,
       "location": "Midstream (GP)"
     },
-    "webuycars_A74413734": {
-      "vehicle_id": "webuycars_A74413734",
-      "stock_number": "A74413734",
-      "title": "2023 Kayo Scrambler KT50",
-      "price": 11900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kayo/Scrambler/A74413734",
-      "make": "Kayo",
-      "model": "Scrambler",
+    "webuycars_737910309": {
+      "vehicle_id": "webuycars_737910309",
+      "stock_number": "737910309",
+      "title": "2025 Lifan Lifan 125 Lifan 125",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Lifan/Lifan 125/737910309",
+      "make": "Lifan",
+      "model": "Lifan 125",
       "source": "WeBuyCars",
-      "kilometers": 7,
-      "location": "Dome (GP)"
+      "kilometers": 14557,
+      "location": "Midstream (GP)"
     },
-    "webuycars_C49108606": {
-      "vehicle_id": "webuycars_C49108606",
-      "stock_number": "C49108606",
-      "title": "2017 Kawasaki ER 650n",
-      "price": 67900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ER/C49108606",
-      "make": "Kawasaki",
-      "model": "ER",
-      "source": "WeBuyCars",
-      "kilometers": 30628,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_D21409264": {
-      "vehicle_id": "webuycars_D21409264",
-      "stock_number": "D21409264",
-      "title": "2015 Honda CRF 250 L",
-      "price": 44900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CRF/D21409264",
-      "make": "Honda",
-      "model": "CRF",
-      "source": "WeBuyCars",
-      "kilometers": 5560,
-      "location": "Riverhorse (KZN)"
-    },
-    "webuycars_28BB01940": {
-      "vehicle_id": "webuycars_28BB01940",
-      "stock_number": "28BB01940",
-      "title": "2017 Kawasaki EN 650 Vulcan",
-      "price": 65900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/EN/28BB01940",
-      "make": "Kawasaki",
-      "model": "EN",
-      "source": "WeBuyCars",
-      "kilometers": 21467,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_720513587": {
-      "vehicle_id": "webuycars_720513587",
-      "stock_number": "720513587",
-      "title": "2020 BMW C G 310 R",
-      "price": 48900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/C/720513587",
-      "make": "BMW",
-      "model": "C",
-      "source": "WeBuyCars",
-      "kilometers": 23845,
-      "location": "Brackenfell (WC)"
-    },
-    "webuycars_A7C611819": {
-      "vehicle_id": "webuycars_A7C611819",
-      "stock_number": "A7C611819",
-      "title": "2022 Big Boy Velocity Cargo 150",
-      "price": 13400,
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/A7C611819",
+    "webuycars_B36104908": {
+      "vehicle_id": "webuycars_B36104908",
+      "stock_number": "B36104908",
+      "title": "2012 Big Boy Revival 150",
+      "price": 9900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Revival/B36104908",
       "make": "Big Boy",
-      "model": "Velocity Cargo",
+      "model": "Revival",
       "source": "WeBuyCars",
-      "kilometers": 15138,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_C25E08811": {
-      "vehicle_id": "webuycars_C25E08811",
-      "stock_number": "C25E08811",
-      "title": "2019 Honda NC 750 X",
-      "price": 74900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/NC/C25E08811",
-      "make": "Honda",
-      "model": "NC",
-      "source": "WeBuyCars",
-      "kilometers": 15614,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_3C7900009": {
-      "vehicle_id": "webuycars_3C7900009",
-      "stock_number": "3C7900009",
-      "title": "2006 Mv Agusta F4 1000s",
-      "price": 67900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Mv Agusta/F4/3C7900009",
-      "make": "Mv Agusta",
-      "model": "F4",
-      "source": "WeBuyCars",
-      "kilometers": 25441,
-      "location": "Dome (GP)"
-    },
-    "webuycars_A13713801": {
-      "vehicle_id": "webuycars_A13713801",
-      "stock_number": "A13713801",
-      "title": "2018 KTM 1090 Adventure S",
-      "price": 91900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/1090 Adventure/A13713801",
-      "make": "KTM",
-      "model": "1090 Adventure",
-      "source": "WeBuyCars",
-      "kilometers": 26531,
-      "location": "Dome (GP)"
-    },
-    "webuycars_C31014274": {
-      "vehicle_id": "webuycars_C31014274",
-      "stock_number": "C31014274",
-      "title": "2018 Kawasaki ZR 800",
-      "price": 59900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZR/C31014274",
-      "make": "Kawasaki",
-      "model": "ZR",
-      "source": "WeBuyCars",
-      "kilometers": 64254,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_DB6312294": {
-      "vehicle_id": "webuycars_DB6312294",
-      "stock_number": "DB6312294",
-      "title": "2015 Gomoto Gomoto 150",
-      "price": 7400,
-      "url": "https://www.webuycars.co.za/buy-a-car/Gomoto/Gomoto/DB6312294",
-      "make": "Gomoto",
-      "model": "Gomoto",
-      "source": "WeBuyCars",
-      "kilometers": 2745,
+      "kilometers": 6944,
       "location": "JHB South (GP)"
+    },
+    "webuycars_1C9A16294": {
+      "vehicle_id": "webuycars_1C9A16294",
+      "stock_number": "1C9A16294",
+      "title": "2016 Kawasaki Z 300",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Z/1C9A16294",
+      "make": "Kawasaki",
+      "model": "Z",
+      "source": "WeBuyCars",
+      "kilometers": 18984,
+      "location": "Germiston (GP)"
+    },
+    "webuycars_53C407306": {
+      "vehicle_id": "webuycars_53C407306",
+      "stock_number": "53C407306",
+      "title": "2021 KTM SX-F 250 Sx-F",
+      "price": 59900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/SX-F/53C407306",
+      "make": "KTM",
+      "model": "SX-F",
+      "source": "WeBuyCars",
+      "kilometers": 5001,
+      "location": "Germiston (GP)"
     },
     "webuycars_034006883": {
       "vehicle_id": "webuycars_034006883",
@@ -3890,30 +3698,6 @@
       "source": "WeBuyCars",
       "kilometers": 347,
       "location": "Dome (GP)"
-    },
-    "webuycars_882F14765": {
-      "vehicle_id": "webuycars_882F14765",
-      "stock_number": "882F14765",
-      "title": "2025 Zhejiang Cf Moto 800 NK 800 NK",
-      "price": 132900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Zhejiang Cf Moto/800 NK/882F14765",
-      "make": "Zhejiang Cf Moto",
-      "model": "800 NK",
-      "source": "WeBuyCars",
-      "kilometers": 250,
-      "location": "Dome (GP)"
-    },
-    "webuycars_B63214193": {
-      "vehicle_id": "webuycars_B63214193",
-      "stock_number": "B63214193",
-      "title": "2024 Yamaha YZ 450 F",
-      "price": 98900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/YZ/B63214193",
-      "make": "Yamaha",
-      "model": "YZ",
-      "source": "WeBuyCars",
-      "kilometers": "N/A",
-      "location": "Vereeniging (GP)"
     },
     "webuycars_C2F112298": {
       "vehicle_id": "webuycars_C2F112298",
@@ -3951,6 +3735,18 @@
       "kilometers": "N/A",
       "location": "Silver Lakes (GP)"
     },
+    "webuycars_1D4515256": {
+      "vehicle_id": "webuycars_1D4515256",
+      "stock_number": "1D4515256",
+      "title": "2010 Yamaha XV 1700 Road Star",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/XV/1D4515256",
+      "make": "Yamaha",
+      "model": "XV",
+      "source": "WeBuyCars",
+      "kilometers": 21539,
+      "location": "Germiston (GP)"
+    },
     "webuycars_14CF04036": {
       "vehicle_id": "webuycars_14CF04036",
       "stock_number": "14CF04036",
@@ -3963,6 +3759,18 @@
       "kilometers": 3180,
       "location": "JHB South (GP)"
     },
+    "webuycars_239300108": {
+      "vehicle_id": "webuycars_239300108",
+      "stock_number": "239300108",
+      "title": "2014 Yamaha XT Xt1200 Z Super Tenere",
+      "price": 68900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/XT/239300108",
+      "make": "Yamaha",
+      "model": "XT",
+      "source": "WeBuyCars",
+      "kilometers": 53082,
+      "location": "Dome (GP)"
+    },
     "webuycars_42B310440": {
       "vehicle_id": "webuycars_42B310440",
       "stock_number": "42B310440",
@@ -3974,6 +3782,18 @@
       "source": "WeBuyCars",
       "kilometers": 6497,
       "location": "Richmond (WC)"
+    },
+    "webuycars_905116696": {
+      "vehicle_id": "webuycars_905116696",
+      "stock_number": "905116696",
+      "title": "2007 Kawasaki ZX Zx10-R",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZX/905116696",
+      "make": "Kawasaki",
+      "model": "ZX",
+      "source": "WeBuyCars",
+      "kilometers": 61380,
+      "location": "Gqeberha (EC)"
     },
     "webuycars_53D308441": {
       "vehicle_id": "webuycars_53D308441",
@@ -3999,18 +3819,6 @@
       "kilometers": 2875,
       "location": "Dome (GP)"
     },
-    "webuycars_74D204045": {
-      "vehicle_id": "webuycars_74D204045",
-      "stock_number": "74D204045",
-      "title": "2025 Zhejiang Cf Moto 800 MT Explore",
-      "price": 134900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Zhejiang Cf Moto/800 MT/74D204045",
-      "make": "Zhejiang Cf Moto",
-      "model": "800 MT",
-      "source": "WeBuyCars",
-      "kilometers": 729,
-      "location": "Dome (GP)"
-    },
     "webuycars_789314435": {
       "vehicle_id": "webuycars_789314435",
       "stock_number": "789314435",
@@ -4023,16 +3831,16 @@
       "kilometers": 1130,
       "location": "Polokwane (L)"
     },
-    "webuycars_BBFE13422": {
-      "vehicle_id": "webuycars_BBFE13422",
-      "stock_number": "BBFE13422",
-      "title": "2025 BMW F Series F 900 R Style Exclusive",
-      "price": 152900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/BBFE13422",
+    "webuycars_B6C907619": {
+      "vehicle_id": "webuycars_B6C907619",
+      "stock_number": "B6C907619",
+      "title": "2022 BMW C G 310 R",
+      "price": 57900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/C/B6C907619",
       "make": "BMW",
-      "model": "F Series",
+      "model": "C",
       "source": "WeBuyCars",
-      "kilometers": 7973,
+      "kilometers": 4600,
       "location": "Midstream (GP)"
     },
     "webuycars_323001565": {
@@ -4059,6 +3867,18 @@
       "kilometers": 8702,
       "location": "Dome (GP)"
     },
+    "webuycars_276A15893": {
+      "vehicle_id": "webuycars_276A15893",
+      "stock_number": "276A15893",
+      "title": "2023 Big Boy Velocity Cargo 150",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/276A15893",
+      "make": "Big Boy",
+      "model": "Velocity Cargo",
+      "source": "WeBuyCars",
+      "kilometers": 631,
+      "location": "Witbank (MP)"
+    },
     "webuycars_5F8D00129": {
       "vehicle_id": "webuycars_5F8D00129",
       "stock_number": "5F8D00129",
@@ -4071,6 +3891,18 @@
       "kilometers": 9641,
       "location": "Dome (GP)"
     },
+    "webuycars_591B00066": {
+      "vehicle_id": "webuycars_591B00066",
+      "stock_number": "591B00066",
+      "title": "2025 Multiple Motorcycle Manufacturers Kayo KT 250 Enduro",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Multiple Motorcycle Manufacturers/Kayo/591B00066",
+      "make": "Multiple Motorcycle Manufacturers",
+      "model": "Kayo",
+      "source": "WeBuyCars",
+      "kilometers": "N/A",
+      "location": "Richmond (WC)"
+    },
     "webuycars_CBCD10413": {
       "vehicle_id": "webuycars_CBCD10413",
       "stock_number": "CBCD10413",
@@ -4082,6 +3914,18 @@
       "source": "WeBuyCars",
       "kilometers": 9315,
       "location": "Midstream (GP)"
+    },
+    "webuycars_B51515421": {
+      "vehicle_id": "webuycars_B51515421",
+      "stock_number": "B51515421",
+      "title": "2010 KTM XC 300 XC (tpi)",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/XC/B51515421",
+      "make": "KTM",
+      "model": "XC",
+      "source": "WeBuyCars",
+      "kilometers": 269,
+      "location": "Dome (GP)"
     },
     "webuycars_E3F311339": {
       "vehicle_id": "webuycars_E3F311339",
@@ -4107,17 +3951,17 @@
       "kilometers": 9206,
       "location": "Midstream (GP)"
     },
-    "webuycars_F98906052": {
-      "vehicle_id": "webuycars_F98906052",
-      "stock_number": "F98906052",
-      "title": "2022 BMW F Series F 850 GS Adventure",
-      "price": 169900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/F98906052",
-      "make": "BMW",
-      "model": "F Series",
+    "webuycars_FC7100003": {
+      "vehicle_id": "webuycars_FC7100003",
+      "stock_number": "FC7100003",
+      "title": "2012 Honda CBR 1000rr (abs)",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/FC7100003",
+      "make": "Honda",
+      "model": "CBR",
       "source": "WeBuyCars",
-      "kilometers": 10583,
-      "location": "George (WC)"
+      "kilometers": 66153,
+      "location": "Germiston (GP)"
     },
     "webuycars_2A2813314": {
       "vehicle_id": "webuycars_2A2813314",
@@ -4131,6 +3975,18 @@
       "kilometers": 10667,
       "location": "Riverhorse (KZN)"
     },
+    "webuycars_1AFC16416": {
+      "vehicle_id": "webuycars_1AFC16416",
+      "stock_number": "1AFC16416",
+      "title": "2025 Big Boy Velocity Cargo 150",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/1AFC16416",
+      "make": "Big Boy",
+      "model": "Velocity Cargo",
+      "source": "WeBuyCars",
+      "kilometers": 5574,
+      "location": "Richmond (WC)"
+    },
     "webuycars_343407407": {
       "vehicle_id": "webuycars_343407407",
       "stock_number": "343407407",
@@ -4143,6 +3999,30 @@
       "kilometers": 14390,
       "location": "George (WC)"
     },
+    "webuycars_4A3912858": {
+      "vehicle_id": "webuycars_4A3912858",
+      "stock_number": "4A3912858",
+      "title": "2020 Harley Davidson Dyna Sport Glide",
+      "price": 159900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Dyna/4A3912858",
+      "make": "Harley Davidson",
+      "model": "Dyna",
+      "source": "WeBuyCars",
+      "kilometers": 16516,
+      "location": "Brackenfell (WC)"
+    },
+    "webuycars_379905779": {
+      "vehicle_id": "webuycars_379905779",
+      "stock_number": "379905779",
+      "title": "2021 Suzuki GSX 250",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX/379905779",
+      "make": "Suzuki",
+      "model": "GSX",
+      "source": "WeBuyCars",
+      "kilometers": 2197,
+      "location": "Richmond (WC)"
+    },
     "webuycars_533D04763": {
       "vehicle_id": "webuycars_533D04763",
       "stock_number": "533D04763",
@@ -4153,6 +4033,18 @@
       "model": "1050 Adventure ",
       "source": "WeBuyCars",
       "kilometers": 11173,
+      "location": "Dome (GP)"
+    },
+    "webuycars_525615865": {
+      "vehicle_id": "webuycars_525615865",
+      "stock_number": "525615865",
+      "title": "2015 KTM EXC 300 EXC",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/EXC/525615865",
+      "make": "KTM",
+      "model": "EXC",
+      "source": "WeBuyCars",
+      "kilometers": 1001,
       "location": "Dome (GP)"
     },
     "webuycars_A2D309102": {
@@ -4167,6 +4059,30 @@
       "kilometers": 12679,
       "location": "Montana (GP)"
     },
+    "webuycars_9EFE00037": {
+      "vehicle_id": "webuycars_9EFE00037",
+      "stock_number": "9EFE00037",
+      "title": "2020 KTM Duke 125 Duke",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Duke/9EFE00037",
+      "make": "KTM",
+      "model": "Duke",
+      "source": "WeBuyCars",
+      "kilometers": 17950,
+      "location": "Dome (GP)"
+    },
+    "webuycars_C11400022": {
+      "vehicle_id": "webuycars_C11400022",
+      "stock_number": "C11400022",
+      "title": "2024 TVS 125 Raider 125",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/TVS/125/C11400022",
+      "make": "TVS",
+      "model": "125",
+      "source": "WeBuyCars",
+      "kilometers": 33368,
+      "location": "Brackenfell (WC)"
+    },
     "webuycars_BF5A04059": {
       "vehicle_id": "webuycars_BF5A04059",
       "stock_number": "BF5A04059",
@@ -4178,6 +4094,18 @@
       "source": "WeBuyCars",
       "kilometers": 13511,
       "location": "George (WC)"
+    },
+    "webuycars_CB7B16224": {
+      "vehicle_id": "webuycars_CB7B16224",
+      "stock_number": "CB7B16224",
+      "title": "2013 BMW R Series R 1200 R ABS H/grips",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/CB7B16224",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 29101,
+      "location": "Montana (GP)"
     },
     "webuycars_D7A709163": {
       "vehicle_id": "webuycars_D7A709163",
@@ -4191,17 +4119,17 @@
       "kilometers": 12959,
       "location": "Dome (GP)"
     },
-    "webuycars_FBCC07320": {
-      "vehicle_id": "webuycars_FBCC07320",
-      "stock_number": "FBCC07320",
-      "title": "2021 Triumph Sreet Triple Trident 660",
-      "price": 98900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Sreet Triple/FBCC07320",
-      "make": "Triumph",
-      "model": "Sreet Triple",
+    "webuycars_1E8213885": {
+      "vehicle_id": "webuycars_1E8213885",
+      "stock_number": "1E8213885",
+      "title": "2008 Honda CRF 250 R",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CRF/1E8213885",
+      "make": "Honda",
+      "model": "CRF",
       "source": "WeBuyCars",
-      "kilometers": 14136,
-      "location": "Richmond (WC)"
+      "kilometers": 1005,
+      "location": "Dome (GP)"
     },
     "webuycars_2E3507903": {
       "vehicle_id": "webuycars_2E3507903",
@@ -4215,17 +4143,29 @@
       "kilometers": 18321,
       "location": "East London (EC)"
     },
-    "webuycars_4A3912858": {
-      "vehicle_id": "webuycars_4A3912858",
-      "stock_number": "4A3912858",
-      "title": "2020 Harley Davidson Dyna Sport Glide",
-      "price": 159900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Dyna/4A3912858",
-      "make": "Harley Davidson",
-      "model": "Dyna",
+    "webuycars_420816196": {
+      "vehicle_id": "webuycars_420816196",
+      "stock_number": "420816196",
+      "title": "2015 Kawasaki KLE 650 Versys",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLE/420816196",
+      "make": "Kawasaki",
+      "model": "KLE",
       "source": "WeBuyCars",
-      "kilometers": 16516,
-      "location": "Brackenfell (WC)"
+      "kilometers": 61687,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_6AE409918": {
+      "vehicle_id": "webuycars_6AE409918",
+      "stock_number": "6AE409918",
+      "title": "2017 Harley Davidson Softail Heritage Softail Classic",
+      "price": 172900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Softail/6AE409918",
+      "make": "Harley Davidson",
+      "model": "Softail",
+      "source": "WeBuyCars",
+      "kilometers": 23349,
+      "location": "Gqeberha (EC)"
     },
     "webuycars_79E303711": {
       "vehicle_id": "webuycars_79E303711",
@@ -4239,6 +4179,18 @@
       "kilometers": 18219,
       "location": "Brackenfell (WC)"
     },
+    "webuycars_748800043": {
+      "vehicle_id": "webuycars_748800043",
+      "stock_number": "748800043",
+      "title": "2015 BMW F Series F 800 R",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/748800043",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 87213,
+      "location": "Montana (GP)"
+    },
     "webuycars_86AE02395": {
       "vehicle_id": "webuycars_86AE02395",
       "stock_number": "86AE02395",
@@ -4251,6 +4203,18 @@
       "kilometers": 21593,
       "location": "Dome (GP)"
     },
+    "webuycars_932416843": {
+      "vehicle_id": "webuycars_932416843",
+      "stock_number": "932416843",
+      "title": "2015 Triumph Tiger 1050 ABS Sport",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Tiger/932416843",
+      "make": "Triumph",
+      "model": "Tiger",
+      "source": "WeBuyCars",
+      "kilometers": 36311,
+      "location": "Vereeniging (GP)"
+    },
     "webuycars_CDB514559": {
       "vehicle_id": "webuycars_CDB514559",
       "stock_number": "CDB514559",
@@ -4262,6 +4226,18 @@
       "source": "WeBuyCars",
       "kilometers": 20978,
       "location": "Germiston (GP)"
+    },
+    "webuycars_A84508656": {
+      "vehicle_id": "webuycars_A84508656",
+      "stock_number": "A84508656",
+      "title": "2018 Honda NC 750 X",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/NC/A84508656",
+      "make": "Honda",
+      "model": "NC",
+      "source": "WeBuyCars",
+      "kilometers": 36180,
+      "location": "Montana (GP)"
     },
     "webuycars_D9F011580": {
       "vehicle_id": "webuycars_D9F011580",
@@ -4287,6 +4263,18 @@
       "kilometers": 17155,
       "location": "Midstream (GP)"
     },
+    "webuycars_1F7716532": {
+      "vehicle_id": "webuycars_1F7716532",
+      "stock_number": "1F7716532",
+      "title": "2012 Yamaha YZF R1 YZF R1",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/YZF R1/1F7716532",
+      "make": "Yamaha",
+      "model": "YZF R1",
+      "source": "WeBuyCars",
+      "kilometers": 26951,
+      "location": "Springfield (KZN)"
+    },
     "webuycars_310808372": {
       "vehicle_id": "webuycars_310808372",
       "stock_number": "310808372",
@@ -4303,7 +4291,7 @@
       "vehicle_id": "webuycars_3E4701576",
       "stock_number": "3E4701576",
       "title": "2012 BMW R Series R 1200 GS Advent ABS H/grips",
-      "price": 114900,
+      "price": 109900,
       "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/3E4701576",
       "make": "BMW",
       "model": "R Series",
@@ -4323,17 +4311,41 @@
       "kilometers": 27932,
       "location": "Dome (GP)"
     },
-    "webuycars_6AE409918": {
-      "vehicle_id": "webuycars_6AE409918",
-      "stock_number": "6AE409918",
-      "title": "2017 Harley Davidson Softail Heritage Softail Classic",
-      "price": 172900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Softail/6AE409918",
-      "make": "Harley Davidson",
-      "model": "Softail",
+    "webuycars_882F14765": {
+      "vehicle_id": "webuycars_882F14765",
+      "stock_number": "882F14765",
+      "title": "2025 Zhejiang Cf Moto 800 NK 800 NK",
+      "price": 127000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Zhejiang Cf Moto/800 NK/882F14765",
+      "make": "Zhejiang Cf Moto",
+      "model": "800 NK",
       "source": "WeBuyCars",
-      "kilometers": 23349,
-      "location": "Gqeberha (EC)"
+      "kilometers": 250,
+      "location": "Dome (GP)"
+    },
+    "webuycars_59A606552": {
+      "vehicle_id": "webuycars_59A606552",
+      "stock_number": "59A606552",
+      "title": "2019 BMW R Series R 1250 R",
+      "price": 122900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/59A606552",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 28712,
+      "location": "George (WC)"
+    },
+    "webuycars_692E15470": {
+      "vehicle_id": "webuycars_692E15470",
+      "stock_number": "692E15470",
+      "title": "2010 BMW F Series F 800 ST",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/692E15470",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 36777,
+      "location": "Dome (GP)"
     },
     "webuycars_6C4308961": {
       "vehicle_id": "webuycars_6C4308961",
@@ -4347,6 +4359,30 @@
       "kilometers": 23402,
       "location": "Brackenfell (WC)"
     },
+    "webuycars_8F4216975": {
+      "vehicle_id": "webuycars_8F4216975",
+      "stock_number": "8F4216975",
+      "title": "1996 Yamaha XJR 1200",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/XJR/8F4216975",
+      "make": "Yamaha",
+      "model": "XJR",
+      "source": "WeBuyCars",
+      "kilometers": 6196,
+      "location": "Brackenfell (WC)"
+    },
+    "webuycars_BBFE13422": {
+      "vehicle_id": "webuycars_BBFE13422",
+      "stock_number": "BBFE13422",
+      "title": "2025 BMW F Series F 900 R Style Exclusive",
+      "price": 152900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/BBFE13422",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 7973,
+      "location": "Midstream (GP)"
+    },
     "webuycars_9B2716077": {
       "vehicle_id": "webuycars_9B2716077",
       "stock_number": "9B2716077",
@@ -4359,6 +4395,30 @@
       "kilometers": 24003,
       "location": "Germiston (GP)"
     },
+    "webuycars_950D16168": {
+      "vehicle_id": "webuycars_950D16168",
+      "stock_number": "950D16168",
+      "title": "2013 KTM Duke 690 Duke",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Duke/950D16168",
+      "make": "KTM",
+      "model": "Duke",
+      "source": "WeBuyCars",
+      "kilometers": 21382,
+      "location": "Silver Lakes (GP)"
+    },
+    "webuycars_BADC00164": {
+      "vehicle_id": "webuycars_BADC00164",
+      "stock_number": "BADC00164",
+      "title": "2014 Gomoto Nippi I 125",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Gomoto/Nippi/BADC00164",
+      "make": "Gomoto",
+      "model": "Nippi",
+      "source": "WeBuyCars",
+      "kilometers": 5903,
+      "location": "Gqeberha (EC)"
+    },
     "webuycars_FAA017877": {
       "vehicle_id": "webuycars_FAA017877",
       "stock_number": "FAA017877",
@@ -4370,18 +4430,6 @@
       "source": "WeBuyCars",
       "kilometers": 24812,
       "location": "Riverhorse (KZN)"
-    },
-    "webuycars_0CAE08366": {
-      "vehicle_id": "webuycars_0CAE08366",
-      "stock_number": "0CAE08366",
-      "title": "2020 Suzuki DL 1000a V Strom",
-      "price": 99900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/DL/0CAE08366",
-      "make": "Suzuki",
-      "model": "DL",
-      "source": "WeBuyCars",
-      "kilometers": 29879,
-      "location": "Dome (GP)"
     },
     "webuycars_116302013": {
       "vehicle_id": "webuycars_116302013",
@@ -4419,17 +4467,53 @@
       "kilometers": 29955,
       "location": "Gqeberha (EC)"
     },
-    "webuycars_59A606552": {
-      "vehicle_id": "webuycars_59A606552",
-      "stock_number": "59A606552",
-      "title": "2019 BMW R Series R 1250 R",
-      "price": 122900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/59A606552",
-      "make": "BMW",
-      "model": "R Series",
+    "webuycars_4E4404172": {
+      "vehicle_id": "webuycars_4E4404172",
+      "stock_number": "4E4404172",
+      "title": "2016 KTM Super Duke 1290 Super Duke GT",
+      "price": 129900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Super Duke/4E4404172",
+      "make": "KTM",
+      "model": "Super Duke",
       "source": "WeBuyCars",
-      "kilometers": 28712,
-      "location": "George (WC)"
+      "kilometers": 30931,
+      "location": "Mbombela (MP)"
+    },
+    "webuycars_64D616306": {
+      "vehicle_id": "webuycars_64D616306",
+      "stock_number": "64D616306",
+      "title": "2004 BMW F Series F 650 GS Dakar ABS H/grips",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/64D616306",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 52828,
+      "location": "Brackenfell (WC)"
+    },
+    "webuycars_74D204045": {
+      "vehicle_id": "webuycars_74D204045",
+      "stock_number": "74D204045",
+      "title": "2025 Zhejiang Cf Moto 800 MT Explore",
+      "price": 129000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Zhejiang Cf Moto/800 MT/74D204045",
+      "make": "Zhejiang Cf Moto",
+      "model": "800 MT",
+      "source": "WeBuyCars",
+      "kilometers": 729,
+      "location": "Dome (GP)"
+    },
+    "webuycars_A13900001": {
+      "vehicle_id": "webuycars_A13900001",
+      "stock_number": "A13900001",
+      "title": "2010 Suzuki GSX-R GSX-R1000",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX-R/A13900001",
+      "make": "Suzuki",
+      "model": "GSX-R",
+      "source": "WeBuyCars",
+      "kilometers": 46962,
+      "location": "Silver Lakes (GP)"
     },
     "webuycars_D18F06314": {
       "vehicle_id": "webuycars_D18F06314",
@@ -4443,17 +4527,29 @@
       "kilometers": 28869,
       "location": "Germiston (GP)"
     },
-    "webuycars_EA7414396": {
-      "vehicle_id": "webuycars_EA7414396",
-      "stock_number": "EA7414396",
-      "title": "2021 KTM Adventure 890 Adventure R",
-      "price": 146900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Adventure/EA7414396",
-      "make": "KTM",
-      "model": "Adventure",
+    "webuycars_D0B215788": {
+      "vehicle_id": "webuycars_D0B215788",
+      "stock_number": "D0B215788",
+      "title": "2011 BMW F Series F 800 GS",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/D0B215788",
+      "make": "BMW",
+      "model": "F Series",
       "source": "WeBuyCars",
-      "kilometers": 29016,
-      "location": "Dome (GP)"
+      "kilometers": 38143,
+      "location": "Polokwane (L)"
+    },
+    "webuycars_E47B16100": {
+      "vehicle_id": "webuycars_E47B16100",
+      "stock_number": "E47B16100",
+      "title": "2008 Triumph Rocket III Classic",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Rocket III/E47B16100",
+      "make": "Triumph",
+      "model": "Rocket III",
+      "source": "WeBuyCars",
+      "kilometers": 38056,
+      "location": "Silver Lakes (GP)"
     },
     "webuycars_167112693": {
       "vehicle_id": "webuycars_167112693",
@@ -4466,30 +4562,6 @@
       "source": "WeBuyCars",
       "kilometers": 32137,
       "location": "Midstream (GP)"
-    },
-    "webuycars_4BD813672": {
-      "vehicle_id": "webuycars_4BD813672",
-      "stock_number": "4BD813672",
-      "title": "2016 BMW R Series R 1200 GS ADV (k51 Full Spec)",
-      "price": 149900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/4BD813672",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 39527,
-      "location": "Rustenburg (NW)"
-    },
-    "webuycars_4E4404172": {
-      "vehicle_id": "webuycars_4E4404172",
-      "stock_number": "4E4404172",
-      "title": "2016 KTM Super Duke 1290 Super Duke GT",
-      "price": 129900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Super Duke/4E4404172",
-      "make": "KTM",
-      "model": "Super Duke",
-      "source": "WeBuyCars",
-      "kilometers": 30931,
-      "location": "Mbombela (MP)"
     },
     "webuycars_58C706656": {
       "vehicle_id": "webuycars_58C706656",
@@ -4515,17 +4587,17 @@
       "kilometers": 33767,
       "location": "Gqeberha (EC)"
     },
-    "webuycars_D07902666": {
-      "vehicle_id": "webuycars_D07902666",
-      "stock_number": "D07902666",
-      "title": "2017 KTM 1290 Super Adventure R",
-      "price": 144900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/1290 Super Adventure/D07902666",
-      "make": "KTM",
-      "model": "1290 Super Adventure",
+    "webuycars_BAA006227": {
+      "vehicle_id": "webuycars_BAA006227",
+      "stock_number": "BAA006227",
+      "title": "2015 BMW R Series R 1200 GS ADV (k51 Full Spec)",
+      "price": 149900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/BAA006227",
+      "make": "BMW",
+      "model": "R Series",
       "source": "WeBuyCars",
-      "kilometers": 30634,
-      "location": "Midstream (GP)"
+      "kilometers": 41091,
+      "location": "Richmond (WC)"
     },
     "webuycars_F1A016069": {
       "vehicle_id": "webuycars_F1A016069",
@@ -4539,89 +4611,29 @@
       "kilometers": 35356,
       "location": "East London (EC)"
     },
-    "webuycars_0CAD17760": {
-      "vehicle_id": "webuycars_0CAD17760",
-      "stock_number": "0CAD17760",
-      "title": "2019 KTM 1290 Super Adventure S",
-      "price": 129900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/1290 Super Adventure/0CAD17760",
-      "make": "KTM",
-      "model": "1290 Super Adventure",
+    "webuycars_F98906052": {
+      "vehicle_id": "webuycars_F98906052",
+      "stock_number": "F98906052",
+      "title": "2022 BMW F Series F 850 GS Adventure",
+      "price": 163000,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/F98906052",
+      "make": "BMW",
+      "model": "F Series",
       "source": "WeBuyCars",
-      "kilometers": 39688,
-      "location": "Richmond (WC)"
+      "kilometers": 10583,
+      "location": "George (WC)"
     },
     "webuycars_201D10784": {
       "vehicle_id": "webuycars_201D10784",
       "stock_number": "201D10784",
       "title": "2018 BMW R Series R 1200 GS MU",
-      "price": 150900,
+      "price": 145900,
       "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/201D10784",
       "make": "BMW",
       "model": "R Series",
       "source": "WeBuyCars",
       "kilometers": 46084,
       "location": "Gqeberha (EC)"
-    },
-    "webuycars_5A2F06879": {
-      "vehicle_id": "webuycars_5A2F06879",
-      "stock_number": "5A2F06879",
-      "title": "2016 BMW R Series R 1200 GS ADV (k51 Full Spec)",
-      "price": 125900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/5A2F06879",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 53115,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_5D8D02058": {
-      "vehicle_id": "webuycars_5D8D02058",
-      "stock_number": "5D8D02058",
-      "title": "2020 Triumph Tiger 1200 XCX",
-      "price": 125900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Tiger/5D8D02058",
-      "make": "Triumph",
-      "model": "Tiger",
-      "source": "WeBuyCars",
-      "kilometers": 42929,
-      "location": "Dome (GP)"
-    },
-    "webuycars_628003244": {
-      "vehicle_id": "webuycars_628003244",
-      "stock_number": "628003244",
-      "title": "2017 BMW R Series R 1200 GS (full Spec)",
-      "price": 119900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/628003244",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 55401,
-      "location": "Gqeberha (EC)"
-    },
-    "webuycars_78E812229": {
-      "vehicle_id": "webuycars_78E812229",
-      "stock_number": "78E812229",
-      "title": "2013 Harley Davidson Touring Street Glide",
-      "price": 119900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Touring/78E812229",
-      "make": "Harley Davidson",
-      "model": "Touring",
-      "source": "WeBuyCars",
-      "kilometers": 47893,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_BAA006227": {
-      "vehicle_id": "webuycars_BAA006227",
-      "stock_number": "BAA006227",
-      "title": "2015 BMW R Series R 1200 GS ADV (k51 Full Spec)",
-      "price": 149900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/BAA006227",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 41091,
-      "location": "Richmond (WC)"
     },
     "webuycars_44A107794": {
       "vehicle_id": "webuycars_44A107794",
@@ -4647,6 +4659,42 @@
       "kilometers": 73558,
       "location": "Silver Lakes (GP)"
     },
+    "webuycars_5A2F06879": {
+      "vehicle_id": "webuycars_5A2F06879",
+      "stock_number": "5A2F06879",
+      "title": "2016 BMW R Series R 1200 GS ADV (k51 Full Spec)",
+      "price": 125900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/5A2F06879",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 53115,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_628003244": {
+      "vehicle_id": "webuycars_628003244",
+      "stock_number": "628003244",
+      "title": "2017 BMW R Series R 1200 GS (full Spec)",
+      "price": 119900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/628003244",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 55401,
+      "location": "Gqeberha (EC)"
+    },
+    "webuycars_78E812229": {
+      "vehicle_id": "webuycars_78E812229",
+      "stock_number": "78E812229",
+      "title": "2013 Harley Davidson Touring Street Glide",
+      "price": 119900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Touring/78E812229",
+      "make": "Harley Davidson",
+      "model": "Touring",
+      "source": "WeBuyCars",
+      "kilometers": 47893,
+      "location": "Midstream (GP)"
+    },
     "webuycars_5F9501750": {
       "vehicle_id": "webuycars_5F9501750",
       "stock_number": "5F9501750",
@@ -4671,42 +4719,6 @@
       "kilometers": 73609,
       "location": "Mbombela (MP)"
     },
-    "webuycars_AED111995": {
-      "vehicle_id": "webuycars_AED111995",
-      "stock_number": "AED111995",
-      "title": "2022 KTM 1290 Super Adventure S",
-      "price": 136900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/1290 Super Adventure/AED111995",
-      "make": "KTM",
-      "model": "1290 Super Adventure",
-      "source": "WeBuyCars",
-      "kilometers": 24600,
-      "location": "Dome (GP)"
-    },
-    "webuycars_B1AA10719": {
-      "vehicle_id": "webuycars_B1AA10719",
-      "stock_number": "B1AA10719",
-      "title": "2008 Hawk Okavango 500 Okavango 4x4",
-      "price": 152900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Hawk/Okavango/B1AA10719",
-      "make": "Hawk",
-      "model": "Okavango",
-      "source": "WeBuyCars",
-      "kilometers": "N/A",
-      "location": "Riverhorse (KZN)"
-    },
-    "webuycars_C04601355": {
-      "vehicle_id": "webuycars_C04601355",
-      "stock_number": "C04601355",
-      "title": "2015 KTM 1290 Super Adventure 1290 Super Adventure",
-      "price": 105900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/1290 Super Adventure/C04601355",
-      "make": "KTM",
-      "model": "1290 Super Adventure",
-      "source": "WeBuyCars",
-      "kilometers": 67468,
-      "location": "Silver Lakes (GP)"
-    },
     "webuycars_763908180": {
       "vehicle_id": "webuycars_763908180",
       "stock_number": "763908180",
@@ -4718,18 +4730,6 @@
       "source": "WeBuyCars",
       "kilometers": 31025,
       "location": "Montana (GP)"
-    },
-    "webuycars_81D000774": {
-      "vehicle_id": "webuycars_81D000774",
-      "stock_number": "81D000774",
-      "title": "2010 Harley Davidson Touring Electra Glide Ultra Limited",
-      "price": 129900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Touring/81D000774",
-      "make": "Harley Davidson",
-      "model": "Touring",
-      "source": "WeBuyCars",
-      "kilometers": 41280,
-      "location": "Dome (GP)"
     },
     "webuycars_98ED15014": {
       "vehicle_id": "webuycars_98ED15014",
@@ -4743,18 +4743,6 @@
       "kilometers": 29896,
       "location": "Dome (GP)"
     },
-    "webuycars_A66312154": {
-      "vehicle_id": "webuycars_A66312154",
-      "stock_number": "A66312154",
-      "title": "2014 BMW R Series R 1200 GS (full Spec)",
-      "price": 104900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/A66312154",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 63236,
-      "location": "Richmond (WC)"
-    },
     "webuycars_B68D06817": {
       "vehicle_id": "webuycars_B68D06817",
       "stock_number": "B68D06817",
@@ -4767,65 +4755,53 @@
       "kilometers": 26304,
       "location": "Brackenfell (WC)"
     },
-    "webuycars_ECCD02193": {
-      "vehicle_id": "webuycars_ECCD02193",
-      "stock_number": "ECCD02193",
-      "title": "2013 BMW K Series K 1600 GT",
+    "webuycars_7D8D16359": {
+      "vehicle_id": "webuycars_7D8D16359",
+      "stock_number": "7D8D16359",
+      "title": "2012 BMW R Series R 1200 GS Advent ABS H/grips",
       "price": 109900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/K Series/ECCD02193",
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/7D8D16359",
       "make": "BMW",
-      "model": "K Series",
+      "model": "R Series",
       "source": "WeBuyCars",
-      "kilometers": 55141,
-      "location": "JHB South (GP)"
+      "kilometers": 36387,
+      "location": "Dome (GP)"
     },
-    "webuycars_FBBB13826": {
-      "vehicle_id": "webuycars_FBBB13826",
-      "stock_number": "FBBB13826",
-      "title": "2013 Suzuki GSX 1300 BK (b-King)",
-      "price": 98900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX/FBBB13826",
+    "webuycars_81D000774": {
+      "vehicle_id": "webuycars_81D000774",
+      "stock_number": "81D000774",
+      "title": "2010 Harley Davidson Touring Electra Glide Ultra Limited",
+      "price": 129900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Touring/81D000774",
+      "make": "Harley Davidson",
+      "model": "Touring",
+      "source": "WeBuyCars",
+      "kilometers": 41280,
+      "location": "Dome (GP)"
+    },
+    "webuycars_870308408": {
+      "vehicle_id": "webuycars_870308408",
+      "stock_number": "870308408",
+      "title": "2025 Suzuki GSX 250",
+      "price": 38900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX/870308408",
       "make": "Suzuki",
       "model": "GSX",
       "source": "WeBuyCars",
-      "kilometers": 39917,
-      "location": "Vereeniging (GP)"
+      "kilometers": 14455,
+      "location": "Montana (GP)"
     },
-    "webuycars_1EBE13726": {
-      "vehicle_id": "webuycars_1EBE13726",
-      "stock_number": "1EBE13726",
-      "title": "2020 Linhai Rustler 300",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Linhai/Rustler/1EBE13726",
-      "make": "Linhai",
-      "model": "Rustler",
+    "webuycars_A66312154": {
+      "vehicle_id": "webuycars_A66312154",
+      "stock_number": "A66312154",
+      "title": "2014 BMW R Series R 1200 GS (full Spec)",
+      "price": 104900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/A66312154",
+      "make": "BMW",
+      "model": "R Series",
       "source": "WeBuyCars",
-      "kilometers": "N/A",
-      "location": "Midstream (GP)"
-    },
-    "webuycars_935415032": {
-      "vehicle_id": "webuycars_935415032",
-      "stock_number": "935415032",
-      "title": "2015 Polaris Sportsman 400/450 4x4",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Polaris/Sportsman/935415032",
-      "make": "Polaris",
-      "model": "Sportsman",
-      "source": "WeBuyCars",
-      "kilometers": 451,
-      "location": "Mbombela (MP)"
-    },
-    "webuycars_DD1215206": {
-      "vehicle_id": "webuycars_DD1215206",
-      "stock_number": "DD1215206",
-      "title": "2025 Lifan Lifan 125 Lifan 125",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Lifan/Lifan 125/DD1215206",
-      "make": "Lifan",
-      "model": "Lifan 125",
-      "source": "WeBuyCars",
-      "kilometers": 207,
-      "location": "Riverhorse (KZN)"
+      "kilometers": 63236,
+      "location": "Richmond (WC)"
     },
     "webuycars_E40503445": {
       "vehicle_id": "webuycars_E40503445",
@@ -4839,395 +4815,359 @@
       "kilometers": 82463,
       "location": "Midstream (GP)"
     },
-    "webuycars_F75615445": {
-      "vehicle_id": "webuycars_F75615445",
-      "stock_number": "F75615445",
-      "title": "2025 Zontes ZT Zt310-R",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Zontes/ZT/F75615445",
-      "make": "Zontes",
-      "model": "ZT",
-      "source": "WeBuyCars",
-      "kilometers": 551,
-      "location": "Brackenfell (WC)"
-    },
-    "webuycars_09A815528": {
-      "vehicle_id": "webuycars_09A815528",
-      "stock_number": "09A815528",
-      "title": "2015 Harley Davidson Sportster Xl883 N Iron",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Sportster/09A815528",
+    "webuycars_832F14729": {
+      "vehicle_id": "webuycars_832F14729",
+      "stock_number": "832F14729",
+      "title": "2013 Harley Davidson Softail FAT BOY",
+      "price": 135900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Softail/832F14729",
       "make": "Harley Davidson",
-      "model": "Sportster",
+      "model": "Softail",
       "source": "WeBuyCars",
-      "kilometers": 4188,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_276A15893": {
-      "vehicle_id": "webuycars_276A15893",
-      "stock_number": "276A15893",
-      "title": "2023 Big Boy Velocity Cargo 150",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/276A15893",
-      "make": "Big Boy",
-      "model": "Velocity Cargo",
-      "source": "WeBuyCars",
-      "kilometers": 631,
-      "location": "Witbank (MP)"
-    },
-    "webuycars_34E914049": {
-      "vehicle_id": "webuycars_34E914049",
-      "stock_number": "34E914049",
-      "title": "2016 Yamaha XTZ 125",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/XTZ/34E914049",
-      "make": "Yamaha",
-      "model": "XTZ",
-      "source": "WeBuyCars",
-      "kilometers": 5835,
-      "location": "Montana (GP)"
-    },
-    "webuycars_4EBB14836": {
-      "vehicle_id": "webuycars_4EBB14836",
-      "stock_number": "4EBB14836",
-      "title": "2025 Big Boy Velocity Cargo 150",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/4EBB14836",
-      "make": "Big Boy",
-      "model": "Velocity Cargo",
-      "source": "WeBuyCars",
-      "kilometers": 16982,
-      "location": "Vereeniging (GP)"
-    },
-    "webuycars_525615865": {
-      "vehicle_id": "webuycars_525615865",
-      "stock_number": "525615865",
-      "title": "2015 KTM EXC 300 EXC",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/EXC/525615865",
-      "make": "KTM",
-      "model": "EXC",
-      "source": "WeBuyCars",
-      "kilometers": 1001,
-      "location": "Dome (GP)"
-    },
-    "webuycars_6E2E15592": {
-      "vehicle_id": "webuycars_6E2E15592",
-      "stock_number": "6E2E15592",
-      "title": "2023 SYM Fiddle II 150",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/SYM/Fiddle/6E2E15592",
-      "make": "SYM",
-      "model": "Fiddle",
-      "source": "WeBuyCars",
-      "kilometers": 3534,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_DAA514572": {
-      "vehicle_id": "webuycars_DAA514572",
-      "stock_number": "DAA514572",
-      "title": "2022 Husqvarna TE 250 I",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TE/DAA514572",
-      "make": "Husqvarna",
-      "model": "TE",
-      "source": "WeBuyCars",
-      "kilometers": 1198,
-      "location": "Brackenfell (WC)"
-    },
-    "webuycars_1E5014819": {
-      "vehicle_id": "webuycars_1E5014819",
-      "stock_number": "1E5014819",
-      "title": "2016 Ducati Hypermotard Hyperstrada",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Ducati/Hypermotard/1E5014819",
-      "make": "Ducati",
-      "model": "Hypermotard",
-      "source": "WeBuyCars",
-      "kilometers": 26275,
-      "location": "Brackenfell (WC)"
-    },
-    "webuycars_A52C12212": {
-      "vehicle_id": "webuycars_A52C12212",
-      "stock_number": "A52C12212",
-      "title": "2014 KTM Super Duke 1290 Super Duke R",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Super Duke/A52C12212",
-      "make": "KTM",
-      "model": "Super Duke",
-      "source": "WeBuyCars",
-      "kilometers": 59247,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_A7DA15326": {
-      "vehicle_id": "webuycars_A7DA15326",
-      "stock_number": "A7DA15326",
-      "title": "2024 Big Boy Superlight 200",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Superlight/A7DA15326",
-      "make": "Big Boy",
-      "model": "Superlight",
-      "source": "WeBuyCars",
-      "kilometers": 46812,
+      "kilometers": 1738,
       "location": "Riverhorse (KZN)"
     },
-    "webuycars_A84508656": {
-      "vehicle_id": "webuycars_A84508656",
-      "stock_number": "A84508656",
-      "title": "2018 Honda NC 750 X",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/NC/A84508656",
-      "make": "Honda",
-      "model": "NC",
+    "webuycars_C31014274": {
+      "vehicle_id": "webuycars_C31014274",
+      "stock_number": "C31014274",
+      "title": "2018 Kawasaki ZR 800",
+      "price": 59900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZR/C31014274",
+      "make": "Kawasaki",
+      "model": "ZR",
       "source": "WeBuyCars",
-      "kilometers": 36180,
-      "location": "Montana (GP)"
+      "kilometers": 64254,
+      "location": "Richmond (WC)"
     },
-    "webuycars_CB7B16224": {
-      "vehicle_id": "webuycars_CB7B16224",
-      "stock_number": "CB7B16224",
-      "title": "2013 BMW R Series R 1200 R ABS H/grips",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/CB7B16224",
+    "webuycars_AA8F04672": {
+      "vehicle_id": "webuycars_AA8F04672",
+      "stock_number": "AA8F04672",
+      "title": "2015 Mv Agusta Rivale 800",
+      "price": 90900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Mv Agusta/Rivale/AA8F04672",
+      "make": "Mv Agusta",
+      "model": "Rivale",
+      "source": "WeBuyCars",
+      "kilometers": 14771,
+      "location": "Dome (GP)"
+    },
+    "webuycars_D07902666": {
+      "vehicle_id": "webuycars_D07902666",
+      "stock_number": "D07902666",
+      "title": "2017 KTM 1290 Super Adventure R",
+      "price": 139900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/1290 Super Adventure/D07902666",
+      "make": "KTM",
+      "model": "1290 Super Adventure",
+      "source": "WeBuyCars",
+      "kilometers": 30634,
+      "location": "Midstream (GP)"
+    },
+    "webuycars_EA7414396": {
+      "vehicle_id": "webuycars_EA7414396",
+      "stock_number": "EA7414396",
+      "title": "2021 KTM Adventure 890 Adventure R",
+      "price": 141000,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Adventure/EA7414396",
+      "make": "KTM",
+      "model": "Adventure",
+      "source": "WeBuyCars",
+      "kilometers": 29016,
+      "location": "Dome (GP)"
+    },
+    "webuycars_0CAD17760": {
+      "vehicle_id": "webuycars_0CAD17760",
+      "stock_number": "0CAD17760",
+      "title": "2019 KTM 1290 Super Adventure S",
+      "price": 124000,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/1290 Super Adventure/0CAD17760",
+      "make": "KTM",
+      "model": "1290 Super Adventure",
+      "source": "WeBuyCars",
+      "kilometers": 39688,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_894717054": {
+      "vehicle_id": "webuycars_894717054",
+      "stock_number": "894717054",
+      "title": "2006 BMW R Series R 1200 RT",
+      "price": 62900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/894717054",
       "make": "BMW",
       "model": "R Series",
       "source": "WeBuyCars",
-      "kilometers": 29101,
-      "location": "Montana (GP)"
-    },
-    "webuycars_E23615349": {
-      "vehicle_id": "webuycars_E23615349",
-      "stock_number": "E23615349",
-      "title": "2015 BMW G Series G650 GS ABS H/grips",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/E23615349",
-      "make": "BMW",
-      "model": "G Series",
-      "source": "WeBuyCars",
-      "kilometers": 41905,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_EDD116302": {
-      "vehicle_id": "webuycars_EDD116302",
-      "stock_number": "EDD116302",
-      "title": "2015 Royal Enfield Classic 500 Classic",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Royal Enfield/Classic/EDD116302",
-      "make": "Royal Enfield",
-      "model": "Classic",
-      "source": "WeBuyCars",
-      "kilometers": 23175,
-      "location": "Silver Lakes (GP)"
-    },
-    "webuycars_1A1915224": {
-      "vehicle_id": "webuycars_1A1915224",
-      "stock_number": "1A1915224",
-      "title": "2005 Honda CBR 1000rr",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/1A1915224",
-      "make": "Honda",
-      "model": "CBR",
-      "source": "WeBuyCars",
-      "kilometers": 4709,
-      "location": "Midstream (GP)"
-    },
-    "webuycars_1F7716532": {
-      "vehicle_id": "webuycars_1F7716532",
-      "stock_number": "1F7716532",
-      "title": "2012 Yamaha YZF R1 YZF R1",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/YZF R1/1F7716532",
-      "make": "Yamaha",
-      "model": "YZF R1",
-      "source": "WeBuyCars",
-      "kilometers": 26951,
-      "location": "Springfield (KZN)"
-    },
-    "webuycars_C5A815056": {
-      "vehicle_id": "webuycars_C5A815056",
-      "stock_number": "C5A815056",
-      "title": "2006 BMW F Series F 650 GS",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/C5A815056",
-      "make": "BMW",
-      "model": "F Series",
-      "source": "WeBuyCars",
-      "kilometers": "N/A",
+      "kilometers": 32277,
       "location": "Pietermaritzburg (KZN)"
     },
-    "webuycars_CCAA16003": {
-      "vehicle_id": "webuycars_CCAA16003",
-      "stock_number": "CCAA16003",
-      "title": "2014 Yamaha XV 1900 Stratoliner",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/XV/CCAA16003",
-      "make": "Yamaha",
-      "model": "XV",
-      "source": "WeBuyCars",
-      "kilometers": 33671,
-      "location": "Vereeniging (GP)"
-    },
-    "webuycars_E3F408524": {
-      "vehicle_id": "webuycars_E3F408524",
-      "stock_number": "E3F408524",
-      "title": "2024 Husqvarna TE 250 I",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Husqvarna/TE/E3F408524",
-      "make": "Husqvarna",
-      "model": "TE",
-      "source": "WeBuyCars",
-      "kilometers": 3051,
-      "location": "Riverhorse (KZN)"
-    },
-    "webuycars_F54A16209": {
-      "vehicle_id": "webuycars_F54A16209",
-      "stock_number": "F54A16209",
-      "title": "2007 KTM LC4 640",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/LC4/F54A16209",
+    "webuycars_AED111995": {
+      "vehicle_id": "webuycars_AED111995",
+      "stock_number": "AED111995",
+      "title": "2022 KTM 1290 Super Adventure S",
+      "price": 131900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/1290 Super Adventure/AED111995",
       "make": "KTM",
-      "model": "LC4",
+      "model": "1290 Super Adventure",
       "source": "WeBuyCars",
-      "kilometers": 10869,
+      "kilometers": 24600,
       "location": "Dome (GP)"
     },
-    "webuycars_148716529": {
-      "vehicle_id": "webuycars_148716529",
-      "stock_number": "148716529",
-      "title": "2009 BMW R Series R 1200 GS ABS H/grips",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/148716529",
-      "make": "BMW",
-      "model": "R Series",
+    "webuycars_DAFA14905": {
+      "vehicle_id": "webuycars_DAFA14905",
+      "stock_number": "DAFA14905",
+      "title": "2017 Ducati Multistrada Enduro 1200 Touring",
+      "price": 149900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Ducati/Multistrada/DAFA14905",
+      "make": "Ducati",
+      "model": "Multistrada",
       "source": "WeBuyCars",
-      "kilometers": 66640,
-      "location": "Gqeberha (EC)"
+      "kilometers": 16566,
+      "location": "Richmond (WC)"
     },
-    "webuycars_47CA11112": {
-      "vehicle_id": "webuycars_47CA11112",
-      "stock_number": "47CA11112",
-      "title": "2010 Yamaha XT Xt1200 Z Super Tenere",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Yamaha/XT/47CA11112",
-      "make": "Yamaha",
-      "model": "XT",
+    "webuycars_E76D15758": {
+      "vehicle_id": "webuycars_E76D15758",
+      "stock_number": "E76D15758",
+      "title": "2022 Triumph Tiger Sport 660",
+      "price": 109900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Tiger/E76D15758",
+      "make": "Triumph",
+      "model": "Tiger",
       "source": "WeBuyCars",
-      "kilometers": 84074,
-      "location": "Midstream (GP)"
+      "kilometers": 14331,
+      "location": "Silver Lakes (GP)"
     },
-    "webuycars_64D616306": {
-      "vehicle_id": "webuycars_64D616306",
-      "stock_number": "64D616306",
-      "title": "2004 BMW F Series F 650 GS Dakar ABS H/grips",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/64D616306",
-      "make": "BMW",
-      "model": "F Series",
+    "webuycars_775F14473": {
+      "vehicle_id": "webuycars_775F14473",
+      "stock_number": "775F14473",
+      "title": "2016 KTM XC 300 Xc-W SIX Days (tpi)",
+      "price": 49900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/XC/775F14473",
+      "make": "KTM",
+      "model": "XC",
       "source": "WeBuyCars",
-      "kilometers": 52828,
-      "location": "Brackenfell (WC)"
+      "kilometers": 1001,
+      "location": "Silver Lakes (GP)"
     },
-    "webuycars_692E15470": {
-      "vehicle_id": "webuycars_692E15470",
-      "stock_number": "692E15470",
-      "title": "2010 BMW F Series F 800 ST",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/692E15470",
-      "make": "BMW",
-      "model": "F Series",
-      "source": "WeBuyCars",
-      "kilometers": 36777,
-      "location": "Dome (GP)"
-    },
-    "webuycars_7C8414999": {
-      "vehicle_id": "webuycars_7C8414999",
-      "stock_number": "7C8414999",
-      "title": "2012 Harley Davidson Dyna Street BOB",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Dyna/7C8414999",
+    "webuycars_EE1114970": {
+      "vehicle_id": "webuycars_EE1114970",
+      "stock_number": "EE1114970",
+      "title": "2018 Harley Davidson Dyna Sport Glide",
+      "price": 159900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Dyna/EE1114970",
       "make": "Harley Davidson",
       "model": "Dyna",
       "source": "WeBuyCars",
-      "kilometers": 41959,
-      "location": "Mbombela (MP)"
+      "kilometers": 42845,
+      "location": "Dome (GP)"
     },
-    "webuycars_7EF215387": {
-      "vehicle_id": "webuycars_7EF215387",
-      "stock_number": "7EF215387",
-      "title": "2005 BMW F Series F 650 GS ABS H/grips",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/7EF215387",
-      "make": "BMW",
-      "model": "F Series",
+    "webuycars_7CE505838": {
+      "vehicle_id": "webuycars_7CE505838",
+      "stock_number": "7CE505838",
+      "title": "2022 KTM Duke 390 Adventure",
+      "price": 61900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Duke/7CE505838",
+      "make": "KTM",
+      "model": "Duke",
       "source": "WeBuyCars",
-      "kilometers": 68568,
-      "location": "Richmond (WC)"
+      "kilometers": 2628,
+      "location": "Montana (GP)"
     },
-    "webuycars_C2A112641": {
-      "vehicle_id": "webuycars_C2A112641",
-      "stock_number": "C2A112641",
-      "title": "2007 Kawasaki KLR Klr650",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/KLR/C2A112641",
-      "make": "Kawasaki",
-      "model": "KLR",
+    "webuycars_6F7C06457": {
+      "vehicle_id": "webuycars_6F7C06457",
+      "stock_number": "6F7C06457",
+      "title": "2019 KTM SX-F 250 Sx-F",
+      "price": 34900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/SX-F/6F7C06457",
+      "make": "KTM",
+      "model": "SX-F",
       "source": "WeBuyCars",
-      "kilometers": 46478,
-      "location": "Richmond (WC)"
+      "kilometers": "N/A",
+      "location": "Brackenfell (WC)"
     },
-    "webuycars_76A816618": {
-      "vehicle_id": "webuycars_76A816618",
-      "stock_number": "76A816618",
-      "title": "2009 BMW F Series F 800 GS",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/76A816618",
-      "make": "BMW",
-      "model": "F Series",
+    "webuycars_F31D04500": {
+      "vehicle_id": "webuycars_F31D04500",
+      "stock_number": "F31D04500",
+      "title": "2021 Big Boy Velocity Cargo 150",
+      "price": 12900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/F31D04500",
+      "make": "Big Boy",
+      "model": "Velocity Cargo",
       "source": "WeBuyCars",
-      "kilometers": 88297,
+      "kilometers": "N/A",
       "location": "Midstream (GP)"
     },
-    "webuycars_B79316463": {
-      "vehicle_id": "webuycars_B79316463",
-      "stock_number": "B79316463",
-      "title": "2006 BMW R Series R 1200 GS ABS H/grips",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/B79316463",
-      "make": "BMW",
-      "model": "R Series",
+    "webuycars_552211210": {
+      "vehicle_id": "webuycars_552211210",
+      "stock_number": "552211210",
+      "title": "2023 KTM Duke 390 Adventure",
+      "price": 70900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Duke/552211210",
+      "make": "KTM",
+      "model": "Duke",
       "source": "WeBuyCars",
-      "kilometers": 112383,
-      "location": "Gqeberha (EC)"
-    },
-    "webuycars_C25516233": {
-      "vehicle_id": "webuycars_C25516233",
-      "stock_number": "C25516233",
-      "title": "2013 BMW R Series R 1200 GS (full Spec)",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/C25516233",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 127998,
+      "kilometers": 5843,
       "location": "Richmond (WC)"
     },
-    "webuycars_CAFD16212": {
-      "vehicle_id": "webuycars_CAFD16212",
-      "stock_number": "CAFD16212",
-      "title": "2015 Honda NC 750 X",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/NC/CAFD16212",
+    "webuycars_5CDE07184": {
+      "vehicle_id": "webuycars_5CDE07184",
+      "stock_number": "5CDE07184",
+      "title": "2017 KTM XCR 450 Xc-W / Exc-F",
+      "price": 63900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/XCR/5CDE07184",
+      "make": "KTM",
+      "model": "XCR",
+      "source": "WeBuyCars",
+      "kilometers": 220,
+      "location": "JHB South (GP)"
+    },
+    "webuycars_7D3E03305": {
+      "vehicle_id": "webuycars_7D3E03305",
+      "stock_number": "7D3E03305",
+      "title": "2023 Big Boy Revival 150",
+      "price": 14400,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Revival/7D3E03305",
+      "make": "Big Boy",
+      "model": "Revival",
+      "source": "WeBuyCars",
+      "kilometers": 1887,
+      "location": "Midstream (GP)"
+    },
+    "webuycars_324D12030": {
+      "vehicle_id": "webuycars_324D12030",
+      "stock_number": "324D12030",
+      "title": "2015 Harley Davidson Street 750 Street",
+      "price": 48900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Street/324D12030",
+      "make": "Harley Davidson",
+      "model": "Street",
+      "source": "WeBuyCars",
+      "kilometers": 39844,
+      "location": "Midstream (GP)"
+    },
+    "webuycars_28BB01940": {
+      "vehicle_id": "webuycars_28BB01940",
+      "stock_number": "28BB01940",
+      "title": "2017 Kawasaki EN 650 Vulcan",
+      "price": 65900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/EN/28BB01940",
+      "make": "Kawasaki",
+      "model": "EN",
+      "source": "WeBuyCars",
+      "kilometers": 21467,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_391F03226": {
+      "vehicle_id": "webuycars_391F03226",
+      "stock_number": "391F03226",
+      "title": "2018 BMW F Series F 700 GS TU",
+      "price": 77300,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/391F03226",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 16018,
+      "location": "Pietermaritzburg (KZN)"
+    },
+    "webuycars_41F801646": {
+      "vehicle_id": "webuycars_41F801646",
+      "stock_number": "41F801646",
+      "title": "2019 BMW F Series F 750 GS",
+      "price": 91900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/41F801646",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 18032,
+      "location": "Dome (GP)"
+    },
+    "webuycars_C25E08811": {
+      "vehicle_id": "webuycars_C25E08811",
+      "stock_number": "C25E08811",
+      "title": "2019 Honda NC 750 X",
+      "price": 74900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/NC/C25E08811",
       "make": "Honda",
       "model": "NC",
       "source": "WeBuyCars",
-      "kilometers": 112907,
-      "location": "George (WC)"
+      "kilometers": 15614,
+      "location": "Midstream (GP)"
+    },
+    "webuycars_EA9213637": {
+      "vehicle_id": "webuycars_EA9213637",
+      "stock_number": "EA9213637",
+      "title": "2013 BMW C 650 Sport",
+      "price": 62900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/C/EA9213637",
+      "make": "BMW",
+      "model": "C",
+      "source": "WeBuyCars",
+      "kilometers": 22324,
+      "location": "Dome (GP)"
+    },
+    "webuycars_3C7900009": {
+      "vehicle_id": "webuycars_3C7900009",
+      "stock_number": "3C7900009",
+      "title": "2006 Mv Agusta F4 1000s",
+      "price": 67900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Mv Agusta/F4/3C7900009",
+      "make": "Mv Agusta",
+      "model": "F4",
+      "source": "WeBuyCars",
+      "kilometers": 25441,
+      "location": "Dome (GP)"
+    },
+    "webuycars_A74413734": {
+      "vehicle_id": "webuycars_A74413734",
+      "stock_number": "A74413734",
+      "title": "2023 Kayo Scrambler KT50",
+      "price": 11900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kayo/Scrambler/A74413734",
+      "make": "Kayo",
+      "model": "Scrambler",
+      "source": "WeBuyCars",
+      "kilometers": 7,
+      "location": "Dome (GP)"
+    },
+    "webuycars_DB6312294": {
+      "vehicle_id": "webuycars_DB6312294",
+      "stock_number": "DB6312294",
+      "title": "2015 Gomoto Gomoto 150",
+      "price": 7400,
+      "url": "https://www.webuycars.co.za/buy-a-car/Gomoto/Gomoto/DB6312294",
+      "make": "Gomoto",
+      "model": "Gomoto",
+      "source": "WeBuyCars",
+      "kilometers": 2745,
+      "location": "JHB South (GP)"
+    },
+    "webuycars_720513587": {
+      "vehicle_id": "webuycars_720513587",
+      "stock_number": "720513587",
+      "title": "2020 BMW C G 310 R",
+      "price": 48900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/C/720513587",
+      "make": "BMW",
+      "model": "C",
+      "source": "WeBuyCars",
+      "kilometers": 23845,
+      "location": "Brackenfell (WC)"
+    },
+    "webuycars_8EF911704": {
+      "vehicle_id": "webuycars_8EF911704",
+      "stock_number": "8EF911704",
+      "title": "2024 Polaris Sportsman 850 SP 4x4",
+      "price": 206000,
+      "url": "https://www.webuycars.co.za/buy-a-car/Polaris/Sportsman/8EF911704",
+      "make": "Polaris",
+      "model": "Sportsman",
+      "source": "WeBuyCars",
+      "kilometers": 64,
+      "location": "Dome (GP)"
     },
     "webuycars_20ED06734": {
       "vehicle_id": "webuycars_20ED06734",
       "stock_number": "20ED06734",
       "title": "2020 Harley Davidson Dyna FAT BOY 114",
-      "price": 215900,
+      "price": 209900,
       "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Dyna/20ED06734",
       "make": "Harley Davidson",
       "model": "Dyna",
@@ -5246,18 +5186,6 @@
       "source": "WeBuyCars",
       "kilometers": 2999,
       "location": "JHB South (GP)"
-    },
-    "webuycars_8EF911704": {
-      "vehicle_id": "webuycars_8EF911704",
-      "stock_number": "8EF911704",
-      "title": "2024 Polaris Sportsman 850 SP 4x4",
-      "price": 212900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Polaris/Sportsman/8EF911704",
-      "make": "Polaris",
-      "model": "Sportsman",
-      "source": "WeBuyCars",
-      "kilometers": 64,
-      "location": "Dome (GP)"
     },
     "webuycars_9EC702687": {
       "vehicle_id": "webuycars_9EC702687",
@@ -5295,11 +5223,23 @@
       "kilometers": 2250,
       "location": "Dome (GP)"
     },
+    "webuycars_F13D05060": {
+      "vehicle_id": "webuycars_F13D05060",
+      "stock_number": "F13D05060",
+      "title": "2023 Harley Davidson Dyna FAT BOB 114",
+      "price": 223900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Dyna/F13D05060",
+      "make": "Harley Davidson",
+      "model": "Dyna",
+      "source": "WeBuyCars",
+      "kilometers": 3036,
+      "location": "JHB South (GP)"
+    },
     "webuycars_13CE08844": {
       "vehicle_id": "webuycars_13CE08844",
       "stock_number": "13CE08844",
       "title": "2022 Triumph Tiger 1200 GT Explorer",
-      "price": 183900,
+      "price": 177900,
       "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Tiger 1200/13CE08844",
       "make": "Triumph",
       "model": "Tiger 1200",
@@ -5331,6 +5271,18 @@
       "kilometers": 7838,
       "location": "Dome (GP)"
     },
+    "webuycars_584C00831": {
+      "vehicle_id": "webuycars_584C00831",
+      "stock_number": "584C00831",
+      "title": "2023 KTM Adventure 890 Adventure R",
+      "price": 194900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Adventure/584C00831",
+      "make": "KTM",
+      "model": "Adventure",
+      "source": "WeBuyCars",
+      "kilometers": 7856,
+      "location": "Brackenfell (WC)"
+    },
     "webuycars_A2D110962": {
       "vehicle_id": "webuycars_A2D110962",
       "stock_number": "A2D110962",
@@ -5355,6 +5307,18 @@
       "kilometers": 5445,
       "location": "Richmond (WC)"
     },
+    "webuycars_A52204857": {
+      "vehicle_id": "webuycars_A52204857",
+      "stock_number": "A52204857",
+      "title": "2025 BMW R Series R 1250 RT MU",
+      "price": 261000,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/A52204857",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 9947,
+      "location": "Vereeniging (GP)"
+    },
     "webuycars_C6A307942": {
       "vehicle_id": "webuycars_C6A307942",
       "stock_number": "C6A307942",
@@ -5366,18 +5330,6 @@
       "source": "WeBuyCars",
       "kilometers": 7359,
       "location": "Silver Lakes (GP)"
-    },
-    "webuycars_F13D05060": {
-      "vehicle_id": "webuycars_F13D05060",
-      "stock_number": "F13D05060",
-      "title": "2023 Harley Davidson Dyna FAT BOB 114",
-      "price": 223900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Dyna/F13D05060",
-      "make": "Harley Davidson",
-      "model": "Dyna",
-      "source": "WeBuyCars",
-      "kilometers": 3036,
-      "location": "JHB South (GP)"
     },
     "webuycars_241201333": {
       "vehicle_id": "webuycars_241201333",
@@ -5403,41 +5355,17 @@
       "kilometers": 12869,
       "location": "East London (EC)"
     },
-    "webuycars_584C00831": {
-      "vehicle_id": "webuycars_584C00831",
-      "stock_number": "584C00831",
-      "title": "2023 KTM Adventure 890 Adventure R",
-      "price": 194900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/Adventure/584C00831",
-      "make": "KTM",
-      "model": "Adventure",
+    "webuycars_52B014800": {
+      "vehicle_id": "webuycars_52B014800",
+      "stock_number": "52B014800",
+      "title": "2020 Harley Davidson Trike Freewheeler 114",
+      "price": 295900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Trike/52B014800",
+      "make": "Harley Davidson",
+      "model": "Trike",
       "source": "WeBuyCars",
-      "kilometers": 7856,
-      "location": "Brackenfell (WC)"
-    },
-    "webuycars_6F7C06457": {
-      "vehicle_id": "webuycars_6F7C06457",
-      "stock_number": "6F7C06457",
-      "title": "2019 KTM SX-F 250 Sx-F",
-      "price": 34900,
-      "url": "https://www.webuycars.co.za/buy-a-car/KTM/SX-F/6F7C06457",
-      "make": "KTM",
-      "model": "SX-F",
-      "source": "WeBuyCars",
-      "kilometers": "N/A",
-      "location": "Brackenfell (WC)"
-    },
-    "webuycars_A52204857": {
-      "vehicle_id": "webuycars_A52204857",
-      "stock_number": "A52204857",
-      "title": "2025 BMW R Series R 1250 RT MU",
-      "price": 268900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/A52204857",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 9947,
-      "location": "Vereeniging (GP)"
+      "kilometers": 25295,
+      "location": "Dome (GP)"
     },
     "webuycars_C1AA15502": {
       "vehicle_id": "webuycars_C1AA15502",
@@ -5511,113 +5439,77 @@
       "kilometers": 28007,
       "location": "Dome (GP)"
     },
-    "webuycars_41F801646": {
-      "vehicle_id": "webuycars_41F801646",
-      "stock_number": "41F801646",
-      "title": "2019 BMW F Series F 750 GS",
-      "price": 91900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/41F801646",
-      "make": "BMW",
-      "model": "F Series",
+    "webuycars_C49108606": {
+      "vehicle_id": "webuycars_C49108606",
+      "stock_number": "C49108606",
+      "title": "2017 Kawasaki ER 650n",
+      "price": 67900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ER/C49108606",
+      "make": "Kawasaki",
+      "model": "ER",
       "source": "WeBuyCars",
-      "kilometers": 18032,
-      "location": "Dome (GP)"
+      "kilometers": 30628,
+      "location": "Richmond (WC)"
     },
-    "webuycars_EA9213637": {
-      "vehicle_id": "webuycars_EA9213637",
-      "stock_number": "EA9213637",
-      "title": "2013 BMW C 650 Sport",
+    "webuycars_781407546": {
+      "vehicle_id": "webuycars_781407546",
+      "stock_number": "781407546",
+      "title": "2026 Big Boy Velocity Cargo 150",
+      "price": 16900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/781407546",
+      "make": "Big Boy",
+      "model": "Velocity Cargo",
+      "source": "WeBuyCars",
+      "kilometers": 457,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_10E214734": {
+      "vehicle_id": "webuycars_10E214734",
+      "stock_number": "10E214734",
+      "title": "2023 Big Boy Velocity Cargo 150",
+      "price": 14700,
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/10E214734",
+      "make": "Big Boy",
+      "model": "Velocity Cargo",
+      "source": "WeBuyCars",
+      "kilometers": 2358,
+      "location": "Lansdowne (WC)"
+    },
+    "webuycars_3B1B05345": {
+      "vehicle_id": "webuycars_3B1B05345",
+      "stock_number": "3B1B05345",
+      "title": "1997 Suzuki GSX-R 600 S-RAD",
+      "price": 28900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/GSX-R/3B1B05345",
+      "make": "Suzuki",
+      "model": "GSX-R",
+      "source": "WeBuyCars",
+      "kilometers": "N/A",
+      "location": "Gqeberha (EC)"
+    },
+    "webuycars_BC2800365": {
+      "vehicle_id": "webuycars_BC2800365",
+      "stock_number": "BC2800365",
+      "title": "2010 Golf Cart Badger",
       "price": 62900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/C/EA9213637",
-      "make": "BMW",
-      "model": "C",
+      "url": "https://www.webuycars.co.za/buy-a-car/Golf/Cart/BC2800365",
+      "make": "Golf",
+      "model": "Cart",
       "source": "WeBuyCars",
-      "kilometers": 22324,
-      "location": "Dome (GP)"
-    },
-    "webuycars_26C005678": {
-      "vehicle_id": "webuycars_26C005678",
-      "stock_number": "26C005678",
-      "title": "2012 BMW R Series R 1200 GS Advent ABS H/grips",
-      "price": 86900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/26C005678",
-      "make": "BMW",
-      "model": "R Series",
-      "source": "WeBuyCars",
-      "kilometers": 53164,
-      "location": "Polokwane (L)"
-    },
-    "webuycars_824812136": {
-      "vehicle_id": "webuycars_824812136",
-      "stock_number": "824812136",
-      "title": "2009 Honda CB 600 Hornet",
-      "price": 36900,
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CB/824812136",
-      "make": "Honda",
-      "model": "CB",
-      "source": "WeBuyCars",
-      "kilometers": 68126,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_832F14729": {
-      "vehicle_id": "webuycars_832F14729",
-      "stock_number": "832F14729",
-      "title": "2013 Harley Davidson Softail FAT BOY",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Softail/832F14729",
-      "make": "Harley Davidson",
-      "model": "Softail",
-      "source": "WeBuyCars",
-      "kilometers": 1738,
-      "location": "Riverhorse (KZN)"
-    },
-    "webuycars_DAFA14905": {
-      "vehicle_id": "webuycars_DAFA14905",
-      "stock_number": "DAFA14905",
-      "title": "2017 Ducati Multistrada Enduro 1200 Touring",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Ducati/Multistrada/DAFA14905",
-      "make": "Ducati",
-      "model": "Multistrada",
-      "source": "WeBuyCars",
-      "kilometers": 16566,
-      "location": "Richmond (WC)"
-    },
-    "webuycars_E76D15758": {
-      "vehicle_id": "webuycars_E76D15758",
-      "stock_number": "E76D15758",
-      "title": "2022 Triumph Tiger Sport 660",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Tiger/E76D15758",
-      "make": "Triumph",
-      "model": "Tiger",
-      "source": "WeBuyCars",
-      "kilometers": 14331,
+      "kilometers": "N/A",
       "location": "Silver Lakes (GP)"
     },
-    "webuycars_7D8D16359": {
-      "vehicle_id": "webuycars_7D8D16359",
-      "stock_number": "7D8D16359",
-      "title": "2012 BMW R Series R 1200 GS Advent ABS H/grips",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/7D8D16359",
-      "make": "BMW",
-      "model": "R Series",
+    "webuycars_3B2B13130": {
+      "vehicle_id": "webuycars_3B2B13130",
+      "stock_number": "3B2B13130",
+      "title": "2004 Suzuki SV 1000s",
+      "price": 30900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/SV/3B2B13130",
+      "make": "Suzuki",
+      "model": "SV",
       "source": "WeBuyCars",
-      "kilometers": 36387,
-      "location": "Dome (GP)"
-    },
-    "webuycars_A5AE16509": {
-      "vehicle_id": "webuycars_A5AE16509",
-      "stock_number": "A5AE16509",
-      "title": "2020 BMW S Series S 1000 XR",
-      "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/S Series/A5AE16509",
-      "make": "BMW",
-      "model": "S Series",
-      "source": "WeBuyCars",
-      "kilometers": 48249,
-      "location": "Mbombela (MP)"
+      "kilometers": 91235,
+      "location": "Richmond (WC)"
     },
     "webuycars_B7DA14342": {
       "vehicle_id": "webuycars_B7DA14342",
@@ -5631,41 +5523,149 @@
       "kilometers": 67169,
       "location": "Dome (GP)"
     },
-    "webuycars_EE1114970": {
-      "vehicle_id": "webuycars_EE1114970",
-      "stock_number": "EE1114970",
-      "title": "2018 Harley Davidson Dyna Sport Glide",
+    "webuycars_BE3D15535": {
+      "vehicle_id": "webuycars_BE3D15535",
+      "stock_number": "BE3D15535",
+      "title": "2014 BMW R Series R 1200 GS (full Spec)",
       "price": "N/A",
-      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Dyna/EE1114970",
-      "make": "Harley Davidson",
-      "model": "Dyna",
-      "source": "WeBuyCars",
-      "kilometers": 42845,
-      "location": "Dome (GP)"
-    },
-    "webuycars_B02A08520": {
-      "vehicle_id": "webuycars_B02A08520",
-      "stock_number": "B02A08520",
-      "title": "2014 BMW S Series S 1000 RR",
-      "price": 178900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/S Series/B02A08520",
-      "make": "BMW",
-      "model": "S Series",
-      "source": "WeBuyCars",
-      "kilometers": 6880,
-      "location": "Silver Lakes (GP)"
-    },
-    "webuycars_FC2103432": {
-      "vehicle_id": "webuycars_FC2103432",
-      "stock_number": "FC2103432",
-      "title": "2020 BMW R Series R 1250 RT",
-      "price": 140900,
-      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/FC2103432",
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/BE3D15535",
       "make": "BMW",
       "model": "R Series",
       "source": "WeBuyCars",
-      "kilometers": 74184,
+      "kilometers": 29753,
+      "location": "Dome (GP)"
+    },
+    "webuycars_E94D16820": {
+      "vehicle_id": "webuycars_E94D16820",
+      "stock_number": "E94D16820",
+      "title": "2020 Triumph Scrambler Street Scrambler",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Scrambler/E94D16820",
+      "make": "Triumph",
+      "model": "Scrambler",
+      "source": "WeBuyCars",
+      "kilometers": 4212,
+      "location": "Dome (GP)"
+    },
+    "webuycars_CFB516790": {
+      "vehicle_id": "webuycars_CFB516790",
+      "stock_number": "CFB516790",
+      "title": "2010 Harley Davidson Softail FAT BOY Special",
+      "price": "N/A",
+      "url": "https://www.webuycars.co.za/buy-a-car/Harley Davidson/Softail/CFB516790",
+      "make": "Harley Davidson",
+      "model": "Softail",
+      "source": "WeBuyCars",
+      "kilometers": 25518,
+      "location": "Dome (GP)"
+    },
+    "webuycars_4BD813672": {
+      "vehicle_id": "webuycars_4BD813672",
+      "stock_number": "4BD813672",
+      "title": "2016 BMW R Series R 1200 GS ADV (k51 Full Spec)",
+      "price": 149900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/4BD813672",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 39527,
+      "location": "Rustenburg (NW)"
+    },
+    "webuycars_5D8D02058": {
+      "vehicle_id": "webuycars_5D8D02058",
+      "stock_number": "5D8D02058",
+      "title": "2020 Triumph Tiger 1200 XCX",
+      "price": 125900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Tiger/5D8D02058",
+      "make": "Triumph",
+      "model": "Tiger",
+      "source": "WeBuyCars",
+      "kilometers": 42929,
+      "location": "Dome (GP)"
+    },
+    "webuycars_ECCD02193": {
+      "vehicle_id": "webuycars_ECCD02193",
+      "stock_number": "ECCD02193",
+      "title": "2013 BMW K Series K 1600 GT",
+      "price": 109900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/K Series/ECCD02193",
+      "make": "BMW",
+      "model": "K Series",
+      "source": "WeBuyCars",
+      "kilometers": 55141,
+      "location": "JHB South (GP)"
+    },
+    "webuycars_EB9205611": {
+      "vehicle_id": "webuycars_EB9205611",
+      "stock_number": "EB9205611",
+      "title": "2019 Aprilia Rsv4 RR",
+      "price": 213900,
+      "url": "https://www.webuycars.co.za/buy-a-car/Aprilia/Rsv4/EB9205611",
+      "make": "Aprilia",
+      "model": "Rsv4",
+      "source": "WeBuyCars",
+      "kilometers": 4489,
       "location": "Brackenfell (WC)"
+    },
+    "webuycars_355E05346": {
+      "vehicle_id": "webuycars_355E05346",
+      "stock_number": "355E05346",
+      "title": "2023 BMW F Series F 900 R",
+      "price": 114900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/355E05346",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 4994,
+      "location": "Lansdowne (WC)"
+    },
+    "webuycars_C04601355": {
+      "vehicle_id": "webuycars_C04601355",
+      "stock_number": "C04601355",
+      "title": "2015 KTM 1290 Super Adventure 1290 Super Adventure",
+      "price": 105900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/1290 Super Adventure/C04601355",
+      "make": "KTM",
+      "model": "1290 Super Adventure",
+      "source": "WeBuyCars",
+      "kilometers": 67468,
+      "location": "Silver Lakes (GP)"
+    },
+    "webuycars_127211877": {
+      "vehicle_id": "webuycars_127211877",
+      "stock_number": "127211877",
+      "title": "2021 BMW F Series F 900 XR Style Sport",
+      "price": 117900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/F Series/127211877",
+      "make": "BMW",
+      "model": "F Series",
+      "source": "WeBuyCars",
+      "kilometers": 5190,
+      "location": "Montana (GP)"
+    },
+    "webuycars_614906721": {
+      "vehicle_id": "webuycars_614906721",
+      "stock_number": "614906721",
+      "title": "2018 BMW R Series R 1200 GS ADV (k51 Full Spec)",
+      "price": 125900,
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/R Series/614906721",
+      "make": "BMW",
+      "model": "R Series",
+      "source": "WeBuyCars",
+      "kilometers": 82733,
+      "location": "Richmond (WC)"
+    },
+    "webuycars_B79309391": {
+      "vehicle_id": "webuycars_B79309391",
+      "stock_number": "B79309391",
+      "title": "2018 KTM 1290 Super Adventure S",
+      "price": 135900,
+      "url": "https://www.webuycars.co.za/buy-a-car/KTM/1290 Super Adventure/B79309391",
+      "make": "KTM",
+      "model": "1290 Super Adventure",
+      "source": "WeBuyCars",
+      "kilometers": 25918,
+      "location": "Silver Lakes (GP)"
     }
   }
 }
