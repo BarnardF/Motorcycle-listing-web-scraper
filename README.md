@@ -1,15 +1,11 @@
 # Motorcycle Listing Tracker
 
-A web scraper that collects motorcycle listings from multiple sites, 
-de-duplicates them, tracks price changes, and displays everything 
-in an Excel spreadsheet and dashboard.
-
+A web scraper that collects motorcycle listings from multiple sites, de-duplicates them, tracks price changes, and displays everything in an Excel spreadsheet and dashboard.
 Built with significant AI assistance for code implementation.
 
 ## Why I Built This
 
-I was constantly jumping between Gumtree and WeBuyCars looking for 
-specific motorcycles. I wanted one automated place to see all listings.
+I was constantly jumping between different listing sites looking for specific motorcycles. I wanted one automated place to see all listings.
 
 ## How It Works
 
@@ -73,8 +69,7 @@ Runs automatically every Sunday via GitHub Actions.
 
 **AI role:** Code implementation (I specified what, AI wrote how)
 
-**My understanding:** I can read through and understand what's happening. 
-I understand why each decision was made. I could modify or extend it.
+**My understanding:** I can read through and understand what's happening. I understand why each decision was made. I could modify or extend it.
 
 ## Legal & Ethics
 
