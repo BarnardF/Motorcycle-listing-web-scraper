@@ -1,24 +1,25 @@
 #Adventure / Dual-Sport
-Suzuki V-STROM 250 SX 
+Suzuki V-STROM 250SX 
 Lifan X Trail 250
-Honda CB 500 X
+Honda CB 500X
 
 #Sport / Supersport
 Kawasaki Ninja 400
 suzuki Gixxer 250
 
 #Modern Classics / Retro
-Triumph Scrambler 400 x
+Triumph Scrambler 400x
 Triumph Scrambler 900
 Triumph Speed 400
 yamaha xsr 700
 Ducati Scrambler
+Honda CL250
 
 #Naked / Streetfighter
-Yamaha MT 07
-BMW G 310
-BMW GS 310
-Kawasaki Z 400
+Yamaha MT07
+BMW G310
+BMW GS310
+Kawasaki Z400
 Big Boy Pacer 200
 Triumph Bonneville T100
 
