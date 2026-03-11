@@ -14,6 +14,7 @@ Triumph Speed 400
 yamaha xsr 700
 Ducati Scrambler
 Honda CL250
+Yamaha xsr155
 
 #Naked / Streetfighter
 Yamaha MT07
