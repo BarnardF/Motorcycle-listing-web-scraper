@@ -1,8 +1,608 @@
 {
-  "timestamp": "2026-03-08T04:27:37.817729",
-  "date_formatted": "08/03/2026 04:27:37",
-  "total_listings": 589,
+  "timestamp": "2026-03-15T04:58:54.126860",
+  "date_formatted": "15/03/2026 04:58:54",
+  "total_listings": 584,
   "listings": {
+    "zabikers_2020-ducati-streetfighter-v4s-4": {
+      "id": "zabikers_2020-ducati-streetfighter-v4s-4",
+      "title": "2020 Ducati STREETFIGHTER V4S",
+      "price": "R399,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2020-ducati-streetfighter-v4s-4/",
+      "year": "2020",
+      "kilometers": "11,505km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2025-royal-enfield-himalayan-450": {
+      "id": "zabikers_2025-royal-enfield-himalayan-450",
+      "title": "2025 Royal Enfield Himalayan 450",
+      "price": "R99,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-royal-enfield-himalayan-450/",
+      "year": "2025",
+      "kilometers": "4,232km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2023-bmw-r1250-gs": {
+      "id": "zabikers_2023-bmw-r1250-gs",
+      "title": "2023 BMW R1250 GS",
+      "price": "R279,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2023-bmw-r1250-gs/",
+      "year": "2023",
+      "kilometers": "28,776km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2024-ducati-multistrada-v2": {
+      "id": "zabikers_2024-ducati-multistrada-v2",
+      "title": "2024 Ducati Multistrada V2",
+      "price": "R269,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-ducati-multistrada-v2/",
+      "year": "2024",
+      "kilometers": "2,192km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2013-kawasaki-zx-14": {
+      "id": "zabikers_2013-kawasaki-zx-14",
+      "title": "2013 Kawasaki ZX-14",
+      "price": "R159,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-kawasaki-zx-14/",
+      "year": "2013",
+      "kilometers": "42,692km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2016-mv-agusta-f4-rr-titanium": {
+      "id": "zabikers_2016-mv-agusta-f4-rr-titanium",
+      "title": "2016 Mv Agusta F4 RR Titanium",
+      "price": "R229,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-mv-agusta-f4-rr-titanium/",
+      "year": "2016",
+      "kilometers": "5,351km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2003-bmw-c1-125-scooter": {
+      "id": "zabikers_2003-bmw-c1-125-scooter",
+      "title": "2003 BMW C1 125 Scooter",
+      "price": "R39,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2003-bmw-c1-125-scooter/",
+      "year": "2003",
+      "kilometers": "2,429km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2018-bmw-g-310-r": {
+      "id": "zabikers_2018-bmw-g-310-r",
+      "title": "2018 BMW G 310 R",
+      "price": "R53,995",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-bmw-g-310-r/",
+      "year": "2018",
+      "kilometers": "5,453km",
+      "location": "Twist Of The Wrist Motorcycles",
+      "source": "ZABikers"
+    },
+    "zabikers_2025-suzuki-v-strom-250sx-for-resale": {
+      "id": "zabikers_2025-suzuki-v-strom-250sx-for-resale",
+      "title": "2025 Suzuki V-Strom 250SX for resale",
+      "price": "R56,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-suzuki-v-strom-250sx-for-resale/",
+      "year": "2025",
+      "kilometers": "397km",
+      "location": "Biker's Warehouse",
+      "source": "ZABikers"
+    },
+    "zabikers_2025-sym-joyride-300-for-resale": {
+      "id": "zabikers_2025-sym-joyride-300-for-resale",
+      "title": "2025 Sym Joyride 300 for resale",
+      "price": "R68,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-sym-joyride-300-for-resale/",
+      "year": "2025",
+      "kilometers": "3,625km",
+      "location": "Biker's Warehouse",
+      "source": "ZABikers"
+    },
+    "zabikers_2026-cfmoto-675-srs": {
+      "id": "zabikers_2026-cfmoto-675-srs",
+      "title": "2026 CFMOTO 675 SRS",
+      "price": "R149,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-cfmoto-675-srs/",
+      "year": "2026",
+      "kilometers": "889km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2018-ktm-1050-adventure-s": {
+      "id": "zabikers_2018-ktm-1050-adventure-s",
+      "title": "2018 KTM 1050 ADVENTURE S",
+      "price": "R119,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-ktm-1050-adventure-s/",
+      "year": "2018",
+      "kilometers": "41,237km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2000-aprilia-rs-250": {
+      "id": "zabikers_2000-aprilia-rs-250",
+      "title": "2000 Aprilia RS 250",
+      "price": "R159,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2000-aprilia-rs-250/",
+      "year": "2000",
+      "kilometers": "31,863km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2021-bmw-r1250-r-3": {
+      "id": "zabikers_2021-bmw-r1250-r-3",
+      "title": "2021 BMW R1250 R",
+      "price": "R159,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2021-bmw-r1250-r-3/",
+      "year": "2021",
+      "kilometers": "13,096km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2016-ducati-diavel": {
+      "id": "zabikers_2016-ducati-diavel",
+      "title": "2016 Ducati Diavel",
+      "price": "R139,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-ducati-diavel/",
+      "year": "2016",
+      "kilometers": "30,367km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2018-honda-crf-250-rally-2": {
+      "id": "zabikers_2018-honda-crf-250-rally-2",
+      "title": "2018 Honda CRF 250 Rally",
+      "price": "R69,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-honda-crf-250-rally-2/",
+      "year": "2018",
+      "kilometers": "9,640km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2018-bmw-s1000-r": {
+      "id": "zabikers_2018-bmw-s1000-r",
+      "title": "2018 BMW S1000 R",
+      "price": "R144,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-bmw-s1000-r/",
+      "year": "2018",
+      "kilometers": "28,780km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2013-yamaha-xvs1300-stryker-2": {
+      "id": "zabikers_2013-yamaha-xvs1300-stryker-2",
+      "title": "2013 Yamaha XVS1300 Stryker",
+      "price": "R109,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-yamaha-xvs1300-stryker-2/",
+      "year": "2013",
+      "kilometers": "17,214km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2025-husqvarna-801-svartpilen-2": {
+      "id": "zabikers_2025-husqvarna-801-svartpilen-2",
+      "title": "2025 Husqvarna 801 Svartpilen",
+      "price": "R149,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-husqvarna-801-svartpilen-2/",
+      "year": "2025",
+      "kilometers": "1,253km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2004-harley-davidson-sportster-883": {
+      "id": "zabikers_2004-harley-davidson-sportster-883",
+      "title": "2004 Harley-Davidson Sportster 883",
+      "price": "R59,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2004-harley-davidson-sportster-883/",
+      "year": "2004",
+      "kilometers": "42,939km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2012-can-am-spyder-rs-s-roadster": {
+      "id": "zabikers_2012-can-am-spyder-rs-s-roadster",
+      "title": "2012 Can-Am Spyder RS-S Roadster",
+      "price": "R229,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2012-can-am-spyder-rs-s-roadster/",
+      "year": "2012",
+      "kilometers": "25,355km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2019-honda-crf-1000-a2-africa-twin": {
+      "id": "zabikers_2019-honda-crf-1000-a2-africa-twin",
+      "title": "2019 Honda CRF 1000 A2 Africa Twin",
+      "price": "R175,995",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2019-honda-crf-1000-a2-africa-twin/",
+      "year": "2019",
+      "kilometers": "30,766km",
+      "location": "Twist Of The Wrist Motorcycles",
+      "source": "ZABikers"
+    },
+    "zabikers_2024-honda-africa-twin-crf1100-dct": {
+      "id": "zabikers_2024-honda-africa-twin-crf1100-dct",
+      "title": "2024 Honda Africa Twin CRF1100 DCT",
+      "price": "R279,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-honda-africa-twin-crf1100-dct/",
+      "year": "2024",
+      "kilometers": "3,629km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2022-ktm-890-duke-r": {
+      "id": "zabikers_2022-ktm-890-duke-r",
+      "title": "2022 KTM 890 DUKE R",
+      "price": "R129,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2022-ktm-890-duke-r/",
+      "year": "2022",
+      "kilometers": "26,125km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2024-suzuki-ds-250-v-strom-sx-2": {
+      "id": "zabikers_2024-suzuki-ds-250-v-strom-sx-2",
+      "title": "2024 Suzuki DS 250 V-Strom SX",
+      "price": "R54,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-suzuki-ds-250-v-strom-sx-2/",
+      "year": "2024",
+      "kilometers": "1,855km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2016-bmw-r1200-gs-triple-black": {
+      "id": "zabikers_2016-bmw-r1200-gs-triple-black",
+      "title": "2016 BMW R1200 GS TRIPLE BLACK",
+      "price": "R149,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-bmw-r1200-gs-triple-black/",
+      "year": "2016",
+      "kilometers": "63,493km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2016-bmw-r1200-gs-adventure-4": {
+      "id": "zabikers_2016-bmw-r1200-gs-adventure-4",
+      "title": "2016 BMW R1200 GS Adventure",
+      "price": "R179,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-bmw-r1200-gs-adventure-4/",
+      "year": "2016",
+      "kilometers": "58,815km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2013-bmw-r1200-gs-5": {
+      "id": "zabikers_2013-bmw-r1200-gs-5",
+      "title": "2013 BMW R1200 GS",
+      "price": "R129,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-bmw-r1200-gs-5/",
+      "year": "2013",
+      "kilometers": "37,414km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2007-kawasaki-vn-900": {
+      "id": "zabikers_2007-kawasaki-vn-900",
+      "title": "2007 Kawasaki VN 900",
+      "price": "R69,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2007-kawasaki-vn-900/",
+      "year": "2007",
+      "kilometers": "15,578km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2024-bmw-r1300gs": {
+      "id": "zabikers_2024-bmw-r1300gs",
+      "title": "2024 BMW R1300GS",
+      "price": "R329,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-bmw-r1300gs/",
+      "year": "2024",
+      "kilometers": "23,950km",
+      "location": "BMW Motorrad Centurion",
+      "source": "ZABikers"
+    },
+    "zabikers_2017-victory-cross-country-arlen-ness": {
+      "id": "zabikers_2017-victory-cross-country-arlen-ness",
+      "title": "2017 Victory Cross Country Arlen Ness",
+      "price": "R199,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-victory-cross-country-arlen-ness/",
+      "year": "2017",
+      "kilometers": "21,066km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2018-ktm-790-duke": {
+      "id": "zabikers_2018-ktm-790-duke",
+      "title": "2018 KTM 790 Duke",
+      "price": "R109,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-ktm-790-duke/",
+      "year": "2018",
+      "kilometers": "29,845km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2026-kawasaki-z-650-rs": {
+      "id": "zabikers_2026-kawasaki-z-650-rs",
+      "title": "2026 Kawasaki Z 650 RS",
+      "price": "R129,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-kawasaki-z-650-rs/",
+      "year": "2026",
+      "kilometers": "0km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2013-ducati-multistrada-1200s-pikes-peak-2": {
+      "id": "zabikers_2013-ducati-multistrada-1200s-pikes-peak-2",
+      "title": "2013 Ducati Multistrada 1200S Pikes Peak",
+      "price": "R139,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-ducati-multistrada-1200s-pikes-peak-2/",
+      "year": "2013",
+      "kilometers": "19,408km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2014-harley-davidson-softail-springer-cvo": {
+      "id": "zabikers_2014-harley-davidson-softail-springer-cvo",
+      "title": "2008 Harley-Davidson Softail SPRINGER CVO",
+      "price": "R159,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2014-harley-davidson-softail-springer-cvo/",
+      "year": "2008",
+      "kilometers": "64,418km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2011-ducati-1098-2": {
+      "id": "zabikers_2011-ducati-1098-2",
+      "title": "2011 Ducati 1098",
+      "price": "R119,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2011-ducati-1098-2/",
+      "year": "2011",
+      "kilometers": "32,306km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2020-ktm-790-adventure-r-2": {
+      "id": "zabikers_2020-ktm-790-adventure-r-2",
+      "title": "2020 KTM 790 Adventure R",
+      "price": "R149,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2020-ktm-790-adventure-r-2/",
+      "year": "2020",
+      "kilometers": "7,994km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2015-triumph-tiger-800-xcx-2": {
+      "id": "zabikers_2015-triumph-tiger-800-xcx-2",
+      "title": "2015 Triumph Tiger 800 XCX",
+      "price": "R94,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2015-triumph-tiger-800-xcx-2/",
+      "year": "2015",
+      "kilometers": "52,785km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2021-bmw-f900-r": {
+      "id": "zabikers_2021-bmw-f900-r",
+      "title": "2021 BMW F900 R",
+      "price": "R119,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2021-bmw-f900-r/",
+      "year": "2021",
+      "kilometers": "6,447km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2011-harley-davidson-v-rod-muscle": {
+      "id": "zabikers_2011-harley-davidson-v-rod-muscle",
+      "title": "2011 Harley-Davidson V-Rod Muscle",
+      "price": "R139,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2011-harley-davidson-v-rod-muscle/",
+      "year": "2011",
+      "kilometers": "39,434km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_stunning-softail-custom-smothered-in-chrome-extras-3": {
+      "id": "zabikers_stunning-softail-custom-smothered-in-chrome-extras-3",
+      "title": "Stunning Softail Custom, Smothered in Chrome Extra...",
+      "price": "R128,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/stunning-softail-custom-smothered-in-chrome-extras-3/",
+      "year": "2007",
+      "kilometers": "23,252km",
+      "location": "V Custom Cycles",
+      "source": "ZABikers"
+    },
+    "zabikers_very-nice-2016-cvo-limited-2": {
+      "id": "zabikers_very-nice-2016-cvo-limited-2",
+      "title": "Very Nice 2016 CVO Limited!",
+      "price": "R225,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/very-nice-2016-cvo-limited-2/",
+      "year": "2016",
+      "kilometers": "43,004km",
+      "location": "V Custom Cycles",
+      "source": "ZABikers"
+    },
+    "zabikers_very-nice-dyna-fat-bob-with-stage-4-conversion": {
+      "id": "zabikers_very-nice-dyna-fat-bob-with-stage-4-conversion",
+      "title": "Very Nice Dyna Fat Bob with Stage 4 Conversion!",
+      "price": "R149,900",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/very-nice-dyna-fat-bob-with-stage-4-conversion/",
+      "year": "2014",
+      "kilometers": "44,584km",
+      "location": "V Custom Cycles",
+      "source": "ZABikers"
+    },
+    "zabikers_2026-triumph-tiger-900-rally-pro-2": {
+      "id": "zabikers_2026-triumph-tiger-900-rally-pro-2",
+      "title": "2026 Triumph Tiger 900 Rally Pro",
+      "price": "R259,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-triumph-tiger-900-rally-pro-2/",
+      "year": "2026",
+      "kilometers": "200km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers"
+    },
+    "zabikers_2023-bmw-f900xr": {
+      "id": "zabikers_2023-bmw-f900xr",
+      "title": "2023 BMW F900XR",
+      "price": "R139,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2023-bmw-f900xr/",
+      "year": "2023",
+      "kilometers": "27,300km",
+      "location": "BMW Motorrad Centurion",
+      "source": "ZABikers"
+    },
+    "zabikers_2021-bmw-c400x": {
+      "id": "zabikers_2021-bmw-c400x",
+      "title": "2021 BMW C400X",
+      "price": "R69,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2021-bmw-c400x/",
+      "year": "2021",
+      "kilometers": "23,200km",
+      "location": "BMW Motorrad Centurion",
+      "source": "ZABikers"
+    },
+    "zabikers_2025-bmw-k1600gt": {
+      "id": "zabikers_2025-bmw-k1600gt",
+      "title": "2025 BMW K1600GT",
+      "price": "R315,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-bmw-k1600gt/",
+      "year": "2025",
+      "kilometers": "12,500km",
+      "location": "BMW Motorrad Centurion",
+      "source": "ZABikers"
+    },
+    "zabikers_price-has-been-reduced-on-this-softail-deluxe-2": {
+      "id": "zabikers_price-has-been-reduced-on-this-softail-deluxe-2",
+      "title": "Price Has Been Reduced on this Softail Deluxe!",
+      "price": "R105,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/price-has-been-reduced-on-this-softail-deluxe-2/",
+      "year": "2008",
+      "kilometers": "46,829km",
+      "location": "V Custom Cycles",
+      "source": "ZABikers"
+    },
+    "zabikers_stunning-2014-road-king": {
+      "id": "zabikers_stunning-2014-road-king",
+      "title": "Stunning 2014 Road King!",
+      "price": "R149,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/stunning-2014-road-king/",
+      "year": "2014",
+      "kilometers": "48,880km",
+      "location": "V Custom Cycles",
+      "source": "ZABikers"
+    },
+    "zabikers_stunning-2016-roadster-1200": {
+      "id": "zabikers_stunning-2016-roadster-1200",
+      "title": "Stunning 2016 Roadster 1200!",
+      "price": "R118,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/stunning-2016-roadster-1200/",
+      "year": "2016",
+      "kilometers": "6,141km",
+      "location": "V Custom Cycles",
+      "source": "ZABikers"
+    },
+    "zabikers_2024-husqvarna-tc-50": {
+      "id": "zabikers_2024-husqvarna-tc-50",
+      "title": "2024 Husqvarna TC 50",
+      "price": "R45,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-husqvarna-tc-50/",
+      "year": "2024",
+      "kilometers": "51km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2016-harley-davidson-dyna-street-bob-2": {
+      "id": "zabikers_2016-harley-davidson-dyna-street-bob-2",
+      "title": "2016 Harley-Davidson Dyna Street Bob",
+      "price": "R139,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-harley-davidson-dyna-street-bob-2/",
+      "year": "2016",
+      "kilometers": "7,787km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2014-bmw-f700-gs": {
+      "id": "zabikers_2014-bmw-f700-gs",
+      "title": "2014 BMW F700 GS",
+      "price": "R89,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2014-bmw-f700-gs/",
+      "year": "2014",
+      "kilometers": "25,482km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2016-bmw-rnine-t-scrambler": {
+      "id": "zabikers_2016-bmw-rnine-t-scrambler",
+      "title": "2016 BMW RNINE T SCRAMBLER",
+      "price": "R139,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-bmw-rnine-t-scrambler/",
+      "year": "2016",
+      "kilometers": "14,097km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2016-yamaha-mt-10": {
+      "id": "zabikers_2016-yamaha-mt-10",
+      "title": "2016 Yamaha MT -10",
+      "price": "R199,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-yamaha-mt-10/",
+      "year": "2016",
+      "kilometers": "23,935km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2016-mv-agusta-turismo-veloce-800": {
+      "id": "zabikers_2016-mv-agusta-turismo-veloce-800",
+      "title": "2016 Mv Agusta Turismo Veloce 800",
+      "price": "R119,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-mv-agusta-turismo-veloce-800/",
+      "year": "2016",
+      "kilometers": "22,139km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_2006-honda-trx-90": {
+      "id": "zabikers_2006-honda-trx-90",
+      "title": "2006 Honda TRX 90",
+      "price": "R35,990",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2006-honda-trx-90/",
+      "year": "2006",
+      "kilometers": "1km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers"
+    },
+    "zabikers_stunning-numbered-edition-cvo-ultra": {
+      "id": "zabikers_stunning-numbered-edition-cvo-ultra",
+      "title": "Stunning Numbered Edition CVO Ultra!",
+      "price": "R250,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/stunning-numbered-edition-cvo-ultra/",
+      "year": "2010",
+      "kilometers": "21,095km",
+      "location": "V Custom Cycles",
+      "source": "ZABikers"
+    },
+    "zabikers_very-nice-softail-fat-boy-2007-model": {
+      "id": "zabikers_very-nice-softail-fat-boy-2007-model",
+      "title": "Very Nice Softail Fat Boy 2007 Model!",
+      "price": "R112,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/very-nice-softail-fat-boy-2007-model/",
+      "year": "2007",
+      "kilometers": "63,306km",
+      "location": "V Custom Cycles",
+      "source": "ZABikers"
+    },
+    "zabikers_very-nice-low-mileage-2016-dyna-wide-glide": {
+      "id": "zabikers_very-nice-low-mileage-2016-dyna-wide-glide",
+      "title": "Very Nice Low Mileage 2016 Dyna Wide Glide!",
+      "price": "R138,000",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/very-nice-low-mileage-2016-dyna-wide-glide/",
+      "year": "2016",
+      "kilometers": "13,957km",
+      "location": "V Custom Cycles",
+      "source": "ZABikers"
+    },
     "zabikers_2016-bmw-f700-gs": {
       "id": "zabikers_2016-bmw-f700-gs",
       "title": "2016 BMW F700 GS",
@@ -151,16 +751,6 @@
       "year": "2017",
       "kilometers": "28,647km",
       "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2014-dyna-fat-bob-with-lots-of-extras": {
-      "id": "zabikers_2014-dyna-fat-bob-with-lots-of-extras",
-      "title": "2014 Dyna Fat Bob with Lots of Extras!",
-      "price": "R149,900",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2014-dyna-fat-bob-with-lots-of-extras/",
-      "year": "2014",
-      "kilometers": "44,584km",
-      "location": "V Custom Cycles",
       "source": "ZABikers"
     },
     "zabikers_stunning-softail-heritage-2018-model": {
@@ -363,26 +953,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_very-nice-2016-cvo-limited": {
-      "id": "zabikers_very-nice-2016-cvo-limited",
-      "title": "Very Nice 2016 CVO Limited!",
-      "price": "R225,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/very-nice-2016-cvo-limited/",
-      "year": "2016",
-      "kilometers": "43,004km",
-      "location": "V Custom Cycles",
-      "source": "ZABikers"
-    },
-    "zabikers_stunning-softail-custom-smothered-in-chrome-extras-2": {
-      "id": "zabikers_stunning-softail-custom-smothered-in-chrome-extras-2",
-      "title": "Stunning Softail Custom, Smothered in Chrome Extra...",
-      "price": "R128,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/stunning-softail-custom-smothered-in-chrome-extras-2/",
-      "year": "2007",
-      "kilometers": "23,252km",
-      "location": "V Custom Cycles",
-      "source": "ZABikers"
-    },
     "zabikers_very-nice-2016-roadster-xl1200": {
       "id": "zabikers_very-nice-2016-roadster-xl1200",
       "title": "Very Nice 2016 Roadster XL1200!",
@@ -443,36 +1013,6 @@
       "location": "Twist Of The Wrist Motorcycles",
       "source": "ZABikers"
     },
-    "zabikers_very-nice-low-mileage-2016-dyna": {
-      "id": "zabikers_very-nice-low-mileage-2016-dyna",
-      "title": "Very Nice Low Mileage 2016 Dyna!",
-      "price": "R138,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/very-nice-low-mileage-2016-dyna/",
-      "year": "2016",
-      "kilometers": "13,957km",
-      "location": "V Custom Cycles",
-      "source": "ZABikers"
-    },
-    "zabikers_price-has-been-reduced-on-this-softail-deluxe": {
-      "id": "zabikers_price-has-been-reduced-on-this-softail-deluxe",
-      "title": "Price Has Been Reduced on this Softail Deluxe!",
-      "price": "R105,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/price-has-been-reduced-on-this-softail-deluxe/",
-      "year": "2008",
-      "kilometers": "46,829km",
-      "location": "V Custom Cycles",
-      "source": "ZABikers"
-    },
-    "zabikers_very-nice-2014-road-king": {
-      "id": "zabikers_very-nice-2014-road-king",
-      "title": "Very Nice 2014 Road King!",
-      "price": "R149,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/very-nice-2014-road-king/",
-      "year": "2014",
-      "kilometers": "48,880km",
-      "location": "V Custom Cycles",
-      "source": "ZABikers"
-    },
     "zabikers_2023-triumph-scrambler-1200-xe-2": {
       "id": "zabikers_2023-triumph-scrambler-1200-xe-2",
       "title": "2023 Triumph SCRAMBLER 1200 XE",
@@ -510,16 +1050,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2009-suzuki-vzr-1800-boulevard-c109-rt/",
       "year": "2009",
       "kilometers": "33,998km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2017-bmw-r1200-gs-5": {
-      "id": "zabikers_2017-bmw-r1200-gs-5",
-      "title": "2017 BMW R1200 GS",
-      "price": "R159,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-bmw-r1200-gs-5/",
-      "year": "2017",
-      "kilometers": "19,112km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -613,40 +1143,10 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_stunning-2016-1200-roadster": {
-      "id": "zabikers_stunning-2016-1200-roadster",
-      "title": "Stunning 2016 1200 Roadster!",
-      "price": "R118,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/stunning-2016-1200-roadster/",
-      "year": "2016",
-      "kilometers": "6,141km",
-      "location": "V Custom Cycles",
-      "source": "ZABikers"
-    },
-    "zabikers_stunning-softail-custom-smothered-in-chrome-extras": {
-      "id": "zabikers_stunning-softail-custom-smothered-in-chrome-extras",
-      "title": "Stunning Softail Custom Smothered in Chrome Extras...",
-      "price": "R128,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/stunning-softail-custom-smothered-in-chrome-extras/",
-      "year": "2007",
-      "kilometers": "23,252km",
-      "location": "V Custom Cycles",
-      "source": "ZABikers"
-    },
-    "zabikers_2022-bmw-r1250-gs-option-719-40-years-of-gs": {
-      "id": "zabikers_2022-bmw-r1250-gs-option-719-40-years-of-gs",
-      "title": "2022 BMW R1250 GS Option 719 40 YEARS OF GS",
-      "price": "R259,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2022-bmw-r1250-gs-option-719-40-years-of-gs/",
-      "year": "2022",
-      "kilometers": "19,585km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_1980-honda-cb-750": {
       "id": "zabikers_1980-honda-cb-750",
       "title": "1980 Honda CB 750",
-      "price": "R89,990",
+      "price": "R85,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/1980-honda-cb-750/",
       "year": "1980",
       "kilometers": "21,565km",
@@ -671,36 +1171,6 @@
       "year": "2017",
       "kilometers": "30,703km",
       "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2007-bmw-f650-funduro": {
-      "id": "zabikers_2007-bmw-f650-funduro",
-      "title": "2007 BMW F650 Funduro",
-      "price": "R39,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2007-bmw-f650-funduro/",
-      "year": "2007",
-      "kilometers": "130,445km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_stunning-numbered-edition-cvo-ultra": {
-      "id": "zabikers_stunning-numbered-edition-cvo-ultra",
-      "title": "Stunning Numbered Edition CVO Ultra!",
-      "price": "R250,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/stunning-numbered-edition-cvo-ultra/",
-      "year": "2010",
-      "kilometers": "21,095km",
-      "location": "V Custom Cycles",
-      "source": "ZABikers"
-    },
-    "zabikers_stunning-2007-softail-fat-boy": {
-      "id": "zabikers_stunning-2007-softail-fat-boy",
-      "title": "Stunning 2007 Softail Fat Boy!",
-      "price": "R112,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/stunning-2007-softail-fat-boy/",
-      "year": "2007",
-      "kilometers": "63,306km",
-      "location": "V Custom Cycles",
       "source": "ZABikers"
     },
     "zabikers_2026-cfmoto-nk-125": {
@@ -730,16 +1200,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2015-ktm-1190-adventure/",
       "year": "2015",
       "kilometers": "40,868km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2024-honda-cb-500x": {
-      "id": "zabikers_2024-honda-cb-500x",
-      "title": "2024 Honda CB 500X",
-      "price": "R99,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-honda-cb-500x/",
-      "year": "2024",
-      "kilometers": "2,431km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -983,16 +1443,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2019-ktm-1290-super-adventure-r-2": {
-      "id": "zabikers_2019-ktm-1290-super-adventure-r-2",
-      "title": "2019 KTM 1290 Super Adventure R",
-      "price": "R189,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2019-ktm-1290-super-adventure-r-2/",
-      "year": "2019",
-      "kilometers": "25,624km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2012-honda-cbr-1000rr-fireblade-abs": {
       "id": "zabikers_2012-honda-cbr-1000rr-fireblade-abs",
       "title": "2012 Honda CBR 1000RR FIREBLADE ABS",
@@ -1053,53 +1503,13 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2018-husqvarna-701-sm": {
-      "id": "zabikers_2018-husqvarna-701-sm",
-      "title": "2018 Husqvarna 701 SM",
-      "price": "R129,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-husqvarna-701-sm/",
-      "year": "2018",
-      "kilometers": "10,974km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2021-bmw-r1250-gs-adventure-triple-black-2": {
-      "id": "zabikers_2021-bmw-r1250-gs-adventure-triple-black-2",
-      "title": "2021 BMW R1250 GS Adventure Triple Black",
-      "price": "R319,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2021-bmw-r1250-gs-adventure-triple-black-2/",
-      "year": "2021",
-      "kilometers": "5,688km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2022-bmw-r1250-gs-adventure-triple-black": {
-      "id": "zabikers_2022-bmw-r1250-gs-adventure-triple-black",
-      "title": "2022 BMW R1250 GS Adventure Triple Black",
-      "price": "R309,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2022-bmw-r1250-gs-adventure-triple-black/",
-      "year": "2022",
-      "kilometers": "19,809km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2007-ktm-990-adventure": {
       "id": "zabikers_2007-ktm-990-adventure",
       "title": "2007 KTM 990 Adventure",
-      "price": "R99,990",
+      "price": "R89,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2007-ktm-990-adventure/",
       "year": "2007",
       "kilometers": "54,238km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2017-honda-africa-twin-crf1000-dct": {
-      "id": "zabikers_2017-honda-africa-twin-crf1000-dct",
-      "title": "2017 Honda Africa Twin CRF1000 DCT",
-      "price": "R159,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-honda-africa-twin-crf1000-dct/",
-      "year": "2017",
-      "kilometers": "17,330km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -1110,36 +1520,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2017-triumph-tiger-800-xcx/",
       "year": "2017",
       "kilometers": "35,156km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2025-bmw-s1000-r": {
-      "id": "zabikers_2025-bmw-s1000-r",
-      "title": "2025 BMW S1000 R",
-      "price": "R299,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-bmw-s1000-r/",
-      "year": "2025",
-      "kilometers": "3,029km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2023-bmw-s1000-rr-3": {
-      "id": "zabikers_2023-bmw-s1000-rr-3",
-      "title": "2023 BMW S1000 RR",
-      "price": "R289,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2023-bmw-s1000-rr-3/",
-      "year": "2023",
-      "kilometers": "14,629km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2017-bmw-r1200-gs-3": {
-      "id": "zabikers_2017-bmw-r1200-gs-3",
-      "title": "2017 BMW R1200 GS",
-      "price": "R169,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-bmw-r1200-gs-3/",
-      "year": "2017",
-      "kilometers": "17,220km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -1220,16 +1600,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2026-hero-eco-150/",
       "year": "2026",
       "kilometers": "0km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2018-bmw-s1000-r-motorsport-2": {
-      "id": "zabikers_2018-bmw-s1000-r-motorsport-2",
-      "title": "2018 BMW S1000 R MOTORSPORT",
-      "price": "R155,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-bmw-s1000-r-motorsport-2/",
-      "year": "2018",
-      "kilometers": "28,780km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -1423,16 +1793,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2016-harley-davidson-sportster-xl-1200v-seventy-two": {
-      "id": "zabikers_2016-harley-davidson-sportster-xl-1200v-seventy-two",
-      "title": "2016 Harley Davidson Sportster XL 1200V Seventy Tw...",
-      "price": "R99,995",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-harley-davidson-sportster-xl-1200v-seventy-two/",
-      "year": "2016",
-      "kilometers": "20,319km",
-      "location": "Twist Of The Wrist Motorcycles",
-      "source": "ZABikers"
-    },
     "zabikers_2024-ktm-1290-superduke-r": {
       "id": "zabikers_2024-ktm-1290-superduke-r",
       "title": "2024 KTM 1290 SUPERDUKE R",
@@ -1460,16 +1820,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2013-bmw-r1200gs/",
       "year": "2013",
       "kilometers": "95,000km",
-      "location": "BMW Motorrad Centurion",
-      "source": "ZABikers"
-    },
-    "zabikers_2011-bmw-r1200gs-adventure": {
-      "id": "zabikers_2011-bmw-r1200gs-adventure",
-      "title": "2011 BMW R1200GS ADVENTURE",
-      "price": "R129,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2011-bmw-r1200gs-adventure/",
-      "year": "2011",
-      "kilometers": "27,500km",
       "location": "BMW Motorrad Centurion",
       "source": "ZABikers"
     },
@@ -1523,26 +1873,6 @@
       "location": "BMW Motorrad Centurion",
       "source": "ZABikers"
     },
-    "zabikers_2019-bmw-c400x": {
-      "id": "zabikers_2019-bmw-c400x",
-      "title": "2019 BMW C400X",
-      "price": "R89,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2019-bmw-c400x/",
-      "year": "2019",
-      "kilometers": "18,200km",
-      "location": "BMW Motorrad Centurion",
-      "source": "ZABikers"
-    },
-    "zabikers_2016-bmw-f700gs": {
-      "id": "zabikers_2016-bmw-f700gs",
-      "title": "2016 BMW F700GS",
-      "price": "R84,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-bmw-f700gs/",
-      "year": "2016",
-      "kilometers": "76,300km",
-      "location": "BMW Motorrad Centurion",
-      "source": "ZABikers"
-    },
     "zabikers_2022-bmw-g-310-gs": {
       "id": "zabikers_2022-bmw-g-310-gs",
       "title": "2022 BMW G 310 GS",
@@ -1583,16 +1913,6 @@
       "location": "Twist Of The Wrist Motorcycles",
       "source": "ZABikers"
     },
-    "zabikers_2018-kawasaki-ninja-400-abs-se": {
-      "id": "zabikers_2018-kawasaki-ninja-400-abs-se",
-      "title": "2018 Kawasaki Ninja 400 ABS SE",
-      "price": "R87,995",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-kawasaki-ninja-400-abs-se/",
-      "year": "2018",
-      "kilometers": "39,108km",
-      "location": "Twist Of The Wrist Motorcycles",
-      "source": "ZABikers"
-    },
     "zabikers_2015-yamaha-mt-09-tracer-2": {
       "id": "zabikers_2015-yamaha-mt-09-tracer-2",
       "title": "2015 Yamaha MT-09 TRACER",
@@ -1609,7 +1929,7 @@
       "price": "R259,000",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-tiger-900-rally-pro-3/",
       "year": "2025",
-      "kilometers": "1,100km",
+      "kilometers": "1,700km",
       "location": "Triumph Johannesburg",
       "source": "ZABikers"
     },
@@ -1679,7 +1999,7 @@
       "price": "R165,000",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2026-triumph-trident-660-660-2/",
       "year": "2026",
-      "kilometers": "800km",
+      "kilometers": "1,000km",
       "location": "Triumph Johannesburg",
       "source": "ZABikers"
     },
@@ -1691,26 +2011,6 @@
       "year": "2023",
       "kilometers": "4,200km",
       "location": "Triumph Johannesburg",
-      "source": "ZABikers"
-    },
-    "zabikers_2013-yamaha-yzf-r1": {
-      "id": "zabikers_2013-yamaha-yzf-r1",
-      "title": "2013 Yamaha YZF R1",
-      "price": "R169,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-yamaha-yzf-r1/",
-      "year": "2013",
-      "kilometers": "43,280km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2016-harley-davidson-touring-street-glide-special": {
-      "id": "zabikers_2016-harley-davidson-touring-street-glide-special",
-      "title": "2016 Harley-Davidson TOURING STREET GLIDE SPECIAL",
-      "price": "R159,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-harley-davidson-touring-street-glide-special/",
-      "year": "2016",
-      "kilometers": "46,002km",
-      "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
     "zabikers_2015-harley-davidson-fat-boy": {
@@ -1813,33 +2113,13 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2013-harley-davidson-softail-fat-boy-2": {
-      "id": "zabikers_2013-harley-davidson-softail-fat-boy-2",
-      "title": "2013 Harley-Davidson Softail Fat Boy",
-      "price": "R145,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-harley-davidson-softail-fat-boy-2/",
-      "year": "2013",
-      "kilometers": "4,831km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2014-bmw-r1200-gs-adventure-2": {
       "id": "zabikers_2014-bmw-r1200-gs-adventure-2",
       "title": "2014 BMW R1200 GS Adventure",
-      "price": "R139,990",
+      "price": "R134,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2014-bmw-r1200-gs-adventure-2/",
       "year": "2014",
       "kilometers": "81,018km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2011-bmw-s1000-rr-2": {
-      "id": "zabikers_2011-bmw-s1000-rr-2",
-      "title": "2011 BMW S1000 RR",
-      "price": "R159,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2011-bmw-s1000-rr-2/",
-      "year": "2011",
-      "kilometers": "24,487km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -1956,7 +2236,7 @@
     "zabikers_2006-bmw-k1200-lt": {
       "id": "zabikers_2006-bmw-k1200-lt",
       "title": "2006 BMW K1200 LT",
-      "price": "R89,990",
+      "price": "R79,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2006-bmw-k1200-lt/",
       "year": "2006",
       "kilometers": "18,027km",
@@ -1970,16 +2250,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2017-harley-davidson-sportster-883-iron-2/",
       "year": "2017",
       "kilometers": "19,759km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2025-suzuki-gsx-150n": {
-      "id": "zabikers_2025-suzuki-gsx-150n",
-      "title": "2025 Suzuki GSX 150N",
-      "price": "R29,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-suzuki-gsx-150n/",
-      "year": "2025",
-      "kilometers": "7,619km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -2000,16 +2270,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2019-bmw-s1000-rr/",
       "year": "2019",
       "kilometers": "8,940km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2012-honda-xr-650l": {
-      "id": "zabikers_2012-honda-xr-650l",
-      "title": "2012 Honda XR 650L",
-      "price": "R69,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2012-honda-xr-650l/",
-      "year": "2012",
-      "kilometers": "30,908km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -2063,16 +2323,6 @@
       "location": "Twist Of The Wrist Motorcycles",
       "source": "ZABikers"
     },
-    "zabikers_2012-kawasaki-z1000-sx": {
-      "id": "zabikers_2012-kawasaki-z1000-sx",
-      "title": "2012 Kawasaki Z1000 SX",
-      "price": "R109,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2012-kawasaki-z1000-sx/",
-      "year": "2012",
-      "kilometers": "13,045km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2014-harley-davidson-v-rod-muscle": {
       "id": "zabikers_2014-harley-davidson-v-rod-muscle",
       "title": "2014 Harley-Davidson V-Rod Muscle",
@@ -2101,16 +2351,6 @@
       "year": "2014",
       "kilometers": "75,000km",
       "location": "Honda Wing Centurion",
-      "source": "ZABikers"
-    },
-    "zabikers_2014-harley-davidson-sportster-xl1200x-forty-eight": {
-      "id": "zabikers_2014-harley-davidson-sportster-xl1200x-forty-eight",
-      "title": "2014 Harley Davidson Sportster XL1200X Forty Eight",
-      "price": "R119,995",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2014-harley-davidson-sportster-xl1200x-forty-eight/",
-      "year": "2014",
-      "kilometers": "20,710km",
-      "location": "Twist Of The Wrist Motorcycles",
       "source": "ZABikers"
     },
     "zabikers_2026-kayo-ea110-quad": {
@@ -2153,16 +2393,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2021-kawasaki-z1000-sx": {
-      "id": "zabikers_2021-kawasaki-z1000-sx",
-      "title": "2021 Kawasaki Z1000 SX",
-      "price": "R149,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2021-kawasaki-z1000-sx/",
-      "year": "2021",
-      "kilometers": "32,849km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2020-kawasaki-z1000-sx": {
       "id": "zabikers_2020-kawasaki-z1000-sx",
       "title": "2020 Kawasaki Z1000 SX",
@@ -2186,20 +2416,10 @@
     "zabikers_2015-bmw-k1600-gt": {
       "id": "zabikers_2015-bmw-k1600-gt",
       "title": "2015 BMW K1600 GT",
-      "price": "R159,990",
+      "price": "R149,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2015-bmw-k1600-gt/",
       "year": "2015",
       "kilometers": "59,559km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2018-yamaha-yzf-r6": {
-      "id": "zabikers_2018-yamaha-yzf-r6",
-      "title": "2018 Yamaha YZF R6",
-      "price": "R239,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-yamaha-yzf-r6/",
-      "year": "2018",
-      "kilometers": "30,039km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -2301,26 +2521,6 @@
       "year": "2026",
       "kilometers": "N/A",
       "location": "FAST. KTM Cape Town",
-      "source": "ZABikers"
-    },
-    "zabikers_2018-yamaha-yz65-for-resale": {
-      "id": "zabikers_2018-yamaha-yz65-for-resale",
-      "title": "2018 Yamaha YZ65 for resale",
-      "price": "R35,000",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-yamaha-yz65-for-resale/",
-      "year": "2018",
-      "kilometers": "1km",
-      "location": "Biker's Warehouse",
-      "source": "ZABikers"
-    },
-    "zabikers_2021-ducati-panigale-v4s-25th-anniversario-916-no-423-500": {
-      "id": "zabikers_2021-ducati-panigale-v4s-25th-anniversario-916-no-423-500",
-      "title": "2021 Ducati Panigale V4S 25th Anniversario 916 No....",
-      "price": "R699,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2021-ducati-panigale-v4s-25th-anniversario-916-no-423-500/",
-      "year": "2021",
-      "kilometers": "2,200km",
-      "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
     "zabikers_2020-bmw-rninet-2": {
@@ -2463,16 +2663,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2024-ducati-panigale-v4s-2": {
-      "id": "zabikers_2024-ducati-panigale-v4s-2",
-      "title": "2024 Ducati Panigale V4S",
-      "price": "R499,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-ducati-panigale-v4s-2/",
-      "year": "2024",
-      "kilometers": "1,720km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_1979-kawasaki-z-750": {
       "id": "zabikers_1979-kawasaki-z-750",
       "title": "1979 Kawasaki Z 750",
@@ -2486,7 +2676,7 @@
     "zabikers_1981-suzuki-gs-1000-2": {
       "id": "zabikers_1981-suzuki-gs-1000-2",
       "title": "1981 Suzuki GS 1000",
-      "price": "R79,990",
+      "price": "R75,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/1981-suzuki-gs-1000-2/",
       "year": "1981",
       "kilometers": "3,465km",
@@ -2496,7 +2686,7 @@
     "zabikers_1979-suzuki-gs-1000-2": {
       "id": "zabikers_1979-suzuki-gs-1000-2",
       "title": "1979 Suzuki GS 1000",
-      "price": "R89,990",
+      "price": "R85,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/1979-suzuki-gs-1000-2/",
       "year": "1979",
       "kilometers": "63,768km",
@@ -2719,7 +2909,7 @@
       "price": "R229,000",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2026-triumph-speed-twin-1200-1200/",
       "year": "2026",
-      "kilometers": "2,000km",
+      "kilometers": "2,600km",
       "location": "Triumph Johannesburg",
       "source": "ZABikers"
     },
@@ -2816,7 +3006,7 @@
     "zabikers_2014-harley-davidson-touring-electra-glide-ultra-classic": {
       "id": "zabikers_2014-harley-davidson-touring-electra-glide-ultra-classic",
       "title": "2014 Harley-Davidson TOURING ELECTRA GLIDE ULTRA C...",
-      "price": "R139,990",
+      "price": "R135,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2014-harley-davidson-touring-electra-glide-ultra-classic/",
       "year": "2014",
       "kilometers": "60,147km",
@@ -2853,16 +3043,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2011-ducati-1098": {
-      "id": "zabikers_2011-ducati-1098",
-      "title": "2011 Ducati 1098",
-      "price": "R129,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2011-ducati-1098/",
-      "year": "2011",
-      "kilometers": "32,306km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2013-triumph-street-triple-675": {
       "id": "zabikers_2013-triumph-street-triple-675",
       "title": "2013 Triumph Street Triple 675",
@@ -2870,36 +3050,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2013-triumph-street-triple-675/",
       "year": "2013",
       "kilometers": "39,372km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2017-triumph-street-triple-r-abs": {
-      "id": "zabikers_2017-triumph-street-triple-r-abs",
-      "title": "2017 Triumph Street Triple R ABS",
-      "price": "R125,995",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-triumph-street-triple-r-abs/",
-      "year": "2017",
-      "kilometers": "14,591km",
-      "location": "Twist Of The Wrist Motorcycles",
-      "source": "ZABikers"
-    },
-    "zabikers_2016-bmw-s1000-rr-moto-gp-safety-bike": {
-      "id": "zabikers_2016-bmw-s1000-rr-moto-gp-safety-bike",
-      "title": "2016 BMW S1000 RR Moto GP Safety Bike",
-      "price": "R299,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-bmw-s1000-rr-moto-gp-safety-bike/",
-      "year": "2016",
-      "kilometers": "1,628km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2019-ktm-250-xc-w": {
-      "id": "zabikers_2019-ktm-250-xc-w",
-      "title": "2019 KTM 250 XC-W",
-      "price": "R79,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2019-ktm-250-xc-w/",
-      "year": "2019",
-      "kilometers": "123km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -2923,16 +3073,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2017-bmw-s-1000-r": {
-      "id": "zabikers_2017-bmw-s-1000-r",
-      "title": "2017 BMW S 1000 R",
-      "price": "R157,995",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-bmw-s-1000-r/",
-      "year": "2017",
-      "kilometers": "41,663km",
-      "location": "Twist Of The Wrist Motorcycles",
-      "source": "ZABikers"
-    },
     "zabikers_1984-honda-cb-1100-r": {
       "id": "zabikers_1984-honda-cb-1100-r",
       "title": "1984 Honda CB 1100 R",
@@ -2946,7 +3086,7 @@
     "zabikers_1991-suzuki-gsx-1100s-katana-jdm-limited-run-70th-anniversary-2": {
       "id": "zabikers_1991-suzuki-gsx-1100s-katana-jdm-limited-run-70th-anniversary-2",
       "title": "1991 Suzuki GSX 1100S Katana JDM Limited Run ̵...",
-      "price": "R283,990",
+      "price": "R279,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/1991-suzuki-gsx-1100s-katana-jdm-limited-run-70th-anniversary-2/",
       "year": "1991",
       "kilometers": "3km",
@@ -3106,7 +3246,7 @@
     "zabikers_2016-harley-davidson-softail-breakout-103ci": {
       "id": "zabikers_2016-harley-davidson-softail-breakout-103ci",
       "title": "2016 Harley-Davidson Softail Breakout 103ci",
-      "price": "R219,990",
+      "price": "R209,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2016-harley-davidson-softail-breakout-103ci/",
       "year": "2016",
       "kilometers": "9,051km",
@@ -3156,7 +3296,7 @@
     "zabikers_2019-bmw-rninet-racer": {
       "id": "zabikers_2019-bmw-rninet-racer",
       "title": "2019 BMW RNinet RACER",
-      "price": "R179,990",
+      "price": "R169,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2019-bmw-rninet-racer/",
       "year": "2019",
       "kilometers": "26,654km",
@@ -3166,7 +3306,7 @@
     "zabikers_2020-triumph-daytona-765-moto-2-2": {
       "id": "zabikers_2020-triumph-daytona-765-moto-2-2",
       "title": "2020 Triumph Daytona 765 Moto 2",
-      "price": "R273,990",
+      "price": "R269,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2020-triumph-daytona-765-moto-2-2/",
       "year": "2020",
       "kilometers": "12,956km",
@@ -3176,7 +3316,7 @@
     "zabikers_2016-harley-davidson-touring-electra-glide-ultra-limited-103ci": {
       "id": "zabikers_2016-harley-davidson-touring-electra-glide-ultra-limited-103ci",
       "title": "2016 Harley-Davidson TOURING ELECTRA GLIDE ULTRA L...",
-      "price": "R179,990",
+      "price": "R169,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2016-harley-davidson-touring-electra-glide-ultra-limited-103ci/",
       "year": "2016",
       "kilometers": "45,911km",
@@ -3196,7 +3336,7 @@
     "zabikers_2023-ktm-450-exc-f-six-days": {
       "id": "zabikers_2023-ktm-450-exc-f-six-days",
       "title": "2023 KTM 450 EXC-F Six Days",
-      "price": "R119,990",
+      "price": "R114,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2023-ktm-450-exc-f-six-days/",
       "year": "2023",
       "kilometers": "109km",
@@ -3221,16 +3361,6 @@
       "year": "2023",
       "kilometers": "21,523km",
       "location": "Twist Of The Wrist Motorcycles",
-      "source": "ZABikers"
-    },
-    "zabikers_2013-ducati-multistrada-1200s-pikes-peak": {
-      "id": "zabikers_2013-ducati-multistrada-1200s-pikes-peak",
-      "title": "2013 Ducati Multistrada 1200S Pikes Peak",
-      "price": "R159,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-ducati-multistrada-1200s-pikes-peak/",
-      "year": "2013",
-      "kilometers": "19,408km",
-      "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
     "zabikers_2014-mv-agusta-f4r": {
@@ -3316,7 +3446,7 @@
     "zabikers_2024-gas-gas-ec-500f-street-legal": {
       "id": "zabikers_2024-gas-gas-ec-500f-street-legal",
       "title": "2024 Gas Gas EC 500F – street legal",
-      "price": "R129,990",
+      "price": "R124,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2024-gas-gas-ec-500f-street-legal/",
       "year": "2024",
       "kilometers": "4km",
@@ -3419,7 +3549,7 @@
       "price": "R159,000",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-twin-900-900/",
       "year": "2025",
-      "kilometers": "3,200km",
+      "kilometers": "3,300km",
       "location": "Triumph Johannesburg",
       "source": "ZABikers"
     },
@@ -3439,7 +3569,7 @@
       "price": "R89,900",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-400-400-3/",
       "year": "2025",
-      "kilometers": "1,100km",
+      "kilometers": "1,200km",
       "location": "Triumph Johannesburg",
       "source": "ZABikers"
     },
@@ -3549,7 +3679,7 @@
       "price": "R89,000",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-2/",
       "year": "2025",
-      "kilometers": "2,850km",
+      "kilometers": "3,000km",
       "location": "Triumph Johannesburg",
       "source": "ZABikers"
     },
@@ -3606,7 +3736,7 @@
     "zabikers_2009-ducati-monster-696": {
       "id": "zabikers_2009-ducati-monster-696",
       "title": "2009 Ducati Monster 696",
-      "price": "R79,990",
+      "price": "R69,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2009-ducati-monster-696/",
       "year": "2009",
       "kilometers": "19,061km",
@@ -3636,7 +3766,7 @@
     "zabikers_2013-yamaha-xt-1200-super-tenere": {
       "id": "zabikers_2013-yamaha-xt-1200-super-tenere",
       "title": "2013 Yamaha XT 1200 Super Tenere",
-      "price": "R139,990",
+      "price": "R129,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2013-yamaha-xt-1200-super-tenere/",
       "year": "2013",
       "kilometers": "20,756km",
@@ -3646,7 +3776,7 @@
     "zabikers_2011-harley-davidson-softail-rocker-c": {
       "id": "zabikers_2011-harley-davidson-softail-rocker-c",
       "title": "2011 Harley-Davidson Softail ROCKER C",
-      "price": "R139,990",
+      "price": "R135,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2011-harley-davidson-softail-rocker-c/",
       "year": "2011",
       "kilometers": "14,364km",
@@ -3656,7 +3786,7 @@
     "zabikers_2011-harley-davidson-touring-electra-glide-ultra-classic-cvo": {
       "id": "zabikers_2011-harley-davidson-touring-electra-glide-ultra-classic-cvo",
       "title": "2011 Harley-Davidson TOURING ELECTRA GLIDE ULTRA C...",
-      "price": "R149,990",
+      "price": "R144,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2011-harley-davidson-touring-electra-glide-ultra-classic-cvo/",
       "year": "2011",
       "kilometers": "43,156km",
@@ -3676,7 +3806,7 @@
     "zabikers_2025-honda-cb-500-x-2": {
       "id": "zabikers_2025-honda-cb-500-x-2",
       "title": "2025 Honda CB 500 X",
-      "price": "R114,990",
+      "price": "R109,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-honda-cb-500-x-2/",
       "year": "2025",
       "kilometers": "744km",
@@ -3696,7 +3826,7 @@
     "zabikers_2018-husqvarna-tc-50": {
       "id": "zabikers_2018-husqvarna-tc-50",
       "title": "2018 Husqvarna TC 50",
-      "price": "R19,990",
+      "price": "R18,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2018-husqvarna-tc-50/",
       "year": "2018",
       "kilometers": "2km",
@@ -3706,7 +3836,7 @@
     "zabikers_2021-bmw-k1600-grand-america": {
       "id": "zabikers_2021-bmw-k1600-grand-america",
       "title": "2021 BMW K1600 GRAND AMERICA",
-      "price": "R279,990",
+      "price": "R259,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2021-bmw-k1600-grand-america/",
       "year": "2021",
       "kilometers": "6,117km",
@@ -3716,7 +3846,7 @@
     "zabikers_2015-yamaha-xt-660-tenere": {
       "id": "zabikers_2015-yamaha-xt-660-tenere",
       "title": "2015 Yamaha XT 660 TENERE",
-      "price": "R89,990",
+      "price": "R85,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2015-yamaha-xt-660-tenere/",
       "year": "2015",
       "kilometers": "54,586km",
@@ -3796,7 +3926,7 @@
     "zabikers_2012-triumph-tiger-800-xc": {
       "id": "zabikers_2012-triumph-tiger-800-xc",
       "title": "2012 Triumph Tiger 800 XC",
-      "price": "R89,990",
+      "price": "R85,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2012-triumph-tiger-800-xc/",
       "year": "2012",
       "kilometers": "20,096km",
@@ -3933,16 +4063,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2017-ktm-1050-adventure": {
-      "id": "zabikers_2017-ktm-1050-adventure",
-      "title": "2017 KTM 1050 Adventure",
-      "price": "R119,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-ktm-1050-adventure/",
-      "year": "2017",
-      "kilometers": "25,495km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2008-buell-xb-12-lightning": {
       "id": "zabikers_2008-buell-xb-12-lightning",
       "title": "2008 Buell XB-12 Lightning",
@@ -3970,16 +4090,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2024-triumph-speed-400/",
       "year": "2024",
       "kilometers": "3,052km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2013-ducati-multistrada-1200": {
-      "id": "zabikers_2013-ducati-multistrada-1200",
-      "title": "2013 Ducati Multistrada 1200",
-      "price": "R109,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-ducati-multistrada-1200/",
-      "year": "2013",
-      "kilometers": "27,499km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -4016,7 +4126,7 @@
     "zabikers_2025-bmw-s1000-rr-akrapovic-exhaust": {
       "id": "zabikers_2025-bmw-s1000-rr-akrapovic-exhaust",
       "title": "2025 BMW S1000 RR Akrapovic Exhaust",
-      "price": "R383,990",
+      "price": "R379,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-bmw-s1000-rr-akrapovic-exhaust/",
       "year": "2025",
       "kilometers": "7km",
@@ -4060,16 +4170,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2022-honda-nc-750x-2/",
       "year": "2022",
       "kilometers": "1,776km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2015-harley-davidson-sportster-883-iron": {
-      "id": "zabikers_2015-harley-davidson-sportster-883-iron",
-      "title": "2015 Harley-Davidson Sportster 883 Iron",
-      "price": "R74,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2015-harley-davidson-sportster-883-iron/",
-      "year": "2015",
-      "kilometers": "36,307km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -4120,16 +4220,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2023-honda-nc-750x-2/",
       "year": "2023",
       "kilometers": "8,928km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2015-harley-davidson-sportster-1200": {
-      "id": "zabikers_2015-harley-davidson-sportster-1200",
-      "title": "2015 Harley-Davidson Sportster 1200",
-      "price": "R103,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2015-harley-davidson-sportster-1200/",
-      "year": "2015",
-      "kilometers": "5,957km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -4323,16 +4413,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2000-aprilia-rs250-two-stroke": {
-      "id": "zabikers_2000-aprilia-rs250-two-stroke",
-      "title": "2000 Aprilia RS250 Two Stroke",
-      "price": "R179,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2000-aprilia-rs250-two-stroke/",
-      "year": "2000",
-      "kilometers": "31,863km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2025-kayo-ay70": {
       "id": "zabikers_2025-kayo-ay70",
       "title": "2026 KAYO AY70",
@@ -4350,16 +4430,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-kayo-ekmb-electric-motorcycle/",
       "year": "2026",
       "kilometers": "0km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2008-harley-davidson-softail-springer-cvo": {
-      "id": "zabikers_2008-harley-davidson-softail-springer-cvo",
-      "title": "2008 Harley-Davidson Softail SPRINGER CVO",
-      "price": "R179,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2008-harley-davidson-softail-springer-cvo/",
-      "year": "2008",
-      "kilometers": "64,418km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -4486,7 +4556,7 @@
     "zabikers_1987-yamaha-banshee-350cc-two-stroke-atv": {
       "id": "zabikers_1987-yamaha-banshee-350cc-two-stroke-atv",
       "title": "1987 Yamaha Banshee 350cc two-stroke ATV",
-      "price": "R159,990",
+      "price": "R155,990",
       "url": "https://www.zabikers.co.za/bikes-for-sale/1987-yamaha-banshee-350cc-two-stroke-atv/",
       "year": "1987",
       "kilometers": "1km",
@@ -4743,16 +4813,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2020-ktm-790-adventure-r": {
-      "id": "zabikers_2020-ktm-790-adventure-r",
-      "title": "2020 KTM 790 Adventure R",
-      "price": "R164,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2020-ktm-790-adventure-r/",
-      "year": "2020",
-      "kilometers": "7,994km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2022-ducati-multistrada-v4s": {
       "id": "zabikers_2022-ducati-multistrada-v4s",
       "title": "2022 Ducati Multistrada V4S",
@@ -4760,66 +4820,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2022-ducati-multistrada-v4s/",
       "year": "2022",
       "kilometers": "5,937km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2015-triumph-tiger-800-xcx": {
-      "id": "zabikers_2015-triumph-tiger-800-xcx",
-      "title": "2015 Triumph Tiger 800 XCx",
-      "price": "R99,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2015-triumph-tiger-800-xcx/",
-      "year": "2015",
-      "kilometers": "52,785km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2024-suzuki-dl-650-ax-v-strom": {
-      "id": "zabikers_2024-suzuki-dl-650-ax-v-strom",
-      "title": "2024 Suzuki DL 650 AX V-STROM",
-      "price": "R129,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-suzuki-dl-650-ax-v-strom/",
-      "year": "2024",
-      "kilometers": "5,697km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2020-bmw-r1250-gs": {
-      "id": "zabikers_2020-bmw-r1250-gs",
-      "title": "2020 BMW R1250 GS",
-      "price": "R184,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2020-bmw-r1250-gs/",
-      "year": "2020",
-      "kilometers": "51,535km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2018-ktm-1090-adventure-s": {
-      "id": "zabikers_2018-ktm-1090-adventure-s",
-      "title": "2018 KTM 1090 ADVENTURE S",
-      "price": "R109,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-ktm-1090-adventure-s/",
-      "year": "2018",
-      "kilometers": "41,237km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2021-bmw-r1250-r": {
-      "id": "zabikers_2021-bmw-r1250-r",
-      "title": "2021 BMW R1250 R",
-      "price": "R164,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2021-bmw-r1250-r/",
-      "year": "2021",
-      "kilometers": "13,096km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2016-ducati-diavel-dark": {
-      "id": "zabikers_2016-ducati-diavel-dark",
-      "title": "2016 Ducati Diavel Dark",
-      "price": "R149,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2016-ducati-diavel-dark/",
-      "year": "2016",
-      "kilometers": "30,367km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -4893,16 +4893,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2018-honda-crf-250-rally": {
-      "id": "zabikers_2018-honda-crf-250-rally",
-      "title": "2018 Honda CRF 250 RALLY",
-      "price": "R74,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-honda-crf-250-rally/",
-      "year": "2018",
-      "kilometers": "9,640km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2023-harley-davidson-softail-standard": {
       "id": "zabikers_2023-harley-davidson-softail-standard",
       "title": "2023 Harley-Davidson Softail Standard",
@@ -4963,16 +4953,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2025-kawasaki-z650-rs-2": {
-      "id": "zabikers_2025-kawasaki-z650-rs-2",
-      "title": "2025 Kawasaki Z650 RS",
-      "price": "R139,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-kawasaki-z650-rs-2/",
-      "year": "2025",
-      "kilometers": "0km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2025-kayo-s200-side-by-side": {
       "id": "zabikers_2025-kayo-s200-side-by-side",
       "title": "2026 KAYO S200 side by side",
@@ -4980,16 +4960,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-kayo-s200-side-by-side/",
       "year": "2026",
       "kilometers": "0km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2021-suzuki-dl-1000-v-strom": {
-      "id": "zabikers_2021-suzuki-dl-1000-v-strom",
-      "title": "2021 Suzuki DL 1000 V-STROM",
-      "price": "R129,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2021-suzuki-dl-1000-v-strom/",
-      "year": "2021",
-      "kilometers": "20,667km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
@@ -5033,16 +5003,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
-    "zabikers_2013-yamaha-xvs1300-stryker": {
-      "id": "zabikers_2013-yamaha-xvs1300-stryker",
-      "title": "2013 Yamaha XVS1300 Stryker",
-      "price": "R109,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-yamaha-xvs1300-stryker/",
-      "year": "2013",
-      "kilometers": "17,214km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
     "zabikers_2025-bsa-vintage-racer-no-20": {
       "id": "zabikers_2025-bsa-vintage-racer-no-20",
       "title": "2025 BSA Vintage Racer No. 20",
@@ -5050,16 +5010,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-bsa-vintage-racer-no-20/",
       "year": "2025",
       "kilometers": "1km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers"
-    },
-    "zabikers_2025-husqvarna-801-svartpilen": {
-      "id": "zabikers_2025-husqvarna-801-svartpilen",
-      "title": "2025 Husqvarna 801 Svartpilen",
-      "price": "R159,990",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-husqvarna-801-svartpilen/",
-      "year": "2025",
-      "kilometers": "1,247km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers"
     },
