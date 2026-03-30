@@ -1,4 +1,4 @@
-# Motorcycle Listing Tracker    
+# Motorcycle Listing Tracker
 
 A web scraper that collects motorcycle listings from multiple sites, de-duplicates them, tracks price changes, and displays everything in an Excel spreadsheet and dashboard.
 Built with significant AI assistance for code implementation.
