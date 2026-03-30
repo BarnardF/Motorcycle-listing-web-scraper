@@ -17,13 +17,13 @@ from template_generator.excel_generator import generate_excel_report
 from template_generator.db_manager import DatabaseManager
 
 #scrapers
-from trackers.autotraderTracker import scrape_autotrader
+# from trackers.autotraderTracker import scrape_autotrader
 from trackers.gumtreeTracker import scrape_gumtree
 from trackers.webuycarsTracker import scrape_webuycars_cached
 from trackers.zabikerstracker import scrape_zabikers
 
 SCRAPERS = [
-    scrape_autotrader,
+    # scrape_autotrader,
     scrape_gumtree,
     scrape_webuycars_cached,  
     scrape_zabikers  

@@ -196,7 +196,7 @@ def load_cache():
 def main():
     """Main entry point"""
     logger.info("=" * 60)
-    logger.info("🏍️  WEBUYCARS CACHE REFRESH")
+    logger.info("WEBUYCARS CACHE REFRESH")
     logger.info("=" * 60)
     
     # Load previous cache
