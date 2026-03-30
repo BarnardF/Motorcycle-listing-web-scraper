@@ -5,25 +5,25 @@
   padding: 0;
 }
 
-/* Layout */
+/* Layout - Mobile First */
 body {
   font-family: 'Segoe UI', Helvetica, sans-serif;
   background: #111;
   color: #eee;
-  padding: 2rem;
+  padding: 1rem;
   font-size: 15px;
   line-height: 1.6;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   font-weight: 400;
   margin-bottom: 0.25rem;
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #fff;
   font-weight: 400;
   margin: 0;
@@ -31,58 +31,62 @@ h2 {
 
 .meta {
   color: #888;
-  font-size: 0.85rem;
-  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
 }
 
+/* Stats - Mobile First Grid */
 .stats {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .stat {
   background: #1e1e1e;
   border: 1px solid #2a2a2a;
   border-radius: 8px;
-  padding: 1rem 1.5rem;
-  min-width: 120px;
+  padding: 0.75rem 1rem;
+  text-align: center;
 }
 
 .stat .num {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #e44c65;
   line-height: 1;
 }
 
 .stat .lbl {
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   color: #888;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-top: 0.3rem;
 }
 
+/* Controls - Mobile First */
 .controls {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 0.5rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
-  padding: 0.55rem 1.2rem;
+  padding: 0.7rem 1rem;
   background: #1e1e1e;
   border: 1px solid #333;
   border-radius: 6px;
   color: #aaa;
   cursor: pointer;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   transition: all 0.2s;
+  width: 100%;
+  text-align: center;
 }
 
 .btn:hover {
@@ -96,65 +100,93 @@ h2 {
   color: #fff;
 }
 
+/* View Container */
+.view-container {
+  display: block;
+}
+
+.view-container.hidden {
+  display: none;
+}
+
+/* Table Section */
 .table-section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .table-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
   background: #1a1a1a;
   border-left: 4px solid #e44c65;
-  padding: 0.9rem 1.2rem;
+  padding: 0.75rem 1rem;
   border-radius: 0 6px 6px 0;
   margin-bottom: 0.75rem;
 }
 
 .listing-count {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #e44c65;
 }
 
+/* Table Wrapper for Horizontal Scroll */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile-First Table - Card Style */
 table {
   width: 100%;
   border-collapse: collapse;
   background: #1a1a1a;
   border-radius: 8px;
   overflow: hidden;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
-th {
-  background: #e44c65;
-  color: #fff;
-  padding: 0.7rem 1rem;
-  text-align: left;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-weight: 600;
+thead {
+  display: none;
 }
 
-td {
-  padding: 0.7rem 1rem;
+tbody tr {
+  display: block;
+  margin-bottom: 1rem;
+  border: 1px solid #222;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+tbody td {
+  display: block;
+  padding: 0.6rem 1rem;
   border-bottom: 1px solid #222;
   color: #ccc;
-  vertical-align: middle;
+  position: relative;
+  padding-left: 40%;
+  text-align: right;
 }
 
-tr:last-child td {
+tbody td:last-child {
   border-bottom: none;
 }
 
-tr:hover td {
-  background: #202020;
+tbody td::before {
+  content: attr(data-label);
+  position: absolute;
+  left: 1rem;
+  width: 35%;
+  text-align: left;
+  font-weight: 600;
+  color: #888;
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
 
 td.price {
   color: #e44c65;
   font-weight: 600;
-  white-space: nowrap;
 }
 
 .old-price {
@@ -183,11 +215,11 @@ a:hover {
 
 .view-link {
   display: inline-block;
-  padding: 0.35rem 0.9rem;
+  padding: 0.4rem 1rem;
   border: 1px solid #e44c65;
   border-radius: 4px;
   color: #e44c65;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   transition: all 0.2s;
 }
 
@@ -200,29 +232,172 @@ a:hover {
 .no-listings {
   color: #555;
   font-style: italic;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
 .timestamp {
   color: #555;
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding-top: 1.5rem;
   border-top: 1px solid #222;
 }
 
-@media (max-width: 600px) {
+/* Tablet Breakpoint (600px+) */
+@media (min-width: 600px) {
   body {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
-  table {
-    display: block;
-    overflow-x: auto;
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.05rem;
   }
 
   .stats {
-    gap: 0.6rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .stat {
+    padding: 1rem 1.25rem;
+  }
+
+  .stat .num {
+    font-size: 1.75rem;
+  }
+
+  .stat .lbl {
+    font-size: 0.7rem;
+  }
+
+  .controls {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .table-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.85rem 1.2rem;
+  }
+
+  /* Keep card style on tablet */
+  table {
+    font-size: 0.9rem;
+  }
+}
+
+/* Desktop Breakpoint (900px+) - Traditional Table */
+@media (min-width: 900px) {
+  body {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .meta {
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+  }
+
+  .stats {
+    margin-bottom: 2rem;
+  }
+
+  .stat {
+    padding: 1rem 1.5rem;
+  }
+
+  .stat .num {
+    font-size: 2rem;
+  }
+
+  .stat .lbl {
+    font-size: 0.72rem;
+  }
+
+  .controls {
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    padding: 0.55rem 1.2rem;
+    font-size: 0.82rem;
+  }
+
+  .table-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .table-header {
+    padding: 0.9rem 1.2rem;
+  }
+
+  .listing-count {
+    font-size: 0.85rem;
+  }
+
+  /* Traditional table layout on desktop */
+  thead {
+    display: table-header-group;
+  }
+
+  tbody tr {
+    display: table-row;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+  }
+
+  tbody td {
+    display: table-cell;
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #222;
+    padding-left: 1rem;
+    text-align: left;
+  }
+
+  tbody td::before {
+    content: none;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  tr:hover td {
+    background: #202020;
+  }
+
+  th {
+    background: #e44c65;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    text-align: left;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  .timestamp {
+    font-size: 0.82rem;
+    margin-top: 3rem;
   }
 }

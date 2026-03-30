@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motorcycle Tracker Dashboard - Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Motorcycle Tracker</h1>
+  <p class="meta">Tracking 5 models • Last updated: 30/03/2026 12:00:00</p>
+
+  <div class="stats">
+    <div class="stat">
+        <div class="num">15</div>
+        <div class="lbl">Total Listings</div>
+    </div>
+    <div class="stat">
+        <div class="num">5</div>
+        <div class="lbl">Bike Models</div>
+    </div>
+    <div class="stat">
+        <div class="num">2</div>
+        <div class="lbl">Sources</div>
+    </div>
+    <div class="stat">
+        <div class="num">3</div>
+        <div class="lbl">Price Drops</div>
+    </div>
+  </div>
+
+  <div class="controls">
+      <button class="btn active" data-view="bike">By Bike</button>
+      <button class="btn" data-view="source">By Source</button>
+      <button class="btn" data-view="drops">Price Drops</button>
+  </div>
+
+  <div id="bike-view" class="view-container"></div>
+  <div id="source-view" class="view-container hidden"></div>
+  <div id="drops-view" class="view-container hidden"></div>
+
+  <div class="timestamp">
+      Last updated: 30/03/2026 12:00:00
+  </div>
+
+<script>
+const allListings = [
+  {
+    "search_term": "Honda CB 500 X",
+    "source": "Gumtree",
+    "title": "2024 Honda CB500X Adventure",
+    "price": "R 89,900",
+    "kilometers": "2,500 km",
+    "location": "Cape Town",
+    "url": "https://example.com/1",
+    "price_dropped": true,
+    "old_price": "R 95,000"
+  },
+  {
+    "search_term": "Honda CB 500 X",
+    "source": "WeBuyCars",
+    "title": "2023 Honda CB500X",
+    "price": "R 85,000",
+    "kilometers": "8,000 km",
+    "location": "Johannesburg",
+    "url": "https://example.com/2",
+    "price_dropped": false
+  },
+  {
+    "search_term": "Suzuki DS 250 V-STROM",
+    "source": "Gumtree",
+    "title": "2023 Suzuki V-Strom 250 SX",
+    "price": "R 50,000",
+    "kilometers": "1,200 km",
+    "location": "Pretoria",
+    "url": "https://example.com/3",
+    "price_dropped": false
+  },
+  {
+    "search_term": "Suzuki DS 250 V-STROM",
+    "source": "WeBuyCars",
+    "title": "2024 Suzuki DS 250",
+    "price": "R 45,000",
+    "kilometers": "500 km",
+    "location": "Durban",
+    "url": "https://example.com/4",
+    "price_dropped": true,
+    "old_price": "R 52,000"
+  },
+  {
+    "search_term": "BMW G 310",
+    "source": "Gumtree",
+    "title": "2023 BMW G310 GS",
+    "price": "R 75,000",
+    "kilometers": "5,000 km",
+    "location": "Cape Town",
+    "url": "https://example.com/5",
+    "price_dropped": false
+  },
+  {
+    "search_term": "BMW G 310",
+    "source": "WeBuyCars",
+    "title": "2024 BMW G 310 R",
+    "price": "R 68,000",
+    "kilometers": "1,000 km",
+    "location": "Port Elizabeth",
+    "url": "https://example.com/6",
+    "price_dropped": true,
+    "old_price": "R 72,000"
+  },
+  {
+    "search_term": "Triumph Scrambler 400 X",
+    "source": "Gumtree",
+    "title": "2024 Triumph Scrambler 400X",
+    "price": "R 95,000",
+    "kilometers": "800 km",
+    "location": "Johannesburg",
+    "url": "https://example.com/7",
+    "price_dropped": false
+  },
+  {
+    "search_term": "Triumph Scrambler 400 X",
+    "source": "WeBuyCars",
+    "title": "2023 Triumph Scrambler 400",
+    "price": "R 88,000",
+    "kilometers": "3,200 km",
+    "location": "Cape Town",
+    "url": "https://example.com/8",
+    "price_dropped": false
+  },
+  {
+    "search_term": "Honda Rebel 500",
+    "source": "Gumtree",
+    "title": "2024 Honda Rebel 500",
+    "price": "R 92,000",
+    "kilometers": "1,500 km",
+    "location": "Pretoria",
+    "url": "https://example.com/9",
+    "price_dropped": false
+  },
+  {
+    "search_term": "Honda Rebel 500",
+    "source": "Gumtree",
+    "title": "2023 Honda Rebel 500 ABS",
+    "price": "R 85,000",
+    "kilometers": "6,000 km",
+    "location": "Durban",
+    "url": "https://example.com/10",
+    "price_dropped": false
+  }
+];
+
+let filteredListings = [...allListings];
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+    setupButtons();
+    updateBikeView();
+});
+
+// Setup button click handlers
+function setupButtons() {
+    document.querySelectorAll('.btn').forEach(button => {
+        button.addEventListener('click', function(e) {
+            const viewType = this.getAttribute('data-view');
+            showView(viewType, this);
+        });
+    });
+}
+
+// Show selected view and update active button
+function showView(viewType, clickedButton) {
+    // Hide all views
+    document.querySelectorAll('.view-container').forEach(el => {
+        el.classList.add('hidden');
+    });
+    
+    // Show selected view
+    const targetView = document.getElementById(viewType + '-view');
+    if (targetView) {
+        targetView.classList.remove('hidden');
+    }
+
+    // Update active button state
+    document.querySelectorAll('.btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    if (clickedButton) {
+        clickedButton.classList.add('active');
+    }
+
+    // Update the view content
+    updateTableDisplay(viewType);
+}
+
+// Update table display based on view type
+function updateTableDisplay(viewType) {
+    if (viewType === 'bike') updateBikeView();
+    else if (viewType === 'source') updateSourceView();
+    else if (viewType === 'drops') updateDropsView();
+}
+
+// Generate bike-grouped view
+function updateBikeView() {
+    const container = document.getElementById('bike-view');
+    const byBike = {};
+
+    filteredListings.forEach(listing => {
+        const bike = listing.search_term;
+        if (!byBike[bike]) byBike[bike] = [];
+        byBike[bike].push(listing);
+    });
+
+    container.innerHTML = '';
+
+    if (Object.keys(byBike).length === 0) {
+        container.innerHTML = '<div class="no-listings"><p>No listings found yet. Run the tracker to populate this page!</p></div>';
+        return;
+    }
+
+    for (const [bike, listings] of Object.entries(byBike)) {
+        container.innerHTML += generateTableSection(bike, listings, 'bike');
+    }
+}
+
+// Generate source-grouped view
+function updateSourceView() {
+    const container = document.getElementById('source-view');
+    const bySource = {};
+
+    filteredListings.forEach(listing => {
+        const source = listing.source;
+        if (!bySource[source]) bySource[source] = [];
+        bySource[source].push(listing);
+    });
+
+    container.innerHTML = '';
+
+    if (Object.keys(bySource).length === 0) {
+        container.innerHTML = '<div class="no-listings"><p>No listings found yet. Run the tracker to populate this page!</p></div>';
+        return;
+    }
+
+    for (const [source, listings] of Object.entries(bySource)) {
+        container.innerHTML += generateTableSection(source, listings, 'source');
+    }
+}
+
+// Generate price drops view
+function updateDropsView() {
+    const container = document.getElementById('drops-view');
+    const drops = filteredListings.filter(l => l.price_dropped);
+
+    container.innerHTML = '';
+
+    if (drops.length === 0) {
+        container.innerHTML = '<div class="no-listings"><p>No price drops detected yet. Keep tracking to find deals!</p></div>';
+        return;
+    }
+
+    container.innerHTML += generateDropsTable(drops);
+}
+
+// Generate table section for any view type
+function generateTableSection(title, listings, type) {
+    let html = `
+    <div class="table-section">
+        <div class="table-header">
+            <h2>${title}</h2>
+            <span class="listing-count">${listings.length} listing(s)</span>
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>${type === 'bike' ? 'Source' : 'Bike Model'}</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Kilometers</th>
+                        <th>Location</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+    `;
+
+    listings.forEach(listing => {
+        const priceDisplay = listing.price_dropped && listing.old_price
+            ? `<span class='old-price'>${listing.old_price}</span> ${listing.price}`
+            : listing.price;
+
+        html += `
+            <tr class="${listing.price_dropped ? 'price-drop-row' : ''}">
+                <td data-label="${type === 'bike' ? 'Source' : 'Bike Model'}">${type === 'bike' ? listing.source : listing.search_term}</td>
+                <td data-label="Title">${listing.title}</td>
+                <td class="price" data-label="Price">${priceDisplay}</td>
+                <td data-label="Kilometers">${listing.kilometers}</td>
+                <td data-label="Location">${listing.location}</td>
+                <td data-label="Link"><a href="${listing.url}" target="_blank" class="view-link">View →</a></td>
+            </tr>
+        `;
+    });
+
+    html += `</tbody></table></div></div>`;
+    return html;
+}
+
+// Generate price drops table
+function generateDropsTable(listings) {
+    return generateTableSection("Price Drops", listings, "drops");
+}
+</script>
+
+</body>
+</html>

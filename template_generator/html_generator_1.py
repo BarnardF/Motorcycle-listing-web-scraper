@@ -1,5 +1,5 @@
 """
-HTML Report Generator with Mobile-First Design
+HTML Report Generator with Horizontal Filter Bar
 Generates a beautiful static HTML page for GitHub Pages
 Works completely client-side (no backend needed)
 Created with ai(Claude) - Dec 2025
@@ -76,7 +76,7 @@ def generate_html_report(all_listings, bikes_tracked, output_file="docs/index.ht
 
 
 def generate_html_template(all_listings, bikes_tracked, listings_by_bike, listings_by_source, all_sources, timestamp):
-    """Generate mobile-first dashboard-style HTML template"""
+    """Generate dashboard-style HTML template"""
 
     sources_count = len(listings_by_source)
     price_drops_count = sum(1 for listing in all_listings if listing.get('price_dropped'))
@@ -117,9 +117,9 @@ def generate_html_template(all_listings, bikes_tracked, listings_by_bike, listin
   </div>
 
   <div class="controls">
-      <button class="btn active" data-view="bike">By Bike</button>
-      <button class="btn" data-view="source">By Source</button>
-      <button class="btn" data-view="drops">Price Drops</button>
+      <button class="btn active" onclick="showView('bike')">By Bike</button>
+      <button class="btn" onclick="showView('source')">By Source</button>
+      <button class="btn" onclick="showView('drops')">Price Drops</button>
   </div>
 
   <div id="bike-view" class="view-container"></div>
@@ -134,55 +134,29 @@ def generate_html_template(all_listings, bikes_tracked, listings_by_bike, listin
 const allListings = {listings_json};
 let filteredListings = [...allListings];
 
-// Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {{
-    setupButtons();
     updateBikeView();
 }});
 
-// Setup button click handlers
-function setupButtons() {{
-    document.querySelectorAll('.btn').forEach(button => {{
-        button.addEventListener('click', function(e) {{
-            const viewType = this.getAttribute('data-view');
-            showView(viewType, this);
-        }});
-    }});
+function showView(viewType) {{
+    document.querySelectorAll('.view-container').forEach(el => el.classList.add('hidden'));
+    document.getElementById(viewType + '-view').classList.remove('hidden');
+
+    document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    updateTableDisplay();
 }}
 
-// Show selected view and update active button
-function showView(viewType, clickedButton) {{
-    // Hide all views
-    document.querySelectorAll('.view-container').forEach(el => {{
-        el.classList.add('hidden');
-    }});
-    
-    // Show selected view
-    const targetView = document.getElementById(viewType + '-view');
-    if (targetView) {{
-        targetView.classList.remove('hidden');
-    }}
+function updateTableDisplay() {{
+    const activeView = document.querySelector('.view-container:not(.hidden)');
+    const viewType = activeView?.id.replace('-view','') || 'bike';
 
-    // Update active button state
-    document.querySelectorAll('.btn').forEach(btn => {{
-        btn.classList.remove('active');
-    }});
-    if (clickedButton) {{
-        clickedButton.classList.add('active');
-    }}
-
-    // Update the view content
-    updateTableDisplay(viewType);
-}}
-
-// Update table display based on view type
-function updateTableDisplay(viewType) {{
     if (viewType === 'bike') updateBikeView();
     else if (viewType === 'source') updateSourceView();
     else if (viewType === 'drops') updateDropsView();
 }}
 
-// Generate bike-grouped view
 function updateBikeView() {{
     const container = document.getElementById('bike-view');
     const byBike = {{}};
@@ -195,17 +169,11 @@ function updateBikeView() {{
 
     container.innerHTML = '';
 
-    if (Object.keys(byBike).length === 0) {{
-        container.innerHTML = '<div class="no-listings"><p>No listings found yet. Run the tracker to populate this page!</p></div>';
-        return;
-    }}
-
     for (const [bike, listings] of Object.entries(byBike)) {{
         container.innerHTML += generateTableSection(bike, listings, 'bike');
     }}
 }}
 
-// Generate source-grouped view
 function updateSourceView() {{
     const container = document.getElementById('source-view');
     const bySource = {{}};
@@ -218,32 +186,19 @@ function updateSourceView() {{
 
     container.innerHTML = '';
 
-    if (Object.keys(bySource).length === 0) {{
-        container.innerHTML = '<div class="no-listings"><p>No listings found yet. Run the tracker to populate this page!</p></div>';
-        return;
-    }}
-
     for (const [source, listings] of Object.entries(bySource)) {{
         container.innerHTML += generateTableSection(source, listings, 'source');
     }}
 }}
 
-// Generate price drops view
 function updateDropsView() {{
     const container = document.getElementById('drops-view');
     const drops = filteredListings.filter(l => l.price_dropped);
 
     container.innerHTML = '';
-
-    if (drops.length === 0) {{
-        container.innerHTML = '<div class="no-listings"><p>No price drops detected yet. Keep tracking to find deals!</p></div>';
-        return;
-    }}
-
     container.innerHTML += generateDropsTable(drops);
 }}
 
-// Generate table section for any view type
 function generateTableSection(title, listings, type) {{
     let html = `
     <div class="table-section">
@@ -251,19 +206,18 @@ function generateTableSection(title, listings, type) {{
             <h2>${{title}}</h2>
             <span class="listing-count">${{listings.length}} listing(s)</span>
         </div>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>${{type === 'bike' ? 'Source' : 'Bike Model'}}</th>
-                        <th>Title</th>
-                        <th>Price</th>
-                        <th>Kilometers</th>
-                        <th>Location</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <tbody>
+        <table>
+            <thead>
+                <tr>
+                    <th>${{type === 'bike' ? 'Source' : 'Bike Model'}}</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Kilometers</th>
+                    <th>Location</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
     `;
 
     listings.forEach(listing => {{
@@ -273,21 +227,20 @@ function generateTableSection(title, listings, type) {{
 
         html += `
             <tr class="${{listing.price_dropped ? 'price-drop-row' : ''}}">
-                <td data-label="${{type === 'bike' ? 'Source' : 'Bike Model'}}">${{type === 'bike' ? listing.source : listing.search_term}}</td>
-                <td data-label="Title">${{listing.title}}</td>
-                <td class="price" data-label="Price">${{priceDisplay}}</td>
-                <td data-label="Kilometers">${{listing.kilometers}}</td>
-                <td data-label="Location">${{listing.location}}</td>
-                <td data-label="Link"><a href="${{listing.url}}" target="_blank" class="view-link">View →</a></td>
+                <td>${{type === 'bike' ? listing.source : listing.search_term}}</td>
+                <td>${{listing.title}}</td>
+                <td class="price">${{priceDisplay}}</td>
+                <td>${{listing.kilometers}}</td>
+                <td>${{listing.location}}</td>
+                <td><a href="${{listing.url}}" target="_blank" class="view-link">View →</a></td>
             </tr>
         `;
     }});
 
-    html += `</tbody></table></div></div>`;
+    html += `</tbody></table></div>`;
     return html;
 }}
 
-// Generate price drops table
 function generateDropsTable(listings) {{
     return generateTableSection("Price Drops", listings, "drops");
 }}
