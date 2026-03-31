@@ -15,6 +15,7 @@ from config.config import SLEEP_MIN, SLEEP_MAX, IS_GITHUB_ACTIONS
 from template_generator.html_generator import generate_html_report
 from template_generator.excel_generator import generate_excel_report
 from template_generator.db_manager import DatabaseManager
+from generate_summary import generate_summary
 
 #scrapers
 # from trackers.autotraderTracker import scrape_autotrader
@@ -245,18 +246,20 @@ async def main():
         # Generate Excel report
         try:
             generate_excel_report(flat_listings, bikes)
-            logger.info("Generated Excel report: data/listings.xlsx")
+            # logger.info("Generated Excel report: data/listings.xlsx")
         except Exception as e:
-            logger.error(f"Failed to generate Excel report: {e}", exc_info=True)
+            # logger.error(f"Failed to generate Excel report: {e}", exc_info=True)
             print(f"ERROR: Excel generation failed - {e}")
 
         # Generate HTML report
         try:
             generate_html_report(flat_listings, bikes, "docs/index.html")
-            logger.info("Generated HTML report: docs/index.html")
+            # logger.info("Generated HTML report: docs/index.html")
         except Exception as e:
-            logger.error(f"Failed to generate HTML report: {e}", exc_info=True)
+            # logger.error(f"Failed to generate HTML report: {e}", exc_info=True)
             print(f"ERROR: HTML generation failed - {e}")
+
+        generate_summary()
 
         return new_listings
 

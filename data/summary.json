@@ -1,0 +1,119 @@
+{
+  "run_date": "31-03-2026 12:21",
+  "total_listings": 21,
+  "new_listings_count": 0,
+  "price_drops_count": 11,
+  "new_listings": [],
+  "price_drops": [
+    {
+      "bike_model": "Honda CB 500 X",
+      "title": "2024 Honda CB 500 X",
+      "old_price": "R 80,900",
+      "new_price": "R 76,900",
+      "kilometers": "11,502 km",
+      "location": "Dome (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CB/513611610"
+    },
+    {
+      "bike_model": "Honda CB 500 X",
+      "title": "2015 Honda CBR 125r",
+      "old_price": "R 25,900",
+      "new_price": "R 23,900",
+      "kilometers": "32,184 km",
+      "location": "Gqeberha (EC)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/9A6A00589"
+    },
+    {
+      "bike_model": "Honda CB 500 X",
+      "title": "2007 Honda CBR 600 RR",
+      "old_price": "R 62,900",
+      "new_price": "R 58,900",
+      "kilometers": "32,466 km",
+      "location": "Midstream (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/6B9613820"
+    },
+    {
+      "bike_model": "Honda CB 500 X",
+      "title": "2009 Honda CB 600 Hornet",
+      "old_price": "R 42,900",
+      "new_price": "R 39,900",
+      "kilometers": "68,126 km",
+      "location": "Richmond (WC)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CB/824812136"
+    },
+    {
+      "bike_model": "Triumph Speed 400",
+      "title": "2015 Triumph Speedmaster 865 Speedmaster EFI",
+      "old_price": "R 43,900",
+      "new_price": "R 40,900",
+      "kilometers": "50,543 km",
+      "location": "Richmond (WC)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Speedmaster/AA5A00028"
+    },
+    {
+      "bike_model": "Triumph Speed 400",
+      "title": "2022 Triumph Speed Triple RS",
+      "old_price": "R 177,900",
+      "new_price": "R 171,900",
+      "kilometers": "17,155 km",
+      "location": "Midstream (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Speed Triple/E05B01946"
+    },
+    {
+      "bike_model": "BMW G 310",
+      "title": "2008 BMW G Series G450 X",
+      "old_price": "R 32,900",
+      "new_price": "R 29,900",
+      "kilometers": "8,076 km",
+      "location": "Montana (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/76DE04781"
+    },
+    {
+      "bike_model": "BMW G 310",
+      "title": "2014 BMW G Series G 650 GS Sertao ABS H/grips",
+      "old_price": "R 28,900",
+      "new_price": "R 24,900",
+      "kilometers": "73,328 km",
+      "location": "George (WC)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/BMW/G Series/CAF414786"
+    },
+    {
+      "bike_model": "Kawasaki Z 400",
+      "title": "2007 Kawasaki ZX 14",
+      "old_price": "R 75,900",
+      "new_price": "R 71,900",
+      "kilometers": "43,595 km",
+      "location": "Richmond (WC)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/ZX/F5BC02354"
+    },
+    {
+      "bike_model": "Suzuki V-STROM 250 SX",
+      "title": "2023 Suzuki 250 DS 250",
+      "old_price": "R 54,900",
+      "new_price": "R 51,900",
+      "kilometers": "15,999 km",
+      "location": "Midstream (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/250/910309679"
+    },
+    {
+      "bike_model": "suzuki Gixxer 250",
+      "title": "2023 Suzuki 250 DS 250",
+      "old_price": "R 54,900",
+      "new_price": "R 51,900",
+      "kilometers": "15,999 km",
+      "location": "Midstream (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/250/910309679"
+    }
+  ]
+}
