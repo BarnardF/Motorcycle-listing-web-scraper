@@ -1,24 +1,34 @@
 import json
 from datetime import datetime, timedelta
 
-def generate_summary(listings_file="data/listings.json", summary_file="data/summary.json"):
-    """
-    Reads listings.json and generates a summary.json file for Make.com to consume.
-    Call this at the end of your main.py, after listings have been saved.
-    """
 
-    with open(listings_file, "r") as f:
-        listings = json.load(f)
+def generate_summary(listings: dict, summary_file="data/summary.json"):
+    """
+    Generates a summary.json file for Make.com to consume.
+    
+    Args:
+        listings: the all_listings dict passed directly from main.py
+        summary_file: where to save the summary JSON
+    """
 
     total_listings = 0
     new_listings = []
     price_drops = []
 
-    # Consider a listing "new" if it was found in the last 8 days (covers weekly runs)
+    # Consider a listing "new" if found in the last 8 days (covers weekly runs)
     cutoff = datetime.now() - timedelta(days=8)
 
     for bike_model, bike_listings in listings.items():
+
+        # Skip empty bike models
+        if not bike_listings:
+            continue
+
         for listing_id, listing in bike_listings.items():
+
+            # Skip if listing is not a proper dict
+            if not isinstance(listing, dict):
+                continue
 
             total_listings += 1
 
@@ -67,7 +77,3 @@ def generate_summary(listings_file="data/listings.json", summary_file="data/summ
 
     print(f"Summary generated: {total_listings} listings, {len(new_listings)} new, {len(price_drops)} price drops")
     return summary
-
-
-if __name__ == "__main__":
-    generate_summary()

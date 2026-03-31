@@ -259,7 +259,7 @@ async def main():
             # logger.error(f"Failed to generate HTML report: {e}", exc_info=True)
             print(f"ERROR: HTML generation failed - {e}")
 
-        generate_summary()
+        generate_summary(all_listings)
 
         return new_listings
 
