@@ -1,8 +1,8 @@
 {
-  "run_date": "12-04-2026 05:20",
-  "total_listings": 152,
-  "new_listings_count": 152,
-  "price_drops_count": 13,
+  "run_date": "19-04-2026 05:25",
+  "total_listings": 139,
+  "new_listings_count": 139,
+  "price_drops_count": 10,
   "new_listings": [
     {
       "bike_model": "suzuki Gixxer 250",
@@ -15,57 +15,12 @@
     },
     {
       "bike_model": "suzuki Gixxer 250",
-      "title": "Suzuki Gixxer 250 Cc (magnificent Condition)",
-      "price": "R 35,000",
+      "title": "Suzuki Gixxer 250 Cc (excellent Condition)",
+      "price": "R 34,000",
       "kilometers": "12,000km",
       "location": "Johannesburg South",
       "source": "Gumtree",
-      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/johannesburg-south/suzuki-gixxer-250-cc-magnificent-condition/10013538551261012587794309"
-    },
-    {
-      "bike_model": "suzuki Gixxer 250",
-      "title": "Suzuki V Storm 250 X",
-      "price": "R 48,000",
-      "kilometers": "4,200km",
-      "location": "Germiston",
-      "source": "Gumtree",
-      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/germiston/suzuki-v-storm-250-x/10013542888451013100514509"
-    },
-    {
-      "bike_model": "suzuki Gixxer 250",
-      "title": "2023 Suzuki 250 DS 250",
-      "price": "R 44,900",
-      "kilometers": "4,412 km",
-      "location": "Pietermaritzburg (KZN)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/250/C59F08120"
-    },
-    {
-      "bike_model": "suzuki Gixxer 250",
-      "title": "2024 Suzuki DS 250",
-      "price": "R49,900",
-      "kilometers": "13,762km",
-      "location": "TRD Motorcycles",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-suzuki-ds-250/"
-    },
-    {
-      "bike_model": "suzuki Gixxer 250",
-      "title": "2026 Suzuki GSX 250 FR",
-      "price": "R62,500",
-      "kilometers": "0km",
-      "location": "Bikeshop Boksburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-suzuki-gsx-250-fr/"
-    },
-    {
-      "bike_model": "suzuki Gixxer 250",
-      "title": "2026 Suzuki GSX 250 F",
-      "price": "R62,500",
-      "kilometers": "0km",
-      "location": "Bikeshop Boksburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-suzuki-gsx-250-f/"
+      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/johannesburg-south/suzuki-gixxer-250-cc-excellent-condition/10013548790141012587794309"
     },
     {
       "bike_model": "suzuki Gixxer 250",
@@ -75,6 +30,15 @@
       "location": "TRD Motorcycles",
       "source": "ZABikers",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2022-suzuki-gixxer-250/"
+    },
+    {
+      "bike_model": "suzuki Gixxer 250",
+      "title": "2026 Suzuki GSX 250 F",
+      "price": "R62,900",
+      "kilometers": "0km",
+      "location": "Bikeshop Boksburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-suzuki-gsx-250-f-3/"
     },
     {
       "bike_model": "suzuki Gixxer 250",
@@ -96,21 +60,30 @@
     },
     {
       "bike_model": "suzuki Gixxer 250",
+      "title": "2024 Suzuki DS 250",
+      "price": "R49,900",
+      "kilometers": "13,762km",
+      "location": "TRD Motorcycles",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-suzuki-ds-250/"
+    },
+    {
+      "bike_model": "suzuki Gixxer 250",
+      "title": "2026 Suzuki GSX 250 F",
+      "price": "R62,500",
+      "kilometers": "0km",
+      "location": "Bikeshop Boksburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-suzuki-gsx-250-f/"
+    },
+    {
+      "bike_model": "suzuki Gixxer 250",
       "title": "2025 Suzuki DS 250 V Strom",
       "price": "R49,900",
       "kilometers": "2,631km",
       "location": "Bikeshop Boksburg",
       "source": "ZABikers",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-suzuki-ds-250-v-strom/"
-    },
-    {
-      "bike_model": "Lifan X Trail 250",
-      "title": "2026 Lifan X-Trail 250",
-      "price": "R26,990",
-      "kilometers": "1km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-lifan-x-trail-250-2/"
     },
     {
       "bike_model": "Lifan X Trail 250",
@@ -140,6 +113,15 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-lifan-x-trail-250-2/"
     },
     {
+      "bike_model": "Lifan X Trail 250",
+      "title": "2026 Lifan X-Trail 250",
+      "price": "R26,990",
+      "kilometers": "1km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-lifan-x-trail-250-2/"
+    },
+    {
       "bike_model": "Honda CB 500X",
       "title": "Honda NX500",
       "price": "R 131,399",
@@ -160,6 +142,15 @@
     {
       "bike_model": "Honda CB 500X",
       "title": "2023 Honda CB 500 X",
+      "price": "R 89,900",
+      "kilometers": "2,436 km",
+      "location": "Richmond (WC)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CB/2A1102636"
+    },
+    {
+      "bike_model": "Honda CB 500X",
+      "title": "2023 Honda CB 500 X",
       "price": "R 66,900",
       "kilometers": "13,270 km",
       "location": "East London (EC)",
@@ -168,48 +159,39 @@
     },
     {
       "bike_model": "Honda CB 500X",
-      "title": "2010 Honda CBR 1000 RR Fireblade",
-      "price": "R 85,900",
-      "kilometers": "34,223 km",
-      "location": "Dome (GP)",
+      "title": "2012 Honda CBX 250 Twister",
+      "price": "R 14,900",
+      "kilometers": "33,429 km",
+      "location": "Vereeniging (GP)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/DDEB08933"
-    },
-    {
-      "bike_model": "Honda CB 500X",
-      "title": "2007 Honda CBR 1000 RR Fireblade",
-      "price": "R 69,900",
-      "kilometers": "55,354 km",
-      "location": "Gqeberha (EC)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/A86403872"
-    },
-    {
-      "bike_model": "Honda CB 500X",
-      "title": "2006 Honda CBR 1000rr",
-      "price": "R 55,900",
-      "kilometers": "76,813 km",
-      "location": "East London (EC)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/4C1510990"
-    },
-    {
-      "bike_model": "Honda CB 500X",
-      "title": "2007 Honda CBR 1000 RR Fireblade",
-      "price": "R 70,900",
-      "kilometers": "81,687 km",
-      "location": "Brackenfell (WC)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/B1C009096"
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBX/0B8C04255"
     },
     {
       "bike_model": "Honda CB 500X",
       "title": "2011 Honda CBR 600 RR",
-      "price": "N/A",
+      "price": "R 62,900",
       "kilometers": "75,001 km",
       "location": "JHB South (GP)",
       "source": "WeBuyCars",
       "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/944803714"
+    },
+    {
+      "bike_model": "Honda CB 500X",
+      "title": "2007 Honda CBR 1000rr",
+      "price": "R 58,900",
+      "kilometers": "75,809 km",
+      "location": "Silver Lakes (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/D45202302"
+    },
+    {
+      "bike_model": "Honda CB 500X",
+      "title": "2023 Honda CB 500X",
+      "price": "R89,990",
+      "kilometers": "13,379km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2023-honda-cb-500x-4/"
     },
     {
       "bike_model": "Honda CB 500X",
@@ -231,69 +213,6 @@
     },
     {
       "bike_model": "Honda CB 500X",
-      "title": "2009 Honda CBR 1000RR",
-      "price": "R119,900",
-      "kilometers": "49,813km",
-      "location": "TRD Motorcycles",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2009-honda-cbr-1000rr/"
-    },
-    {
-      "bike_model": "Honda CB 500X",
-      "title": "2017 Honda CBR 1000RR",
-      "price": "R219,900",
-      "kilometers": "17,971km",
-      "location": "TRD Motorcycles",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-honda-cbr-1000rr/"
-    },
-    {
-      "bike_model": "Honda CB 500X",
-      "title": "2008 Honda CBR 1000RR",
-      "price": "R119,900",
-      "kilometers": "39,800km",
-      "location": "TRD Motorcycles",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2008-honda-cbr-1000rr/"
-    },
-    {
-      "bike_model": "Honda CB 500X",
-      "title": "2012 Honda CBR 1000RR",
-      "price": "R134,900",
-      "kilometers": "30,918km",
-      "location": "TRD Motorcycles",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2012-honda-cbr-1000rr/"
-    },
-    {
-      "bike_model": "Honda CB 500X",
-      "title": "2008 Honda CBR 1000R",
-      "price": "R89,900",
-      "kilometers": "32,100km",
-      "location": "TRD Motorcycles",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2008-honda-cbr-1000r/"
-    },
-    {
-      "bike_model": "Honda CB 500X",
-      "title": "2013 Honda CBF 1000",
-      "price": "R79,990",
-      "kilometers": "45,104km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-honda-cbf-1000-2/"
-    },
-    {
-      "bike_model": "Honda CB 500X",
-      "title": "2026 Honda CBR1000RR-R Fireblade SP",
-      "price": "R569,599",
-      "kilometers": "0km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-honda-cbr1000rr-r-fireblade-sp/"
-    },
-    {
-      "bike_model": "Honda CB 500X",
       "title": "2026 Honda CB 1000 SP HONET",
       "price": "R229,950",
       "kilometers": "0km",
@@ -303,21 +222,12 @@
     },
     {
       "bike_model": "Honda CB 500X",
-      "title": "1984 Honda CB 1100 R",
-      "price": "R283,990",
-      "kilometers": "555km",
+      "title": "2026 Honda CBR1000RR-R Fireblade SP",
+      "price": "R569,599",
+      "kilometers": "0km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/1984-honda-cb-1100-r/"
-    },
-    {
-      "bike_model": "Honda CB 500X",
-      "title": "2012 Honda CBF1000",
-      "price": "R79,900",
-      "kilometers": "57,051km",
-      "location": "Bikeshop Boksburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2012-honda-cbf1000/"
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-honda-cbr1000rr-r-fireblade-sp/"
     },
     {
       "bike_model": "Honda CB 500X",
@@ -339,12 +249,84 @@
     },
     {
       "bike_model": "Honda CB 500X",
+      "title": "1984 Honda CB 1100 R",
+      "price": "R283,990",
+      "kilometers": "555km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/1984-honda-cb-1100-r/"
+    },
+    {
+      "bike_model": "Honda CB 500X",
+      "title": "2012 Honda CBF1000",
+      "price": "R79,900",
+      "kilometers": "57,051km",
+      "location": "Bikeshop Boksburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2012-honda-cbf1000/"
+    },
+    {
+      "bike_model": "Honda CB 500X",
       "title": "1980 Honda CB 750",
-      "price": "R85,990",
+      "price": "R89,990",
       "kilometers": "21,565km",
       "location": "Bikeshop Rivonia",
       "source": "ZABikers",
       "url": "https://www.zabikers.co.za/bikes-for-sale/1980-honda-cb-750/"
+    },
+    {
+      "bike_model": "Honda CB 500X",
+      "title": "2017 Honda CBR 1000RR",
+      "price": "R219,900",
+      "kilometers": "17,971km",
+      "location": "TRD Motorcycles",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-honda-cbr-1000rr/"
+    },
+    {
+      "bike_model": "Honda CB 500X",
+      "title": "2009 Honda CBR 1000RR",
+      "price": "R119,900",
+      "kilometers": "49,813km",
+      "location": "TRD Motorcycles",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2009-honda-cbr-1000rr/"
+    },
+    {
+      "bike_model": "Honda CB 500X",
+      "title": "2012 Honda CBR 1000RR",
+      "price": "R134,900",
+      "kilometers": "30,918km",
+      "location": "TRD Motorcycles",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2012-honda-cbr-1000rr/"
+    },
+    {
+      "bike_model": "Honda CB 500X",
+      "title": "2008 Honda CBR 1000RR",
+      "price": "R119,900",
+      "kilometers": "39,800km",
+      "location": "TRD Motorcycles",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2008-honda-cbr-1000rr/"
+    },
+    {
+      "bike_model": "Honda CB 500X",
+      "title": "2008 Honda CBR 1000R",
+      "price": "R89,900",
+      "kilometers": "32,100km",
+      "location": "TRD Motorcycles",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2008-honda-cbr-1000r/"
+    },
+    {
+      "bike_model": "Honda CB 500X",
+      "title": "2013 Honda CBF 1000",
+      "price": "R79,990",
+      "kilometers": "45,104km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-honda-cbf-1000-2/"
     },
     {
       "bike_model": "Kawasaki Ninja 400",
@@ -367,7 +349,7 @@
     {
       "bike_model": "Kawasaki Ninja 400",
       "title": "Kawasaki KFX400",
-      "price": "R 34,500",
+      "price": "R 33,500",
       "kilometers": "121km",
       "location": "Malmesbury",
       "source": "Gumtree",
@@ -375,12 +357,12 @@
     },
     {
       "bike_model": "Kawasaki Ninja 400",
-      "title": "2023 Kawasaki Ninja 400 ABS (ex400g)",
-      "price": "R 88,900",
-      "kilometers": "9,351 km",
-      "location": "Dome (GP)",
+      "title": "2019 Kawasaki Ninja 400 ABS SE (ex400g)",
+      "price": "R 68,000",
+      "kilometers": "2,372 km",
+      "location": "Polokwane (L)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Ninja/D27C03223"
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Ninja/860205550"
     },
     {
       "bike_model": "Kawasaki Ninja 400",
@@ -393,12 +375,12 @@
     },
     {
       "bike_model": "Kawasaki Ninja 400",
-      "title": "2025 Kawasaki Ninja 500",
-      "price": "R 92,900",
-      "kilometers": "1,529 km",
-      "location": "Vereeniging (GP)",
+      "title": "2026 Kawasaki Ninja 500",
+      "price": "R 104,900",
+      "kilometers": "3,363 km",
+      "location": "Montana (GP)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Ninja/816113216"
+      "url": "https://www.webuycars.co.za/buy-a-car/Kawasaki/Ninja/85BC06567"
     },
     {
       "bike_model": "Kawasaki Ninja 400",
@@ -408,33 +390,6 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2019-kawasaki-ninja-400-2/"
-    },
-    {
-      "bike_model": "Kawasaki Ninja 400",
-      "title": "2025 Kawasaki Ninja 500",
-      "price": "R124,990",
-      "kilometers": "0km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-kawasaki-ninja-500/"
-    },
-    {
-      "bike_model": "Kawasaki Ninja 400",
-      "title": "2025 Kawasaki Ninja 500",
-      "price": "R119,990",
-      "kilometers": "3,225km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-kawasaki-ninja-500-4/"
-    },
-    {
-      "bike_model": "Kawasaki Ninja 400",
-      "title": "2025 Kawasaki Ninja ZX-10R",
-      "price": "R369,995",
-      "kilometers": "0km",
-      "location": "Linex Lynnwood",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-kawasaki-ninja-zx-10r/"
     },
     {
       "bike_model": "Kawasaki Ninja 400",
@@ -464,6 +419,33 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2026-kawasaki-ninja-500/"
     },
     {
+      "bike_model": "Kawasaki Ninja 400",
+      "title": "2025 Kawasaki Ninja 500",
+      "price": "R124,990",
+      "kilometers": "0km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-kawasaki-ninja-500/"
+    },
+    {
+      "bike_model": "Kawasaki Ninja 400",
+      "title": "2025 Kawasaki Ninja 500",
+      "price": "R119,990",
+      "kilometers": "3,225km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-kawasaki-ninja-500-4/"
+    },
+    {
+      "bike_model": "Kawasaki Ninja 400",
+      "title": "2025 Kawasaki Ninja ZX-10R",
+      "price": "R369,995",
+      "kilometers": "0km",
+      "location": "Linex Lynnwood",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-kawasaki-ninja-zx-10r/"
+    },
+    {
       "bike_model": "Triumph Speed 400",
       "title": "2024 Triumph Speed 400 Speed 400x",
       "price": "R 75,900",
@@ -480,60 +462,6 @@
       "location": "Richmond (WC)",
       "source": "WeBuyCars",
       "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Speed Triple/921008836"
-    },
-    {
-      "bike_model": "Triumph Speed 400",
-      "title": "2025 Triumph Scrambler 400 X",
-      "price": "R89,000",
-      "kilometers": "3,000km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-2/"
-    },
-    {
-      "bike_model": "Triumph Speed 400",
-      "title": "2024 Triumph SPEED 400",
-      "price": "R84,990",
-      "kilometers": "3,052km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-triumph-speed-400-2/"
-    },
-    {
-      "bike_model": "Triumph Speed 400",
-      "title": "2026 Triumph Speed 400 400",
-      "price": "R93,000",
-      "kilometers": "100km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-triumph-speed-400-400-2/"
-    },
-    {
-      "bike_model": "Triumph Speed 400",
-      "title": "2025 Triumph Speed 400 400",
-      "price": "R89,900",
-      "kilometers": "2,300km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-400-400-3/"
-    },
-    {
-      "bike_model": "Triumph Speed 400",
-      "title": "2025 Triumph Scrambler 400 X 400 X",
-      "price": "R99,900",
-      "kilometers": "500km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-400-x-2/"
-    },
-    {
-      "bike_model": "Triumph Speed 400",
-      "title": "2025 Triumph Speed 400 400",
-      "price": "R85,000",
-      "kilometers": "100km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-400-400-2/"
     },
     {
       "bike_model": "Triumph Speed 400",
@@ -573,12 +501,84 @@
     },
     {
       "bike_model": "Triumph Speed 400",
-      "title": "2025 Triumph Speed Triple 1200 RS Triple 1200 RS",
-      "price": "R289,000",
-      "kilometers": "5,000km",
+      "title": "2024 Triumph SPEED 400",
+      "price": "R84,990",
+      "kilometers": "3,052km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-triumph-speed-400-2/"
+    },
+    {
+      "bike_model": "Triumph Speed 400",
+      "title": "2025 Triumph Scrambler 400 X",
+      "price": "R89,000",
+      "kilometers": "3,000km",
       "location": "Triumph Johannesburg",
       "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-triple-1200-rs-triple-1200-rs/"
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-2/"
+    },
+    {
+      "bike_model": "Triumph Speed 400",
+      "title": "2026 Triumph Speed 400 400",
+      "price": "R93,000",
+      "kilometers": "100km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-triumph-speed-400-400-2/"
+    },
+    {
+      "bike_model": "Triumph Speed 400",
+      "title": "2025 Triumph Speed 400 400",
+      "price": "R89,900",
+      "kilometers": "2,300km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-400-400-3/"
+    },
+    {
+      "bike_model": "Triumph Speed 400",
+      "title": "2025 Triumph Scrambler 400 X 400 X",
+      "price": "R99,900",
+      "kilometers": "500km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-400-x-2/"
+    },
+    {
+      "bike_model": "Triumph Speed 400",
+      "title": "2025 Triumph Speed 400 400",
+      "price": "R85,000",
+      "kilometers": "100km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-400-400-2/"
+    },
+    {
+      "bike_model": "Triumph Speed 400",
+      "title": "2013 Triumph Speed Triple R 1050 ABS",
+      "price": "R127,995",
+      "kilometers": "32,557km",
+      "location": "Twist Of The Wrist Motorcycles",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-triumph-speed-triple-r-1050-abs/"
+    },
+    {
+      "bike_model": "Triumph Speed 400",
+      "title": "2017 Triumph Speed Triple 1050 S",
+      "price": "R119,990",
+      "kilometers": "51,472km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-triumph-speed-triple-1050-s/"
+    },
+    {
+      "bike_model": "Triumph Speed 400",
+      "title": "2025 Triumph Speed Triple 1200 RS Triple 1200 RS",
+      "price": "R299,000",
+      "kilometers": "3,800km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-triple-1200-rs-triple-1200-rs-2/"
     },
     {
       "bike_model": "Triumph Speed 400",
@@ -591,12 +591,12 @@
     },
     {
       "bike_model": "Triumph Speed 400",
-      "title": "2026 Triumph Speed Twin 1200 1200",
-      "price": "R229,000",
-      "kilometers": "3,600km",
+      "title": "2025 Triumph Speed Triple 1200 RS Triple 1200 RS",
+      "price": "R289,000",
+      "kilometers": "5,000km",
       "location": "Triumph Johannesburg",
       "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-triumph-speed-twin-1200-1200/"
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-triple-1200-rs-triple-1200-rs/"
     },
     {
       "bike_model": "Triumph Speed 400",
@@ -609,12 +609,12 @@
     },
     {
       "bike_model": "Triumph Speed 400",
-      "title": "2025 Triumph Speed Twin 900",
-      "price": "R149,000",
-      "kilometers": "4,200km",
+      "title": "2026 Triumph Speed Twin 1200 1200",
+      "price": "R229,000",
+      "kilometers": "3,600km",
       "location": "Triumph Johannesburg",
       "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-twin-900/"
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-triumph-speed-twin-1200-1200/"
     },
     {
       "bike_model": "Triumph Speed 400",
@@ -636,93 +636,12 @@
     },
     {
       "bike_model": "Triumph Speed 400",
-      "title": "2017 Triumph Speed Triple 1050 S",
-      "price": "R119,990",
-      "kilometers": "51,472km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-triumph-speed-triple-1050-s/"
-    },
-    {
-      "bike_model": "Triumph Speed 400",
-      "title": "2013 Triumph Speed Triple R 1050 ABS",
-      "price": "R127,995",
-      "kilometers": "32,557km",
-      "location": "Twist Of The Wrist Motorcycles",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2013-triumph-speed-triple-r-1050-abs/"
-    },
-    {
-      "bike_model": "Triumph Speed 400",
-      "title": "2025 Triumph Speed Triple 1200 RS Triple 1200 RS",
-      "price": "R299,000",
-      "kilometers": "3,800km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-triple-1200-rs-triple-1200-rs-2/"
-    },
-    {
-      "bike_model": "Triumph Scrambler 400x",
-      "title": "2025 Triumph Scrambler 400 X",
-      "price": "R89,000",
-      "kilometers": "3,000km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-2/"
-    },
-    {
-      "bike_model": "Triumph Scrambler 400x",
-      "title": "2024 Triumph Scrambler 400X",
-      "price": "R93,995",
-      "kilometers": "13,008km",
-      "location": "Twist Of The Wrist Motorcycles",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-triumph-scrambler-400x/"
-    },
-    {
-      "bike_model": "Triumph Scrambler 400x",
-      "title": "2025 Triumph Scrambler 400 X 400 X",
-      "price": "R99,900",
-      "kilometers": "500km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-400-x-2/"
-    },
-    {
-      "bike_model": "Triumph Scrambler 400x",
-      "title": "2025 Triumph Scrambler 400 X",
-      "price": "R89,000",
-      "kilometers": "4,000km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x/"
-    },
-    {
-      "bike_model": "Triumph Scrambler 400x",
-      "title": "2026 Triumph Scrambler 400 X 400 X",
-      "price": "R103,000",
-      "kilometers": "100km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-triumph-scrambler-400-x-400-x-2/"
-    },
-    {
-      "bike_model": "Triumph Scrambler 400x",
-      "title": "2023 Triumph SCRAMBLER 1200 XE",
-      "price": "R199,000",
-      "kilometers": "4,800km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2023-triumph-scrambler-1200-xe-3/"
-    },
-    {
-      "bike_model": "Triumph Scrambler 400x",
-      "title": "2023 Triumph SCRAMBLER 1200 XE",
-      "price": "R225,000",
+      "title": "2025 Triumph Speed Twin 900",
+      "price": "R149,000",
       "kilometers": "4,200km",
       "location": "Triumph Johannesburg",
       "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2023-triumph-scrambler-1200-xe/"
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-twin-900/"
     },
     {
       "bike_model": "Triumph Scrambler 900",
@@ -735,15 +654,6 @@
     },
     {
       "bike_model": "Triumph Scrambler 900",
-      "title": "2025 Triumph Speed Twin 900",
-      "price": "R149,000",
-      "kilometers": "4,200km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-twin-900/"
-    },
-    {
-      "bike_model": "Triumph Scrambler 900",
       "title": "2015 Triumph Thruxton 900",
       "price": "R89,990",
       "kilometers": "7,516km",
@@ -753,39 +663,12 @@
     },
     {
       "bike_model": "Triumph Scrambler 900",
-      "title": "2025 Triumph Scrambler 400 X",
-      "price": "R89,000",
-      "kilometers": "3,000km",
+      "title": "2025 Triumph Speed Twin 900",
+      "price": "R149,000",
+      "kilometers": "4,200km",
       "location": "Triumph Johannesburg",
       "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-2/"
-    },
-    {
-      "bike_model": "Triumph Scrambler 900",
-      "title": "2024 Triumph Scrambler 400X",
-      "price": "R93,995",
-      "kilometers": "13,008km",
-      "location": "Twist Of The Wrist Motorcycles",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-triumph-scrambler-400x/"
-    },
-    {
-      "bike_model": "Triumph Scrambler 900",
-      "title": "2025 Triumph Scrambler 400 X 400 X",
-      "price": "R99,900",
-      "kilometers": "500km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-400-x-2/"
-    },
-    {
-      "bike_model": "Triumph Scrambler 900",
-      "title": "2023 Triumph SCRAMBLER 1200 XE",
-      "price": "R199,000",
-      "kilometers": "4,800km",
-      "location": "Triumph Johannesburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2023-triumph-scrambler-1200-xe-3/"
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-twin-900/"
     },
     {
       "bike_model": "Triumph Scrambler 900",
@@ -816,6 +699,51 @@
     },
     {
       "bike_model": "Triumph Scrambler 900",
+      "title": "2024 Triumph Scrambler 400X",
+      "price": "R93,995",
+      "kilometers": "13,008km",
+      "location": "Twist Of The Wrist Motorcycles",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-triumph-scrambler-400x/"
+    },
+    {
+      "bike_model": "Triumph Scrambler 900",
+      "title": "2025 Triumph Scrambler 400 X",
+      "price": "R89,000",
+      "kilometers": "3,000km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-2/"
+    },
+    {
+      "bike_model": "Triumph Scrambler 900",
+      "title": "2025 Triumph Scrambler 400 X 400 X",
+      "price": "R99,900",
+      "kilometers": "500km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-400-x-2/"
+    },
+    {
+      "bike_model": "Triumph Scrambler 900",
+      "title": "2023 Triumph SCRAMBLER 1200 XE",
+      "price": "R199,000",
+      "kilometers": "4,800km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2023-triumph-scrambler-1200-xe-3/"
+    },
+    {
+      "bike_model": "Triumph Scrambler 900",
+      "title": "2025 Triumph 900 Rally Pro",
+      "price": "R239,990",
+      "kilometers": "6,173km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-900-rally-pro/"
+    },
+    {
+      "bike_model": "Triumph Scrambler 900",
       "title": "2025 Triumph Speed Twin 900 900",
       "price": "R159,000",
       "kilometers": "4,200km",
@@ -824,22 +752,67 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-speed-twin-900-900/"
     },
     {
-      "bike_model": "Triumph Scrambler 900",
-      "title": "2025 Triumph 900 Rally Pro",
-      "price": "R249,990",
-      "kilometers": "6,173km",
-      "location": "Bikeshop Rivonia",
+      "bike_model": "Triumph Scrambler 400x",
+      "title": "2025 Triumph Scrambler 400 X",
+      "price": "R89,000",
+      "kilometers": "4,000km",
+      "location": "Triumph Johannesburg",
       "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-900-rally-pro/"
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x/"
     },
     {
-      "bike_model": "yamaha xsr 700",
-      "title": "2017 Yamaha XSR 900",
-      "price": "R139,900",
-      "kilometers": "40,320km",
-      "location": "Bikeshop Boksburg",
+      "bike_model": "Triumph Scrambler 400x",
+      "title": "2026 Triumph Scrambler 400 X 400 X",
+      "price": "R103,000",
+      "kilometers": "100km",
+      "location": "Triumph Johannesburg",
       "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-yamaha-xsr-900/"
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2026-triumph-scrambler-400-x-400-x-2/"
+    },
+    {
+      "bike_model": "Triumph Scrambler 400x",
+      "title": "2024 Triumph Scrambler 400X",
+      "price": "R93,995",
+      "kilometers": "13,008km",
+      "location": "Twist Of The Wrist Motorcycles",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2024-triumph-scrambler-400x/"
+    },
+    {
+      "bike_model": "Triumph Scrambler 400x",
+      "title": "2025 Triumph Scrambler 400 X",
+      "price": "R89,000",
+      "kilometers": "3,000km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-2/"
+    },
+    {
+      "bike_model": "Triumph Scrambler 400x",
+      "title": "2025 Triumph Scrambler 400 X 400 X",
+      "price": "R99,900",
+      "kilometers": "500km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-scrambler-400-x-400-x-2/"
+    },
+    {
+      "bike_model": "Triumph Scrambler 400x",
+      "title": "2023 Triumph SCRAMBLER 1200 XE",
+      "price": "R225,000",
+      "kilometers": "4,200km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2023-triumph-scrambler-1200-xe/"
+    },
+    {
+      "bike_model": "Triumph Scrambler 400x",
+      "title": "2023 Triumph SCRAMBLER 1200 XE",
+      "price": "R199,000",
+      "kilometers": "4,800km",
+      "location": "Triumph Johannesburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2023-triumph-scrambler-1200-xe-3/"
     },
     {
       "bike_model": "yamaha xsr 700",
@@ -858,6 +831,15 @@
       "location": "Bikeshop Rivonia",
       "source": "ZABikers",
       "url": "https://www.zabikers.co.za/bikes-for-sale/2024-yamaha-xsr-900/"
+    },
+    {
+      "bike_model": "yamaha xsr 700",
+      "title": "2017 Yamaha XSR 900",
+      "price": "R139,900",
+      "kilometers": "40,320km",
+      "location": "Bikeshop Boksburg",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2017-yamaha-xsr-900/"
     },
     {
       "bike_model": "Ducati Scrambler",
@@ -887,78 +869,6 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2018-ducati-scrambler-desert-sled/"
     },
     {
-      "bike_model": "BMW GS310",
-      "title": "2022 BMW G310 R",
-      "price": "R69,990",
-      "kilometers": "6,077km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2022-bmw-g310-r-3/"
-    },
-    {
-      "bike_model": "BMW GS310",
-      "title": "2025 BMW G310R",
-      "price": "R69,900",
-      "kilometers": "80km",
-      "location": "Bikeshop Boksburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-bmw-g310r/"
-    },
-    {
-      "bike_model": "BMW GS310",
-      "title": "2025 BMW G310R",
-      "price": "R69,000",
-      "kilometers": "780km",
-      "location": "BMW Motorrad Centurion",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-bmw-g310r-2/"
-    },
-    {
-      "bike_model": "BMW G310",
-      "title": "2018 BMW G310 GS",
-      "price": "R59,900",
-      "kilometers": "4,696km",
-      "location": "Bikeshop Boksburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-bmw-g310-gs-3/"
-    },
-    {
-      "bike_model": "BMW G310",
-      "title": "2018 BMW G310 GS",
-      "price": "R69,900",
-      "kilometers": "17,145km",
-      "location": "Bikeshop Boksburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2018-bmw-g310-gs-2/"
-    },
-    {
-      "bike_model": "BMW G310",
-      "title": "2022 BMW G310 R",
-      "price": "R69,990",
-      "kilometers": "6,077km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2022-bmw-g310-r-3/"
-    },
-    {
-      "bike_model": "BMW G310",
-      "title": "2025 BMW G310R",
-      "price": "R69,900",
-      "kilometers": "80km",
-      "location": "Bikeshop Boksburg",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-bmw-g310r/"
-    },
-    {
-      "bike_model": "BMW G310",
-      "title": "2025 BMW G310R",
-      "price": "R69,000",
-      "kilometers": "780km",
-      "location": "BMW Motorrad Centurion",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-bmw-g310r-2/"
-    },
-    {
       "bike_model": "BMW G310",
       "title": "2023 BMW G310 GS",
       "price": "R79,900",
@@ -977,6 +887,24 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2024-bmw-g310-gs-style-triple-black/"
     },
     {
+      "bike_model": "BMW G310",
+      "title": "2022 BMW G310 R",
+      "price": "R69,990",
+      "kilometers": "6,077km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2022-bmw-g310-r-3/"
+    },
+    {
+      "bike_model": "BMW GS310",
+      "title": "2022 BMW G310 R",
+      "price": "R69,990",
+      "kilometers": "6,077km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2022-bmw-g310-r-3/"
+    },
+    {
       "bike_model": "Big Boy Pacer 200",
       "title": "2025 Big Boy Pacer 200 Pacer 200",
       "price": "R 16,900",
@@ -988,11 +916,20 @@
     {
       "bike_model": "Big Boy Pacer 200",
       "title": "2024 Big Boy Pacer 200 Pacer 200",
-      "price": "R 15,900",
+      "price": "R 14,900",
       "kilometers": "9,046 km",
       "location": "Brackenfell (WC)",
       "source": "WeBuyCars",
       "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Pacer 200/4DED08387"
+    },
+    {
+      "bike_model": "Big Boy Pacer 200",
+      "title": "2026 Big Boy CGL D-Lite 125",
+      "price": "R 16,700",
+      "kilometers": "11 km",
+      "location": "Polokwane (L)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/CGL/246106482"
     },
     {
       "bike_model": "Big Boy Pacer 200",
@@ -1005,39 +942,12 @@
     },
     {
       "bike_model": "Big Boy Pacer 200",
-      "title": "2026 Big Boy Velocity Cargo 150",
+      "title": "2025 Big Boy Velocity Cargo 150",
       "price": "R 15,900",
-      "kilometers": "35 km",
-      "location": "Richmond (WC)",
+      "kilometers": "669 km",
+      "location": "Mbombela (MP)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/DAB601455"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy Mustang 250",
-      "price": "R 28,400",
-      "kilometers": "836 km",
-      "location": "East London (EC)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Mustang/5D7F01740"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2026 Big Boy CGL Cgl/ccl/velocity 200",
-      "price": "R 17,900",
-      "kilometers": "636 km",
-      "location": "Witbank (MP)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/CGL/6CDB01809"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy D Lite 125",
-      "price": "R 13,900",
-      "kilometers": "1,032 km",
-      "location": "Dome (GP)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/D Lite/148E06971"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/024D04358"
     },
     {
       "bike_model": "Big Boy Pacer 200",
@@ -1050,21 +960,12 @@
     },
     {
       "bike_model": "Big Boy Pacer 200",
-      "title": "2024 Big Boy Velocity Cargo 150",
-      "price": "R 14,400",
-      "kilometers": "1,447 km",
-      "location": "Brackenfell (WC)",
+      "title": "2025 Big Boy Mustang 250",
+      "price": "R 26,400",
+      "kilometers": "836 km",
+      "location": "East London (EC)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/1CBD00584"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy CGL Cgl/ccl/velocity 200",
-      "price": "R 19,900",
-      "kilometers": "1,964 km",
-      "location": "Germiston (GP)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/CGL/3C8B11988"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Mustang/5D7F01740"
     },
     {
       "bike_model": "Big Boy Pacer 200",
@@ -1074,15 +975,6 @@
       "location": "George (WC)",
       "source": "WeBuyCars",
       "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Adventure/A41315109"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy Velocity Cargo 150",
-      "price": "R 14,900",
-      "kilometers": "1,360 km",
-      "location": "Silver Lakes (GP)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/A83005987"
     },
     {
       "bike_model": "Big Boy Pacer 200",
@@ -1096,16 +988,16 @@
     {
       "bike_model": "Big Boy Pacer 200",
       "title": "2023 Big Boy TSR 250",
-      "price": "R 24,900",
+      "price": "R 22,900",
       "kilometers": "2,135 km",
-      "location": "Riverhorse (KZN)",
+      "location": "Dome (GP)",
       "source": "WeBuyCars",
       "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/TSR/A5E812682"
     },
     {
       "bike_model": "Big Boy Pacer 200",
       "title": "2021 Big Boy Adventure 150",
-      "price": "R 14,900",
+      "price": "R 13,900",
       "kilometers": "3,417 km",
       "location": "Dome (GP)",
       "source": "WeBuyCars",
@@ -1140,6 +1032,33 @@
     },
     {
       "bike_model": "Big Boy Pacer 200",
+      "title": "2024 Big Boy TSR 125",
+      "price": "R 22,900",
+      "kilometers": "5,763 km",
+      "location": "Brackenfell (WC)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/TSR/76A206325"
+    },
+    {
+      "bike_model": "Big Boy Pacer 200",
+      "title": "2023 Big Boy TSR 125",
+      "price": "R 17,900",
+      "kilometers": "5,702 km",
+      "location": "Dome (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/TSR/9EAC15681"
+    },
+    {
+      "bike_model": "Big Boy Pacer 200",
+      "title": "2025 Big Boy Slingshot 125",
+      "price": "R 13,900",
+      "kilometers": "7,540 km",
+      "location": "Dome (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Slingshot/3C0907233"
+    },
+    {
+      "bike_model": "Big Boy Pacer 200",
       "title": "2025 Big Boy Revival 150",
       "price": "R 16,900",
       "kilometers": "6,140 km",
@@ -1159,7 +1078,7 @@
     {
       "bike_model": "Big Boy Pacer 200",
       "title": "2025 Big Boy Velocity Cargo 150",
-      "price": "R 10,400",
+      "price": "R 9,400",
       "kilometers": "12,750 km",
       "location": "Richmond (WC)",
       "source": "WeBuyCars",
@@ -1176,12 +1095,12 @@
     },
     {
       "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy Velocity Cargo 150",
-      "price": "R 11,900",
-      "kilometers": "15,410 km",
-      "location": "Richmond (WC)",
+      "title": "2024 Big Boy Velocity Cargo 150",
+      "price": "R 12,900",
+      "kilometers": "25,582 km",
+      "location": "Brackenfell (WC)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/D76700634"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/555401152"
     },
     {
       "bike_model": "Big Boy Pacer 200",
@@ -1195,20 +1114,20 @@
     {
       "bike_model": "Big Boy Pacer 200",
       "title": "2024 Big Boy Velocity Cargo 150",
-      "price": "R 12,900",
-      "kilometers": "25,582 km",
-      "location": "Brackenfell (WC)",
+      "price": "R 8,900",
+      "kilometers": "40,694 km",
+      "location": "Richmond (WC)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/555401152"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/447713059"
     },
     {
       "bike_model": "Big Boy Pacer 200",
-      "title": "2024 Big Boy Velocity YQ200-2B",
-      "price": "R 13,400",
-      "kilometers": "26,292 km",
-      "location": "Germiston (GP)",
+      "title": "2019 Big Boy JNR90 90cc",
+      "price": "R 9,900",
+      "kilometers": "N/A",
+      "location": "Vereeniging (GP)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity/075500961"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/JNR90/03B405337"
     },
     {
       "bike_model": "Big Boy Pacer 200",
@@ -1230,8 +1149,17 @@
     },
     {
       "bike_model": "Big Boy Pacer 200",
+      "title": "2024 Big Boy Velocity YQ200-2B",
+      "price": "R 13,400",
+      "kilometers": "26,292 km",
+      "location": "Germiston (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity/075500961"
+    },
+    {
+      "bike_model": "Big Boy Pacer 200",
       "title": "2024 Big Boy Velocity Cargo 150",
-      "price": "R 11,900",
+      "price": "R 10,900",
       "kilometers": "29,943 km",
       "location": "Richmond (WC)",
       "source": "WeBuyCars",
@@ -1239,66 +1167,30 @@
     },
     {
       "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy Velocity Cargo 150",
-      "price": "R 14,400",
-      "kilometers": "5,228 km",
+      "title": "2025 Big Boy TSR 250",
+      "price": "N/A",
+      "kilometers": "2,989 km",
+      "location": "Riverhorse (KZN)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/TSR/3EB308003"
+    },
+    {
+      "bike_model": "Big Boy Pacer 200",
+      "title": "2023 Big Boy Revival 125",
+      "price": "N/A",
+      "kilometers": "3,927 km",
       "location": "Dome (GP)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/7B0516881"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Revival/988502563"
     },
     {
       "bike_model": "Big Boy Pacer 200",
-      "title": "2019 Big Boy SAM ATV 110 Apollo (monster Crx)",
-      "price": "R 11,400",
-      "kilometers": "N/A",
+      "title": "2024 Big Boy D Lite 125",
+      "price": "N/A",
+      "kilometers": "9,809 km",
       "location": "Montana (GP)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/SAM ATV/EB7402767"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy SY 150",
-      "price": "R 13,900",
-      "kilometers": "13,770 km",
-      "location": "Brackenfell (WC)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/SY/A02901114"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy Velocity Cargo 150",
-      "price": "N/A",
-      "kilometers": "669 km",
-      "location": "Mbombela (MP)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/024D04358"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy Velocity Cargo 150",
-      "price": "N/A",
-      "kilometers": "10,748 km",
-      "location": "Montana (GP)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/976602445"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2022 Big Boy D Lite 125",
-      "price": "R 8,400",
-      "kilometers": "N/A",
-      "location": "Midstream (GP)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/D Lite/862D10485"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2024 Big Boy Velocity Cargo 150",
-      "price": "R 9,900",
-      "kilometers": "40,694 km",
-      "location": "Richmond (WC)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/447713059"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/D Lite/5ADB07374"
     },
     {
       "bike_model": "Triumph Bonneville T100",
@@ -1312,20 +1204,11 @@
     {
       "bike_model": "Triumph Bonneville T100",
       "title": "2012 Triumph Bonneville 865 Bonneville America EFI",
-      "price": "N/A",
+      "price": "R 44,900",
       "kilometers": "12,965 km",
       "location": "Dome (GP)",
       "source": "WeBuyCars",
       "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Bonneville/C2D803904"
-    },
-    {
-      "bike_model": "Triumph Bonneville T100",
-      "title": "2021 Triumph Bonneville SPEED MASTER",
-      "price": "R139,990",
-      "kilometers": "4,942km",
-      "location": "Bikeshop Rivonia",
-      "source": "ZABikers",
-      "url": "https://www.zabikers.co.za/bikes-for-sale/2021-triumph-bonneville-speed-master/"
     },
     {
       "bike_model": "Triumph Bonneville T100",
@@ -1337,13 +1220,13 @@
       "url": "https://www.zabikers.co.za/bikes-for-sale/2017-triumph-bonneville-t120-bobber/"
     },
     {
-      "bike_model": "Suzuki V-STROM 250SX",
-      "title": "Suzuki V Storm 250 X",
-      "price": "R 48,000",
-      "kilometers": "4,200km",
-      "location": "Germiston",
-      "source": "Gumtree",
-      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/germiston/suzuki-v-storm-250-x/10013542888451013100514509"
+      "bike_model": "Triumph Bonneville T100",
+      "title": "2021 Triumph Bonneville SPEED MASTER",
+      "price": "R139,990",
+      "kilometers": "4,942km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2021-triumph-bonneville-speed-master/"
     },
     {
       "bike_model": "Suzuki V-STROM 250SX",
@@ -1375,134 +1258,104 @@
   ],
   "price_drops": [
     {
-      "bike_model": "suzuki Gixxer 250",
-      "title": "2023 Suzuki 250 DS 250",
-      "old_price": "R 47,900",
-      "new_price": "R 44,900",
-      "kilometers": "4,412 km",
-      "location": "Pietermaritzburg (KZN)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Suzuki/250/C59F08120"
+      "bike_model": "Kawasaki Ninja 400",
+      "title": "Kawasaki KFX400",
+      "old_price": "R 34,500",
+      "new_price": "R 33,500",
+      "kilometers": "121km",
+      "location": "Malmesbury",
+      "source": "Gumtree",
+      "url": "https://www.gumtree.co.za/a-motorcycles-scooters/malmesbury/kawasaki-kfx400/10013543088721013086864309"
     },
     {
-      "bike_model": "Honda CB 500X",
-      "title": "2006 Honda CBR 1000rr",
-      "old_price": "R 58,900",
-      "new_price": "R 55,900",
-      "kilometers": "76,813 km",
-      "location": "East London (EC)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/4C1510990"
-    },
-    {
-      "bike_model": "Honda CB 500X",
-      "title": "2007 Honda CBR 1000 RR Fireblade",
-      "old_price": "R 74,900",
-      "new_price": "R 70,900",
-      "kilometers": "81,687 km",
-      "location": "Brackenfell (WC)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Honda/CBR/B1C009096"
-    },
-    {
-      "bike_model": "Triumph Speed 400",
-      "title": "2024 Triumph Speed 400 Speed 400x",
-      "old_price": "R 79,900",
-      "new_price": "R 75,900",
-      "kilometers": "30 km",
-      "location": "Dome (GP)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Speed 400/7EB709812"
-    },
-    {
-      "bike_model": "Triumph Speed 400",
-      "title": "2013 Triumph Speed Triple 1050",
-      "old_price": "R 57,900",
-      "new_price": "R 54,900",
-      "kilometers": "81,679 km",
-      "location": "Richmond (WC)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Triumph/Speed Triple/921008836"
+      "bike_model": "Triumph Scrambler 900",
+      "title": "2025 Triumph 900 Rally Pro",
+      "old_price": "R249,990",
+      "new_price": "R239,990",
+      "kilometers": "6,173km",
+      "location": "Bikeshop Rivonia",
+      "source": "ZABikers",
+      "url": "https://www.zabikers.co.za/bikes-for-sale/2025-triumph-900-rally-pro/"
     },
     {
       "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy Pacer 200 Pacer 200",
-      "old_price": "R 18,900",
-      "new_price": "R 16,900",
-      "kilometers": "24 km",
-      "location": "East London (EC)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Pacer 200/0F2A11517"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy D Lite 125",
-      "old_price": "R 14,900",
-      "new_price": "R 13,900",
-      "kilometers": "1,032 km",
-      "location": "Dome (GP)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/D Lite/148E06971"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2024 Big Boy Zooka RFZ 125t",
-      "old_price": "R 12,900",
-      "new_price": "R 11,900",
-      "kilometers": "1,001 km",
-      "location": "Dome (GP)",
-      "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Zooka/220506649"
-    },
-    {
-      "bike_model": "Big Boy Pacer 200",
-      "title": "2025 Big Boy Velocity Cargo 150",
+      "title": "2024 Big Boy Pacer 200 Pacer 200",
       "old_price": "R 15,900",
       "new_price": "R 14,900",
-      "kilometers": "1,360 km",
-      "location": "Silver Lakes (GP)",
+      "kilometers": "9,046 km",
+      "location": "Brackenfell (WC)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/A83005987"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Pacer 200/4DED08387"
     },
     {
       "bike_model": "Big Boy Pacer 200",
-      "title": "2024 Big Boy D Lite 125",
-      "old_price": "R 12,900",
-      "new_price": "R 11,900",
-      "kilometers": "16,964 km",
-      "location": "Midstream (GP)",
+      "title": "2025 Big Boy Mustang 250",
+      "old_price": "R 28,400",
+      "new_price": "R 26,400",
+      "kilometers": "836 km",
+      "location": "East London (EC)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/D Lite/04DA01184"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Mustang/5D7F01740"
+    },
+    {
+      "bike_model": "Big Boy Pacer 200",
+      "title": "2023 Big Boy TSR 250",
+      "old_price": "R 24,900",
+      "new_price": "R 22,900",
+      "kilometers": "2,135 km",
+      "location": "Dome (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/TSR/A5E812682"
+    },
+    {
+      "bike_model": "Big Boy Pacer 200",
+      "title": "2021 Big Boy Adventure 150",
+      "old_price": "R 14,900",
+      "new_price": "R 13,900",
+      "kilometers": "3,417 km",
+      "location": "Dome (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Adventure/7EF314137"
+    },
+    {
+      "bike_model": "Big Boy Pacer 200",
+      "title": "2023 Big Boy TSR 125",
+      "old_price": "R 19,900",
+      "new_price": "R 17,900",
+      "kilometers": "5,702 km",
+      "location": "Dome (GP)",
+      "source": "WeBuyCars",
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/TSR/9EAC15681"
     },
     {
       "bike_model": "Big Boy Pacer 200",
       "title": "2025 Big Boy Velocity Cargo 150",
-      "old_price": "R 12,900",
-      "new_price": "R 11,900",
-      "kilometers": "15,410 km",
+      "old_price": "R 10,400",
+      "new_price": "R 9,400",
+      "kilometers": "12,750 km",
       "location": "Richmond (WC)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/D76700634"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/7A1A00635"
     },
     {
       "bike_model": "Big Boy Pacer 200",
-      "title": "2015 Big Boy Sportflite F35 150",
-      "old_price": "R 15,400",
-      "new_price": "R 14,400",
-      "kilometers": "4,719 km",
-      "location": "Montana (GP)",
+      "title": "2024 Big Boy Velocity Cargo 150",
+      "old_price": "R 9,900",
+      "new_price": "R 8,900",
+      "kilometers": "40,694 km",
+      "location": "Richmond (WC)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Sportflite/C39209934"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/447713059"
     },
     {
       "bike_model": "Big Boy Pacer 200",
-      "title": "2022 Big Boy D Lite 125",
-      "old_price": "R 9,400",
-      "new_price": "R 8,400",
-      "kilometers": "N/A",
-      "location": "Midstream (GP)",
+      "title": "2024 Big Boy Velocity Cargo 150",
+      "old_price": "R 11,900",
+      "new_price": "R 10,900",
+      "kilometers": "29,943 km",
+      "location": "Richmond (WC)",
       "source": "WeBuyCars",
-      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/D Lite/862D10485"
+      "url": "https://www.webuycars.co.za/buy-a-car/Big Boy/Velocity Cargo/DF9514668"
     }
   ]
 }
