@@ -9,8 +9,8 @@ import sqlite3
 import json
 from pathlib import Path
 from datetime import datetime
-from logger.logger import logger
-from config.config import DATA_FILE
+from src.logger.logger import logger
+from src.config.config import DATA_FILE
 
 DB_FILE = "data/listings.db"
 
@@ -28,6 +28,7 @@ class DatabaseManager:
         try:
             self.conn = sqlite3.connect(self.db_path)
             self.conn.row_factory = sqlite3.Row
+            self.conn.execute('PRAGMA foreign_keys = ON;')
             cursor = self.conn.cursor()
             
             # Create listings table
@@ -76,6 +77,12 @@ class DatabaseManager:
             cursor.execute('''
                 CREATE INDEX IF NOT EXISTS idx_price_history_listing 
                 ON price_history(listing_id)
+            ''')
+            
+            # Prevent exponential duplication of price history
+            cursor.execute('''
+                CREATE UNIQUE INDEX IF NOT EXISTS idx_price_history_unique
+                ON price_history(listing_id, price, date)
             ''')
             
             self.conn.commit()
@@ -354,6 +361,14 @@ class DatabaseManager:
             self.conn.rollback()
             return 0
     
+    def vacuum(self):
+        """Reclaim unused disk space after mass deletions"""
+        try:
+            self.conn.execute('VACUUM')
+            logger.info("Database vacuumed successfully, reclaimed disk space.")
+        except Exception as e:
+            logger.error(f"Failed to vacuum database: {e}")
+
     def close(self):
         """Close database connection"""
         if self.conn:

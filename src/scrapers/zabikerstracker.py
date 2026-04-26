@@ -6,11 +6,11 @@ Uses fuzzy matching to find relevant bikes without relying on their search API.
 
 import json
 from pathlib import Path
-from logger.logger import logger
-from config.config import MATCH_THRESHOLDS, ZABIKERS_CACHE_FILE
-from utils.relevant_match import is_relevant_match
-from utils.search_variation_generator import generate_search_variations
-from utils.listing_builder import build_listing
+from src.logger.logger import logger
+from src.config.config import MATCH_THRESHOLDS, ZABIKERS_CACHE_FILE
+from src.utils.relevant_match import is_relevant_match
+from src.utils.search_variation_generator import generate_search_variations
+from src.utils.listing_builder import build_listing
 
 SOURCE = "ZABikers"
 

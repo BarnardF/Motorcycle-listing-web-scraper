@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 import json
 import os
 from datetime import datetime
-from logger.logger import logger
-from config.config import (
+from src.logger.logger import logger
+from src.config.config import (
     DATA_FILE, BIKE_FILE, REQUEST_TIMEOUT, 
     get_random_user_agent, IS_GITHUB_ACTIONS
 )

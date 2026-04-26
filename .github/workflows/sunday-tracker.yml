@@ -49,7 +49,9 @@ jobs:
       # STEP 1 — Refresh ZABikers cache
       # --------------------------------------------------
       - name: Refresh ZABikers cache
-        run: python cache_zabikers.py
+        env:
+          PYTHONPATH: .
+        run: python scripts/cache_zabikers.py
 
       - name: Verify ZABikers cache file exists
         run: |
@@ -80,7 +82,9 @@ jobs:
       # STEP 2 — Refresh WeBuyCars cache
       # --------------------------------------------------
       - name: Refresh WeBuyCars cache
-        run: python cache_webuycars.py
+        env:
+          PYTHONPATH: .
+        run: python scripts/cache_webuycars.py
 
       - name: Verify WeBuyCars cache file exists
         run: |
@@ -141,7 +145,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: sunday-tracker-logs
-          path: tracker.log
+          path: logs/tracker.log
           retention-days: 30
 
       - name: Upload ZABikers cache backup

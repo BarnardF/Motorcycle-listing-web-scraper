@@ -4,24 +4,24 @@ from datetime import datetime
 import asyncio
 import os
 
-from trackers.baseTracker import (
+from src.scrapers.baseTracker import (
     load_bike_list,
-    load_previous_listings,
+    # load_previous_listings,
     save_listings,
     clean_stale_listings
 )
-from logger.logger import logger
-from config.config import SLEEP_MIN, SLEEP_MAX, IS_GITHUB_ACTIONS
-from template_generator.html_generator import generate_html_report
-from template_generator.excel_generator import generate_excel_report
-from template_generator.db_manager import DatabaseManager
-from generate_summary import generate_summary
+from src.logger.logger import logger
+from src.config.config import SLEEP_MIN, SLEEP_MAX, IS_GITHUB_ACTIONS
+from src.generators.html_generator import generate_html_report
+from src.generators.excel_generator import generate_excel_report
+from src.database.db_manager import DatabaseManager
+from src.generators.summary_generator import generate_summary
 
 #scrapers
-# from trackers.autotraderTracker import scrape_autotrader
-from trackers.gumtreeTracker import scrape_gumtree
-from trackers.webuycarsTracker import scrape_webuycars_cached
-from trackers.zabikerstracker import scrape_zabikers
+# from src.scrapers.autotraderTracker import scrape_autotrader
+from src.scrapers.gumtreeTracker import scrape_gumtree
+from src.scrapers.webuycarsTracker import scrape_webuycars_cached
+from src.scrapers.zabikerstracker import scrape_zabikers
 
 SCRAPERS = [
     # scrape_autotrader,
@@ -32,10 +32,10 @@ SCRAPERS = [
 
 if IS_GITHUB_ACTIONS:
     print("\nRunning on GitHub Actions")
-    print("- Using: AutoTrader + Gumtree + WeBuyCars (TESTING)\n")
+    print("- Using: Gumtree + WeBuyCars + ZABikers\n")
 else:
     print("\nRunning locally")
-    print("- Using: AutoTrader + Gumtree + WeBuyCars\n")
+    print("- Using: Gumtree + WeBuyCars + ZABikers\n")
 
 LIVE_SCRAPERS = [
     'Autotrader',
@@ -235,6 +235,20 @@ async def main():
         # Save to database
         db.save_listings(all_listings)
         logger.info("Saved listings to database")
+        
+        # 1. Collect all active listing IDs from our merged all_listings
+        active_ids = set()
+        for bike, listings in all_listings.items():
+            for listing_id in listings.keys():
+                active_ids.add(listing_id)
+        
+        # 2. Delete any listings in the DB that aren't in our active_ids set
+        removed_from_db = db.delete_listings_not_in(active_ids)
+        if removed_from_db > 0:
+            logger.info(f"Purged {removed_from_db} stale listings from the database")
+            
+            # 3. Reclaim the disk space immediately (optional but recommended here)
+            db.vacuum()
 
         # Flatten listings for reports (use current data from this run)
         flat_listings = [

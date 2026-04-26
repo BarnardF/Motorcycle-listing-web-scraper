@@ -5,7 +5,7 @@ Helps identify correct CSS classes for scraping
 
 import requests
 from bs4 import BeautifulSoup
-from config.config import get_random_user_agent, REQUEST_TIMEOUT
+from src.config.config import get_random_user_agent, REQUEST_TIMEOUT
 
 BASE_URL = "https://www.zabikers.co.za/bikes-for-sale/"
 

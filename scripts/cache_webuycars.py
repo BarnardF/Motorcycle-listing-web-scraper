@@ -10,8 +10,8 @@ import time
 from datetime import datetime
 from pathlib import Path
 from playwright.sync_api import sync_playwright
-from logger.logger import logger
-from config.config import WEBUYCARS_CACHE_FILE, WEBUYCARS_BASE_URL, API_KEYWORDS
+from src.logger.logger import logger
+from src.config.config import WEBUYCARS_CACHE_FILE, WEBUYCARS_BASE_URL, API_KEYWORDS
 
 SOURCE = "WeBuyCars"
 

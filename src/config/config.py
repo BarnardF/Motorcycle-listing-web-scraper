@@ -16,8 +16,8 @@ ZABIKERS_CACHE_FILE = str(DATA_FOLDER / "zabikers_cache.json")
 
 
 # Other files (in root)
-BIKE_FILE = "bikes.txt"
-LOG_FILE = "tracker.log"
+BIKE_FILE = "src/config/bikes.txt"
+LOG_FILE = "logs/tracker.log"
 
 # ==================== ENVIRONMENT DETECTION ====================
 IS_GITHUB_ACTIONS = os.getenv('GITHUB_ACTIONS') == 'true'

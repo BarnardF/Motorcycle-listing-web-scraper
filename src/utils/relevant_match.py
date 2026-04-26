@@ -4,7 +4,7 @@
 
 import re
 from difflib import SequenceMatcher
-from config.config import MATCH_THRESHOLDS
+from src.config.config import MATCH_THRESHOLDS
 
 def normalize_text(text):
     """Normalize text for comparison"""

@@ -5,7 +5,7 @@ Works completely client-side (no backend needed)
 Created with ai(Claude) - Dec 2025
 """
 from datetime import datetime
-from logger.logger import logger
+from src.logger.logger import logger
 import os
 import json
 

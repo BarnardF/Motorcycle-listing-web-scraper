@@ -11,7 +11,7 @@ from datetime import datetime
 from pathlib import Path
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
-from logger.logger import logger
+from src.logger.logger import logger
 
 SOURCE = "ZABikers"
 ZABIKERS_CACHE_FILE = "data/zabikers_cache.json"

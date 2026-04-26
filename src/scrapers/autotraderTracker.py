@@ -7,12 +7,12 @@ AI(Claude) assisted implementation
 import time
 
 from urllib.parse import quote
-from trackers.baseTracker import fetch_page
-from utils.search_variation_generator import generate_search_variations
-from utils.relevant_match import is_relevant_autotrader_match
-from utils.listing_builder import build_listing
-from logger.logger import logger
-from config.config import AUTOTRADER_BASE_URL
+from src.scrapers.baseTracker import fetch_page
+from src.utils.search_variation_generator import generate_search_variations
+from src.utils.relevant_match import is_relevant_autotrader_match
+from src.utils.listing_builder import build_listing
+from src.logger.logger import logger
+from src.config.config import AUTOTRADER_BASE_URL
 
 SOURCE = "AutoTrader"
 

@@ -1,10 +1,10 @@
 from urllib.parse import quote_plus
-from trackers.baseTracker import fetch_page
-from utils.relevant_match import is_relevant_match
-from utils.search_variation_generator import generate_search_variations
-from utils.listing_builder import build_listing
-from logger.logger import logger
-from config.config import GUMTREE_BASE_URL, MATCH_THRESHOLDS
+from src.scrapers.baseTracker import fetch_page
+from src.utils.relevant_match import is_relevant_match
+from src.utils.search_variation_generator import generate_search_variations
+from src.utils.listing_builder import build_listing
+from src.logger.logger import logger
+from src.config.config import GUMTREE_BASE_URL, MATCH_THRESHOLDS
 
 SOURCE = "Gumtree"
 

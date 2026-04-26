@@ -7,7 +7,7 @@ import numpy as np
 from collections import Counter
 
 
-from utils.relevant_match import fuzzy_match_score
+from src.utils.relevant_match import fuzzy_match_score
 
 # Test cases: (search_term, listing_title, should_match)
 # should_match = True means we want this listing included

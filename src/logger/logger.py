@@ -1,7 +1,7 @@
 #ai generated
 import logging
 import sys
-from config.config import LOG_FILE, LOG_LEVEL, LOG_FORMAT, LOG_DATE_FORMAT
+from src.config.config import LOG_FILE, LOG_LEVEL, LOG_FORMAT, LOG_DATE_FORMAT
 
 
 def setup_logger(name="MotorcycleTracker"):

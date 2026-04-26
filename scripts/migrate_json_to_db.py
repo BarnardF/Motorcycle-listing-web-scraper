@@ -7,8 +7,8 @@ Run this ONCE before switching to the database-based tracker.
 import json
 import os
 from pathlib import Path
-from logger.logger import logger
-from template_generator.db_manager import DatabaseManager
+from src.logger.logger import logger
+from src.database.db_manager import DatabaseManager
 
 
 def migrate_json_to_db(json_file="data/listings.json", db_file="data/listings.db"):
